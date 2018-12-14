@@ -1,0 +1,21 @@
+.header__menu,
+.search input[type=text],
+.header__cart,
+.search,
+.prewiev,
+.prewiev time,
+.brends li,
+.multi-slider h2,
+.catalog__buy input[type=submit],
+.catalog__kol input,
+.popup__wrap,
+.popup__wrap input,
+.popup__wrap h2,
+.popup-close,
+.filter__hidden,
+.filter__letter > li > a,
+.filter__letter > li {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

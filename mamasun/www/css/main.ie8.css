@@ -1,0 +1,33 @@
+/* css for ltie8 */
+.header__menu,
+.sub-menu a:hover,
+.prewiev time,
+.points-slider li.active {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8d175', endColorstr='#7f9a2b',GradientType=0 );
+}
+.header__menu a:hover,
+.prewiev h2,
+.brends a:hover,
+.multi-slider__points,
+.popup__wrap h2 {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e9ff', endColorstr='#93bbf2',GradientType=0 );
+}
+.search input[type=text],
+.popup__wrap input {
+    line-height: 34px;
+}
+.brends a,
+.brends a:visited {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
+}
+.multi-slider h2 {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdcb21', endColorstr='#dda102',GradientType=0 );
+}
+.popup__wrap input.popup-send,
+.popup__wrap input.popup-send:visited {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce23', endColorstr='#db9f00',GradientType=0 );
+}
+.popup__wrap input.popup-send:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db9f00', endColorstr='#ffce23',GradientType=0 );
+
+}

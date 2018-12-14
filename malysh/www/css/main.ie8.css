@@ -1,0 +1,8 @@
+/* css for ltie8 */
+.catalog__buy {
+    top: 0;
+    display: none;
+}
+.catalog__pic:hover .catalog__buy {
+    display: block;
+}

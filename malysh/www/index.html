@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=1024">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <!-- popup__wrap -->
+    <form class="popup__wrap">
+
+        <h2>Заказать звонок</h2>
+
+        <div class="popup__close"></div>
+
+        <fieldset>
+            <label for="pop1">Ваше имя <sup>*</sup></label>
+            <input id="pop1" type="text" placeholder="">
+        </fieldset>
+
+        <fieldset>
+            <label for="pop2">Ваш телефон <sup>*</sup></label>
+            <input id="pop2" type="tel" placeholder="">
+        </fieldset>
+
+        <div class="popup__capcha">
+            <img src="pic/capca.jpg" alt="">
+        </div>
+
+        <fieldset>
+            <label for="pop3">Введите цифры с картинки <sup>*</sup></label>
+            <input id="pop3" type="text" placeholder="">
+        </fieldset>
+
+        <input class="popup__send" type="submit" value="отправить">
+
+    </form>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- popup -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__header -->
+        <header class="site__header">
+
+            <!-- logo -->
+            <h1 class="logo"><img src="img/logo.png" alt="малыш"></h1>
+            <!-- /logo -->
+
+            <!-- header-tel -->
+            <div class="header-tel">
+                <a href="tel:88005000160">8-800-5000-160</a>
+                Звонок бесплатный
+            </div>
+            <!-- /header-tel -->
+
+            <!-- call-back -->
+            <a href="#" class="call-back">Заказать звонок</a>
+            <!-- /call-back -->
+
+            <!-- header-basket -->
+            <dl class="header-basket">
+                <dt>
+                    <a href="#">
+                        <span>90</span>
+                    </a>
+                </dt>
+                <dd>
+                    <!-- header-basket__item -->
+                    <a href="#" class="header-basket__item">
+                        <div class="header-basket__pic"><img src="pic/basket1.jpg" width="60" height="60" alt=""></div>
+                        <div class="header-basket__title">Автокресло</div>
+                        <div class="header-basket__kol"><span>1</span></div>
+                        <div class="header-basket__price">2 300 Р</div>
+                    </a>
+                    <!-- /header-basket__item -->
+                    <!-- header-basket__item -->
+                    <a href="#" class="header-basket__item">
+                        <div class="header-basket__pic"><img src="pic/basket1.jpg" width="60" height="60" alt=""></div>
+                        <div class="header-basket__title">Автокресло</div>
+                        <div class="header-basket__kol"><span>99</span></div>
+                        <div class="header-basket__price">2 300 Р</div>
+                    </a>
+                    <!-- /header-basket__item -->
+                    <button>ОФОРМИТЬ ЗАКАЗ</button>
+                </dd>
+            </dl>
+            <!-- /header-basket -->
+
+            <!-- header-login -->
+            <div class="header-login active">
+                <div class="header-login__sing-in">
+                    <a href="#">Вход</a>|<a href="#">Регистрация</a>
+                </div>
+                <div class="header-login__sing-out">
+                    <a href="#">alenaalbertovna</a>
+                </div>
+            </div>
+            <!-- /header-login -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <a href="#" style="background: #cc2429"><div><span>подгузники, гигиена, уход</span></div></a>
+                <a href="#" style="background: #d46c2c"><div><span>питание и кормление</span></div></a>
+                <a href="#" style="background: #f1cc31"><div><span>одежда,обувь, текстиль</span></div></a>
+                <a href="#" style="background: #599c52"><div><span>игрушки и книги</span></div></a>
+                <a href="#" style="background: #457aac"><div><span>автокресла, безопасность</span></div></a>
+                <a href="#" style="background: #599c52"><div><span>детские коляски</span></div></a>
+                <a href="#" style="background: #f1cc31"><div><span>детская мебель</span></div></a>
+                <a href="#" style="background: #bd6333"><div><span>спорт и отдых</span></div></a>
+                <a href="#" style="background: #cc2429"><div><span>товары для мам</span></div></a>
+                <a href="#" style="background: #595959">
+                    <div>
+                        <span class="search"></span>
+                        <form action="#">
+                            <input type="text" placeholder="Поиск по каталогу">
+                            <input type="submit" value="">
+                        </form>
+                    </div>
+                </a>
+            </nav>
+            <!-- /menu -->
+
+        </header><!-- /site__header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- slider -->
+            <div class="slider">
+
+                <!-- slider__wrap -->
+                <div class="slider__wrap">
+
+                    <!-- slider__item -->
+                    <a href="#" class="slider__item">
+                        <img src="pic/slider1.jpg" alt="" onmousedown="return false">
+                    </a>
+                    <!-- /slider__item -->
+
+                    <!-- slider__item -->
+                    <a href="#" class="slider__item">
+                        <img src="pic/slider2.jpg" alt="" onmousedown="return false">
+                    </a>
+                    <!-- /slider__item -->
+
+                    <!-- slider__item -->
+                    <a href="#" class="slider__item">
+                        <img src="pic/slider1.jpg" alt="" onmousedown="return false">
+                    </a>
+                    <!-- /slider__item -->
+
+                    <!-- slider__item -->
+                    <a href="#" class="slider__item">
+                        <img src="pic/slider2.jpg" alt="" onmousedown="return false">
+                    </a>
+                    <!-- /slider__item -->
+
+                </div>
+                <!-- /slider__wrap -->
+
+            </div>
+            <!-- /slider -->
+
+            <!-- info-preview -->
+            <div class="info-preview">
+                <a href="#" class="info-preview__actions">
+                    <h2>акции</h2>
+                    <img src="pic/info-preview1.jpg" alt="">
+                    <span>Скидка 5%</span>
+                    на детское питание
+                </a>
+                <a href="#" class="info-preview__news">
+                    <h2>новости</h2>
+                    <img src="pic/info-preview2.jpg" alt="">
+                    <span>Презентация новой</span>
+                    торговой марки
+                </a>
+            </div>
+            <!-- /info-preview -->
+
+            <!-- catalog -->
+            <div class="catalog">
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog1.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog2.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog3.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog4.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog1.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog2.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog3.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog4.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog1.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog2.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog3.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+                <!-- catalog__item -->
+                <div class="catalog__item">
+                    <div class="catalog__pic">
+                        <div class="centering">
+                            <img src="pic/catalog4.jpg" alt="">
+                        </div>
+                        <div class="catalog__buy">
+                            <a href="#">В КОРЗИНУ</a>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog__title"><span>Прогулочная коляска</span> Zippy Classic</a>
+                    <div class="catalog__price">14900 Р</div>
+                </div>
+                <!-- /catalog__item -->
+            </div>
+            <!-- /catalog -->
+
+            <!-- about-us -->
+            <div class="about-us">
+                <h2><span>О НАС</span></h2>
+                <p>Интернет-магазин детских товаров «Малыш» рад предложить вам широкий ассортимент детских товаров. Наш
+                    магазин многопрофильный, здесь можно найти товары для новорожденных, детскую одежду, детское бельё,
+                    чулочно-носочные изделия, игрушки, верхнюю детскую одежду, аксессуары, детскую обувь и карнавальные
+                    костюмы.Интернет-магазин Малышок предоставляет продукции популярных брендов, таких как REIMA, KERRY,
+                    Larsy, Pablosky, JOHA, Absorba, Mothercare, Next, Early Days, George, Tesco, Disney. </p>
+                <p>У нас можно приобрести ползунки, боди, комплекты для новорожденных, брюки, футболки, майки, шорты,
+                    толстовки, платья, сарафаны, юбки, колготки, носки, шапки, шарфы, куртки, комбинезоны, ботики, сапоги,
+                    кроссовки, игрушки, галстуки, ремни, термобельё. </p>
+                <p>В нашем магазине предусмотрены сезонные скидки.</p>
+            </div>
+            <!-- /about-us -->
+
+        </div><!-- /site__content -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+
+            <!-- site__footer-layout -->
+            <div class="site__footer-layout">
+
+                <!-- footer-menu -->
+                <nav class="footer-menu">
+                    <a href="#" style="background: #cc2429">О компании</a>
+                    <a href="#" style="background: #d46b2d">Доставка</a>
+                    <a href="#" style="background: #f1cc31">Оплата</a>
+                    <a href="#" style="background: #599c52">Контакты</a>
+                </nav>
+                <!-- /footer-menu -->
+
+                <!-- counter -->
+                <div class="counter">
+                    <img src="pic/counter.jpg" alt="">
+                </div>
+                <!-- /counter -->
+
+                <span class="site-create">Разработка сайта: <a href="#">«Экспресс лаб»</a></span>
+
+            </div><!-- /site__footer-layout -->
+
+        </footer>
+        <!-- /site__footer -->
+
+    </div>
+    <!-- /site -->
+
+</body>
+</html>

@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=1024">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.slider.js"></script>
+    <script src="js/jquery.ares.multiple.slider.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <!-- popup__wrap -->
+    <form action="#" class="popup__wrap">
+
+        <h2>Заказать звонок</h2>
+
+        <label>Ваше имя <sup>*</sup></label>
+        <input type="text" placeholder="">
+
+        <label>Ваш телефон <sup>*</sup></label>
+        <input type="tel" placeholder="">
+
+        <!-- capcha -->
+        <div class="capcha">
+            <img src="pic/capcha.jpg" width="129" height="48" alt="">
+        </div>
+        <!-- /capcha -->
+
+        <label>Введите цифры с картинки <sup>*</sup></label>
+        <input type="text" placeholder="">
+
+        <input type="submit" class="popup-send" value="отправить">
+
+        <div class="popup-close"></div>
+
+    </form>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- popup -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- header -->
+        <header class="header">
+
+            <!-- header__layout -->
+            <div class="header__layout">
+
+                <!-- logo -->
+                <a href="#" class="logo"><img src="img/logo.png" width="198" height="79" alt=""></a>
+                <!-- /logo -->
+
+                <a class="header__tel" href="tel:88005000160">8-800-5000-160<span>Звонок бесплатный</span></a>
+                <a class="header__call-back" href="#">Заказать звонок</a>
+
+                <!-- header__login -->
+                <ul class="header__login">
+                    <li><a href="#">Регистрация</a></li>
+                    <li><a href="#">Авторизация</a></li>
+                </ul>
+                <!-- /header__login -->
+
+                <!-- header__cart -->
+                <div class="header__cart">
+                    <li>
+                        <span>В корзине</span>
+                        <span>На сумму</span>
+                    </li>
+                    <li>
+                        <span><a href="#">2 товара</a></span>
+                        <span>1100  Р</span>
+                    </li>
+                </div>
+                <!-- /header__cart -->
+
+                <!-- menu -->
+                <nav class="menu">
+                    <a class="menu__item" href="#">подгузники, гигиена, уход</a>
+                    <a class="menu__item" href="#">питание и кормление</a>
+                    <span class="menu__item">
+                        одежда,обувь, ткстиль
+                        <!-- sub-menu -->
+                        <div class="sub-menu">
+                            <a href="#">Аксессуары по уходу</a>
+                            <a href="#">Бытовая химия</a>
+                            <a href="#">Влажные салфетки</a>
+                            <a href="#">Гигиена полости рта</a>
+                            <a href="#">Горшки и накладки</a>
+                            <a href="#">Косметика</a>
+                            <a href="#">Пакеты и накопители подгузников</a>
+                            <a href="#">Принадлежности для купания</a>
+                            <a href="#">Пустышки</a>
+                            <a href="#">Детское питание</a>
+                            <a href="#">Игры и игрушки</a>
+                            <a href="#">Одежда и текстиль</a>
+                            <a href="#">Подгузники и пеленки</a>
+                            <a href="#">Сон, прогулка, путешествие</a>
+                            <a href="#">Товары для мам</a>
+                        </div>
+                        <!-- /sub-menu -->
+                    </span>
+                    <a class="menu__item" href="#">игрушки и книги</a>
+                    <a class="menu__item" href="#">автокресла, безопасность</a>
+                    <a class="menu__item" href="#">детские коляски</a>
+                    <a class="menu__item" href="#">детская мебель</a>
+                    <span class="menu__item">
+                        спорт и отдых
+                        <!-- sub-menu -->
+                        <div class="sub-menu">
+                            <a href="#">Аксессуары по уходу</a>
+                            <a href="#">Бытовая химия</a>
+                            <a href="#">Влажные салфетки</a>
+                            <a href="#">Гигиена полости рта</a>
+                            <a href="#">Горшки и накладки</a>
+                            <a href="#">Косметика</a>
+                            <a href="#">Пакеты и накопители подгузников</a>
+                            <a href="#">Принадлежности для купания</a>
+                            <a href="#">Пустышки</a>
+                            <a href="#">Детское питание</a>
+                            <a href="#">Игры и игрушки</a>
+                            <a href="#">Одежда и текстиль</a>
+                            <a href="#">Подгузники и пеленки</a>
+                            <a href="#">Сон, прогулка, путешествие</a>
+                            <a href="#">Товары для мам</a>
+                        </div>
+                        <!-- /sub-menu -->
+                    </span>
+                    <a class="menu__item" href="#">товары для мам</a>
+                </nav>
+                <!-- menu -->
+
+            </div>
+            <!-- /header__layout -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__wrap -->
+        <div class="site__wrap">
+
+            <!-- site__aside -->
+            <div class="site__aside">
+
+                <!-- search -->
+                <form class="search" action="#">
+                    <input type="text" placeholder="Поиск по сайту">
+                    <input type="submit" value="">
+                </form>
+                <!-- /search -->
+
+                <!-- filter -->
+                <div class="filter">
+                    <h2 class="bow">бренды</h2>
+                    <!-- filter__letter -->
+                    <ul class="filter__letter">
+                        <li><a href="#">a</a></li>
+                        <li>
+                            <a href="#">b</a>
+                            <!-- filter__hidden -->
+                            <div class="filter__hidden">
+                                <div>
+                                    <ul>
+                                        <li><a href="#">BabyBjorn</a></li>
+                                        <li><a href="#">Baby Care</a></li>
+                                        <li><a href="#">Baby Dan</a></li>
+                                        <li><a href="#">Baby Expert</a></li>
+                                        <li><a href="#">Baby Jogger</a></li>
+                                        <li><a href="#">Baby Italia</a></li>
+                                        <li><a href="#">Babyhome</a></li>
+                                        <li><a href="#">Babymel</a></li>
+                                        <li><a href="#">BabyMoov</a></li>
+                                        <li><a href="#">Baby Trend</a></li>
+                                        <li><a href="#">Bambolina</a></li>
+                                        <li><a href="#">Beaba</a></li>
+                                        <li><a href="#">Bebe Confort</a></li>
+                                        <li><a href="#">Bebecar</a></li>
+                                        <li><a href="#">Bebe Jou</a></li>
+                                        <li><a href="#">Bebek</a></li>
+                                        <li><a href="#">BeeAngel</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Beluvv</a></li>
+                                        <li><a href="#">Benim Odam</a></li>
+                                        <li><a href="#">Berg Toys</a></li>
+                                        <li><a href="#">Besafe</a></li>
+                                        <li><a href="#">Bestway</a></li>
+                                        <li><a href="#">Biloop</a></li>
+                                        <li><a href="#">Bloom</a></li>
+                                        <li><a href="#">Bob</a></li>
+                                        <li><a href="#">Bonest Benest</a></li>
+                                        <li><a href="#">BornFree</a></li>
+                                        <li><a href="#">Brevi</a></li>
+                                        <li><a href="#">Brio</a></li>
+                                        <li><a href="#">Britax</a></li>
+                                        <li><a href="#">Brother Max</a></li>
+                                        <li><a href="#">Buggysnuggle</a></li>
+                                        <li><a href="#">Bumbleride</a></li>
+                                        <li><a href="#">ByBO design</a></li>
+                                    </ul>
+                                    <span class="filter__hidden-close"></span>
+                                </div>
+                            </div>
+                            <!-- /filter__hidden -->
+                        </li>
+                        <li>
+                            <a href="#">c</a>
+                            <!-- filter__hidden -->
+                            <div class="filter__hidden">
+                                <div>
+                                    <ul>
+                                        <li><a href="#">BabyBjorn</a></li>
+                                        <li><a href="#">Baby Care</a></li>
+                                        <li><a href="#">Baby Dan</a></li>
+                                        <li><a href="#">Baby Expert</a></li>
+                                        <li><a href="#">Baby Jogger</a></li>
+                                        <li><a href="#">Baby Italia</a></li>
+                                        <li><a href="#">Babyhome</a></li>
+                                        <li><a href="#">Babymel</a></li>
+                                        <li><a href="#">BabyMoov</a></li>
+                                        <li><a href="#">Baby Trend</a></li>
+                                        <li><a href="#">Bambolina</a></li>
+                                        <li><a href="#">Beaba</a></li>
+                                        <li><a href="#">Bebe Confort</a></li>
+                                        <li><a href="#">Bebecar</a></li>
+                                        <li><a href="#">Bebe Jou</a></li>
+                                        <li><a href="#">Bebek</a></li>
+                                        <li><a href="#">BeeAngel</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Beluvv</a></li>
+                                        <li><a href="#">Benim Odam</a></li>
+                                        <li><a href="#">Berg Toys</a></li>
+                                        <li><a href="#">Besafe</a></li>
+                                        <li><a href="#">Bestway</a></li>
+                                        <li><a href="#">Biloop</a></li>
+                                        <li><a href="#">Bloom</a></li>
+                                        <li><a href="#">Bob</a></li>
+                                        <li><a href="#">Bonest Benest</a></li>
+                                        <li><a href="#">BornFree</a></li>
+                                        <li><a href="#">Brevi</a></li>
+                                        <li><a href="#">Brio</a></li>
+                                        <li><a href="#">Britax</a></li>
+                                        <li><a href="#">Brother Max</a></li>
+                                        <li><a href="#">Buggysnuggle</a></li>
+                                        <li><a href="#">Bumbleride</a></li>
+                                        <li><a href="#">ByBO design</a></li>
+                                    </ul>
+                                    <span class="filter__hidden-close"></span>
+                                </div>
+                            </div>
+                            <!-- /filter__hidden -->
+                        </li>
+                        <li><a href="#">d</a></li>
+                        <li><a href="#">e</a></li>
+                        <li><a href="#">f</a></li>
+                        <li><a href="#">g</a></li>
+                        <li><a href="#">h</a></li>
+                        <li><a href="#">i</a></li>
+                        <li><a href="#">j</a></li>
+                        <li><a href="#">k</a></li>
+                        <li><a href="#">l</a></li>
+                        <li><a href="#">m</a></li>
+                        <li><a href="#">n</a></li>
+                        <li><a href="#">o</a></li>
+                        <li><a href="#">p</a></li>
+                        <li><a href="#">q</a></li>
+                        <li><a href="#">r</a></li>
+                        <li><a href="#">s</a></li>
+                        <li><a href="#">t</a></li>
+                        <li><a href="#">u</a></li>
+                        <li><a href="#">v</a></li>
+                        <li><a href="#">w</a></li>
+                        <li><a href="#">y</a></li>
+                        <li>
+                            <a href="#">z</a>
+                            <!-- filter__hidden -->
+                            <div class="filter__hidden">
+                                <div>
+                                    <ul>
+                                        <li><a href="#">BabyBjorn</a></li>
+                                        <li><a href="#">Baby Care</a></li>
+                                        <li><a href="#">Baby Dan</a></li>
+                                        <li><a href="#">Baby Expert</a></li>
+                                        <li><a href="#">Baby Jogger</a></li>
+                                        <li><a href="#">Baby Italia</a></li>
+                                        <li><a href="#">Babyhome</a></li>
+                                        <li><a href="#">Babymel</a></li>
+                                        <li><a href="#">BabyMoov</a></li>
+                                        <li><a href="#">Baby Trend</a></li>
+                                        <li><a href="#">Bambolina</a></li>
+                                        <li><a href="#">Beaba</a></li>
+                                        <li><a href="#">Bebe Confort</a></li>
+                                        <li><a href="#">Bebecar</a></li>
+                                        <li><a href="#">Bebe Jou</a></li>
+                                        <li><a href="#">Bebek</a></li>
+                                        <li><a href="#">BeeAngel</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Beluvv</a></li>
+                                        <li><a href="#">Benim Odam</a></li>
+                                        <li><a href="#">Berg Toys</a></li>
+                                        <li><a href="#">Besafe</a></li>
+                                        <li><a href="#">Bestway</a></li>
+                                        <li><a href="#">Biloop</a></li>
+                                        <li><a href="#">Bloom</a></li>
+                                        <li><a href="#">Bob</a></li>
+                                        <li><a href="#">Bonest Benest</a></li>
+                                        <li><a href="#">BornFree</a></li>
+                                        <li><a href="#">Brevi</a></li>
+                                        <li><a href="#">Brio</a></li>
+                                        <li><a href="#">Britax</a></li>
+                                        <li><a href="#">Brother Max</a></li>
+                                        <li><a href="#">Buggysnuggle</a></li>
+                                        <li><a href="#">Bumbleride</a></li>
+                                        <li><a href="#">ByBO design</a></li>
+                                    </ul>
+                                    <span class="filter__hidden-close"></span>
+                                </div>
+                            </div>
+                            <!-- /filter__hidden -->
+                        </li>
+                        <li><a class="another" href="#">а-я</a></li>
+                    </ul>
+                    <!-- /filter__letter -->
+                    <dl>
+                        <dt>Стоимость</dt>
+                        <!-- filter__price -->
+                        <dd class="filter__price">
+                            <div class="filter__range"></div>
+                            <p min="0" max="30000">
+                                <span><input class="amount_min" type="text" value="0"> .p</span>
+                                <span><input class="amount_max" type="text" value="10000"> .p</span>
+                            </p>
+                        </dd>
+                        <!-- /filter__price -->
+                    </dl>
+                </div>
+                <!-- /filter -->
+            </div>
+            <!-- /site__aside -->
+
+            <!-- site__content -->
+            <div class="site__content">
+
+                <!-- breadcrumb -->
+                <ul class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li class="active">Новости</li>
+                </ul>
+                <!-- /breadcrumb -->
+
+                <h1>Новости</h1>
+
+                <!-- news-prewiev -->
+                <ul class="news-prewiev">
+                    <!-- news-prewiev__item -->
+                    <li class="news-prewiev__item">
+                        <time datetime="2014-11-11">11 Ноября 2014</time>
+                        <a href="#">
+                            <img src="pic/news-prewiev1.jpg" width="47" height="47" alt="">
+                            Изменение условий работы интернет-магазина
+                        </a>
+                    </li>
+                    <!-- /news-prewiev__item -->
+                    <!-- news-prewiev__item -->
+                    <li class="news-prewiev__item">
+                        <time datetime="2014-11-11">11 Ноября 2014</time>
+                        <a href="#">
+                            <img src="pic/news-prewiev2.jpg" width="47" height="47" alt="">
+                            Готовимся к холодам!!!
+                        </a>
+                    </li>
+                    <!-- /news-prewiev__item -->
+                    <!-- news-prewiev__item -->
+                    <li class="news-prewiev__item">
+                        <time datetime="2014-11-11">11 Ноября 2014</time>
+                        <a href="#">
+                            <img src="pic/news-prewiev3.jpg" width="47" height="47" alt="">
+                            Распродажа летнего ассортимента!
+                        </a>
+                    </li>
+                    <!-- /news-prewiev__item -->
+                    <!-- news-prewiev__item -->
+                    <li class="news-prewiev__item">
+                        <time datetime="2014-11-11">11 Ноября 2014</time>
+                        <a href="#">
+                            <img src="pic/news-prewiev4.jpg" width="47" height="47" alt="">
+                            Нам 5 лет!!!
+                        </a>
+                    </li>
+                    <!-- /news-prewiev__item -->
+                    <!-- news-prewiev__item -->
+                    <li class="news-prewiev__item">
+                        <time datetime="2014-11-11">11 Ноября 2014</time>
+                        <a href="#">
+                            <img src="pic/news-prewiev5.jpg" width="47" height="47" alt="">
+                            С Днём Защиты Детей!
+                        </a>
+                    </li>
+                    <!-- /news-prewiev__item -->
+                </ul>
+                <!-- /news-prewiev -->
+
+            </div>
+            <!-- /site__content -->
+
+        </div>
+        <!-- /site__wrap -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <!-- footer__menu -->
+            <nav class="footer__menu">
+                <a href="#">О компании</a>
+                <a href="#">Доставка</a>
+                <a href="#">Оплата</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <!-- /footer__menu -->
+
+            <!-- footer__counter -->
+            <div class="footer__counter">
+                <img src="pic/counter.png" width="66" height="23" alt="">
+            </div>
+            <!-- /footer__counter -->
+
+            <!-- footer__design -->
+            <div class="footer__design">Разработка сайта: <a href="#">«Экспресс лаб»</a></div>
+            <!-- /footer__design -->
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>
