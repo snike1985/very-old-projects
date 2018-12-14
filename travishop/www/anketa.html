@@ -1,0 +1,725 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <meta name="viewport" content="width=1000">
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.slider.js"></script>
+    <script src="js/jquery.ares.multiple.slider.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+        <link rel="stylesheet" href="css/main.ie9.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <!-- popup__wrap -->
+    <form class="popup__wrap" action="#">
+        <div class="close"></div>
+        <h1>Заказать звонок</h1>
+        <fieldset>
+            <label for="popup1">Ваше имя</label>
+            <input type="text" id="popup1" placeholder="">
+        </fieldset>
+        <fieldset>
+            <label for="popup2">Телефон</label>
+            <input type="tel" class="phoneMask" id="popup2" placeholder="+7 (___) ___ __ __">
+        </fieldset>
+        <span class="buy__submit">
+            <input class="popup-send" type="submit" value="Отправить">
+        </span>
+    </form>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- /popup -->
+
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <h1 class="logo"><img src="img/logo.png" width="299" height="108" alt="Здравница травника Гордеева М.В."></h1>
+            <!-- /logo -->
+
+            <!-- header__menu -->
+            <nav class="header__menu">
+                <div class="header__menu-item">
+                    <a href="#">О компании</a>
+                </div>
+                <div class="header__menu-item">
+                    <a href="#">Центр консультирования</a>
+                    <ul class="header__sub-menu">
+                        <li><a href="#">Правила обслуживания в фитоцентрах</a></li>
+                        <li><a href="#">Образовательно-практические курсы</a></li>
+                        <li><a href="#">ЦДО</a></li>
+                        <li><a href="#">Расписание М.В.Гордеева</a></li>
+                        <li><a href="#">Школа здорового человека</a></li>
+                        <li><a href="#">Туристско-оздоровительные курсы</a></li>
+                    </ul>
+                </div>
+                <div class="header__menu-item">
+                    <a href="#">Как сделать заказ</a>
+                </div>
+                <div class="header__menu-item">
+                    <a href="#">Условия доставки</a>
+                </div>
+                <div class="header__menu-item">
+                    <a class="active" href="#">Публикации</a>
+                </div>
+                <div class="header__menu-item">
+                    <a href="#">Контакты</a>
+                </div>
+            </nav>
+            <!-- /header__menu -->
+
+            <!-- header__call-back -->
+            <div class="header__call-back">
+                <span>Бесплатная экспресс-консультация</span>
+                <a href="tel:84959746362"><span><span>8 (495)</span> 974-63-62</span></a>
+                <a class="call-back" href="#">Заказать звонок</a>
+            </div>
+            <!-- header__call-back -->
+
+            <span class="header__mail">E-mail: <a href="mailto:travoshop@yandex.ru">travoshop@yandex.ru</a></span>
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__wrap -->
+        <div class="site__wrap">
+
+        <!-- our-consultants -->
+        <div class="our-consultants">
+            <h2>Наши консультанты</h2>
+
+            <!-- order-consultation -->
+            <div class="order-consultation">
+                <a href="#">
+                    Заказать
+                    <span>консультацию</span>
+                    врача-фитотерапевта
+                </a>
+            </div>
+            <!-- /order-consultation -->
+
+            <!-- ares-slider -->
+            <div class="ares-slider">
+
+                <!-- ares-slider__item -->
+                <div class="ares-slider__item" data-attr="pic/our-consultants1-min.jpg">
+                    <img src="pic/our-consultants1.jpg" width="123" height="123" alt="">
+
+                    <!-- ares-slider__title -->
+                    <div class="ares-slider__title">
+                                <span>
+                                    Анастасия Спиридоновна
+                                    <span>Тихорецкая</span>
+                                </span>
+                        <p>Биоэнерготерапевт, психолог, фитотерапевт, гирудотерапевт, член Международной Ассоциации народной медицины.</p>
+                    </div>
+                    <!-- /ares-slider__title -->
+
+                </div>
+                <!-- /ares-slider__item -->
+
+                <!-- ares-slider__item -->
+                <div class="ares-slider__item" data-attr="pic/our-consultants2-min.jpg">
+                    <img src="pic/our-consultants2.jpg" width="123" height="123" alt="">
+
+                    <!-- ares-slider__title -->
+                    <div class="ares-slider__title">
+                                <span>
+                                    Татьяна Спиридоновна
+                                    <span>Шевченко</span>
+                                </span>
+                        <p>Биоэнерготерапевт, психолог, член Международной Ассоциации народной медицины.</p>
+                    </div>
+                    <!-- /ares-slider__title -->
+
+                </div>
+                <!-- /ares-slider__item -->
+
+                <!-- ares-slider__item -->
+                <div class="ares-slider__item" data-attr="pic/our-consultants1-min.jpg">
+                    <img src="pic/our-consultants1.jpg" width="123" height="123" alt="">
+
+                    <!-- ares-slider__title -->
+                    <div class="ares-slider__title">
+                                <span>
+                                    Алла Ивановна
+                                    <span>Попова</span>
+                                </span>
+                        <p>Фитотерапевт, гирудотерапевт, член Международной Ассоциации народной медицины.</p>
+                    </div>
+                    <!-- /ares-slider__title -->
+
+                </div>
+                <!-- /ares-slider__item -->
+
+                <!-- ares-slider__item -->
+                <div class="ares-slider__item" data-attr="pic/our-consultants2-min.jpg">
+                    <img src="pic/our-consultants2.jpg" width="123" height="123" alt="">
+
+                    <!-- ares-slider__title -->
+                    <div class="ares-slider__title">
+                                <span>
+                                    Светлана Спиридоновна
+                                    <span>Сидорова</span>
+                                </span>
+                        <p>Биоэнерготерапевт, психолог, фитотерапевт.</p>
+                    </div>
+                    <!-- /ares-slider__title -->
+
+                </div>
+                <!-- /ares-slider__item -->
+
+                <div class="ares-slider__prev"></div>
+                <div class="ares-slider__next"></div>
+            </div>
+            <!-- /ares-slider -->
+
+        </div>
+        <!-- /our-consultants -->
+
+            <!-- site__aside -->
+            <aside class="site__aside">
+
+                <h2>Каталог продукции</h2>
+
+                <!-- site__menu -->
+                <ul class="site__menu">
+                    <li class="active"><a href="#">Сборы лекарственных трав</a></li>
+                    <li><a href="#">Сборы лекарственных трав в фильтр-пакетах</a></li>
+                    <li><a href="#">Лекарственные травы</a></li>
+                    <li><a href="#">Мази, кремы</a></li>
+                    <li><a href="#">Мед и другие продукты пчеловодства</a></li>
+                    <li><a href="#">Подушки, биоматрас</a></li>
+                    <li><a href="#">Книги, журналы</a></li>
+                    <li><a href="#">Сиропы</a></li>
+                    <li><a href="#">Бальзамы</a></li>
+                    <li><a href="#">БАДы</a></li>
+                    <li><a href="#">Другие товары для здоровья</a></li>
+                </ul>
+                <!-- /site__menu -->
+
+                <!-- make-appointment -->
+                <div class="make-appointment">
+                    <a href="#">
+                        Заказать
+                        консультацию
+                        <span>врача-
+                        фитотерапевта</span>
+                    </a>
+                </div>
+                <!-- /make-appointment -->
+
+                <!-- download-price -->
+                <a href="#" class="download-price">
+                    <span>СКАЧАТЬ</span>
+                    <span>ПРАЙС-ЛИСТ</span>
+                </a>
+                <!-- /download-price -->
+
+                <!-- filter -->
+                <form action="#" class="filter">
+                    <h2>Поиск по названию</h2>
+
+                    <!-- filter__name -->
+                    <div class="filter__name">
+                        <div class="filter__name-item">
+                            <a href="#">А</a>
+
+                            <!-- filter__hidden -->
+                            <div class="filter__hidden">
+                                <ul>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <span class="filter__hidden-close"></span>
+                            </div>
+                            <!-- /filter__hidden -->
+
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Б</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">В</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Г</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Д</a>
+
+                            <!-- filter__hidden -->
+                            <div class="filter__hidden">
+                                <ul>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <span class="filter__hidden-close"></span>
+                            </div>
+                            <!-- /filter__hidden -->
+
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Ж</a>
+
+                            <!-- filter__hidden -->
+                            <div class="filter__hidden">
+                                <ul>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Агарик (лиственничная губка)</a></li>
+                                    <li><a href="#">Адамов корень (тамус обыкновенный)</a></li>
+                                    <li><a href="#">Адонис (цветы)</a></li>
+                                    <li><a href="#">Аир болотный (корневища)</a></li>
+                                    <li><a href="#">Аистник (трава)</a></li>
+                                    <li><a href="#">Алтей (корень)</a></li>
+                                    <li><a href="#">Амарант (цветки)</a></li>
+                                    <li><a href="#">Аралия маньчжурская (корни)</a></li>
+                                    <li><a href="#">Астрагал датский трава</a></li>
+                                    <li><a href="#">Астрагал шерстистоцветковый (трава)</a></li>
+                                </ul>
+                                <span class="filter__hidden-close"></span>
+                            </div>
+                            <!-- /filter__hidden -->
+
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">З</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">И</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Й</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">К</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Л</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">М</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Н</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">О</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">П</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Р</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">С</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Т</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">У</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Ф</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Х</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Ц</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Ч</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Ш</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Щ</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Э</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Ю</a>
+                        </div>
+                        <div class="filter__name-item">
+                            <a href="#">Я</a>
+                        </div>
+                    </div>
+                    <!-- /filter__name -->
+
+                    <h2>фильтр по болезням</h2>
+
+                    <!-- filter__disease -->
+                    <div class="filter__disease">
+                        <dl>
+                            <dt><span>А</span></dt>
+                            <dd><a href="#">Аденоиды</a></dd>
+                            <dd><a href="#">Аденома предстательной железы</a></dd>
+                            <dd><a href="#">Аднексит</a></dd>
+                            <dd><a href="#">Алкоголизм</a></dd>
+                            <dd><a href="#">Аллергия</a></dd>
+                            <dd><a href="#">Анальная трещина</a></dd>
+                            <dd><a class="active" href="#">Ангина</a></dd>
+                            <dd><a href="#">Анемия (малокровие)</a></dd>
+                            <dd><a href="#">Анорексия</a></dd>
+                            <dd><a href="#">Аппетита отсутствие</a></dd>
+                            <dd><a href="#">Аритмия</a></dd>
+                            <dd><a class="active" href="#">Артрит</a></dd>
+                            <dd><a href="#">Артроз</a></dd>
+                            <dd><a href="#">Астения</a></dd>
+                            <dd><a href="#">Атеросклероз</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><span>Б</span></dt>
+                            <dd><a href="#">Бели</a></dd>
+                            <dd><a href="#">Бесплодие</a></dd>
+                            <dd><a href="#">Бессонница</a></dd>
+                            <dd><a href="#">Блефарит</a></dd>
+                            <dd><a href="#">Болезнь Бехтерева</a></dd>
+                            <dd><a href="#">Бели</a></dd>
+                            <dd><a href="#">Бесплодие</a></dd>
+                            <dd><a href="#">Бессонница</a></dd>
+                            <dd><a href="#">Блефарит</a></dd>
+                            <dd><a href="#">Болезнь Бехтерева</a></dd>
+                            <dd><a href="#">Бели</a></dd>
+                            <dd><a href="#">Бесплодие</a></dd>
+                            <dd><a href="#">Бессонница</a></dd>
+                            <dd><a href="#">Блефарит</a></dd>
+                            <dd><a href="#">Болезнь Бехтерева</a></dd>
+                        </dl>
+                    </div>
+                    <!-- /filter__disease -->
+
+                <input type="submit" value="НАЙТИ">
+
+                </form>
+                <!-- /filter -->
+
+                <!-- comment-preview -->
+                <div class="comment-preview">
+                    <h2>Отзывы</h2>
+
+                    <!-- comment-preview__title -->
+                    <div class="comment-preview__title">
+                        <img src="img/ava.jpg" alt="">
+                        <span>Зухра С </span>
+                        <time datetime="2013-02-16">16 февраля 2013</time>
+                    </div>
+                    <!-- /comment-preview__title -->
+
+                    <!-- comment-preview__text -->
+                    <div class="comment-preview__text">
+                        <a href="#">Очень рада, что у нас есть такой центр, точнее сеть аптек Гордеева.</a>
+                    </div>
+                    <!-- /comment-preview__text -->
+
+                    <div class="all-comment"><a href="#">Все отзывы</a></div>
+
+                    <a href="#" class="comment__leave">Оставить отзыв</a>
+
+                </div>
+                <!-- /comment-preview -->
+
+            </aside>
+            <!-- /site__aside -->
+
+            <!-- site__content -->
+            <div class="site__content">
+
+                <!-- breadcrumbs -->
+                <nav class="breadcrumbs">
+                    <a href="">Главная</a>
+                    <span>Отзывы</span>
+                </nav>
+                <!-- /breadcrumbs -->
+
+                <!-- anketa -->
+                <div class="anketa">
+                    <h2>Центр дистанционного обслуживания</h2>
+                    <p>
+                        Расстояние – не помеха. Кто не мечтает получить тот состав лечебных трав, который поможет от любой
+                        хвори? В старину силу воздействия лекарственных растений на человека знали только приобщенные к
+                        знаниям. Они передавались из уст в уста, из века в век. Сегодня на нашей планете тайнами
+                        траволечения владеют единицы, и среди них – целитель России Михаил Викторович Гордеев. Далеко не
+                        каждый имеет возможность попасть к нему на прием. Но у Гордеева есть ученики, которые работают в
+                        области оздоровления уже больше 20 лет. За это время накоплен не только арсенал оздоровительных
+                        средств, но и сформирована методика, основанная на целостном подходе к человеку. Развитие тяжелых
+                        заболеваний происходит не случайно. За этим кроются нарушенные физиологические процессы, которые
+                        организм ошибочно выстроил для того, чтобы таким своеобразным образом сохранить свою целостность.
+                        Анализируя жалобы, нюансы самочувствия, привычек, можно подобрать индивидуальную схему оздоровления,
+                        при которой организм сможет сам настроиться на адекватное саморегулирование.Сегодня у вас есть
+                        уникальная возможность получить для себя Рецепт Здоровья, не выходя из дома. Стоимость подготовки
+                        индивидуального рецепта – 300 рублей. Для того, чтобы он сработал, вам тоже необходимо постараться
+                        и заполнить анкету. Заполненная анкета высылается нам на e-mail. В течение 3-х рабочих дней вы
+                        получите индивидуальный Рецепт Здоровья. Рекомендованные травы вы сможете приобрести в ближайшем
+                        от вас Фитоцентре. Но если в вашем городе или населенном пункте нет Фитоцентра М.В.Гордеева, вам
+                        по заказу пришлют травы почтой наложенным платежом с подробными рекомендациями по применению.Но
+                        это еще не все. После того, как вы пропьете назначенные травы в течение месяца, вам будет сделана
+                        корректировка рецепта, и для этого необходимо ответить еще на несколько вопросов. Доброго вам
+                        здоровья!
+                    </p>
+                    <!-- anketa__info -->
+                    <div class="anketa__info">
+                        <a href="#" class="anketa__info-button">Заполнить</a>
+                        <ul>
+                            <li><a href="#">Анкета детская</a></li>
+                            <li><a href="#">Анкета женская (детородный период)</a></li>
+                            <li><a href="#">Анкета женская (климактерический период)</a></li>
+                            <li><a href="#">Анкета мужская</a></li>
+                        </ul>
+                        <dl>
+                            <dt>Распечатайте анкету,
+                                заполните и отправьте
+                                почтой</dt>
+                            <dd>
+                                Если вы в Москве или МО, анкету может забрать курьер. Или отправьте ее по адресу:
+                                <span>101000, Москва, Чистопрудный бульвар, д. 1а. Здравница травника Гордеева М.В.</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- /anketa__info -->
+                </div>
+                <!-- /anketa -->
+
+            </div>
+            <!-- /site__content -->
+
+        </div>
+        <!-- /site__wrap -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__layout">
+
+                <!-- footer__menu -->
+                <ul class="footer__menu">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Центр консультирования</a></li>
+                    <li><a href="#">Как сделать заказ</a></li>
+                    <li><a href="#">Условия доставки</a></li>
+                    <li><a href="#">Публикации</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <!-- /bfooter__menu -->
+
+                <!-- footer__development -->
+                <span class="footer__development">
+                    Разработка сайта
+                    <span>«<a href="#">Экспресс лаб</a>»</span>
+                </span>
+                <!-- /footer__development -->
+
+                <address>
+                <span>Все права защищены
+                    <span>© Travoshop.ru.</span>
+                </span>
+                    <span>Тел. 8 (495) 974-63-62</span>
+                </address>
+
+                <a class="footer__logo" href="#"><img src="img/footer-logo.png" width="94" height="95" alt=""></a>
+
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <!-- cart -->
+        <div class="cart">
+            <a class="cart__account" href="#">Личный кабинет</a>
+            <a class="cart__deferred" href="#">Отложенные товары<span>0</span></a>
+            <a class="cart__my-cart" href="#">Моя корзина<span>0</span></a>
+            <span class="cart__sum">100 р.</span>
+            <a class="cart__checkout" href="#">Оформить заказ</a>
+        </div>
+        <!-- /cart -->
+
+    </div>
+    <!-- /site -->
+
+
+
+</body>
+</html>

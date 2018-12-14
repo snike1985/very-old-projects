@@ -1,0 +1,115 @@
+/* ------------------- view_admin ------------------ */
+.view_admin .site__content__head {
+    margin: 0 0 0 -15px !important;
+}
+/* ------------------ /view_admin ------------------ */
+
+/* ------------------- pagination ------------------ */
+.pagination {
+    text-align: right;
+}
+/* ------------------ /pagination ------------------ */
+
+/* ------------------ search__block ---------------- */
+.search__block{
+    margin-bottom: 30px;
+}
+/* ----------------- /search__block ---------------- */
+
+/* ---------------- table-responsive --------------- */
+.table-responsive{
+    margin-bottom: 0;
+}
+.table-responsive table .table-condensed-header > td{
+    font-family: "lato-heavy", sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    color: #3f434f;
+}
+.table-responsive table tr td{
+    padding: 13px 10px 0;
+}
+.table-responsive table tr td:nth-of-type(1){
+    width: auto;
+    min-width: auto;
+}
+.table-responsive table tr td:nth-of-type(7){
+    padding-right: 10px;
+}
+.table-responsive table tbody td{
+    color: #6d7079;
+}
+.table-responsive table tr td span{
+    font-size: 10px;
+}
+.table-responsive table tr .expires-on{
+    text-align: center;
+}
+.table-responsive table tr > .action{
+    text-align: center;
+    white-space: nowrap;
+}
+.table-responsive a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 9999px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease 0s;
+}
+
+.table-responsive .action__edit{
+    width: 17px;
+    height: 17px;
+    background: url("../img/icon6.png") no-repeat 50% 50%;
+}
+.table-responsive .action__remove{
+    background: url("../img/icon7.png") no-repeat 50% 50%
+}
+.table-responsive .action__key{
+    background: url("../img/icon9.png") no-repeat 50% 50%
+}
+.table-responsive a:hover{
+    opacity: 1;
+}
+/* ---------------- /table-responsive -------------- */
+
+/* -------------------- add-btn ------------------- */
+.add-btn{
+    margin-bottom: 18px;
+    text-align: right;
+}
+.add-btn .btn{
+    width: auto;
+    padding: 0 8px;
+    border: 1px solid #0ab6c0;
+    background-color: transparent;
+    color: #0ab6c0;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+.add-btn .btn:hover{
+    color: #fff;
+    background-color: #0ab6c0;
+}
+.add-btn .btn span{
+    margin-right: 2px;
+    font: 15px 'lato-bold', sans-serif;
+}
+/* -------------------- /add-btn ------------------- */
+
+@media (max-width: 991px) {
+    .add-btn{
+        text-align: left;
+    }
+
+    .table-responsive{
+        margin-bottom: 20px;
+    }
+}

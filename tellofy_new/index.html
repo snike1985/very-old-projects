@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-submenu.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+
+    <!-- mediafilm -->
+    <div class="mediafilm">
+
+        <!-- mediafilm__popup -->
+        <div class="mediafilm__popup">
+            <div>
+                <div>
+                    <div>
+
+                        <!-- mediafilm__close -->
+                        <div class="mediafilm__close">&#x51;</div>
+                        <!-- /mediafilm__close -->
+
+                        <video id="movie" width="400" height="320" preload controls>
+                            <source src="video/tellofy.mp4" />
+                            <source src="video/tellofy.webm" type='video/webm; codecs="vp8, vorbis"' />
+                            <source src="video/tellofy.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                            <object id="flowplayer" type="application/x-shockwave-flash"
+                                    width="400" height="320">
+                                <param name="movie" value="video/flowplayer-3.2.5.swf" />
+                                <param name="flashvars" value='config={"clip":"video/snowman.mp4"}' />
+                                <p>Загрузить видео в <a href="video/tellofy.mp4">MP4</a>,
+                                    <a href="video/tellofy.ogv">OGG</a> или
+                                    <a href="video/tellofy.webm">WebM</a></p>
+                            </object>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /mediafilm__popup -->
+
+    </div>
+    <!-- /mediafilm -->
+
+    <!-- site -->
+    <div class="site site_inner">
+
+        <ul class="menu-dropdown">
+            <li>
+                <a href="#">browse</a>
+            </li>
+            <li>
+                <a href="#">what`s hot</a>
+            </li>
+            <li>
+                <a href="#">tellofy tour</a>
+            </li>
+            <li>
+                <a href="#">tellofy engage (for business)</a>
+            </li>
+            <li>
+                <a href="#">review us/tellofy us</a>
+            </li>
+            <li class="menu-dropdown__submenu">
+                <span>About us</span>
+                <ul>
+                    <li><a>Sub action</a></li>
+                    <li><a>Another sub action</a></li>
+                    <li><a>Something else here</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Contact us</a>
+            </li>
+            <li>
+                <a href="#">Careers</a>
+            </li>
+            <li>
+                <a href="#">Press and Media</a>
+            </li>
+            <li>
+                <a href="#">privacy policy</a>
+            </li>
+        </ul>
+
+        <!-- site__header -->
+        <header class="site__header">
+            <div class="container-fluid">
+
+                <a href="#" class="logo"><img src="img/logo.png" width="303" height="55" alt="tellofy"></a><!-- /logo -->
+
+                <!-- site__header__items -->
+                <div class="site__header__items">
+                    <nav class="navbar" role="navigation">
+
+                        <!-- site__header__links -->
+                        <ul class="site__header__links">
+                            <li>
+                                <a href="#">Tour</a>
+                            </li>
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                        </ul>
+                        <!-- /site__header__links -->
+
+                        <a class="site__btn site__btn_gradient" href="#">get started!</a>
+
+                        <!-- site__header__links -->
+                        <ul class="site__header__links nav nav-pills">
+                            <li>
+                                <a href="#">Tellofy Engage</a>
+                            </li>
+                            <li>
+                                <a class="site__header__menu-btn" href="#"><span>Menu</span></a>
+                            </li>
+                        </ul>
+                        <!-- /site__header__links -->
+
+                    </nav>
+                </div>
+                <!-- /site__header__items -->
+
+            </div>
+        </header>
+        <!-- /site__header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- slider -->
+            <div class="slider">
+                <div>
+                    <!-- take-tour -->
+                    <div class="take-tour">
+                        <a href="#">
+                            <div>
+                                Take the
+                                <span>Video Tour</span>
+                                to find out more!
+                            </div>
+                        </a>
+                    </div>
+                    <!-- /take-tour -->
+
+                </div>
+
+                <!-- started -->
+                <form class="started" action="#">
+                    <h1>What are you <span>tellofying</span> today?</h1>
+                    <div>
+                        <input type="text" name="business-name" placeholder="Business Name Ex: James Cupcakes"/>
+                        <input type="text" name="near" placeholder="Near Address, Neigborhood, City or Zipcode"/>
+                        <input class="site__btn site__btn_gradient" type="submit" value="GET STARTED!"/>
+                    </div>
+                    <p style="display: none">Couldn’t Find Message - No Matches with Create Option</p>
+                </form>
+                <!-- /started -->
+
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="pic/slide1.jpg" width="1920" height="649" alt="slider">
+                        </div>
+                        <div class="item">
+                            <img src="pic/slide2.jpg" width="1920" height="649" alt="slider">
+                        </div>
+                        <div class="item">
+                            <img src="pic/slide1.jpg" width="1920" height="649" alt="slider">
+                        </div>
+                        <div class="item">
+                            <img src="pic/slide2.jpg" width="1920" height="649" alt="slider">
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left prev" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="carousel-control right next" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+
+            </div>
+            <!-- /slider -->
+
+            <!-- capability -->
+            <div class="capability">
+                <div class="container-fluid">
+
+                    <div class="capability__moments">
+                        <div>
+                            <h2>tell<span class="color-blue">o</span>fic <span>moments!</span></h2>
+                            <p>Share your <span class="color-blue">happy moments</span> with us!</p>
+                            <p>Image submitted by: Name and Details</p>
+                            <p class="capability__posted">Image posted by xyz..</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                            <!-- capability__item -->
+                            <div class="capability__item">
+                                <span class="capability__icon icon1">icon</span>
+                                <h2>Reviews added to the site</h2>
+                                <p>Jan 29, 2015 22:54 UTC (+0)</p>
+
+                                <!-- capability__time -->
+                                <div class="capability__time">
+                                    <img src="pic/time.jpg" width="242" height="52" alt="pic"/>
+                                </div>
+                                <!-- /capability__time -->
+
+                                <!-- capability__read-more -->
+                                <a class="capability__read-more" href="#">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                                <!-- /capability__read-more -->
+
+                            </div>
+                            <!-- /capability__item -->
+
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                            <!-- capability__item -->
+                            <div class="capability__item">
+                                <span class="capability__icon icon2">icon</span>
+                                <h2>Latest Reviews</h2>
+
+                                <!-- capability__reviews -->
+                                <div class="capability__reviews">
+                                    <h3>“Excellent Service all round!”</h3>
+                                    <div class="capability__reviews-avatar">
+                                        <img src="pic/avatar.jpg" width="92" height="92" alt="avatar"/>
+                                    </div>
+                                    <div class="capability__reviews-text">
+                                        <p>Ut iaculis consectetur efficitur. Cras vel elit a elit pellentesque vulputate in et dui. Proin ornare .</p>
+                                        <div class="capability__rating"><div>rating</div></div>
+
+                                        <!-- capability__read-more -->
+                                        <a class="capability__read-more" href="#">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                                        <!-- /capability__read-more -->
+
+                                    </div>
+
+                                </div>
+                                <!-- /capability__reviews -->
+
+                            </div>
+                            <!-- /capability__item -->
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                            <!-- capability__item -->
+                            <div class="capability__item">
+                                <span class="capability__icon icon3">icon</span>
+                                <h2>Latest Consumer Speak</h2>
+                                <p>Praesent turpis mauris, aliquet id dolor. Gravida adipiscing </p>
+
+                                <div class="capability__tellofy-logo"><img src="pic/tellofy-logo.jpg" width="211" height="63" alt="tellofy-logo"/></div>
+
+                                <!-- capability__read-more -->
+                                <a class="capability__read-more" href="#">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                                <!-- /capability__read-more -->
+
+                            </div>
+                            <!-- /capability__item -->
+
+                        </div>
+                    </div>
+
+                    <div class="capability__btns">
+                        <a href="#"><img src="pic/apple.png" width="166" height="55" alt="apple"/></a>
+                        <a href="#"><img src="pic/google.png" width="166" height="55" alt="google"/></a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /capability -->
+
+            <!-- real-time -->
+            <div class="real-time">
+                <div>
+                    <h2 class="site__tellofic-title">Real-Time Review Systems</h2>
+                    <h3 class="site__title">How It Works</h3>
+                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed tempus iaculis leo eget lobortis.  Nullam non tellus mauris. </p>
+
+                    <!-- real-time__features -->
+                    <div class="real-time__features row">
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                            <!-- real-time__items -->
+                            <div class="real-time__items real-time__items_right">
+
+                                <!-- real-time__item -->
+                                <div class="real-time__item">
+
+                                    <!-- real-time__btn -->
+                                    <a class="real-time__btn" href="#">&#xe106;<span>&#x4c;</span></a>
+                                    <!-- /real-time__btn -->
+
+                                    <!-- real-time__text -->
+                                    <div class="real-time__text">
+                                        <h4>Feature One Title</h4>
+                                        <span>Etiam fermentum pulvinar libero!</span>
+
+                                        <!-- real-time__hidden -->
+                                        <div class="real-time__hidden">
+                                            <p>Etiam sem elit, porttitor id diam nec, congue elementum mi. Duis blandit molestie porttitor. Sed tristique nisl ut nibh facilisis, non maximus libero tincidunt. Donec ac quam vel eros ultricies,</p>
+                                            <a href="#">Find out more!</a>
+                                        </div>
+                                        <!-- /real-time__hidden -->
+
+                                    </div>
+                                    <!-- /real-time__text -->
+
+                                </div>
+                                <!-- /real-time__item -->
+
+                                <!-- real-time__item -->
+                                <div class="real-time__item">
+
+                                    <!-- real-time__btn -->
+                                    <a class="real-time__btn" href="#">&#xe028;<span>&#x4c;</span></a>
+                                    <!-- /real-time__btn -->
+
+                                    <!-- real-time__text -->
+                                    <div class="real-time__text">
+                                        <h4>Feature One Title</h4>
+                                        <span>Etiam fermentum pulvinar libero!</span>
+
+                                        <!-- real-time__hidden -->
+                                        <div class="real-time__hidden">
+                                            <p>Etiam sem elit, porttitor id diam nec, congue elementum mi. Duis blandit molestie porttitor. Sed tristique nisl ut nibh facilisis, non maximus libero tincidunt. Donec ac quam vel eros ultricies,</p>
+                                            <a href="#">Find out more!</a>
+                                        </div>
+                                        <!-- /real-time__hidden -->
+
+                                    </div>
+                                    <!-- /real-time__text -->
+
+                                </div>
+                                <!-- /real-time__item -->
+
+                                <!-- real-time__item -->
+                                <div class="real-time__item">
+
+                                    <!-- real-time__btn -->
+                                    <a class="real-time__btn" href="#">&#x68;<span>&#x4c;</span></a>
+                                    <!-- /real-time__btn -->
+
+                                    <!-- real-time__text -->
+                                    <div class="real-time__text">
+                                        <h4>Feature One Title</h4>
+                                        <span>Etiam fermentum pulvinar libero!</span>
+
+                                        <!-- real-time__hidden -->
+                                        <div class="real-time__hidden">
+                                            <p>Etiam sem elit, porttitor id diam nec, congue elementum mi. Duis blandit molestie porttitor. Sed tristique nisl ut nibh facilisis, non maximus libero tincidunt. Donec ac quam vel eros ultricies,</p>
+                                            <a href="#">Find out more!</a>
+                                        </div>
+                                        <!-- /real-time__hidden -->
+
+                                    </div>
+                                    <!-- /real-time__text -->
+
+                                </div>
+                                <!-- /real-time__item -->
+
+                            </div>
+                            <!-- /real-time__items -->
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                            <!-- real-time__items -->
+                            <div class="real-time__items">
+
+                                <!-- real-time__item -->
+                                <div class="real-time__item">
+
+                                    <!-- real-time__btn -->
+                                    <a class="real-time__btn" href="#">&#xe00d;<span>&#x4c;</span></a>
+                                    <!-- /real-time__btn -->
+
+                                    <!-- real-time__text -->
+                                    <div class="real-time__text">
+                                        <h4>Feature One Title</h4>
+                                        <span>Etiam fermentum pulvinar libero!</span>
+
+                                        <!-- real-time__hidden -->
+                                        <div class="real-time__hidden">
+                                            <p>Etiam sem elit, porttitor id diam nec, congue elementum mi. Duis blandit molestie porttitor. Sed tristique nisl ut nibh facilisis, non maximus libero tincidunt. Donec ac quam vel eros ultricies,</p>
+                                            <a href="#">Find out more!</a>
+                                        </div>
+                                        <!-- /real-time__hidden -->
+
+                                    </div>
+                                    <!-- /real-time__text -->
+
+                                </div>
+                                <!-- /real-time__item -->
+
+                                <!-- real-time__item -->
+                                <div class="real-time__item">
+
+                                    <!-- real-time__btn -->
+                                    <a class="real-time__btn" href="#">&#xe100;<span>&#x4c;</span></a>
+                                    <!-- /real-time__btn -->
+
+                                    <!-- real-time__text -->
+                                    <div class="real-time__text">
+                                        <h4>Feature One Title</h4>
+                                        <span>Etiam fermentum pulvinar libero!</span>
+
+                                        <!-- real-time__hidden -->
+                                        <div class="real-time__hidden">
+                                            <p>Etiam sem elit, porttitor id diam nec, congue elementum mi. Duis blandit molestie porttitor. Sed tristique nisl ut nibh facilisis, non maximus libero tincidunt. Donec ac quam vel eros ultricies,</p>
+                                            <a href="#">Find out more!</a>
+                                        </div>
+                                        <!-- /real-time__hidden -->
+
+                                    </div>
+                                    <!-- /real-time__text -->
+
+                                </div>
+                                <!-- /real-time__item -->
+
+                                <!-- real-time__item -->
+                                <div class="real-time__item">
+
+                                    <!-- real-time__btn -->
+                                    <a class="real-time__btn" href="#">&#xe031;<span>&#x4c;</span></a>
+                                    <!-- /real-time__btn -->
+
+                                    <!-- real-time__text -->
+                                    <div class="real-time__text">
+                                        <h4>Feature One Title</h4>
+                                        <span>Etiam fermentum pulvinar libero!</span>
+
+                                        <!-- real-time__hidden -->
+                                        <div class="real-time__hidden">
+                                            <p>Etiam sem elit, porttitor id diam nec, congue elementum mi. Duis blandit molestie porttitor. Sed tristique nisl ut nibh facilisis, non maximus libero tincidunt. Donec ac quam vel eros ultricies,</p>
+                                            <a href="#">Find out more!</a>
+                                        </div>
+                                        <!-- /real-time__hidden -->
+
+                                    </div>
+                                    <!-- /real-time__text -->
+
+                                </div>
+                                <!-- /real-time__item -->
+
+                            </div>
+                            <!-- /real-time__items -->
+
+                        </div>
+
+                        <!-- real-time__pic -->
+                        <div class="real-time__pic">
+                            <img src="pic/real-time-mob.png" width="483" height="558" alt="mobile"/>
+                            <a href="#" class="real-time__play">watch tellofy in action</a>
+                        </div>
+                        <!-- /real-time__pic -->
+
+                    </div>
+                    <!-- /real-time__features -->
+
+                </div>
+            </div>
+            <!-- /real-time -->
+
+            <!-- engage -->
+            <div class="engage">
+                <div class="container-fluid">
+                    <h2 class="site__tellofic-title">tell<img src="pic/tellofic-moments1.png" width="25" height="25" alt="tellofic"/>fic Engage</h2>
+                    <h3 class="site__title">A powerful technology platform</h3>
+
+                    <!-- engage__list -->
+                    <div class="engage__list row">
+                        <div class="engage__item col-lg-4 col-md-4 col-sm-12">
+                            <h4>Learn</h4>
+                            <p><span>Maecenas scelerisque</span>
+                                Aliquam non magna nec mi ullamcorper efficitur. Etiam ultricies ligula at ante semper feugiat id at nunc. Sed molestie tempor eros.</p>
+                            <div class="engage__btn">
+                                <a class="site__btn site__btn_gradient" href="#">Tellofy Engage!</a>
+                            </div>
+                        </div>
+                        <div class="engage__item  col-lg-4 col-md-4 col-sm-12">
+                            <h4>Engage</h4>
+                            <p><span>Maecenas scelerisque</span>
+                                Aliquam non magna nec mi ullamcorper efficitur. Etiam ultricies ligula at ante semper feugiat id at nunc. Sed molestie tempor eros.
+                            </p>
+                            <div class="engage__btn">
+                                <a class="site__btn site__btn_gradient" href="#">Get Tellofy Engage!</a>
+                            </div>
+                        </div>
+                        <div class="engage__item col-lg-4 col-md-4 col-sm-12">
+                            <h4>Grow</h4>
+                            <p><span>Maecenas scelerisque</span>
+                                Aliquam non magna nec mi ullamcorper efficitur. Etiam ultricies ligula at ante semper feugiat id at nunc. Sed molestie tempor eros.</p>
+                            <div class="engage__btn">
+                                <a class="site__btn site__btn_gradient" href="#">Tellofy Engage!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /engage__list -->
+
+                </div>
+            </div>
+            <!-- /engage -->
+
+            <!-- moments -->
+            <div class="moments">
+                <div class="container-fluid">
+                    <h2 class="site__tellofic-title">tell<img src="pic/tellofic-moments.png" width="25" height="25" alt="tellofic"/>fic moments</h2>
+                    <h3 class="site__title">Share Your Happy Moments With Us!</h3>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+
+                            <!-- moments__happy -->
+                            <div class="moments__happy">
+                                <p>Fusce lectus erat, posuere ut turpis sit amet, malesuada ornare orci. Suspendisse accumsan lectus vulputate ullamcorper cursus.</p>
+                                <span>Morbi congue arcu vel erat dignissim pellentesque etiam euismod! </span>
+
+                                <!-- moments__share -->
+                                <div class="moments__share">
+                                    <div class="moments__share1">share</div>
+                                    <div class="moments__share2">share</div>
+                                    <div class="moments__share3">share</div>
+                                </div>
+                                <!-- /moments__share -->
+
+                                <!-- moments__btns -->
+                                <div class="moments__btns">
+                                    <a class="site__btn" href="#">submit your moment!</a>
+                                    <a class="site__btn site__btn_white" href="#">find out More</a>
+                                </div>
+                                <!-- /moments__btns -->
+
+                            </div>
+                            <!-- moments__happy -->
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+
+                            <!-- moments__happy -->
+                            <div class="moments__tell-it">
+                                <img src="pic/tell-it.png" width="452" height="371" alt="tell"/>
+                            </div>
+                            <!-- /moments__happy -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /moments -->
+
+        </div>
+        <!-- /site__content -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+
+            <!-- site__footer__items -->
+            <div class="site__footer__items">
+                <div class="container-fluid">
+                    <dl class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <dt>QUICK LINKS</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="#">Browse</a>
+                                </li>
+                                <li>
+                                    <a href="#">What's Hot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tellofy Your</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tellofy Engage (For Business)</a>
+                                </li>
+                                <li>
+                                    <a href="#">Review Us/Unfollow Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Press and Media</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <dt>SOCIAL MEDIA</dt>
+                        <dd>
+                            <div class="tellofy-plugin">
+                                <img src="pic/facebook-plug.jpg" width="288" height="249" alt=""/>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <dt>TELLOFY BLOG</dt>
+                        <dd>
+
+                            <!-- tellofy-blog -->
+                            <div class="tellofy-blog">
+                                <div>
+                                    <h2>TELLOFY LAUNCHES NEW SITE</h2>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...</p>
+                                </div>
+                                <div>
+                                    <h2>TELLOFY LAUNCHES NEW SITE</h2>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...</p>
+                                </div>
+                            </div>
+                            <!-- /tellofy-blog -->
+
+                        </dd>
+                    </dl>
+                    <dl class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <dt>Don't Be Left Out</dt>
+                        <dd>
+                            <form class="claim-business" action="#">
+                                <h2>CLAIM YOUR BUSINESS SECTION TODAY!</h2>
+                                <input type="text" name="your-name" placeholder="Your Name"/>
+                                <input type="email" name="email-address" placeholder="Your Email Address"/>
+                                <input class="site__btn site__btn_gradient" type="submit" value="CLAIM YOUR BUSINESS"/>
+                            </form>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- /site__footer__items -->
+
+            <!-- site__footer-layout -->
+            <div class="site__footer-layout">
+                <p>© 2015 <span>tellofy</span> - Real-time Review Systems. All Rights Reserved</p>
+            </div>
+            <!-- /site__footer-layout -->
+
+        </footer>
+        <!-- /site__footer -->
+
+    </div><!-- /site -->
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-submenu.min.js" defer></script>
+    <script src="js/jquery.main.js"></script>
+
+</body>
+</html>

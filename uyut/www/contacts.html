@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=1024">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <title>Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <!-- popup__wrap -->
+    <div class="popup__wrap">
+        <span class="popup__close">close</span>
+        <form>
+            <h1>ЗАКАЗАТЬ ЗВОНОК</h1>
+            <label for="popup1">Ваше имя</label>
+            <input type="text" id="popup1" placeholder="">
+            <label for="popup2">Ваш телефон</label>
+            <input type="tel" id="popup2" placeholder="">
+            <input class="popup__send" type="submit" value="ОК">
+        </form>
+    </div>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- /popup -->
+
+    <!-- site -->
+    <div class="site site_main">
+
+        <!-- site__header -->
+        <header class="site__header">
+
+            <!-- site__header-layout -->
+            <div class="site__header-layout">
+
+                <!-- menu -->
+                <nav class="menu">
+                    <div><a href="#">О комплексе</a></div>
+                    <div><a href="#">Ход строительства</a></div>
+                    <div class="active"><a href="#">Квартиры и цены</a></div>
+                    <div><a href="#">Как купить</a></div>
+                </nav>
+                <!-- /menu -->
+
+                <!-- logo -->
+                <a href="#" class="logo"><img src="img/logo.png" width="" height="" alt=""></a>
+                <!-- /logo -->
+
+                <!-- site__header-tel -->
+                <div class="site__header-tel">
+                    <h2>Контакты</h2>
+                    <span>(347)</span>
+                    <span>
+                        <a href="tel:+73472991717">299-17-17,</a>
+                        <a href="tel:+73472980101">298-01-01,</a>
+                        <a href="tel:+73472992020">299-20-20</a>
+                    </span>
+                </div>
+                <!-- /site__header-tel -->
+
+                <a href="#" class="call-back">заказать <span>звонок</span></a>
+
+            </div>
+
+        </header>
+        <!-- /site__header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- contacts -->
+            <div class="contacts">
+                <div class="contacts__wrap text-graph">
+                    <div class="text-graph__wrap">
+                        <h1>Офис</h1>
+                        <p><strong>г. Уфа, ул. Ветошникова, д. 99, 7 этаж.</strong></p>
+                        <p>Тел.: (347) <strong>299-17-17</strong>, (347) <strong>298-01-01</strong>, (347) <strong>299-20-20</strong>.</p>
+                        <p>Тел./факс: (347) <strong>292-93-64</strong>.</p>
+                        <p>Эл.почта: <a href="mailto:info@garantufa.ru">info@garantufa.ru</a></p>
+                    </div>
+                    <h2>Время работы:</h2>
+                    <p>пн–пт: 9:00–19:00</p>
+                    <p>сб: 10:00-17:00</p>
+                    <p>вс: выходной</p>
+                </div>
+                <div class="contacts__map"  id="map" data-coordinates="54.727625, 55.970225"></div>
+            </div>
+            <!-- /contacts -->
+
+        </div>
+        <!-- /site__content -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+
+            <!-- builder-sale -->
+            <div class="builder-sale">
+                <a href="#"><span>Прямые продажи от застройщика.</span></a>
+            </div>
+            <!-- /builder-sale -->
+
+            <!-- site__footer-layout -->
+            <div class="site__footer-layout">
+                <span class="site__footer-copyright">ООО СК Гарант, 2015</span>
+                <span class="site__footer-create"><span>Разработка сайта —</span> «<a href="#">Экспресс лаб</a>»</span>
+            </div>
+            <!-- /site__footer-layout -->
+
+        </footer>
+        <!-- /site__footer -->
+
+    </div>
+    <!-- /site -->
+
+
+</body>
+</html>

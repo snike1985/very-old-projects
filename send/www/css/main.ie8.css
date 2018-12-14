@@ -1,0 +1,17 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "dincondc";
+    src: url("../fonts/dincondc.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+
+.calculator > input,
+.content-wrap > h2 {
+    font-family: 'dincondc', sans-serif;
+}
+.calculator > div > input {
+    padding: 5px 5px 0 33px;
+}

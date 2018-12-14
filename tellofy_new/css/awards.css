@@ -1,0 +1,96 @@
+/* --------------- awards --------------- */
+.awards {
+    background: #fafafa;
+    padding: 31px 0;
+}
+.awards h2 {
+    font-family: "lato-black", sans-serif;
+    font-size: 21px;
+    color: #374a5b;
+    font-weight: 400;
+    padding: 0 0 29px 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.awards__item {
+    background: #fff;
+    box-shadow: 1px 1px 5px #e5e5e5;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: block;
+    padding: 19px 64px 19px 382px;
+    position: relative;
+    -webkit-transition: box-shadow .3s ease;
+    transition: box-shadow .3s ease;
+}
+.awards__item:hover {
+    box-shadow: 0 0 10px #000;
+}
+.awards__pic {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 24px;
+    left: 28px;
+    bottom: 24px;
+    width: 332px;
+}
+.awards__title {
+    font-size: 21px;
+    line-height: 25px;
+    color: #222534;
+    font-family: "lato-black", sans-serif;
+    display: block;
+    margin-bottom: 12px;
+}
+.awards__title > span {
+    color: #0ab6c4;
+}
+.awards p {
+    font-size: 13px;
+    color: #222534;
+    opacity: .6;
+    line-height: 21px;
+    margin-bottom: 0;
+    padding-top: 21px;
+}
+.awards__title + p {
+    padding-top: 0;
+}
+/* --------------- /awards --------------- */
+
+@media (max-width: 991px){
+
+    /* --------------- awards --------------- */
+    .awards__item {
+        padding: 24px 28px 24px 28px;
+    }
+    .awards__pic {
+        position: relative;
+        display: block;
+        padding-bottom: 55%;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* --------------- /awards --------------- */
+
+}
+
+@media (max-width: 767px){
+
+    /* --------------- awards --------------- */
+    .awards__item {
+        padding: 15px 15px 15px 15px;
+    }
+    .awards__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    /* --------------- /awards --------------- */
+
+}

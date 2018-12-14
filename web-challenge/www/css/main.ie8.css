@@ -1,0 +1,15 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/helveticaneue.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetica Neue-bold";
+    src: url("../fonts/helveticaneue-bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

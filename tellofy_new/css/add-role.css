@@ -1,0 +1,88 @@
+/* --------------- checkbox-new --------------- */
+.checkbox-role {
+    display: block;
+    text-align: center;
+}
+.checkbox-role input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+.checkbox-role input[type='checkbox'] + label {
+    margin-left: 0;
+}
+
+.checkbox-role label {
+    font-size: 14px;
+    height: 15px;
+    color: #4d4d4d;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.checkbox-role input[type="checkbox"] + label:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: -1px;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid #b5b5b8;
+}
+.checkbox-role input[type="checkbox"]:checked + label:before {
+    background: #0ab6c0;
+    border-color: #0ab6c0;
+}
+.checkbox-role input[type="checkbox"] + label:after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    top: 0;
+    left: 3px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* --------------- /checkbox-new --------------- */
+
+/* --------------- admin-add-role --------------- */
+.admin-add-role{
+
+}
+
+.admin-add-role__fields {
+    margin-bottom: 39px;
+    margin-left: 97px;
+}
+.admin-add-role__fields .form-group {
+    margin-bottom: 19px;
+}
+.admin-add-role .btn.btn_blue{
+    margin-right: 8px;
+}
+/* --------------- /admin-add-role --------------- */
+
+@media (max-width: 480px){
+    .admin-add-role__fields{
+         width: 100%;
+        margin-left: 0;
+     }
+}
+
+@media (max-width: 767px){
+    .admin-add-role__fields{
+        /*width: 100%;*/
+        margin-left: 0;
+     }
+}

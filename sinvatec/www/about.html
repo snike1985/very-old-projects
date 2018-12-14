@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=1024">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <div class="popup__hidden">Спасибо, Ваша заявка принята</div>
+
+    <!-- popup__wrap -->
+    <form class="popup__wrap">
+
+        <h2>Заказать звонок</h2>
+
+        <div class="popup__close"></div>
+
+        <fieldset>
+            <label for="pop1">ФИО <sup>*</sup></label>
+            <input id="pop1" type="text" name="name" placeholder="" required="">
+        </fieldset>
+
+        <fieldset>
+            <label for="pop2">Номер телефона <sup>*</sup></label>
+            <input id="pop2" type="tel" name="tel" placeholder="+7" required="">
+        </fieldset>
+
+        <fieldset>
+            <label for="pop3">Удобное время звонка</label>
+            <input id="pop3" type="text" name="time" placeholder="">
+        </fieldset>
+
+        <div class="popup__capcha">
+            <img src="pic/capcha.png" alt="">
+        </div>
+
+        <fieldset>
+            <label for="pop4">Введите цифры с картинки <sup>*</sup></label>
+            <input id="pop4" type="text" placeholder="" required="">
+        </fieldset>
+
+        <input class="popup__send" type="submit" value="отправить">
+
+    </form>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- popup -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__header -->
+        <header class="site__header">
+
+            <div class="site__header-tel"><a href="tel:+73472666565">+7 (347) 266-65-65</a></div>
+            <div class="site__header-callback"><a href="#">Заказать звонок</a></div>
+
+            <!-- logo -->
+            <a href="#" class="logo"><img src="img/logo.jpg" alt="sinwatec"></a>
+            <!-- /logo -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <a class="menu__item" href="#">О компании</a>
+                <div class="menu__item">
+                    <a href="#">Контрактное производство</a>
+                    <ul>
+                        <li><a href="#">Поверхностный монтаж (SMT монтаж)</a></li>
+                        <li><a href="#">Выводной монтаж (THT монтаж)</a></li>
+                        <li><a href="#">Промышленный дизайн</a></li>
+                        <li><a href="#">Сборка готовой продукции</a></li>
+                        <li><a href="#">Производство упаковки продукции</a></li>
+                        <li><a href="#">Рентген контроль (BGA-пайка)</a></li>
+                        <li><a href="#">Производство жгутов</a></li>
+                        <li><a href="#">Редизайн для массового производства</a></li>
+                        <li><a href="#">Прототипирирование</a></li>
+                        <li><a href="#">Поставка запасных частей</a></li>
+                    </ul>
+                </div>
+                <a class="menu__item" href="#">Продукты и решения</a>
+                <a class="menu__item" href="#">Пресс-центр</a>
+                <a class="menu__item" href="#">Контакты</a>
+            </nav>
+            <!-- /menu -->
+
+            <form class="site__header-search">
+                <input type="text" placeholder="Поиск">
+                <input type="submit" value="">
+            </form>
+
+        </header><!-- /site__header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- breadcrumbs -->
+            <ul class="breadcrumbs">
+                <li><a href="#">Главная</a></li>
+                <li>о компании</li>
+            </ul>
+            <!-- /breadcrumbs -->
+
+            <!-- site__aside -->
+            <aside class="site__aside">
+                <!-- site__menu -->
+                <nav class="site__menu">
+                    <a href="#">Миссия, видение, ценности</a>
+                    <a href="#">История компании</a>
+                    <a href="#">Карьера в «Синватек»</a>
+                    <a href="#">Экологическая политика</a>
+                    <a href="#">Политика в области качества</a>
+                </nav>
+                <!-- /site__menu -->
+            </aside>
+            <!-- /site__aside -->
+
+            <!-- content-right -->
+            <div class="content-right">
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <h1>О компании</h1>
+
+                    <div class="content-wrap__pic">
+                        <img src="pic/pic1.jpg" alt="">
+                    </div>
+
+                    <p>Мы — команда профессиональных инженеров и программистов, промдизайнеров и конструкторов, основное
+                        направление нашей деятельности — разработка электроники на заказ. Мы создаем для наших клиентов
+                        коммерчески успешные серийные продукты мирового уровня.С момента основания компании Sinvatec в
+                        2012 году мы предлагаем комплексные решения задач различного уровня сложности, оказывая услуги
+                        аутсорсинга разработки электроники для различных рынков: потребительская электроника, телекоммуникации,
+                        бортовое радиоэлектронное оборудование и авионика.
+                    </p>
+
+                    <p>Мы готовы поддержать вас на любом этапе реализации проекта: выполнить отдельные задачи в области
+                        контрактной разработки электроники или взять на себя проект под ключ — начиная с подготовки ТЗ и
+                        заканчивая постановкой на производство.Наши накопленные знания, более 150 выполненных проектов,
+                        сплоченная команда, надежные партнерские отношения с игроками рынка электроники — это основа, на
+                        которой мы постоянно развиваем наш опыт и комплекс услуг для потенциальных клиентов</p>
+                </div>
+                <!-- /content-wrap -->
+            </div>
+            <!-- /content-right -->
+
+        </div><!-- /site__content -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+
+            <!-- site__footer-layout -->
+            <div class="site__footer-layout">
+
+                <span class="site__footer-copyright">© «Sinwatec LLC»</span>
+                <span class="site__footer-create">Разработка сайта: <a href="#">«Экспресс-лаб»</a></span>
+
+                <address>
+                    <span>г. Уфа, ул. Кирова, 39, оф. X, т.: +7 (347) 266-65-65</span>
+                    <a href="mailto:info@sinwatec.com">info@sinwatec.com</a>
+                </address>
+
+                <!-- social -->
+                <div class="social">
+                    <a class="facebook" href="#"></a>
+                    <a class="vk" href="#"></a>
+                    <a class="in" href="#"></a>
+                </div>
+                <!-- /social -->
+
+            </div><!-- /site__footer-layout -->
+
+        </footer>
+        <!-- /site__footer -->
+
+    </div>
+    <!-- /site -->
+
+</body>
+</html>

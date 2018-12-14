@@ -1,0 +1,9 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Calibri";
+    src: url("../fonts/calibri.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

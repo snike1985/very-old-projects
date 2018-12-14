@@ -1,0 +1,91 @@
+/* ------------- my-followers -------------- */
+.my-followers {}
+.my-followers__title {
+    color: #3d4e5e;
+    font-size: 16.5px;
+    font-family: lato-black, sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 28px;
+}
+.my-followers__item {
+    width: 100%;
+    display: table;
+    background: #fff;
+    height: 92px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 0 5px rgba(12,6,14,.1);
+    border-radius: 5px;
+    margin-bottom: 14px;
+}
+.my-followers__item > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+.my-followers__item > div:nth-child(1) {
+    width: 93px;
+    text-align: center;
+    padding-top: 5px;
+}
+.my-followers__item > div:nth-child(1) a {
+    display: block;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+.my-followers__item > div:nth-child(1) a:hover {
+    opacity: 0.7;
+}
+.my-followers__item > div:nth-child(1) img {
+    width: 67px;
+    height: 67px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.my-followers__text {
+    padding: 0 0 4px 2px;
+}
+.my-followers__text,
+.my-followers__text a {
+    color: #2c3e50;
+    font-size: 17.5px;
+    font-weight: 700;
+}
+.my-followers__text span {
+    text-transform: none;
+    color: #a4b3be;
+    display: inline-block;
+    line-height: 1;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 3px;
+}
+.my-followers__text a {
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    line-height: 1;
+    -webkit-transition: border-bottom .3s ease-in-out;
+    transition: border-bottom .3s ease-in-out;
+}
+.my-followers__text a:hover {
+    border-bottom: 1px solid #3d4e5e;
+}
+.my-followers__more {
+    padding: 13px 0 0;
+}
+.my-followers__more a {
+    color: #0fb7c3;
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 10px;
+    border-bottom: 1px solid #0fb7c3;
+    -webkit-transition: border-bottom .3s ease-in-out;
+    transition: border-bottom .3s ease-in-out;
+}
+.my-followers__more a:hover {
+    border-bottom: 1px solid transparent;
+}
+/* ------------- /my-followers -------------- */

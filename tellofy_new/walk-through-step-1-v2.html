@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-submenu.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <!-- popup__wrap -->
+    <div class="popup__wrap">
+
+        <div>
+
+            <!-- popup__content -->
+            <div class="popup__content popup__record">
+
+                <!-- popup__record-steps -->
+                <ul class="popup__record-steps">
+                    <li class="active">BUSINESS DETAILS</li>
+                    <li>CONTACT DETAILS</li>
+                    <li>ADD CONTACTS</li>
+                    <li>PREVIEW SUMMARY</li>
+                    <li>CONGRATULATIONS!</li>
+                </ul>
+                <!-- /popup__record-steps -->
+
+                <!-- popup__record-inner -->
+                <div class="popup__record-inner">
+                    <header>tell us about your business</header>
+                    <span class="popup__record-subtitle">Tell us a little about what your business is and what it does for us to let the others know.</span>
+                    <form action="#">
+                        <div class="popup__record-logo">
+                            <div class="popup__record-logo-pic">
+                                <div class="centering">
+                                    <div>
+                                        <img src="img/popup__record-logo.png" width="79" height="81" alt="picture"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup__record-logo-inner">
+                                <fieldset>
+                                    <label for="name">Business Name</label>
+                                    <input type="text" id="name"/>
+                                </fieldset>
+                                <label class="popup__record-upload">
+                                    <span>Upload Logo</span>
+                                    <input type="file"/>
+                                </label>
+                            </div>
+                        </div>
+                        <fieldset>
+                            <label for="url">Website URL</label>
+                            <input type="text" id="url" value="http://"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="tag">Tag Line (Optional)</label>
+                            <input type="text" id="tag"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="description">Business Description (Optional)</label>
+                            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                        </fieldset>
+                        <fieldset class="popup__record-timeField">
+                            <span class="popup__record-hours-title">Opening Hours</span>
+                        <span class="popup__record-add">
+                            <a href="#">Add Another timeline</a>
+                        </span>
+                            <div class="popup__record-time">
+                                <div class="popup__record-days">
+                                    <span class="popup__record-days-txt"></span>
+                                    <div class="popup__record-days-tooltip">
+                                        <div>
+                                            <input type="checkbox" id="ch1"/>
+                                            <label for="ch1">Monday</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="ch2"/>
+                                            <label for="ch2">Tuesday</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="ch3"/>
+                                            <label for="ch3">Wednesday</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="ch4"/>
+                                            <label for="ch4">Thursday</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="ch5"/>
+                                            <label for="ch5">Friday</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="ch6"/>
+                                            <label for="ch6">Saturday</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="ch7"/>
+                                            <label for="ch7">Sunday</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="ch8"/>
+                                            <label for="ch8">Weekdays</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="ch9"/>
+                                            <label for="ch9">Weekends</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup__record-clock">
+                                <span>
+                                    <input type="text" id="stepExample1" class="ui-timepicker-input" value="08 : 30 AM"/>
+                                </span>
+                                <span>
+                                    <input type="text" id="stepExample2" class="ui-timepicker-input" value="08 : 30 AM"/>
+                                </span>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                        <button type="submit" class="site__btn site__btn_gradient popup__record-submit">Go to next step</button>
+                    </form>
+                </div>
+                <!-- /popup__record-inner -->
+
+            </div>
+            <!-- /popup__content -->
+
+        </div>
+
+    </div>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- /popup -->
+
+<!-- site -->
+<div class="site">
+
+    <ul class="menu-dropdown">
+        <li>
+            <a href="#">browse</a>
+        </li>
+        <li>
+            <a href="#">what`s hot</a>
+        </li>
+        <li>
+            <a href="#">tellofy tour</a>
+        </li>
+        <li>
+            <a href="#">tellofy engage (for business)</a>
+        </li>
+        <li>
+            <a href="#">review us/tellofy us</a>
+        </li>
+        <li class="menu-dropdown__submenu">
+            <span>About us</span>
+            <ul>
+                <li><a>Sub action</a></li>
+                <li><a>Another sub action</a></li>
+                <li><a>Something else here</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Contact us</a>
+        </li>
+        <li>
+            <a href="#">Careers</a>
+        </li>
+        <li>
+            <a href="#">Press and Media</a>
+        </li>
+        <li>
+            <a href="#">privacy policy</a>
+        </li>
+    </ul>
+
+    <!-- site__header -->
+    <header class="site__header">
+        <div class="container-fluid">
+
+            <a href="#" class="logo"><img src="img/logo.png" width="303" height="55" alt="tellofy"></a><!-- /logo -->
+
+            <!-- site__header__items -->
+            <div class="site__header__items">
+                <nav class="navbar" role="navigation">
+
+                    <!-- site__header__links -->
+                    <ul class="site__header__links">
+                        <li>
+                            <a href="#">Tour</a>
+                        </li>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                    </ul>
+                    <!-- /site__header__links -->
+
+                    <a class="site__btn site__btn_gradient popup__open" href="#">get started!</a>
+
+                    <!-- site__header__links -->
+                    <ul class="site__header__links nav nav-pills">
+                        <li>
+                            <a href="#">Tellofy Engage</a>
+                        </li>
+                        <li>
+                            <a class="site__header__menu-btn" href="#"><span>Menu</span></a>
+                        </li>
+                    </ul>
+                    <!-- /site__header__links -->
+
+                </nav>
+            </div>
+            <!-- /site__header__items -->
+
+        </div>
+    </header>
+    <!-- /site__header -->
+
+    <!-- site__content -->
+    <div class="site__content"></div>
+    <!-- /site__content -->
+
+    <!-- site__footer -->
+    <footer class="site__footer">
+
+        <!-- site__footer-layout -->
+        <div class="site__footer-layout">
+            <p>© 2015 <span>tellofy</span> - Real-time Review Systems. All Rights Reserved</p>
+        </div>
+        <!-- /site__footer-layout -->
+
+    </footer>
+    <!-- /site__footer -->
+
+</div><!-- /site -->
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-submenu.min.js" defer></script>
+<script src="js/jquery.timepicker.js"></script>
+<script src="js/jquery.main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=1024">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <title>Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/raphael.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <!-- popup__wrap -->
+    <div class="popup__wrap">
+        <span class="popup__close">close</span>
+        <form>
+            <h1>ЗАКАЗАТЬ ЗВОНОК</h1>
+            <label for="popup1">Ваше имя</label>
+            <input type="text" id="popup1" placeholder="">
+            <label for="popup2">Ваш телефон</label>
+            <input type="tel" id="popup2" placeholder="">
+            <input class="popup__send" type="submit" value="ОК">
+        </form>
+    </div>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- /popup -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__header -->
+        <header class="site__header">
+
+            <!-- site__header-layout -->
+            <div class="site__header-layout">
+
+                <!-- menu -->
+                <nav class="menu">
+                    <div><a href="#">О комплексе</a></div>
+                    <div><a href="#">Ход строительства</a></div>
+                    <div class="active"><a href="#">Квартиры и цены</a></div>
+                    <div><a href="#">Как купить</a></div>
+                </nav>
+                <!-- /menu -->
+
+                <!-- logo -->
+                <a href="#" class="logo"><img src="img/logo.png" width="" height="" alt=""></a>
+                <!-- /logo -->
+
+                <!-- site__header-tel -->
+                <div class="site__header-tel">
+                    <h2>Контакты</h2>
+                    <span>(347)</span>
+                    <span>
+                        <a href="tel:+73472991717">299-17-17,</a>
+                        <a href="tel:+73472980101">298-01-01,</a>
+                        <a href="tel:+73472992020">299-20-20</a>
+                    </span>
+                </div>
+                <!-- /site__header-tel -->
+
+                <a href="#" class="call-back">заказать <span>звонок</span></a>
+
+            </div>
+
+        </header>
+        <!-- /site__header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- house -->
+            <div class="house" data-action="php/json3.php">
+                <div class="house__wrap">
+                    <div class="house__select-storey">
+                        <div>
+                            ВЫБЕРИТЕ <span>Этаж</span>
+                        </div>
+                    </div>
+                    <div class="house__blocks" data-name="A" data-attr='{
+                                                        "arr": [
+                                                            [
+                                                                {
+                                                                    "x":322,
+                                                                    "y":148
+                                                                },
+                                                                {
+                                                                    "x":322,
+                                                                    "y":648
+                                                                },
+                                                                {
+                                                                    "x":790,
+                                                                    "y":751
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":678
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":303
+                                                                },
+                                                                {
+                                                                    "x":835,
+                                                                    "y":260
+                                                                },
+                                                                {
+                                                                    "x":835,
+                                                                    "y":136
+                                                                },
+                                                                {
+                                                                    "x":647,
+                                                                    "y":31
+                                                                }
+                                                            ]
+                                                        ]
+                                                      }'></div>
+                    <div class="house__blocks" data-name="B" data-attr='{
+                                                        "arr": [
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":218
+                                                                },
+                                                                {
+                                                                    "x":322,
+                                                                    "y":148
+                                                                },
+                                                                {
+                                                                    "x":322,
+                                                                    "y":648
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":603
+                                                                }
+                                                            ]
+                                                        ]
+                                                      }'></div>
+                    <div class="house__storey" data-attr='{
+                                                        "arr": [
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":565
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":671
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":616
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":568
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":606
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":533
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":533
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":606
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":568
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":515
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":536
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":496
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":496
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":536
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":515
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":462
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":466
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":459
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":459
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":466
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":462
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":409
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":396
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":422
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":422
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":396
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":409
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":356
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":326
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":390
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":390
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":326
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":356
+                                                                },
+                                                                {
+                                                                    "x":950,
+                                                                    "y":303
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":256
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":356
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":356
+                                                                },
+                                                                {
+                                                                    "x":647,
+                                                                    "y":280
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":261
+                                                                },
+                                                                {
+                                                                    "x":647,
+                                                                    "y":210
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":316
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":316
+                                                                },
+                                                                {
+                                                                    "x":647,
+                                                                    "y":210
+                                                                },
+                                                                {
+                                                                    "x":791,
+                                                                    "y":261
+                                                                },
+                                                                {
+                                                                    "x":835,
+                                                                    "y":273
+                                                                },
+                                                                {
+                                                                    "x":835,
+                                                                    "y":230
+                                                                },
+                                                                {
+                                                                    "x":647,
+                                                                    "y":144
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":276
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":276
+                                                                },
+                                                                {
+                                                                    "x":647,
+                                                                    "y":144
+                                                                },
+                                                                {
+                                                                    "x":835,
+                                                                    "y":230
+                                                                },
+                                                                {
+                                                                    "x":835,
+                                                                    "y":183
+                                                                },
+                                                                {
+                                                                    "x":647,
+                                                                    "y":88
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":247
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":119,
+                                                                    "y":247
+                                                                },
+                                                                {
+                                                                    "x":647,
+                                                                    "y":88
+                                                                },
+                                                                {
+                                                                    "x":835,
+                                                                    "y":183
+                                                                },
+                                                                {
+                                                                    "x":835,
+                                                                    "y":136
+                                                                },
+                                                                {
+                                                                    "x":647,
+                                                                    "y":31
+                                                                },
+                                                                {
+                                                                    "x":119,
+                                                                    "y":218
+                                                                }
+                                                            ]
+                                                        ]
+                                                      }'></div>
+
+                    <!-- house__popup -->
+                    <div class="house__popup">
+
+                        <!-- spinner -->
+                        <div class="spinner">
+                            <div class="spinner__wrap">
+                                <div class="spinner-container container1">
+                                    <div class="circle1"></div>
+                                    <div class="circle2"></div>
+                                    <div class="circle3"></div>
+                                    <div class="circle4"></div>
+                                </div>
+                                <div class="spinner-container container2">
+                                    <div class="circle1"></div>
+                                    <div class="circle2"></div>
+                                    <div class="circle3"></div>
+                                    <div class="circle4"></div>
+                                </div>
+                                <div class="spinner-container container3">
+                                    <div class="circle1"></div>
+                                    <div class="circle2"></div>
+                                    <div class="circle3"></div>
+                                    <div class="circle4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /spinner -->
+
+                        <div class="house__popup__wrap">
+                            <a href="#" class="house__popup-flat">
+                                <span>
+                                    <span><img src="" alt=""></span>
+                                </span>
+                            </a>
+
+                            Схема секций
+                            <div class="house__popup-blocks">
+                                <img src="" alt="">
+                            </div>
+
+                            План этажа
+                            <div class="house__popup-storey">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="house__popup-title">
+                                <h2>Блок <span class="house__popup-numBlock"></span> / <span class="house__popup-numStorey"></span> этаж</h2>
+                                <strong></strong>
+
+                                <dl class="house__popup-squareAll">
+                                    <dt>Общая площадь</dt>
+                                    <dd><span></span> м<sup>2</sup></dd>
+                                </dl>
+                                <dl class="house__popup-squareLive">
+                                    <dt>Жилая площадь</dt>
+                                    <dd><span></span> м<sup>2</sup></dd>
+                                </dl>
+                                <dl class="house__popup-saled">
+                                    <dt>Квартира</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl class="house__popup-price">
+                                    <dt>Цена</dt>
+                                    <dd><span></span> руб.</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /house__popup -->
+
+
+                </div>
+            </div>
+            <!-- /house -->
+
+        </div>
+        <!-- /site__content -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+
+            <!-- builder-sale -->
+            <div class="builder-sale">
+                <a href="#"><span>Прямые продажи от застройщика.</span></a>
+            </div>
+            <!-- /builder-sale -->
+
+            <!-- site__footer-layout -->
+            <div class="site__footer-layout">
+                <span class="site__footer-copyright">ООО СК Гарант, 2015</span>
+                <span class="site__footer-create"><span>Разработка сайта —</span> «<a href="#">Экспресс лаб</a>»</span>
+            </div>
+            <!-- /site__footer-layout -->
+
+        </footer>
+        <!-- /site__footer -->
+
+    </div>
+    <!-- /site -->
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* --------------- privacy-policy --------------- */
+.privacy-policy {
+    background: #fff;
+    color: #374a5b;
+    font: 13.5px/20px "lato", sans-serif;
+}
+.privacy-policy > div{
+    padding: 30px 50px 90px;
+}
+.privacy-policy h1{
+    margin-bottom: 3px;
+    font: normal 23.5px "lato-black", sans-serif;
+}
+.privacy-policy h2{
+    padding-top: 20px;
+    font: normal 18px/18px "lato-black", sans-serif;
+    color: #0ab6c4;
+}
+.privacy-policy h3{
+    padding-top: 18px;
+    font: normal 15px/18px "lato-heavy", sans-serif;
+}
+/* --------------- /privacy-policy --------------- */

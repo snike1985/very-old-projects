@@ -1,0 +1,773 @@
+/* --------------- consumer --------------- */
+.consumer{
+
+}
+.consumer__head{
+    overflow: hidden;
+    margin: 0 0 35px;
+}
+.consumer__head>div{
+    float: left;
+}
+.consumer__avatar{
+    width: 33.8%;
+}
+.consumer__avatar div{
+    max-width: 264px;
+    max-height: 264px;
+    box-shadow: 0 0 10px -5px rgba(0,0,0,0.5);
+    margin: 1px 0 17px;
+}
+.consumer__avatar div img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px -5px rgba(0,0,0,0.5);
+}
+.consumer__avatar-edit,
+.consumer__avatar-edit:visited{
+    color: #0bb6c2;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    background: url("../img/edit.png") no-repeat left top;
+    background-size: 24px 20px;
+    padding: 4px 0 4px 29px;
+    margin: 0 0 0 2px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "lato-semibold";
+}
+.consumer__avatar-edit:hover,
+.consumer__avatar-edit:focus,
+.consumer__avatar-edit:active{
+    color: #0bb6c2;
+    text-decoration: underline;
+}
+.consumer__info{
+    width: 66.2%;
+    font-family: "lato-semibold";
+    color: #a0b1bc;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 0 0 29px;
+}
+.consumer__info h2{
+    font-weight: 400;
+    font-family: "lato-black";
+    font-size: 18px;
+    line-height: 18px;
+    color: #3d4e5e;
+    margin: 0 0 7px;
+}
+.consumer__info p{
+    margin: 0 0 24px;
+}
+.consumer__statistic{
+    background: #ffffff;
+    border-radius: 2px;
+    border: 1px solid #f1f0f1;
+    box-shadow: 0 0 6px -2px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #222533;
+    font-size: 13px;
+    line-height: 13px;
+    max-width: 390px;
+    margin: 0 0 31px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.consumer__statistic .row{
+    margin: 0;
+}
+.consumer__statistic .row>div{
+    border-left: 1px solid #e6e6e6;
+    padding: 5px 10px 8px 10px;
+}
+.consumer__statistic .row>div:first-child{
+    border-left: none;
+}
+.consumer__statistic span{
+    display: block;
+    font-family: "lato-black";
+    color: #0bb6c2;
+    font-size: 21px;
+    line-height: 21px;
+    margin: 0 0 8px;
+}
+.consumer__phone{
+    position: relative;
+    background: url('../img/phone.png') no-repeat 18px center #ffffff;
+    border-radius: 2px;
+    border: 1px solid #f1f0f1;
+    box-shadow: 0 0 6px -2px rgba(0,0,0,0.3);
+    color: #3d4e5e;
+    font-size: 15px;
+    line-height: 15px;
+    max-width: 233px;
+    padding: 19px 49px;
+    background-size: 16px 26px;
+    font-weight: 700;
+}
+.check-phone:after{
+    content: '';
+    position: absolute;
+    background: url("../img/check-phone.png") no-repeat;
+    top: 50%;
+    right: 12px;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-top: -11px;
+}
+.consumer__phone a,
+.consumer__phone a:visited{
+    color: #3d4e5e;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+.consumer__my-profile{
+    position: relative;
+    color: #3d4e5e;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 0 30px;
+    margin: 0 0 15px;
+}
+.consumer__my-profile .tabs{
+    border-top: 1px solid #e8e8e8;
+}
+.consumer__my-profile .tabs dt{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 14px 33px;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    width: 264px;
+    background: #fff;
+    -webkit-transition: color 300ms linear;
+    transition: color 300ms linear;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.consumer__my-profile .tabs dt:hover{
+    color: #0bb6c2;
+}
+.consumer__my-profile .tabs dt.active{
+    color: #b3c0c9;
+    cursor: default;
+}
+.consumer__my-profile .tabs dt span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.consumer__my-profile .tabs dd{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 263px;
+    right: 0;
+    padding: 20px 0 20px 30px;
+    border-left: 1px solid #e8e8e8;
+}
+.consumer__my-profile__title{
+    font-family: "lato-black", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0 0 24px;
+    font-weight: normal;
+    max-width: 50%;
+}
+.consumer__follow{
+
+}
+.consumer__follow .site__btn{
+    font-size: 15px;
+    line-height: 15px;
+    width: 121px;
+    height: 47px;
+    padding: 17px 10px;
+}
+/* --------------- /consumer --------------- */
+
+/* --------------- invite-friends --------------- */
+.invite-friends{
+    font-size: 13px;
+    line-height: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.invite-friends__social{
+    overflow: hidden;
+    margin: 0 0 32px;
+}
+.invite-friends__social div{
+    float: left;
+    width: 28.4%;
+    margin: 0 9px 10px 0;
+}
+.invite-friends__social div:last-child{
+    margin: 0;
+    width: 42px;
+}
+.invite-friends__social a{
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #fff;
+    border: 1px solid #f8f8f8;
+    border-radius: 4px;
+    color: #a0b1bc;
+    position: relative;
+    height: 44px;
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 13px;
+    -webkit-transition: color 300ms ease-in-out, background 300ms ease-in-out, border 300ms ease-in-out;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out, border 300ms ease-in-out;
+}
+.invite-friends__social a:hover{
+    color: #fff;
+}
+.invite-friends__social a:first-child{
+    margin-left: 0;
+}
+.invite-friends__social a i{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 21px;
+    line-height: 21px;
+}
+.invite-friends__social a span{
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    padding: 0 11px;
+}
+.invite-friends__social .invite-friends__facebook:hover{
+    background: #3b579d;
+    border: 1px solid #3b579d;
+}
+.invite-friends__social .invite-friends__facebook i{
+    top: 10px;
+    left: 19px;
+    font-size: 24px;
+    line-height: 24px;
+}
+.invite-friends__social .invite-friends__google:hover{
+    background: #cc3736;
+    border: 1px solid #cc3736;
+}
+.invite-friends__social .invite-friends__google i{
+    top: 10px;
+    left: 14px;
+    font-size: 23px;
+    line-height: 23px;
+}
+.invite-friends__social .invite-friends__linked:hover{
+    background: #0177b5;
+    border: 1px solid #0177b5;
+}
+.invite-friends__social .invite-friends__linked i{
+    top: 10px;
+    left: 16px;
+    font-size: 21px;
+    line-height: 21px;
+}
+.invite-friends__social .invite-friends__mail{
+    padding: 0;
+}
+.invite-friends__social .invite-friends__mail:hover{
+    background: #0bb6c2;
+    border: 1px solid #0bb6c2;
+}
+.invite-friends__social .invite-friends__mail i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+    margin: -7px 0 0 -7px;
+    line-height: 15px;
+}
+.invite-friends__info{
+    text-align: justify;
+    margin: 0 0 59px;
+}
+.invite-friends__info .site__btn{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    width: auto;
+    padding: 10px 23px;
+    height: 36px;
+}
+.invite-friends__fields{
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin: 0 0 12px;
+}
+.invite-friends__fields label{
+    display: block;
+    margin: 0 0 5px 1px;
+}
+.invite-friends__fields input{
+    width: 100%;
+    background: #fff;
+    border: 1px solid #f8f8f8;
+    border-radius: 4px;
+    color: #a0b1bc;
+    height: 39px;
+    padding: 11px 10px;
+}
+.invite-friends__file button{
+    width: 97px;
+    height: 37px;
+    font-size: 17px;
+    line-height: 17px;
+    padding: 9px 5px;
+    color: #fff;
+    background: #0bb6c2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.invite-friends__file span{
+    display: block;
+    margin: 0 0 8px;
+}
+.invite-friends__file .type-file__val {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #f8f8f8;
+    border-radius: 4px;
+    color: #a0b1bc;
+    height: 38px;
+    padding: 11px 10px;
+}
+.invite-friends__file .type-file {
+    height: 37px;
+    padding: 0 104px 0 0;
+    width: 65.5%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+.invite-friends__file .type-file__input {
+    width: 92px;
+    height: 37px;
+    right: 8px;
+}
+.invite-friends__file .type-file__btn {
+    width: 92px;
+    height: 37px;
+    font-size: 17px;
+    line-height: 17px;
+    right: 8px;
+    padding: 9px 5px;
+    color: #fff;
+    background: #a0b1bc;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+/* --------------- /invite-friends --------------- */
+
+/* --------------- my-reviews --------------- */
+.my-reviews{
+    padding: 0 3px 0 0;
+}
+.my-reviews .latest-review__item{
+    background: #ffffff;
+    border-radius: 2px;
+    border: 1px solid #f1f0f1;
+    box-shadow: 0 0 6px -2px rgba(0,0,0,0.3);
+    padding: 12px 30px 21px 93px;
+    margin: 0 0 16px;
+}
+.my-reviews__date{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: "lato-semibold";
+    background: #ecf0f1;
+    color: #3d4e5e;
+    padding: 7px 11px 2px;
+    text-align: right;
+    font-size: 10px;
+    line-height: 10px;
+}
+.my-reviews__date time {
+    display: inline;
+    font-size: 10px;
+    line-height: 10px;
+}
+.my-reviews .latest-review__item h3 {
+    margin: 0 0 10px 4px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222533;
+    font-family: "lato-black";
+    font-weight: normal;
+}
+.my-reviews .latest-review__item h3 a{
+    color: #222533;
+}
+.my-reviews .latest-review__item h3 a:hover{
+    text-decoration: underline;
+}
+.my-reviews .search__rate {
+    margin: 0 0 9px 0;
+}
+.my-reviews .latest-review__text {
+    margin: 0 0 31px;
+    line-height: 18px;
+}
+.my-reviews .all-reviews__info {
+    right: 12px;
+    top: 11px;
+}
+.my-reviews .all-reviews__score .rating {
+    width: 52px;
+    height: 52px;
+}
+.my-reviews .all-reviews__score .rating__bg {
+    width: 52px;
+    height: 52px;
+}
+
+.my-reviews  .write-review__rating {
+    height: 20px;
+    width: 115px;
+    background: url("../img/rating8.png") repeat-x left top;
+    background-size: 23px 20px;
+    margin: 0 0 9px 0;
+    vertical-align: top;
+}
+.my-reviews  .write-review__rating>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 115px;
+    background: url("../img/rating9.png") repeat-x left top;
+    background-size: 23px 20px
+}
+
+.my-reviews .all-reviews__score {
+    width: 52px;
+    height: 52px;
+}
+.my-reviews .all-reviews__score span {
+    padding: 20px 12px;
+}
+.my-reviews .latest-review__item>img {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    max-width: 67px;
+    height: auto;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.my-reviews__distance{
+    font-size: 11px;
+    line-height: 11px;
+    margin: -2px 0 10px;
+    color: #6d7a85;
+    font-weight: 700;
+}
+/* --------------- /my-reviews --------------- */
+
+/* --------------- my-chekin --------------- */
+.my-chekin{
+
+}
+.my-chekin .latest-review__item {
+    padding: 12px 30px 25px 93px;
+    margin: 0 0 13px;
+}
+.my-chekin .write-review__rating {
+    height: 14px;
+    width: 80px;
+    background: url("../img/rating7.png") repeat-x left top;
+    background-size: 16px 14px;
+    margin: 0 0 0 1px;
+    vertical-align: top;
+}
+.my-chekin .write-review__rating>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    background: url("../img/rating6.png") repeat-x left top;
+    width: 80px;
+    background-size: 16px 14px;
+}
+.my-chekin .latest-review__item h3 {
+    margin: 0 0 21px 0;
+}
+.chekin__load{
+    font-size: 11px;
+    line-height: 11px;
+    color: #0fb7c3;
+    font-weight: 700;
+    padding: 16px 0 0;
+}
+.chekin__load a{
+    color: #0fb7c3;
+    text-decoration: underline;
+}
+.chekin__load a:hover{
+    text-decoration: none;
+}
+/* --------------- /my-chekin --------------- */
+
+/* --------------- my-moments --------------- */
+.my-moments{
+
+}
+.my-moments__share{
+    position: absolute;
+    right: 2px;
+    top: 25px;
+    text-transform: uppercase;
+    color: #0bb6c2;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration: underline;
+    font-weight: 700;
+    max-width: 50%;
+    text-align: right;
+}
+.my-moments__share i{
+    display: inline-block;
+    margin: 0 2px 0 0;
+    font-size: 13px;
+    line-height: 13px;
+    vertical-align: middle;
+}
+.my-moments>div{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    position: relative;
+    padding: 0 29px 0 0;
+    float: left;
+    margin: 0 0 31px;
+}
+.my-moments>div:nth-child(even){
+    float: right;
+}
+.my-moments>div>div:first-child{
+    background: #ffffff;
+    border-radius: 2px;
+    border: 1px solid #f1f0f1;
+    box-shadow: 0 0 6px -2px rgba(0,0,0,0.3);
+    overflow: hidden;
+    text-align: center;
+    padding: 0 0 4px;
+}
+.my-moments__pic{
+    margin: 0 0 3px;
+}
+.my-moments__pic img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.my-moments .latest-review__item {
+    padding: 12px 30px 25px 93px;
+    margin: 0 0 13px;
+}
+.my-moments h3{
+    color: #3d4e5e;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: "lato-semibold";
+    font-weight: normal;
+    margin: 0 0 3px;
+}
+.my-moments h3 a{
+    color: #3d4e5e;
+}
+.my-moments h3 a:hover{
+    text-decoration: underline;
+}
+.my-moments span{
+    font-weight: 700;
+    display: block;
+    font-size: 9px;
+    line-height: 9px;
+    color: #a0b1bc;
+}
+.my-moments__edit{
+    width: 30px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 9px;
+    background: #ffffff;
+    border-radius: 0 2px 2px 0;
+    border: 1px solid #f1f0f1;
+    box-shadow: 0 0 6px -2px rgba(0,0,0,0.3);
+    font-size: 17px;
+    line-height: 17px;
+}
+.my-moments__edit a{
+    display: block;
+    color: #a0b1bc;
+    text-align: center;
+    height: 28px;
+    padding: 2px 0;
+}
+.my-moments__edit a:first-child{
+    font-size: 15px;
+    line-height: 15px;
+    padding: 6px 6px;
+}
+.my-moments__edit a:hover{
+    color: #737f8a;
+}
+/* --------------- /my-moments --------------- */
+
+@media (max-width: 1300px){
+
+}
+@media (max-width: 1170px){
+
+}
+@media (max-width: 1050px){
+
+}
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+
+    /* --------------- consumer --------------- */
+    .consumer__my-profile .tabs{
+        background: #fff;
+        border: 1px solid #e8e8e8;
+    }
+    .consumer__my-profile .tabs dt{
+        width: 100%;
+        padding: 10px 20px;
+        border-left: none;
+        border-right: none;
+    }
+    .consumer__my-profile .tabs dd {
+        top: 245px;
+        left: 0;
+        right: 0;
+        padding: 30px 20px;
+    }
+    .consumer__avatar,
+    .consumer__info{
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+    .consumer__avatar{
+        margin: 0 0 30px;
+        text-align: center;
+    }
+    .consumer__avatar div {
+        margin: 1px auto 17px;
+    }
+    /* --------------- /consumer --------------- */
+
+    /* --------------- /invite-friends --------------- */
+    .invite-friends__social div{
+        width: 100%;
+        text-align: center;
+    }
+    .invite-friends__social a{
+        background: #fafafa;
+    }
+    .invite-friends__fields input {
+        background: #fafafa;
+    }
+    .invite-friends__fields{
+        width: 100%;
+    }
+    .invite-friends__file .type-file__val{
+        background: #fafafa;
+    }
+    .invite-friends__file .type-file__input,
+    .invite-friends__file .type-file__btn{
+        width: 97px;
+        height: 37px;
+        right: auto;
+        bottom: 0;
+        left: 0;
+        top: auto;
+    }
+    .invite-friends__file .type-file {
+        padding: 0 0 50px 0;
+        height: auto;
+        display: block;
+        margin: 0 0 10px;
+    }
+    .invite-friends__info {
+        margin: 0 0 30px;
+    }
+    /* --------------- /invite-friends --------------- */
+
+    /* --------------- my-reviews --------------- */
+    .my-reviews .latest-review__item{
+        padding: 12px 15px 21px;
+    }
+    .my-reviews .all-reviews__info{
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 0 15px;
+    }
+    .my-reviews .latest-review__item>img{
+        position: relative;
+        left: auto;
+        top: auto;
+        display: block;
+        margin: 0 0 30px;
+    }
+    /* --------------- /my-reviews --------------- */
+
+    /* --------------- my-moments --------------- */
+    .my-moments__pic{
+        max-height: 100%;
+    }
+    .my-moments>div{
+        width: 250px;
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    .my-moments>div:nth-child(even){
+        float: none;
+    }
+    .my-moments__share{
+        position: relative;
+        top: auto;
+        right: auto;
+        text-align: left;
+        max-width: 100%;
+        display: inline-block;
+        margin: 0 0 25px;
+    }
+    /* --------------- /my-moments --------------- */
+
+}

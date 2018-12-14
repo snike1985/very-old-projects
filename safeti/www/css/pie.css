@@ -1,0 +1,6 @@
+.important-information,
+.important-information img {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

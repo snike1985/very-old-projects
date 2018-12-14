@@ -1,0 +1,245 @@
+/* ------------- edit-details --------------- */
+.edit-details {}
+.edit-details__wrap {
+    position: relative;
+    padding: 17px 0 57px;
+}
+.edit-details__wrap:first-child {
+    padding-top: 0;
+}
+.edit-details > .edit-details__wrap:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -30px;
+    height: 1px;
+    background: #e8e8e8;
+    top: 0;
+}
+.edit-details > .edit-details__wrap:first-child:before {
+    display: none;
+}
+.edit-details__title {
+    font-family: "lato-black", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0 0 31px;
+    font-weight: normal;
+}
+.edit-details__wrap > fieldset {
+    width: 100%;
+    padding-left: 97px;
+    position: relative;
+    margin-bottom: 11px;
+}
+.edit-details__wrap > fieldset > span {
+    position: relative;
+    display: block;
+    padding-bottom: 19px;
+}
+.edit-details__wrap > fieldset.edit-details__check_not-valid .edit-details__error {
+    display: block;
+}
+.edit-details__wrap > fieldset.edit-details__check_not-valid input {
+    border: 2px solid #ff0000;
+}
+.edit-details__wrap > fieldset.edit-details__check_valid > span:before {
+    content: '';
+    position: absolute;
+    background: url("../img/edit-details__valid.png") no-repeat;
+    width: 21px;
+    height: 21px;
+    background-size: contain;
+    top: 12px;
+    right: 15px;
+}
+.edit-details__wrap > fieldset > .edit-details__label {
+    position: absolute;
+}
+.edit-details__label,
+.edit-details__wrap label {
+    position: absolute;
+    width: 90px;
+    height: 42px;
+    font-weight: 700;
+    color: #3d4e5e;
+    font-size: 12px;
+    top: 0;
+    left: 0;
+}
+.edit-details__label .centering span,
+.edit-details__wrap label .centering span {
+    text-align: left;
+    line-height: 19px;
+}
+.edit-details__error {
+    font-size: 10.5px;
+    color: #ff0000;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    display: none;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.edit-details__note {
+    color: #a1b1bc;
+    font-size: 10.5px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;      white-space: nowrap;      overflow: hidden;      text-overflow: ellipsis;
+}
+textarea + .edit-details__note {
+    left: auto;
+    right: 2px;
+    bottom: 7px;
+}
+.edit-details__wrap textarea,
+.edit-details__wrap input {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    padding: 0 17px 0;
+    font-weight: 700;
+    color: #3d4e5e;
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.edit-details__wrap textarea {
+    height: 177px;
+    padding-top: 13px;
+}
+.edit-details__radio {
+    margin-left: 57px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: -2px;
+}
+.edit-details__radio:first-child {
+    margin-left: 10px;
+}
+.edit-details__radio input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.edit-details__radio label {
+    cursor: pointer;
+    font-size: 12px;
+    color: #3d4e5e;
+    font-weight: 700;
+    margin-left: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.edit-details__radio label:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url("../img/edit-details__radio.png") no-repeat top;
+    top: 0px;
+    left: -24px;
+    background-size: 18px !important;
+}
+.edit-details__radio input:checked + label:before {
+    background: url("../img/edit-details__radio.png") no-repeat bottom;
+}
+.edit-details__radio label {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+}
+.edit-details__star {
+    color: #ff001d;
+    display: none;
+}
+.edit-details__check .edit-details__star {
+    display: inline;
+}
+.edit-details__radio-wrap .edit-details__label {
+    height: 21px;
+}
+.edit-details__wrap > .edit-details__radio-wrap > span {
+    padding-bottom: 15px;
+}
+.edit-details__submit {
+    text-align: right;
+    margin-top: -3px;
+    padding: 0 2px 0 0;
+}
+.edit-details__submit button {
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 16.5px;
+    font-weight: 700;
+    height: 38px;
+    width: auto;
+    padding: 0 27px 3px;
+}
+.edit-details__wrap > .edit-details__margin {
+    margin-bottom: 18px;
+}
+.edit-details__txt label {
+    height: auto;
+    top: -3px;
+}
+.edit-details__remark {
+    position: relative;
+    padding: 21px 0 40px;
+}
+.edit-details__remark p {
+    font-weight: 300;
+    font-size: 13px;
+    color: #aebcc5;
+    margin-bottom: 8px;
+}
+.edit-details__remark:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -30px;
+    height: 1px;
+    background: #e8e8e8;
+    top: 0;
+}
+.edit-details__remark a {
+    font-weight: 700;
+    font-size: 10.5px;
+    color: #ff0000;
+    display: inline-block;
+    border-bottom: 1px solid #ff0000;
+    -webkit-transition: border-bottom 500ms ease;
+    transition: border-bottom 500ms ease;
+    line-height: 1;
+}
+.edit-details__remark a:hover {
+    border-bottom: 1px solid transparent;
+}
+.edit-details__wrap_pass {
+    padding: 17px 0 40px;
+}
+/* ------------- /edit-details --------------- */
+
+@media (max-width: 767px) {
+
+    .edit-details__wrap > .edit-details__radio-wrap > span {
+        white-space: nowrap;
+    }
+    .edit-details__radio {
+        margin-left: 35px;
+    }
+
+}

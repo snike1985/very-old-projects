@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=1024">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Title</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/iscroll-probe-min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/jquery.popup.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+    <script src="js/jquery.map.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="#" class="logo"><img src="img/logo.png" width="297" height="95" alt="wowbox впечатление в подарок"></a>
+            <!-- /logo -->
+
+            <!-- header__menu -->
+            <nav class="header__menu">
+                <div>
+                    <a href="#">Новости</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Партнеры</a>
+                </div>
+                <div>
+                    <a href="#">Wowbox-каталог</a>
+                    <a href="#">O wowbox</a>
+                    <a href="#">Как купить</a>
+                </div>
+            </nav>
+            <!-- header__menu -->
+
+            <!-- header__cart -->
+            <div class="header__cart">
+                В <a href="#">корзине</a>
+                <span>5 боксов</span>
+                <span class="cart-kol">5</span>
+            </div>
+            <!-- /header__cart -->
+
+            <!-- header__tel -->
+            <div class="header__tel">
+                Тел.: (347) <a href="tel:3472984987">298-498-7</a>, <a href="tel:3472980892">298-0-892</a>
+            </div>
+            <!-- /header__tel -->
+
+            <!-- header__social -->
+            <div class="header__social">
+                <a class="facebook" href="#">facebook</a>
+                <a class="instagram" href="#">instagram</a>
+                <a class="vkontakte" href="#">vkontakte</a>
+            </div>
+            <!-- /header__social -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <div class="site-cell-wrapper">
+                <!-- site-cell -->
+                <div class="site-cell site-cell_big">
+                    <div>
+                        <div class="wrapper map" id="map"></div>
+                    </div>
+                </div>
+                <!-- /site-cell -->
+
+                <!-- site-cell -->
+                <div class="site-cell">
+                    <div class="map-item map-item_icon1" data-coord="54.730634, 55.972611">
+                        <!-- wrapper -->
+                        <div class="wrapper">
+                            <!-- map-item__wrap -->
+                            <div class="map-item__wrap">
+                                <div>
+                                    <div class="map-item__title">Уфа, ул. Достоевского, 135, <div>второй этаж, кабинет 25</div></div>
+                                    <dl class="map-item__tel">
+                                        <dt>Тел.:</dt>
+                                        <dd>
+                                            <span>298-08-72,</span>
+                                            <span>298-49-87</span>
+                                        </dd>
+                                    </dl>
+                                    <span>Время работы:</span>
+                                    <span>понедельник — пятница с 9:00 до 18:00,</span>
+                                    <span>суббота, воскресенье — выходные дни.</span>
+                                </div>
+                            </div>
+                            <!-- /map-item__wrap -->
+                        </div>
+                        <!-- /wrapper -->
+                    </div>
+                </div>
+                <!-- /site-cell -->
+
+                <!-- site-cell -->
+                <div class="site-cell">
+                    <div class="map-item map-item_icon2" data-coord="54.733950, 55.944741">
+                        <!-- wrapper -->
+                        <div class="wrapper">
+                            <!-- map-item__wrap -->
+                            <div class="map-item__wrap">
+                                <div>
+                                    <div class="map-item__title">
+                                        <span>Цветочный магазин «Fashion Flora»</span>
+                                        Уфа, ул. Карла Маркса 37, корпус 3.
+                                    </div>
+                                    <dl class="map-item__tel">
+                                        <dt>Тел.:</dt>
+                                        <dd>
+                                            <span>2-911-155,</span>
+                                            <span>8-965-65-40-40-5,</span>
+                                            <span>8-987-60-61-999</span>
+                                        </dd>
+                                    </dl>
+                                    <span>Время работы:</span>
+                                    <span>понедельник — пятница с 9:00 до 20:00,</span>
+                                    <span>воскресенье с 10:00 до 18:00</span>
+                                </div>
+                            </div>
+                            <!-- /map-item__wrap -->
+                        </div>
+                        <!-- /wrapper -->
+                    </div>
+                </div>
+                <!-- /site-cell -->
+            </div>
+
+            <!-- site-cell -->
+            <div class="site-cell">
+                <div class="map-item map-item_icon3" data-coord="54.784585, 56.039439">
+                    <!-- wrapper -->
+                    <div class="wrapper">
+                        <!-- map-item__wrap -->
+                        <div class="map-item__wrap">
+                            <div>
+                                <div class="map-item__title">
+                                    <span>Магазин компьютерных аксессуаров «Green flash»</span>
+                                    Уфа, ул. Российская, 23 <div>(ТСК «Урал», 2 этаж).</div>
+                                </div>
+                                <span>Время работы:</span>
+                                <span>понедельник — воскресенье с 11:00 до 19:30</span>
+                            </div>
+                        </div>
+                        <!-- /map-item__wrap -->
+                    </div>
+                    <!-- /wrapper -->
+                </div>
+            </div>
+            <!-- /site-cell -->
+
+            <!-- site-cell -->
+            <div class="site-cell">
+                <div class="map-item map-item_icon4" data-coord="54.729556, 55.970622">
+                    <!-- wrapper -->
+                    <div class="wrapper">
+                        <!-- map-item__wrap -->
+                        <div class="map-item__wrap">
+                            <div>
+                                <div class="map-item__title">
+                                    <span>Букетная лавка Bloom Boom</span>
+                                    Уфа, ул. Ветошникова, 131.
+                                </div>
+                                <dl class="map-item__tel">
+                                    <dt>Тел.:</dt>
+                                    <dd>
+                                        <span>266-59-77</span>
+                                    </dd>
+                                </dl>
+                                <span>Время работы:</span>
+                                <span>понедельник — воскресенье с 8:30 до 20:00</span>
+                            </div>
+                        </div>
+                        <!-- /map-item__wrap -->
+                    </div>
+                    <!-- /wrapper -->
+                </div>
+            </div>
+            <!-- /site-cell -->
+
+            <div class="site-cell-wrapper2">
+
+                <!-- site-cell -->
+                <div class="site-cell">
+                    <div class="map-item map-item_icon5" data-coord="54.748744, 56.030860">
+                        <!-- wrapper -->
+                        <div class="wrapper">
+                            <!-- map-item__wrap -->
+                            <div class="map-item__wrap">
+                                <div>
+                                    <div class="map-item__title">
+                                        <span>Магазин роз RoseUfa.ru</span>
+                                        Уфа, ул. Менделеева, 217, <div>цокольный этаж</div>
+                                    </div>
+                                    <dl class="map-item__tel">
+                                        <dt>Тел.:</dt>
+                                        <dd>
+                                            <span>8-962-533-92-20</span>
+                                        </dd>
+                                    </dl>
+                                    <span>Время работы:</span>
+                                    <span>понедельник — воскресенье с 10:00 до 20:00</span>
+                                </div>
+                            </div>
+                            <!-- /map-item__wrap -->
+                        </div>
+                        <!-- /wrapper -->
+                    </div>
+                </div>
+                <!-- /site-cell -->
+
+                <!-- site-cell -->
+                <div class="site-cell">
+                    <div class="map-item map-item_iconNan">
+                        <!-- wrapper -->
+                        <div class="wrapper">
+                            <!-- map-item__wrap -->
+                            <div class="map-item__wrap">
+                                <div>
+                                    <div class="map-item__title">Приглашаем к сотрудничеству</div>
+                                    Вы торгуете цветами или сувенирами? Тогда приглашаем вас стать нашим партнером!
+                                    <dl class="map-item__tel">
+                                        <dt>Тел.:</dt>
+                                        <dd>
+                                            <span>298-08-72,</span>
+                                            <span>298-49-87</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <!-- /map-item__wrap -->
+                        </div>
+                        <!-- /wrapper -->
+                    </div>
+                </div>
+                <!-- /site-cell -->
+
+            </div>
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+</body>
+</html>

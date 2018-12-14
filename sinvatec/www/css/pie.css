@@ -1,0 +1,16 @@
+.site__header-search,
+.site__menu a,
+.menu__item,
+.menu__item a,
+.content-wrap > img,
+.content-wrap ul li:before,
+.slider__text,
+.slider__points li,
+.services > div,
+.services__btn,
+.news-preview__title img,
+.news__title img {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

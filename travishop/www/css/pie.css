@@ -1,0 +1,6 @@
+.buy button.minus,
+.buy button.plus {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

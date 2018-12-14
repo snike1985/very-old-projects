@@ -1,0 +1,23 @@
+/* css for ltie8 */
+.slider__item:before {
+    display: block;
+}
+.active:before {
+   display: none;
+}
+.header__call-back span > span {
+    margin-right: 3px;
+}
+.slider__points li:hover:before,
+.slider__points li.active:before {
+    display: none;
+}
+.catalog__pic-hidden {
+    display: none;
+}
+.catalog__item:hover .catalog__pic-hidden {
+    display: block;
+}
+.popup__wrap fieldset input {
+    line-height: 30px;
+}

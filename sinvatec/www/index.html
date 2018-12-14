@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=1024">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <div class="popup__hidden">Спасибо, Ваша заявка принята</div>
+
+    <!-- popup__wrap -->
+    <form class="popup__wrap">
+
+        <h2>Заказать звонок</h2>
+
+        <div class="popup__close"></div>
+
+        <fieldset>
+            <label for="pop1">ФИО <sup>*</sup></label>
+            <input id="pop1" type="text" name="name" placeholder="" required="">
+        </fieldset>
+
+        <fieldset>
+            <label for="pop2">Номер телефона <sup>*</sup></label>
+            <input id="pop2" type="tel" name="tel" placeholder="+7" required="">
+        </fieldset>
+
+        <fieldset>
+            <label for="pop3">Удобное время звонка</label>
+            <input id="pop3" type="text" name="time" placeholder="">
+        </fieldset>
+
+        <div class="popup__capcha">
+            <img src="pic/capcha.png" alt="">
+        </div>
+
+        <fieldset>
+            <label for="pop4">Введите цифры с картинки <sup>*</sup></label>
+            <input id="pop4" type="text" placeholder="" required="">
+        </fieldset>
+
+        <input class="popup__send" type="submit" value="отправить">
+
+    </form>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- popup -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__header -->
+        <header class="site__header">
+
+            <div class="site__header-tel"><a href="tel:+73472666565">+7 (347) 266-65-65</a></div>
+            <div class="site__header-callback"><a href="#">Заказать звонок</a></div>
+
+            <!-- logo -->
+            <h1 class="logo"><img src="img/logo.jpg" alt="sinwatec"></h1>
+            <!-- /logo -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <a class="menu__item" href="#">О компании</a>
+                <div class="menu__item">
+                    <a href="#">Контрактное производство</a>
+                    <ul>
+                        <li><a href="#">Поверхностный монтаж (SMT монтаж)</a></li>
+                        <li><a href="#">Выводной монтаж (THT монтаж)</a></li>
+                        <li><a href="#">Промышленный дизайн</a></li>
+                        <li><a href="#">Сборка готовой продукции</a></li>
+                        <li><a href="#">Производство упаковки продукции</a></li>
+                        <li><a href="#">Рентген контроль (BGA-пайка)</a></li>
+                        <li><a href="#">Производство жгутов</a></li>
+                        <li><a href="#">Редизайн для массового производства</a></li>
+                        <li><a href="#">Прототипирирование</a></li>
+                        <li><a href="#">Поставка запасных частей</a></li>
+                    </ul>
+                </div>
+                <a class="menu__item" href="#">Продукты и решения</a>
+                <a class="menu__item" href="#">Пресс-центр</a>
+                <a class="menu__item" href="#">Контакты</a>
+            </nav>
+            <!-- /menu -->
+
+            <form class="site__header-search">
+                <input type="text" placeholder="Поиск">
+                <input type="submit" value="">
+            </form>
+
+        </header><!-- /site__header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- slider -->
+            <div class="slider">
+
+                <!-- slider__wrap -->
+                <div class="slider__wrap">
+
+                    <!-- slider__item -->
+                    <a href="#" class="slider__item" onmousedown="return false">
+                        <img src="pic/slider1.jpg" alt="">
+                        <div class="slider__text">
+                            <span class="slider__title">Производство печатных плат</span>
+                            <p>Производство печатных плат, SMT- и TНT монтаж,
+                                <span>промышленный дизайн, сборка готовой продукции</span>
+                            </p>
+                        </div>
+                    </a>
+                    <!-- /slider__item -->
+
+                    <!-- slider__item -->
+                    <a href="#" class="slider__item" onmousedown="return false">
+                        <img src="pic/slider2.jpg" alt="">
+                        <div class="slider__text">
+                            <span class="slider__title">Производство печатных плат</span>
+                            <p>Производство печатных плат, SMT- и TНT монтаж,
+                                <span>промышленный дизайн, сборка готовой продукции</span>
+                            </p>
+                        </div>
+                    </a>
+                    <!-- /slider__item -->
+
+                    <!-- slider__item -->
+                    <a href="#" class="slider__item" onmousedown="return false">
+                        <img src="pic/slider1.jpg" alt="">
+                        <div class="slider__text">
+                            <span class="slider__title">Производство печатных плат</span>
+                            <p>Производство печатных плат, SMT- и TНT монтаж,
+                                <span>промышленный дизайн, сборка готовой продукции</span>
+                            </p>
+                        </div>
+                    </a>
+                    <!-- /slider__item -->
+
+                    <!-- slider__item -->
+                    <a href="#" class="slider__item" onmousedown="return false">
+                        <img src="pic/slider2.jpg" alt="">
+                        <div class="slider__text">
+                            <span class="slider__title">Производство печатных плат</span>
+                            <p>Производство печатных плат, SMT- и TНT монтаж,
+                                <span>промышленный дизайн, сборка готовой продукции</span>
+                            </p>
+                        </div>
+                    </a>
+                    <!-- /slider__item -->
+
+                </div>
+                <!-- /slider__wrap -->
+
+            </div>
+            <!-- /slider -->
+
+            <!-- services -->
+            <div class="services">
+
+                <!-- services__installation -->
+                <div class="services__installation">
+                    <a href="#" class="services__title">контрактное производство электроники</a>
+                    <p>Производство печатных плат, SMT- и TНT монтаж, промышленный дизайн, сборка готовой продукции</p>
+                    <a href="#" class="services__btn"><span>Онлайн-калькулятор на монтаж радиоэлементов</span></a>
+                </div>
+                <!-- /services__installation -->
+
+                <!-- services__products -->
+                <div class="services__products">
+                    <a href="#" class="services__title">продукты и решения</a>
+                    <p>Цифровое эфирное телевидение, бортовое радиоэлектронное оборудование и авионика</p>
+                    <a href="#" class="services__btn"><span>обновить прошивку</span></a>
+                </div>
+                <!-- /services__products -->
+
+            </div>
+            <!-- /services -->
+
+            <!-- news-preview -->
+            <div class="news-preview">
+                <h2>новости</h2>
+
+                <!-- news-preview__item -->
+                <div class="news-preview__item">
+                    <time datetime="2015-02-13">13.02.2015</time>
+                    <a class="news-preview__title" href="#">
+                        <img src="pic/news-preview1.jpg" alt="">
+                        Синватек представляет новые модели приставок наилучшего качества
+                    </a>
+                    <p>Принцип восприятия непредвзято создает паллиативный интеллект, казавшийся забытой фишкой...</p>
+                </div>
+                <!-- /news-preview__item -->
+
+                <!-- news-preview__item -->
+                <div class="news-preview__item">
+                    <time datetime="2015-02-13">13.02.2015</time>
+                    <a class="news-preview__title" href="#">
+                        <img src="pic/news-preview2.jpg" alt="">
+                        Синватек представляет новые модели приставок
+                    </a>
+                    <p>Принцип восприятия непредвзято создает паллиативный интеллект...</p>
+                </div>
+                <!-- /news-preview__item -->
+
+                <a class="news-preview__all" href="#">Все новости</a>
+
+            </div>
+            <!-- /news-preview -->
+
+            <p><span class="green">«Синватек»</span> – первая на территории Приволжского федерального округа и Республики
+                Башкортостан мультиотраслевая инновационная компания инновационного производства, основанная на новейших
+                европейских технологиях производства продукции телекоммуникационного назначения и радиоэлектроники,
+                осуществляющая услуги контрактного производства и разработки электроники на заказ.Инновационная деятельность
+                компании сосредоточена на создании решений с применением передовых и оптимальных технологий в сферах
+                производства электроники, радиоэлектроники и бортовой авионики.</p>
+
+        </div><!-- /site__content -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+
+            <!-- site__footer-layout -->
+            <div class="site__footer-layout">
+
+                <span class="site__footer-copyright">© «Sinwatec LLC»</span>
+                <span class="site__footer-create">Разработка сайта: <a href="#">«Экспресс-лаб»</a></span>
+
+                <address>
+                    <span>г. Уфа, ул. Кирова, 39, оф. X, т.: +7 (347) 266-65-65</span>
+                    <a href="mailto:info@sinwatec.com">info@sinwatec.com</a>
+                </address>
+
+                <!-- social -->
+                <div class="social">
+                    <a class="facebook" href="#"></a>
+                    <a class="vk" href="#"></a>
+                    <a class="in" href="#"></a>
+                </div>
+                <!-- /social -->
+
+            </div><!-- /site__footer-layout -->
+
+        </footer>
+        <!-- /site__footer -->
+
+    </div>
+    <!-- /site -->
+
+</body>
+</html>

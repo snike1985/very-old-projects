@@ -1,0 +1,20 @@
+.header__social a{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+.link__pic img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.link__pic:hover {
+   box-shadow: 0 0 10px #000;
+}
+.buy {
+    bottom: 5px;
+    opacity: 1;
+}
+.site-cell:hover .buy {
+    opacity: 1;
+    bottom: 5px;
+}
+

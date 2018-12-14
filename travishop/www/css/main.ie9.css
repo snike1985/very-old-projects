@@ -1,0 +1,10 @@
+/* css for ltie9 */
+
+.hover:before {
+    display: none;
+}
+.hover:hover > span {
+    color: #fff;
+    background: #8f8f8f;
+    left: 0;
+}
