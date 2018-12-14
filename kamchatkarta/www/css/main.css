@@ -1,0 +1,330 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    content-wrap
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+::-webkit-input-placeholder {
+    color: #f36751;
+}
+:-moz-placeholder {
+    color: #f36751;
+}
+.placeholder {
+    color: #f36751;
+}
+/* --------------- /Style to null --------------- */
+body {
+    background: #ffe69f;
+}
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "robotoslab-regular";
+    src: url("../fonts/robotoslab-regular.woff") format("woff");
+}
+@font-face {
+    font-family: "robotoslab-bold";
+    src: url("../fonts/robotoslab-bold.woff") format("woff");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    height: 1024px;
+    width: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background: url("../img/site_fon.png") no-repeat top center;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 181px;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    bottom: 0;
+    left: 102px;
+    width: 564px;
+    height: 149px;
+    background: url("../img/logo.png") no-repeat;
+}
+/* --------------- /logo --------------- */
+.site__content {
+    padding: 48px 0 0 161px;
+}
+.site__content span {
+    color: #fff;
+    font-size: 30px;
+    display: block;
+    font-family: "robotoslab-bold";
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.site__content span.salary {
+    color: #ffe69f;
+    padding-top: 5px;
+    text-transform: none;
+}
+.site__content input.mail {
+    border: none;
+    border-radius: 3px;
+    border-right: 2px solid #d9d9d9;
+    border-bottom: 2px solid #d9d9d9;
+    background: #fff url("../img/mail.png") no-repeat 39px 36px;
+    padding: 0 20px 0 116px;
+    color: #f36751;
+    font-family: "robotoslab-regular";
+    width: 552px;
+    height: 104px;
+    box-sizing: border-box;
+    font-size: 32px;
+    position: absolute;
+    top: 535px;
+    left: 50%;
+    margin-left: -274px;
+}
+.site__content input.send {
+    border: none;
+    border-radius: 3px;
+    background: url("../img/send_fon.png") no-repeat;
+    color: #fff;
+    font-family: "robotoslab-bold";
+    width: 552px;
+    height: 142px;
+    box-sizing: border-box;
+    font-size: 40px;
+    position: absolute;
+    top: 681px;
+    left: 50%;
+    margin-left: -274px;
+    padding-left: 72px;
+}
+.site__content input.send:hover {
+    opacity: 0.8;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    background: url("../img/footer_fon.png") center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 127px;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-top: 49px;
+}
+.footer span {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "robotoslab-bold";
+    font-size: 26px;
+}
+/* --------------- /footer --------------- */
+
+@media screen and (max-width: 768px){
+    /* --------------- site --------------- */
+    .site {
+        height: 480px;
+        width: 320px;
+        background: url("../img/site_fon_min.png") no-repeat top center;
+    }
+    /* --------------- /site --------------- */
+
+    /* --------------- header --------------- */
+    .header {
+        height: 75px;
+    }
+    /* --------------- /header --------------- */
+
+    /* --------------- logo --------------- */
+    .logo {
+        left: 32px;
+        width: 251px;
+        height: 65px;
+        background: url("../img/logo_min.png") no-repeat;
+    }
+    /* --------------- /logo --------------- */
+    .site__content {
+        padding: 26px 0 0 56px;
+    }
+    .site__content span {
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+    .site__content span.salary {
+        padding-top: 3px;
+    }
+    .site__content input.mail {
+        background: #fff url("../img/mail_min.png") no-repeat 21px 17px;
+        padding: 0 10px 0 59px;
+        font-size: 14px;
+        width: 254px;
+        height: 50px;
+        top: 249px;
+        margin-left: -128px;
+    }
+    .site__content input.send {
+        background: url("../img/send_fon_min.png") no-repeat;
+        font-size: 18px;
+        width: 254px;
+        height: 70px;
+        top: 319px;
+        left: 50%;
+        margin-left: -127px;
+        padding-left: 40px;
+    }
+    .site__content input.send:hover {
+        opacity: 0.8;
+    }
+    /* --------------- footer --------------- */
+    .footer {
+        height: 59px;
+        padding-top: 22px;
+    }
+    .footer span {
+        font-size: 12px;
+    }
+    /* --------------- /footer --------------- */
+
+}

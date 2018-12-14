@@ -1,0 +1,7 @@
+/* css for ltie8 */
+.reflect img {
+    display: none !important;
+}
+.reflect img.reflected {
+    display: block !important;
+}

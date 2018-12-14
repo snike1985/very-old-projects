@@ -1,0 +1,19 @@
+.site,
+.site__wrap,
+.ares-slider__points li,
+.site__menu,
+.news-preview__item,
+.news-preview__item img,
+.info img,
+.pagination a.pagination__prev,
+.pagination a.pagination__next,
+.footer__layout,
+.aside__menu-links,
+.aside__menu,
+.banner,
+.header__search,
+.information {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

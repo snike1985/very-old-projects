@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=1024">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/jquery.ares.multiple.slider.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <!-- popup__wrap -->
+    <form class="popup__wrap">
+
+        <h2>Перезвонить мне</h2>
+
+        <div class="popup__close"></div>
+
+        <fieldset>
+            <label for="pop1">Имя*</label>
+            <input id="pop1" type="text" placeholder="" required="">
+        </fieldset>
+
+        <fieldset>
+            <label for="pop2">Телефон*</label>
+            <input id="pop2" type="tel" placeholder="">
+        </fieldset>
+
+        <fieldset>
+            <label for="pop3">Удобное время звонка*</label>
+            <input id="pop3" type="text" placeholder="">
+        </fieldset>
+
+        <input class="popup__send site__btn" type="submit" value="отправить">
+        <span>* - Поля обязательные для заполнения</span>
+
+    </form>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- popup -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__header -->
+        <header class="site__header">
+
+            <!-- logo -->
+            <h1 class="logo"><img src="img/logo.png" width="" height="" alt=""></h1>
+            <!-- /logo -->
+
+            <!-- header-tel -->
+            <div class="header-tel">
+                <a href="tel:+73532908560"><span>+7 (3532)</span> 90-85-60</a>
+                <a href="tel:+79228758175"><span>+7 (922)</span> 875-81-75</a>
+            </div>
+            <!-- /header-tel -->
+
+            <!-- header-mail -->
+            <div class="header-mail">
+                <a href="mailto:prespark@mail.ru">prespark@mail.ru</a>
+                <a href="#" class="call-back">Перезвоните мне</a>
+            </div>
+            <!-- /header-mail -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <a href="#">О компании</a>
+                <a href="#">Новости</a>
+                <a href="#">Статьи</a>
+                <a class="active" href="#">Расчет</a>
+                <a href="#">Тех. требования</a>
+                <a href="#">FAQ</a>
+                <a href="#">Доставка</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <!-- /menu -->
+
+        </header><!-- /site__header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- slider -->
+            <div class="slider">
+
+                <!-- slider__wrap -->
+                <div class="slider__wrap">
+
+                    <!-- slider__item -->
+                    <div class="slider__item">
+
+                        <img src="pic/slider_pic1.jpg" alt="" onmousedown="return false">
+
+                        <!-- slider__title -->
+                        <ul class="slider__title">
+                            <li><h2>Новая печатная  <span>машина Mark Andy P3</span></h2></li>
+                        </ul>
+                        <!-- /slider__title -->
+
+                    </div>
+                    <!-- /slider__item -->
+
+                    <!-- slider__item -->
+                    <a href="#" class="slider__item">
+
+                        <img src="pic/slider_pic2.jpg" alt="" onmousedown="return false">
+
+                        <!-- slider__title -->
+                        <ul class="slider__title">
+                            <li><h2>Печатные формы <span>бесплатно</span></h2></li>
+                            <li><p>при заказе одного вида этикетки на сумму более 30000 руб.</p></li>
+                        </ul>
+                        <!-- /slider__title -->
+
+                    </a>
+                    <!-- /slider__item -->
+
+                    <!-- slider__item -->
+                    <a href="#" class="slider__item">
+
+                        <img src="pic/slider_pic3.jpg" alt="" onmousedown="return false">
+
+                        <!-- slider__title -->
+                        <ul class="slider__title">
+                            <li><h2>Вырубные ножи <span>за наш счёт</span></h2></li>
+                            <li><p>при заказе одного вида этикетки на сумму более 40000 руб.</p></li>
+                        </ul>
+                        <!-- /slider__title -->
+
+                    </a>
+                    <!-- /slider__item -->
+
+                </div>
+                <!-- /slider__wrap -->
+
+            </div>
+            <!-- /slider -->
+
+            <!-- about -->
+            <div class="about">
+                <div>
+                    <h2>5 причин заказать у нас</h2>
+                    <ul>
+                        <li><span>Значимость этих проблем настолько очевидна</span></li>
+                        <li><span>Внедрения и модернизации соответствующий</span></li>
+                        <li><span>Повседневная практика показывает, что</span></li>
+                        <li><span>Cтруктура организации позволяет оценит</span></li>
+                        <li><span>С другой стороны рамки и место обучения</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>виды этикеток</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Пищевая</span>
+                                <div class="about__pic">
+                                    <img src="pic/vid_pic1.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Косметика</span>
+                                <div class="about__pic">
+                                    <img src="pic/vid_pic2.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Фармацевтика</span>
+                                <div class="about__pic">
+                                    <img src="pic/vid_pic3.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Бытовая и автохимия</span>
+                                <div class="about__pic">
+                                    <img src="pic/vid_pic4.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>На бутылки</span>
+                                <div class="about__pic">
+                                    <img src="pic/vid_pic5.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /about -->
+
+            <!-- gallery -->
+            <div class="gallery">
+
+                <ul>
+                    <li class="gallery__item">
+                        <a href="pic/gallery_pic1.jpg" data-lightbox="roadtrip"><img src="pic/gallery_pic1.jpg" alt=""/></a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="pic/gallery_pic2.jpg" data-lightbox="roadtrip"><img src="pic/gallery_pic2.jpg" alt=""/></a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="pic/gallery_pic3.jpg" data-lightbox="roadtrip"><img src="pic/gallery_pic3.jpg" alt=""/></a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="pic/gallery_pic4.jpg" data-lightbox="roadtrip"><img src="pic/gallery_pic4.jpg" alt=""/></a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="pic/gallery_pic5.jpg" data-lightbox="roadtrip"><img src="pic/gallery_pic5.jpg" alt=""/></a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="pic/gallery_pic1.jpg" data-lightbox="roadtrip"><img src="pic/gallery_pic1.jpg" alt=""/></a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="pic/gallery_pic2.jpg" data-lightbox="roadtrip"><img src="pic/gallery_pic2.jpg" alt=""/></a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="pic/gallery_pic3.jpg" data-lightbox="roadtrip"><img src="pic/gallery_pic3.jpg" alt=""/></a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="pic/gallery_pic4.jpg" data-lightbox="roadtrip"><img src="pic/gallery_pic4.jpg" alt=""/></a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="pic/gallery_pic5.jpg" data-lightbox="roadtrip"><img src="pic/gallery_pic5.jpg" alt=""/></a>
+                    </li>
+                </ul>
+                <div class="gallery__prev"></div>
+                <div class="gallery__next"></div>
+
+            </div>
+            <!-- /gallery -->
+
+            <!-- calc -->
+            <div class="calc">
+                <a class="site__btn" href="#">рассчитать тираж этикеток</a>
+            </div>
+            <!-- /calc -->
+
+            <!-- preview -->
+            <div class="preview">
+                <div>
+                    <h2>новости</h2>
+                    <a href="#" class="preview__more">все новости</a>
+                    <!-- preview__item -->
+                    <div class="preview__item">
+                        <img src="pic/preview_pic1.jpg" width="86" height="86" alt="">
+                        <time datetime="2015-01-30">30.01.2015</time>
+                        <span><a href="#">Таким образом кон- сультация прошла</a></span>
+                        <p>Повседневная практика показывает, что реализация намеченных плановых заданий позволяет
+                            выполнять важные... <a href="#">Далее</a> &rarr;</p>
+                    </div>
+                    <!-- /preview__item -->
+                    <!-- preview__item -->
+                    <div class="preview__item">
+                        <img src="pic/preview_pic1.jpg" width="86" height="86" alt="">
+                        <time datetime="2015-01-30">30.01.2015</time>
+                        <span><a href="#">Таким образом кон- сультация прошла</a></span>
+                        <p>Повседневная практика показывает, что реализация намеченных плановых заданий позволяет
+                            выполнять важные... <a href="#">Далее</a> &rarr;</p>
+                    </div>
+                    <!-- /preview__item -->
+                </div>
+                <div>
+                    <h2>статьи</h2>
+                    <a href="#" class="preview__more">все статьи</a>
+                    <!-- preview__item -->
+                    <div class="preview__item">
+                        <img src="pic/preview_pic1.jpg" width="86" height="86" alt="">
+                        <time datetime="2015-01-30">30.01.2015</time>
+                        <span><a href="#">Таким образом кон- сультация прошла</a></span>
+                        <p>Повседневная практика показывает, что реализация намеченных плановых заданий позволяет
+                            выполнять важные... <a href="#">Далее</a> &rarr;</p>
+                    </div>
+                    <!-- /preview__item -->
+                    <!-- preview__item -->
+                    <div class="preview__item">
+                        <img src="pic/preview_pic1.jpg" width="86" height="86" alt="">
+                        <time datetime="2015-01-30">30.01.2015</time>
+                        <span><a href="#">Таким образом кон- сультация прошла</a></span>
+                        <p>Повседневная практика показывает, что реализация намеченных плановых заданий позволяет
+                            выполнять важные... <a href="#">Далее</a> &rarr;</p>
+                    </div>
+                    <!-- /preview__item -->
+                </div>
+                <div class="preview__questions">
+                    <h2>FAQ</h2>
+                    <a href="#" class="preview__more">все вопросы</a>
+                    <!-- preview__item -->
+                    <div class="preview__item">
+                        <span><a href="#"><b>Вопрос:</b> Как проверить состояние термоголовки на весах DIGI SM-300?</a></span>
+                        <p><b>Ответ:</b> Повседневная практика показывает, что реализация намеченных плановых заданий позво-
+                            ляет выполнять важные задания по разработке направлений...  <a href="#">Далее</a> &rarr;</p>
+                    </div>
+                    <!-- /preview__item -->
+                    <!-- preview__item -->
+                    <div class="preview__item">
+                        <span><a href="#"><b>Вопрос:</b> Как проверить состояние термоголовки на весах DIGI SM-300?</a></span>
+                        <p><b>Ответ:</b> Повседневная практика показывает, что реализация намеченных плановых заданий позво-
+                            ляет выполнять важные задания по разработке направлений...  <a href="#">Далее</a> &rarr;</p>
+                    </div>
+                    <!-- /preview__item -->
+                </div>
+            </div>
+            <!-- /preview -->
+
+        </div><!-- /site__content -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+
+            <!-- site__footer-layout -->
+            <div class="site__footer-layout">
+
+                <!-- footer-menu -->
+                <nav class="footer-menu">
+                    <div><a href="#">О компании</a></div>
+                    <div><a href="#">Тех. требования</a></div>
+                    <div><a href="#">Новости</a></div>
+                    <div><a href="#">FAQ</a></div>
+                    <div><a href="#">Статьи</a></div>
+                    <div><a href="#">Доставка</a></div>
+                    <div><a href="#">Расчет</a></div>
+                    <div><a href="#">Контакты</a></div>
+                </nav>
+                <!-- /footer-menu -->
+
+                <!-- footer-info -->
+                <div class="footer-info">
+                    <!-- social -->
+                    <div class="social">
+                        <a class="vkontakte" href="#"></a>
+                        <a class="facebook" href="#"></a>
+                        <a class="twitter" href="#"></a>
+                        <a class="odnoklassniki" href="#"></a>
+                    </div>
+                    <!-- /social -->
+                    <span>г. Оренбург, Шарлыкское шоссе 5, офис 572</span>
+                    <span>+7 (3532) 90-85-60; +7 (922) 875-81-75; 460019, </span>
+                    <a href="mailto:prespark@mail.ru">prespark@mail.ru</a>
+                </div>
+                <!-- /footer-info -->
+
+                <a href="#" class="logo logo-footer"><img src="img/logo-footer.png" alt=""></a>
+
+            </div><!-- /site__footer-layout -->
+
+        </footer>
+        <!-- /site__footer -->
+
+    </div>
+    <!-- /site -->
+
+</body>
+</html>

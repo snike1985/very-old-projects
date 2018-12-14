@@ -1,0 +1,414 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    content-wrap
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "times-new-roman-cyr-regular";
+    src: url("../fonts/times-new-roman-cyr-regular.woff") format("woff");
+}
+@font-face {
+    font-family: "impact";
+    src: url("../fonts/impact.woff") format("woff");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 972px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background: #383e45;
+    font-family: "times-new-roman-cyr-regular";
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 26px;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    width: 972px;
+    height: 137px;
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+.header__menu {
+    text-align: right;
+    width: 100%;
+    position: relative;
+    padding: 20px 6px 17px 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.header__menu:after {
+    content: '';
+    background: url("../img/horizontal_border.png");
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.header__menu a:first-child:before {
+    content: '';
+    background: url("../img/vertical_border.png");
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -2px;
+}
+.header__menu a:after {
+    content: '';
+    background: url("../img/vertical_border.png");
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -2px;
+}
+.header__menu a,
+.header__menu a:visited {
+    font-size: 14px;
+    color: #d6d7d8;
+    text-decoration: none;
+    position: relative;
+    padding: 0 5px;
+}
+.header__menu a:hover {
+    color: #fff;
+}
+.header__date {
+    height: 41px;
+    background: #3c434a;
+    position: absolute;
+    bottom: 19px;
+    right: 6px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-top: 4px;
+}
+.header__date span {
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0 5px 0 19px;
+}
+.header__date span.week_day {
+    margin: 0 20px 0 41px;
+}
+.header__date span.week_day:before {
+    content: '';
+    background: url("../img/vertical_border.png");
+    width: 1px;
+    height: 13px;
+    position: absolute;
+    top: 9px;
+    left: -15px;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- site__content --------------- */
+.site__content {
+    width: 972px;
+    margin: 0 auto;
+}
+.big__img__wrap {
+    border: 6px solid #454d56;
+    width: 956px;
+    height: 393px;
+    margin: 0 auto;
+    margin-bottom: 29px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+.big__img__wrap img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* --------------- /site__content --------------- */
+
+/* --------------- site__content__weather --------------- */
+.site__content__weather {
+    text-align: justify;
+    width: 956px;
+    margin: 0 auto;
+    margin-bottom: -27px;
+    position: relative;
+}
+.site__content__weather:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
+.site__content__weather:before {
+    content: '';
+    background: url("../img/horizontal_border.png");
+    width: 672px;
+    height: 1px;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    margin-left: -336px;
+}
+.site__content__weather li:first-child:before,
+.site__content__weather li:first-child:after {
+    background: none;
+}
+.site__content__weather li:before {
+    content: '';
+    background: url("../img/vertical_border.png");
+    width: 1px;
+    height: 97px;
+    position: absolute;
+    top: 9px;
+    left: -10px;
+}
+.site__content__weather li:after {
+    content: '';
+    background: url("../img/vertical_border.png");
+    width: 1px;
+    height: 97px;
+    position: absolute;
+    bottom: 19px;
+    left: -10px;
+}
+.site__content__weather li {
+    display: inline-block;
+    width: 304px;
+    position: relative;
+}
+.img__wrap {
+    border: 3px solid #454d56;
+    width: 304px;
+    height: 125px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.img__wrap:hover {
+    border-color: #59616a;
+}
+.site__content__weather h2 {
+    text-transform: uppercase;
+    color: #858f9c;
+    text-align: center;
+    font-family: "impact";
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-bottom: 21px;
+}
+.site__content__weather dl {
+    text-align: justify;
+    font-family: "times-new-roman-cyr-regular";
+    color: #fff;
+    margin-bottom: -12px;
+}
+.site__content__weather dl:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
+.site__content__weather dt {
+    display: inline-block;
+    font-size: 18px;
+}
+.site__content__weather dd {
+    display: inline-block;
+    font-size: 28px;
+}
+/* --------------- site__content__weather --------------- */
+
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -26px;
+    width: 100%;
+}
+.footer__layout {
+    width: 972px;
+    height: 26px;
+    margin: 0 auto;
+    background: #3c434a;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+    padding-top: 3px;
+}
+.footer__layout span {
+    font-family: "Tahoma";
+    font-size: 10px;
+    color: #ededed;
+    text-transform: uppercase;
+}
+/* --------------- /footer --------------- */

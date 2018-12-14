@@ -1,0 +1,359 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    font: 12px Arial, Helvetica, sans-serif;
+}
+body {
+    color: #000;
+    background: #fff;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Font Name";
+    src: url("../fonts/font.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+
+    height: 100px;
+}
+.site__content {
+
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+
+    height: 100px;
+    background: red;
+
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -100px;
+}
+.footer__layout {
+    width: 100%;
+
+    height: 100px;
+    background: blue;
+}
+/* --------------- /footer --------------- */
+
+
+/* --------------- lenta --------------- */
+.lenta-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    background: rgba(0,0,0, 0.5);
+    z-index: 3;
+}
+.lenta {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top: 297px;
+    left: 0;
+}
+.lenta-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 45px;
+    background: url("../img/lenta.png") repeat-x;
+    -webkit-transition: left 1.5s ease;
+    transition: left 1.5s ease;
+}
+.lenta-left.action {
+    left: -100%;
+}
+.lenta-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 45px;
+    background: url("../img/lenta.png") repeat-x -55%;
+    -webkit-transition: right 1.5s ease;
+    transition: right 1.5s ease;
+}
+.lenta-right.action {
+    right: -100%;
+}
+.lenta-right:before {
+    content: '';
+    background: url("../img/bant.png") no-repeat;
+    width: 270px;
+    height: 145px;
+    position: absolute;
+    top: -48px;
+    right: 30%;
+}
+.incision {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    width: 10px;
+    height: 0;
+    overflow: hidden;
+}
+.incision:before {
+    content: '';
+    border: 5px solid transparent;
+    border-bottom: 47px solid #000;
+    position: absolute;
+    top: -7px;
+    left: 0;
+}
+.incision.action {
+    -webkit-transition: height 1s ease;
+    transition: height 1s ease;
+    -webkit-animation: incision 3s linear 1;
+    animation: incision 3s linear 1;
+}
+@-webkit-keyframes incision {
+    0% {
+        height: 0;
+    }
+    50% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+@keyframes incision {
+    0% {
+        height: 0;
+    }
+    50% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+.scissors {
+    width: 21px;
+    height: 30px;
+    position: absolute;
+    top: 405px;
+    left: 55%;
+    margin-left: -9px;
+    display: none;
+}
+.scissors.action {
+    display: block;
+}
+.scissors:before {
+    content: '';
+    background: url("../img/scissors_part1.png") no-repeat;
+    width: 21px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    -webkit-animation: cuting1 1s linear infinite;
+    animation: cuting1 1s linear infinite;
+}
+.scissors:after {
+    content: '';
+    background: url("../img/scissors_part2.png") no-repeat;
+    width: 21px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    -webkit-animation: cuting2 1s linear infinite, cuting3 3s linear infinite;
+    animation: cuting2 1s linear infinite, cuting3 3s linear infinite;
+}
+@-webkit-keyframes cuting1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(25deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+@keyframes cuting1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes cuting2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(-25deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+@keyframes cuting2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes cuting3 {
+    0% {
+        background: url("../img/scissors_part2.png") no-repeat;
+    }
+    50% {
+        background: url("../img/scissors_part2.png") no-repeat;
+    }
+    55% {
+        background: url("../img/scissors-cut.png") no-repeat;
+    }
+    100% {
+        background: url("../img/scissors-cut.png") no-repeat;
+    }
+}
+@keyframes cuting3 {
+    0% {
+        background: url("../img/scissors_part2.png") no-repeat;
+    }
+    50% {
+        background: url("../img/scissors_part2.png") no-repeat;
+    }
+    55% {
+        background: url("../img/scissors-cut.png") no-repeat;
+    }
+    100% {
+        background: url("../img/scissors-cut.png") no-repeat;
+    }
+}
+.scissors.action {
+    -webkit-transition: -webkit-transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+    -webkit-animation: flying 3s linear 1;
+    animation: flying 3s linear 1;
+}
+@-webkit-keyframes flying {
+    0% {
+        -webkit-transform: rotate(0deg);
+        top: 435px;
+        left: 50%;
+    }
+    50% {
+        -webkit-transform: rotate(35deg);
+        top: 325px;
+        left: 55%;
+    }
+    100% {
+        -webkit-transform: rotate(35deg);
+        top: 282px;
+        left: 55%;
+    }
+}
+@keyframes flying {
+    0% {
+        transform: rotate(0deg);
+        top: 435px;
+        left: 50%;
+    }
+    50% {
+        transform: rotate(35deg);
+        top: 325px;
+        left: 55%;
+    }
+    100% {
+        transform: rotate(35deg);
+        top: 282px;
+        left: 55%;
+    }
+}
+/* --------------- /lenta --------------- */

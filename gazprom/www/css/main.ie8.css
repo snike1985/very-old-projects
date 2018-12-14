@@ -1,0 +1,17 @@
+/* css for ltie8 */
+.ares-slider {
+    filter: none;
+    background: url("../img/slider-points-fon.jpg") repeat-y top center;
+}
+.header__search input[type=text] {
+    line-height: 35px;
+}
+.aside__menu,
+.aside__menu-links,
+.site__menu {
+    filter: none;
+    background: #eff3f6;
+}
+.site__wrap {
+    background: red;
+}

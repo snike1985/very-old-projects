@@ -1,0 +1,15 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "robotoslab-regular";
+    src: url("../fonts/robotoslab-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "robotoslab-bold";
+    src: url("../fonts/robotoslab-bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

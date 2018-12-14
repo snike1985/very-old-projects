@@ -1,0 +1,7 @@
+.girls__item a,
+.interior__item img,
+.programms__item{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+
