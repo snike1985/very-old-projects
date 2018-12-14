@@ -1,0 +1,9 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "jacoba";
+    src: url("../fonts/jacoba_bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

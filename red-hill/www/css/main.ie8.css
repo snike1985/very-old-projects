@@ -1,0 +1,14 @@
+/* css for ltie8 */
+
+.menu__submenu {
+    display: none;
+}
+.menu__item:hover .menu__submenu {
+    display: block;
+}
+.tabs dd {
+    display: none;
+}
+.tabs dt.active + dd {
+    display: block;
+}

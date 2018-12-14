@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <meta name="viewport" content="width=1024">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- header__layout -->
+            <div class="header__layout">
+
+                <a href="#" class="add-ad">Добавить объявление</a>
+
+                <!-- header__login -->
+                <div class="header__login">
+                    <a href="#">Войти</a>
+                    <a href="#">Регистрация</a>
+                </div>
+                <!-- /header__login -->
+
+                <!-- header__city -->
+                <div class="header__city">
+                    <span>Город: <a href="#">Москва</a></span>
+                    <!--<select>-->
+                        <!--<option>Москва</option>-->
+                        <!--<option>Уфа</option>-->
+                        <!--<option>Ростов</option>-->
+                    <!--</select>-->
+                </div>
+                <!-- /header__city -->
+
+                <!-- logo -->
+                <a href="#" class="logo"><img src="img/logo.png" width="193" height="97" alt="APARTMENT RENT EXPRESS"></a>
+                <!-- /logo -->
+
+                <!-- header__menu -->
+                <nav class="header__menu">
+                    <a href="#">О проект</a>
+                    <a href="#">Платные услуги</a>
+                    <a class="active" href="#">Вопросы и ответы</a>
+                    <a href="#">Обратная связь</a>
+                </nav>
+                <!-- /header__menu -->
+
+            </div>
+            <!-- /header__layout -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- breadcrumbs -->
+                <nav class="breadcrumbs">
+                    <a href="#">Главная</a>
+                    <span>Вопросы и ответы</span>
+                </nav>
+                <!-- /breadcrumbs -->
+
+                <h1>ВОПРОСЫ И ОТВЕТЫ</h1>
+
+                <!-- accordion -->
+                <dl class="accordion">
+                    <dt>Почему в некоторых объявлениях фотографии перевернуты?</dt>
+                    <dd>Это означает, что собственник изначально разместил фотографии в таком виде.</dd>
+                    <dt>Почему блокируются объявления?</dt>
+                    <dd>Ответ.</dd>
+                    <dt>Как понять, за что заблокировали объявление?</dt>
+                    <dd>Ответ.</dd>
+                    <dt>Объявление было заблокировано по причине «Повторная подача». Что делать?</dt>
+                    <dd>Ответ.</dd>
+                    <dt>Объявление было заблокировано по причине «Запрещённый товар». Что делать?</dt>
+                    <dd>Ответ.</dd>
+                    <dt>Объявление было заблокировано по причине «Объявление о покупке». Что делать?</dt>
+                    <dd>Ответ.</dd>
+                    <dt>Моё оплаченное объявление заблокировали. Что теперь будет с деньгами?</dt>
+                    <dd>Ответ.</dd>
+                </dl>
+                <!-- /accordion -->
+
+                <span>Не нашли ответа на ваш вопрос?</span>
+                <span>Тогда заполните форму ниже, и наши специалисты ответят вам в письме.</span>
+
+                <!-- ask-question -->
+                <form class="ask-question" action="#">
+                    <h2>ЗАДАТЬ СВОЙ ВОПРОС</h2>
+                    <fieldset>
+                        <label for="quest1">Ваше имя<sup>*</sup></label>
+                        <input id="quest1" type="text" placeholder="" required="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="quest2">E-mail<sup>*</sup></label>
+                        <input id="quest2" type="email" placeholder="" required="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="quest3">Вопрос<sup>*</sup></label>
+                        <textarea id="quest3" required=""></textarea>
+                    </fieldset>
+                    <fieldset class="capcha">
+                        <label for="quest4">Введите символы с картинки<sup>*</sup></label>
+                        <div>
+                            <img src="img/capcha.jpg" width="198" height="38" alt="">
+                            <input id="quest4" type="text" placeholder="" required="">
+                        </div>
+                    </fieldset>
+                    <input class="submit-btn" type="submit" value="отправить">
+                </form>
+                <!-- /ask-question -->
+
+            </div>
+            <!-- /content-wrap -->
+
+            <!-- site__aside -->
+            <aside class="site__aside">
+                <!-- last-ads -->
+                <table class="last-ads">
+                    <thead>
+                        <tr>
+                            <th>Последние объявления</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- /last-ads -->
+            </aside>
+            <!-- /site__aside -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <dl>
+                <dt>Недвижимость</dt>
+                <dd><a href="#">Ищу</a></dd>
+                <dd><a href="#">Предлагаю</a></dd>
+                <dd><a href="#">Обменяю</a></dd>
+                <dd><a href="#">Сдам</a></dd>
+            </dl>
+
+            <dl>
+                <dt>Поиск</dt>
+                <dd><a href="#">Лучшие предлжения</a></dd>
+                <dd><a href="#">Последние объявления</a></dd>
+                <dd><a href="#">Все объявления</a></dd>
+            </dl>
+
+            <dl>
+                <dt>Информация</dt>
+                <dd><a href="#">О проекте</a></dd>
+                <dd><a href="#">Платные услуги</a></dd>
+                <dd><a href="#">Вопросы и ответы</a></dd>
+                <dd><a href="#">Обратная связь</a></dd>
+            </dl>
+
+            <!-- social -->
+            <dl class="social">
+                <dt>Мы в соцсетях</dt>
+                <dd class="facebook"><a href="#">Facebook</a></dd>
+                <dd class="vkontakte"><a href="#">Вконтакте</a></dd>
+                <dd class="twitter"><a href="#">Twitter</a></dd>
+                <dd class="odnoklassniki"><a href="#">Одноклассники</a></dd>
+            </dl>
+            <!-- /social -->
+
+            <dl>
+                <dt>О проекте</dt>
+                <dd>
+                    <p>
+                        Сайт бесплатных объявлений. Использование сайта, в том числе подача объявлений, означает согласие с
+                        <a href="#">пользовательским соглашением.</a>
+                    </p>
+                </dd>
+            </dl>
+
+            <!-- footer__counters -->
+            <div class="footer__counters">
+                <a href="#"><img src="img/counter.png" width="88" height="31" alt=""></a>
+                <a href="#"><img src="img/counter.png" width="88" height="31" alt=""></a>
+                <a href="#"><img src="img/counter.png" width="88" height="31" alt=""></a>
+            </div>
+            <!-- /footer__counters -->
+
+            <span class="year">© 2014</span>
+            <span class="create-site">Создание сайта: <a href="#">«Экспресс лаб»</a></span>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

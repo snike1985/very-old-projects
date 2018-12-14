@@ -1,0 +1,6 @@
+.rentals a,
+.last-ads img {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

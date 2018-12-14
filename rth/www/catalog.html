@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=1024">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/jquery.slider.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup popup_send-request">
+
+    <!-- popup__wrap -->
+    <form class="popup__wrap">
+
+        <h2>Оставить заявку</h2>
+
+        <div class="popup__close"></div>
+
+        <fieldset>
+            <label for="pop1">Название организации клиента <sup>*</sup></label>
+            <input id="pop1" type="text" placeholder="">
+        </fieldset>
+
+        <fieldset class="popup__contacts">
+            <label for="pop2">Контакты <sup>*</sup></label>
+            <input id="pop2" type="email" placeholder="E-mail">
+            <input type="tel" placeholder="Телефон (Начиная с +7)">
+        </fieldset>
+
+        <fieldset>
+            <label for="pop3">Контактное лицо (ФИО) <sup>*</sup></label>
+            <input id="pop3" type="text" placeholder="">
+        </fieldset>
+
+        <fieldset class="popup__comments">
+            <label for="pop4">Комментарий к заказу</label>
+            <textarea id="pop4"></textarea>
+        </fieldset>
+
+        <div class="popup__files">
+            <span>Прикрепить файл (заявка, карта партнера)</span>
+            <a href="#">Выберите файл</a>
+        </div>
+
+        <span class="popup__title"><sup>*</sup> - Поля, обязательные к заполнению</span>
+
+        <button type="submit">Отправить</button>
+
+    </form>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- popup -->
+
+<!-- popup -->
+<div class="popup popup_call-back">
+
+    <!-- popup__wrap -->
+    <form class="popup__wrap">
+
+        <h2>Не можете дозвониться?</h2>
+
+        <div class="popup__close"></div>
+
+        <fieldset>
+            <label for="pop5">Ваше имя <sup>*</sup></label>
+            <input id="pop5" type="text" placeholder="">
+        </fieldset>
+
+        <fieldset>
+            <label for="pop6">Номер телефона <sup>*</sup></label>
+            <input id="pop6" type="tel" placeholder="+7">
+        </fieldset>
+
+        <span class="popup__title"><sup>*</sup> - Поля, обязательные к заполнению</span>
+
+        <button type="submit">Отправить</button>
+
+    </form>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- popup -->
+
+<!-- scroll-top -->
+<div class="scroll-top">Наверх</div>
+<!-- /scroll-top -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__header -->
+        <header class="site__header">
+
+            <!-- site__header-info -->
+            <div class="site__header-info">
+
+                <!-- logo -->
+                <h1 class="logo"><img src="img/logo.png" alt=""></h1>
+                <!-- /logo -->
+
+                    <span class="site__header-city">
+                        ваш город:
+                        <a href="#">УФА</a>
+                    </span>
+
+                    <span class="site__header-tel">
+                        тел:
+                        <a href="tel:+7987654321">+7 987 654 321</a>
+                    </span>
+
+                    <span class="site__header-mail">
+                        e-mail:
+                        <a href="mailto:rushold@mail.com">rushold@mail.com</a>
+                    </span>
+
+            </div>
+            <!-- /site__header-info -->
+
+            <!-- slider -->
+            <div class="slider">
+
+                <!-- slider__wrap -->
+                <div class="slider__wrap">
+
+                    <!-- slider__item -->
+                    <div class="slider__item" style="background-image: url('pic/slider1.jpg')">
+
+                        <!-- slider__title -->
+                        <div class="slider__title">
+                            <h2>КАЧЕСТВО</h2>
+                            <p>Мы - современное предприятие по произ- водству бетонной продукции методом вибропрессования</p>
+                        </div>
+                        <!-- /slider__title -->
+
+                    </div>
+                    <!-- /slider__item -->
+
+                    <!-- slider__item -->
+                    <div class="slider__item" style="background-image: url('pic/slider2.jpg')">
+
+                        <!-- slider__title -->
+                        <div class="slider__title">
+                            <h2>КАЧЕСТВО</h2>
+                            <p>Мы - современное предприятие по произ- водству бетонной продукции методом вибропрессования</p>
+                        </div>
+                        <!-- /slider__title -->
+
+                    </div>
+                    <!-- /slider__item -->
+
+                    <!-- slider__item -->
+                    <div class="slider__item" style="background-image: url('pic/slider1.jpg')">
+
+                        <!-- slider__title -->
+                        <div class="slider__title">
+                            <h2>КАЧЕСТВО</h2>
+                            <p>Мы - современное предприятие по произ- водству бетонной продукции методом вибропрессования</p>
+                        </div>
+                        <!-- /slider__title -->
+
+                    </div>
+                    <!-- /slider__item -->
+
+                </div>
+                <!-- /slider__wrap -->
+
+            </div>
+            <!-- /slider -->
+
+            <!-- fix-wrap -->
+            <div class="fix-wrap">
+
+                <!-- menu -->
+                <nav class="menu">
+                    <a href="#">главная</a>
+                    <a href="#">о компании</a>
+                    <a href="#">каталог</a>
+                    <a href="#">прайс-лист</a>
+                    <a href="#">отправить заявку</a>
+                    <a href="#">заказать звонок</a>
+                    <a href="#">контакты</a>
+                </nav>
+                <!-- /menu -->
+
+                <!-- search -->
+                <div class="search">
+
+                    <a href="#" class="search__logo"><img src="img/logo-red.png" alt=""></a>
+
+                    <form class="search__form">
+                        <input type="search" placeholder="поиск">
+                        <button type="submit"></button>
+                    </form>
+
+                    <!-- basket -->
+                    <a href="#" class="basket">
+                        Корзина
+                        <span>(1товар - 25 000 Р)</span>
+                    </a>
+                    <!-- /basket -->
+                </div>
+                <!-- /search -->
+            </div>
+            <!-- /fix-wrap -->
+
+        </header>
+        <!-- /site__header -->
+
+        <!-- site__wrap -->
+        <div class="site__wrap">
+
+            <!-- site__aside -->
+            <aside class="site__aside">
+
+                <!-- site__menu -->
+                <nav class="site__menu">
+                    <h2>каталог товаров</h2>
+                    <div class="open">
+                        <span class="site__menu-item">Блоки под дороги</span>
+                        <ul>
+                            <li><a href="#">Серия 3.501-104</a></li>
+                            <li><a href="#">Серия 777</a></li>
+                            <li><a href="#">Разделитель</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span class="site__menu-item">Плиты заборные</span>
+                        <ul>
+                            <li><a href="#">Серия 3.501-104</a></li>
+                            <li><a href="#">Серия 777</a></li>
+                            <li><a href="#">Разделитель</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span class="site__menu-item">Трубы ЖБИ</span>
+                        <ul>
+                            <li><a href="#">Серия 3.501-104</a></li>
+                            <li><a href="#">Серия 777</a></li>
+                            <li><a href="#">Разделитель</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span class="site__menu-item">Детали для колодцев</span>
+                        <ul>
+                            <li><a href="#">Серия 3.501-104</a></li>
+                            <li><a href="#">Серия 777</a></li>
+                            <li><a href="#">Разделитель</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="site__menu-item">Бордюрные камни</a>
+                    </div>
+                    <div>
+                        <a href="#" class="site__menu-item">Стеновые панели</a>
+                    </div>
+                    <div>
+                        <a href="#" class="site__menu-item">Силовые кабели, провода</a>
+                    </div>
+                    <div>
+                        <a href="#" class="site__menu-item">Строительное оборудование</a>
+                    </div>
+                    <div>
+                        <a href="#" class="site__menu-item">Станки</a>
+                    </div>
+                </nav>
+                <!-- /site__menu -->
+
+                <!-- ban -->
+                <a href="#" class="ban">
+                    <img src="pic/ban1.jpg" alt="">
+                    <span class="ban__title">отправить заявку</span>
+                </a>
+                <!-- /ban -->
+
+                <!-- ban -->
+                <a href="#" class="ban">
+                    <img src="pic/ban2.jpg" alt="">
+                    <span class="ban__title">скачать прайс-лист</span>
+                </a>
+                <!-- /ban -->
+
+            </aside>
+            <!-- /site__aside -->
+
+            <!-- site__content -->
+            <div class="site__content">
+
+                <!-- breadcrumbs -->
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li>Каталог товаров</li>
+                </ul>
+                <!-- /breadcrumbs -->
+
+                <h1>каталог товаров</h1>
+
+                <!-- catalog-preview -->
+                <div class="catalog-preview">
+
+                    <!-- catalog-preview__item -->
+                    <a href="#" class="catalog-preview__item">
+                        <div class="catalog-preview__pic" style="background-image: url(pic/catalog-pic9.jpg)"></div>
+                        <strong>Блоки <span>под </span></strong>
+                    </a>
+                    <!-- /catalog-preview__item -->
+
+                    <!-- catalog-preview__item -->
+                    <a href="#" class="catalog-preview__item">
+                        <div class="catalog-preview__pic" style="background-image: url(pic/catalog-pic10.jpg)"></div>
+                        <strong>Блоки <span>под </span></strong>
+                    </a>
+                    <!-- /catalog-preview__item -->
+
+                    <!-- catalog-preview__item -->
+                    <a href="#" class="catalog-preview__item">
+                        <div class="catalog-preview__pic" style="background-image: url(pic/catalog-pic11.jpg)"></div>
+                        <strong>Блоки <span>под </span></strong>
+                    </a>
+                    <!-- /catalog-preview__item -->
+
+                    <!-- catalog-preview__item -->
+                    <a href="#" class="catalog-preview__item">
+                        <div class="catalog-preview__pic" style="background-image: url(pic/catalog-pic12.jpg)"></div>
+                        <strong>Блоки <span>под </span></strong>
+                    </a>
+                    <!-- /catalog-preview__item -->
+
+                    <!-- catalog-preview__item -->
+                    <a href="#" class="catalog-preview__item">
+                        <div class="catalog-preview__pic" style="background-image: url(pic/catalog-pic13.jpg)"></div>
+                        <strong>Блоки <span>под </span></strong>
+                    </a>
+                    <!-- /catalog-preview__item -->
+
+                    <!-- catalog-preview__item -->
+                    <a href="#" class="catalog-preview__item">
+                        <div class="catalog-preview__pic" style="background-image: url(pic/catalog-pic14.jpg)"></div>
+                        <strong>Блоки <span>под </span></strong>
+                    </a>
+                    <!-- /catalog-preview__item -->
+
+                    <!-- catalog-preview__item -->
+                    <a href="#" class="catalog-preview__item">
+                        <div class="catalog-preview__pic" style="background-image: url(pic/catalog-pic3.jpg)"></div>
+                        <strong>Блоки <span>под </span></strong>
+                    </a>
+                    <!-- /catalog-preview__item -->
+
+                    <!-- catalog-preview__item -->
+                    <a href="#" class="catalog-preview__item">
+                        <div class="catalog-preview__pic" style="background-image: url(pic/catalog-pic4.jpg)"></div>
+                        <strong>Блоки <span>под </span></strong>
+                    </a>
+                    <!-- /catalog-preview__item -->
+
+                    <!-- catalog-preview__item -->
+                    <a href="#" class="catalog-preview__item">
+                        <div class="catalog-preview__pic" style="background-image: url(pic/catalog-pic5.jpg)"></div>
+                        <strong>Блоки под дороги</strong>
+                    </a>
+                    <!-- /catalog-preview__item -->
+
+                </div>
+                <!-- /catalog -->
+
+            </div>
+            <!-- /site__content -->
+
+        </div>
+        <!-- /site__wrap -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+
+            <!-- site__footer-layout -->
+            <div class="site__footer-layout">
+
+                <!-- site__footer-item -->
+                <address class="site__footer-item">
+                    <div>
+                        <span>ООО «РусТехХолдинг» 2011-2015</span>
+                        <span>Все права защищены</span>
+                        <span><a class="site__footer-tel" href="tel:89876543210">8 (987) 654 32 10</a></span>
+                        <span><a class="site__footer-mail" href="mailto:rustech@mail.com">rustech@mail.com</a></span>
+                    </div>
+                </address>
+                <!-- /site__footer-item -->
+
+                <!-- site__footer-item -->
+                <div class="site__footer-item">
+                    <div>
+                        <h2>Доставка и оплата</h2>
+                        <span><a href="#">По городу</a></span>
+                        <span><a href="#">В регионы</a></span>
+                        <span><a href="#">Формы оплаты</a></span>
+                    </div>
+                </div>
+                <!-- /site__footer-item -->
+
+                <!-- site__footer-item -->
+                <div class="site__footer-item">
+                    <div>
+                        <h2>о нас</h2>
+                        <span><a href="#">Сертификаты</a></span>
+                        <span><a href="#">Поставщики</a></span>
+                        <span><a href="#">Покупатели</a></span>
+                    </div>
+                </div>
+                <!-- /site__footer-item -->
+
+                <!-- site__footer-item -->
+                <address class="site__footer-item">
+                    <div>
+                        <h2>адреса офисов</h2>
+                        <span>г. Москва, Дмитровское шоссе, д. 116</span>
+                        <span>г. Уфа, ул. Комсомольская, д. 2</span>
+                        <span>г. Москва, Дмитровское шоссе, д. 116</span>
+                    </div>
+                </address>
+                <!-- /site__footer-item -->
+
+            </div><!-- /site__footer-layout -->
+
+        </footer>
+        <!-- /site__footer -->
+
+    </div>
+    <!-- /site -->
+
+</body>
+</html>

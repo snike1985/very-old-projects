@@ -1,0 +1,8 @@
+/* css for ltie8 */
+
+.search__logo {
+    display: none;
+}
+.fix-wrap.active .search__logo {
+    display: block;
+}

@@ -1,0 +1,994 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/text-slide.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/raphael.js"></script>
+    <script src="js/text-slide.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <h1 class="logo"><img src=""></h1>
+            <!-- /logo -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+            <!-- container -->
+                <div class="container appts" data-attr='{
+                                                        "arr": [
+                                                            [
+                                                                {
+                                                                    "x":25,
+                                                                    "y":94
+                                                                },
+                                                                {
+                                                                    "x":132,
+                                                                    "y":50
+                                                                },
+                                                                {
+                                                                    "x":220,
+                                                                    "y":245
+                                                                },
+                                                                {
+                                                                    "x":60,
+                                                                    "y":315
+                                                                },
+                                                                {
+                                                                    "x":20,
+                                                                    "y":215
+                                                                },
+                                                                {
+                                                                    "x":67,
+                                                                    "y":195
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":140,
+                                                                    "y":50
+                                                                },
+                                                                {
+                                                                    "x":260,
+                                                                    "y":0
+                                                                },
+                                                                {
+                                                                    "x":355,
+                                                                    "y":195
+                                                                },
+                                                                {
+                                                                    "x":233,
+                                                                    "y":248
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":315,
+                                                                    "y":97
+                                                                },
+                                                                {
+                                                                    "x":537,
+                                                                    "y":0
+                                                                },
+                                                                {
+                                                                    "x":585,
+                                                                    "y":85
+                                                                },
+                                                                {
+                                                                    "x":360,
+                                                                    "y":185
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":530,
+                                                                    "y":125
+                                                                },
+                                                                {
+                                                                    "x":580,
+                                                                    "y":103
+                                                                },
+                                                                {
+                                                                    "x":670,
+                                                                    "y":260
+                                                                },
+                                                                {
+                                                                    "x":620,
+                                                                    "y":285
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":518,
+                                                                    "y":135
+                                                                },
+                                                                {
+                                                                    "x":600,
+                                                                    "y":280
+                                                                },
+                                                                {
+                                                                    "x":190,
+                                                                    "y":470
+                                                                },
+                                                                {
+                                                                    "x":120,
+                                                                    "y":313
+                                                                }
+                                                            ]
+                                                        ]
+                                                      }'>
+
+                    <span class="room0" data-coords="143 87">
+                        <img src="pic/sensor-water.png" alt="">
+                        Датчик
+                        протечки
+                        воды
+                    </span>
+                    <span class="room1" data-coords="109 223">
+                        <img src="pic/sensor-motion.png" alt="">
+                        Датчик
+                        движения
+                    </span>
+                    <span class="room2" data-coords="61 377">
+                        <img src="pic/sensor-water.png" alt="">
+                        Датчик
+                        протечки
+                        воды
+                    </span>
+                    <span class="room2" data-coords="34 469">
+                        <img src="pic/sensor-gas.png" alt="">
+                        Датчик
+                        газа
+                    </span>
+                    <span class="room3" data-coords="159 577">
+                        <img src="pic/sensor-glass.png" alt="">
+                        Датчик
+                        разбития
+                        стекла
+                    </span>
+                    <span class="room4" data-coords="157 448">
+                        <img src="pic/sensor-motion2.png" alt="">
+                        Датчик
+                        движения
+                    </span>
+                    <span class="room4" data-coords="231 284">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room4" data-coords="273 380">
+                        <img src="pic/control-panel.png" alt="">
+                        Контрольная
+                        панель
+                    </span>
+                    <span class="room4" data-coords="293 144">
+                        <img src="pic/keyboard.png" alt="">
+                        Клавиатура
+                    </span>
+                    <span class="room4" data-coords="355 187">
+                        <img src="pic/sensor-door.png" alt="">
+                        Датчик
+                        открытия
+                        двери
+                    </span>
+                </div>
+                <!-- /container -->
+
+                <!-- container -->
+                <div class="container house" data-attr='{
+                                                        "arr": [
+                                                            [
+                                                                {
+                                                                    "x":244,
+                                                                    "y":204
+                                                                },
+                                                                {
+                                                                    "x":318,
+                                                                    "y":170
+                                                                },
+                                                                {
+                                                                    "x":310,
+                                                                    "y":145
+                                                                },
+                                                                {
+                                                                    "x":346,
+                                                                    "y":127
+                                                                },
+                                                                {
+                                                                    "x":409,
+                                                                    "y":176
+                                                                },
+                                                                {
+                                                                    "x":484,
+                                                                    "y":141
+                                                                },
+                                                                {
+                                                                    "x":497,
+                                                                    "y":75
+                                                                },
+                                                                {
+                                                                    "x":556,
+                                                                    "y":49
+                                                                },
+                                                                {
+                                                                    "x":662,
+                                                                    "y":111
+                                                                },
+                                                                {
+                                                                    "x":652,
+                                                                    "y":120
+                                                                },
+                                                                {
+                                                                    "x":625,
+                                                                    "y":190
+                                                                },
+                                                                {
+                                                                    "x":454,
+                                                                    "y":289
+                                                                },
+                                                                {
+                                                                    "x":352,
+                                                                    "y":202
+                                                                },
+                                                                {
+                                                                    "x":278,
+                                                                    "y":238
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":95,
+                                                                    "y":270
+                                                                },
+                                                                {
+                                                                    "x":193,
+                                                                    "y":223
+                                                                },
+                                                                {
+                                                                    "x":228,
+                                                                    "y":263
+                                                                },
+                                                                {
+                                                                    "x":126,
+                                                                    "y":313
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":281,
+                                                                    "y":157
+                                                                },
+                                                                {
+                                                                    "x":276,
+                                                                    "y":97
+                                                                },
+                                                                {
+                                                                    "x":268,
+                                                                    "y":88
+                                                                },
+                                                                {
+                                                                    "x":267,
+                                                                    "y":67
+                                                                },
+                                                                {
+                                                                    "x":248,
+                                                                    "y":49
+                                                                },
+                                                                {
+                                                                    "x":298,
+                                                                    "y":30
+                                                                },
+                                                                {
+                                                                    "x":305,
+                                                                    "y":32
+                                                                },
+                                                                {
+                                                                    "x":310,
+                                                                    "y":97
+                                                                },
+                                                                {
+                                                                    "x":344,
+                                                                    "y":128
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":410,
+                                                                    "y":178
+                                                                },
+                                                                {
+                                                                    "x":310,
+                                                                    "y":98
+                                                                },
+                                                                {
+                                                                    "x":304,
+                                                                    "y":34
+                                                                },
+                                                                {
+                                                                    "x":300,
+                                                                    "y":28
+                                                                },
+                                                                {
+                                                                    "x":352,
+                                                                    "y":10
+                                                                },
+                                                                {
+                                                                    "x":390,
+                                                                    "y":34
+                                                                },
+                                                                {
+                                                                    "x":425,
+                                                                    "y":20
+                                                                },
+                                                                {
+                                                                    "x":503,
+                                                                    "y":71
+                                                                },
+                                                                {
+                                                                    "x":498,
+                                                                    "y":76
+                                                                },
+                                                                {
+                                                                    "x":483,
+                                                                    "y":142
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":90,
+                                                                    "y":268
+                                                                },
+                                                                {
+                                                                    "x":61,
+                                                                    "y":230
+                                                                },
+                                                                {
+                                                                    "x":28,
+                                                                    "y":144
+                                                                },
+                                                                {
+                                                                    "x":20,
+                                                                    "y":133
+                                                                },
+                                                                {
+                                                                    "x":170,
+                                                                    "y":77
+                                                                },
+                                                                {
+                                                                    "x":197,
+                                                                    "y":102
+                                                                },
+                                                                {
+                                                                    "x":210,
+                                                                    "y":170
+                                                                },
+                                                                {
+                                                                    "x":277,
+                                                                    "y":240
+                                                                },
+                                                                {
+                                                                    "x":230,
+                                                                    "y":262
+                                                                },
+                                                                {
+                                                                    "x":195,
+                                                                    "y":223
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":245,
+                                                                    "y":203
+                                                                },
+                                                                {
+                                                                    "x":209,
+                                                                    "y":170
+                                                                },
+                                                                {
+                                                                    "x":196,
+                                                                    "y":103
+                                                                },
+                                                                {
+                                                                    "x":190,
+                                                                    "y":94
+                                                                },
+                                                                {
+                                                                    "x":265,
+                                                                    "y":66
+                                                                },
+                                                                {
+                                                                    "x":266,
+                                                                    "y":91
+                                                                },
+                                                                {
+                                                                    "x":244,
+                                                                    "y":101
+                                                                },
+                                                                {
+                                                                    "x":249,
+                                                                    "y":106
+                                                                },
+                                                                {
+                                                                    "x":275,
+                                                                    "y":95
+                                                                },
+                                                                {
+                                                                    "x":283,
+                                                                    "y":157
+                                                                },
+                                                                {
+                                                                    "x":311,
+                                                                    "y":144
+                                                                },
+                                                                {
+                                                                    "x":320,
+                                                                    "y":169
+                                                                }
+                                                            ]
+                                                        ]
+                                                      }'>
+
+                    <span class="room0" data-coords="55 515">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room0" data-coords="129 542">
+                        <img src="pic/sensor-motion2.png" alt="">
+                        Датчик
+                        движения
+                    </span>
+                    <span class="room0" data-coords="150 483">
+                        <img src="pic/sensor-glass.png" alt="">
+                        Датчик
+                        разбития
+                        стекла
+                    </span>
+                    <span class="room0" data-coords="186 404">
+                        <img src="pic/control-panel.png" alt="">
+                        Контрольная
+                        панель
+                    </span>
+                    <span class="room0" data-coords="144 347">
+                        <img src="pic/sensor-motion2.png" alt="">
+                        Датчик
+                        движения
+                    </span>
+                    <span class="room0" data-coords="135 289">
+                        <img src="pic/keyboard.png" alt="">
+                        Клавиатура
+                    </span>
+                    <span class="room0" data-coords="150 242">
+                        <img src="pic/sensor-door.png" alt="">
+                        Датчик
+                        открытия
+                        двери
+                    </span>
+                    <span class="room1" data-coords="216 108">
+                        <img src="pic/sensor-water.png" alt="">
+                        Датчик
+                        протечки
+                        воды
+                    </span>
+                    <span class="room2" data-coords="59 266">
+                        <img src="pic/sensor-water.png" alt="">
+                        Датчик
+                        протечки
+                        воды
+                    </span>
+                    <span class="room3" data-coords="8 298">
+                        <img src="pic/sensor-door.png" alt="">
+                        Датчик
+                        открытия
+                        двери
+                    </span>
+                    <span class="room3" data-coords="32 405">
+                        <img src="pic/sensor-gas.png" alt="">
+                        Датчик
+                        газа
+                    </span>
+                    <span class="room3" data-coords="81 375">
+                        <img src="pic/sensor-water.png" alt="">
+                        Датчик
+                        протечки
+                        воды
+                    </span>
+                    <span class="room4" data-coords="115 47">
+                        <img src="pic/sensor-glass.png" alt="">
+                        Датчик
+                        разбития
+                        стекла
+                    </span>
+                    <span class="room4" data-coords="101 101">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room4" data-coords="147 142">
+                        <img src="pic/sensor-motion.png" alt="">
+                        Датчик
+                        движения
+                    </span>
+                    <span class="room5" data-coords="103 211">
+                        <img src="pic/sensor-motion2.png" alt="">
+                        Датчик
+                        движения
+                    </span>
+                </div>
+                <!-- /container -->
+
+                <!-- container -->
+                <div class="container office" data-attr='{
+                                                        "arr": [
+                                                            [
+                                                                {
+                                                                    "x":167,
+                                                                    "y":177
+                                                                },
+                                                                {
+                                                                    "x":233,
+                                                                    "y":177
+                                                                },
+                                                                {
+                                                                    "x":233,
+                                                                    "y":288
+                                                                },
+                                                                {
+                                                                    "x":167,
+                                                                    "y":288
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":494,
+                                                                    "y":369
+                                                                },
+                                                                {
+                                                                    "x":682,
+                                                                    "y":369
+                                                                },
+                                                                {
+                                                                    "x":682,
+                                                                    "y":513
+                                                                },
+                                                                {
+                                                                    "x":494,
+                                                                    "y":513
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":166,
+                                                                    "y":110
+                                                                },
+                                                                {
+                                                                    "x":506,
+                                                                    "y":110
+                                                                },
+                                                                {
+                                                                    "x":506,
+                                                                    "y":62
+                                                                },
+                                                                {
+                                                                    "x":578,
+                                                                    "y":62
+                                                                },
+                                                                {
+                                                                    "x":578,
+                                                                    "y":367
+                                                                },
+                                                                {
+                                                                    "x":495,
+                                                                    "y":367
+                                                                },
+                                                                {
+                                                                    "x":495,
+                                                                    "y":262
+                                                                },
+                                                                {
+                                                                    "x":368,
+                                                                    "y":262
+                                                                },
+                                                                {
+                                                                    "x":368,
+                                                                    "y":482
+                                                                },
+                                                                {
+                                                                    "x":290,
+                                                                    "y":482
+                                                                },
+                                                                {
+                                                                    "x":290,
+                                                                    "y":516
+                                                                },
+                                                                {
+                                                                    "x":166,
+                                                                    "y":516
+                                                                },
+                                                                {
+                                                                    "x":166,
+                                                                    "y":287
+                                                                },
+                                                                {
+                                                                    "x":233,
+                                                                    "y":287
+                                                                },
+                                                                {
+                                                                    "x":233,
+                                                                    "y":175
+                                                                },
+                                                                {
+                                                                    "x":166,
+                                                                    "y":175
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":167,
+                                                                    "y":10
+                                                                },
+                                                                {
+                                                                    "x":367,
+                                                                    "y":10
+                                                                },
+                                                                {
+                                                                    "x":367,
+                                                                    "y":115
+                                                                },
+                                                                {
+                                                                    "x":167,
+                                                                    "y":115
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":579,
+                                                                    "y":249
+                                                                },
+                                                                {
+                                                                    "x":684,
+                                                                    "y":249
+                                                                },
+                                                                {
+                                                                    "x":684,
+                                                                    "y":367
+                                                                },
+                                                                {
+                                                                    "x":579,
+                                                                    "y":367
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":7,
+                                                                    "y":276
+                                                                },
+                                                                {
+                                                                    "x":166,
+                                                                    "y":276
+                                                                },
+                                                                {
+                                                                    "x":166,
+                                                                    "y":516
+                                                                },
+                                                                {
+                                                                    "x":7,
+                                                                    "y":516
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":7,
+                                                                    "y":10
+                                                                },
+                                                                {
+                                                                    "x":166,
+                                                                    "y":10
+                                                                },
+                                                                {
+                                                                    "x":166,
+                                                                    "y":273
+                                                                },
+                                                                {
+                                                                    "x":7,
+                                                                    "y":273
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":579,
+                                                                    "y":10
+                                                                },
+                                                                {
+                                                                    "x":684,
+                                                                    "y":10
+                                                                },
+                                                                {
+                                                                    "x":684,
+                                                                    "y":127
+                                                                },
+                                                                {
+                                                                    "x":579,
+                                                                    "y":127
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":579,
+                                                                    "y":130
+                                                                },
+                                                                {
+                                                                    "x":684,
+                                                                    "y":130
+                                                                },
+                                                                {
+                                                                    "x":684,
+                                                                    "y":247
+                                                                },
+                                                                {
+                                                                    "x":579,
+                                                                    "y":247
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":368,
+                                                                    "y":10
+                                                                },
+                                                                {
+                                                                    "x":578,
+                                                                    "y":10
+                                                                },
+                                                                {
+                                                                    "x":578,
+                                                                    "y":60
+                                                                },
+                                                                {
+                                                                    "x":511,
+                                                                    "y":60
+                                                                },
+                                                                {
+                                                                    "x":511,
+                                                                    "y":114
+                                                                },
+                                                                {
+                                                                    "x":368,
+                                                                    "y":114
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "x":367,
+                                                                    "y":263
+                                                                },
+                                                                {
+                                                                    "x":494,
+                                                                    "y":263
+                                                                },
+                                                                {
+                                                                    "x":494,
+                                                                    "y":516
+                                                                },
+                                                                {
+                                                                    "x":367,
+                                                                    "y":516
+                                                                }
+                                                            ]
+                                                        ]
+                                                      }'>
+
+                    <span class="room0" data-coords="187 159">
+                        <img src="pic/sensor-water.png" alt="">
+                        Датчик
+                        протечки
+                        воды
+                    </span>
+                    <span class="room1" data-coords="377 487">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room1" data-coords="417 545">
+                        <img src="pic/sensor-water.png" alt="">
+                        Датчик
+                        протечки
+                        воды
+                    </span>
+                    <span class="room2" data-coords="154 246">
+                        <img src="pic/keyboard.png" alt="">
+                        Клавиатура
+                    </span>
+                    <span class="room2" data-coords="244 247">
+                       <img src="pic/control-panel.png" alt="">
+                        Контрольная
+                        панель
+                    </span>
+                    <span class="room2" data-coords="344 247">
+                        <img src="pic/sensor-door.png" alt="">
+                        Датчик
+                        открытия
+                        двери
+                    </span>
+                    <span class="room2" data-coords="154 394">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room2" data-coords="70 502">
+                        <img src="pic/sensor-door.png" alt="">
+                        Датчик
+                        открытия
+                        двери
+                    </span>
+                    <span class="room2" data-coords="263 494">
+                        <img src="pic/sensor-door.png" alt="">
+                        Датчик
+                        открытия
+                        двери
+                    </span>
+                    <span class="room3" data-coords="22 233">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room4" data-coords="269 593">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room5" data-coords="355 48">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room6" data-coords="55 49">
+                        <img src="pic/sensor-glass.png" alt="">
+                        Датчик
+                        разбития
+                        стекла
+                    </span>
+                    <span class="room6" data-coords="145 49">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room7" data-coords="37 595">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room8" data-coords="148 593">
+                        <img src="pic/sensor-smoke.png" alt="">
+                        Датчик
+                        дыма
+                    </span>
+                    <span class="room9" data-coords="18 361">
+                        <img src="pic/sensor-motion2.png" alt="">
+                        Датчик
+                        движения
+                    </span>
+                    <span class="room10" data-coords="314 392">
+                        <img src="pic/sensor-motion.png" alt="">
+                        Датчик
+                        движения
+                    </span>
+                </div>
+                <!-- /container -->
+
+                <!-- important-information -->
+                <div class="important-information">
+                    <div class="important-information__wrap">
+                        <p>Охрана объектов нефтяного и энергетического сектора</p>
+                        <p>Физическая охрана объектов различной
+                            формы собственности</p>
+                        <p>Современная техническая база</p>
+                        <p>Круглосуточный мониторинг</p>
+                    </div>
+                    <img src="pic/pic1.jpg" alt="">
+                </div>
+                <!-- /important-information -->
+
+                <!-- important-information -->
+                <div class="important-information">
+                    <div class="important-information__wrap">
+                        <span>Пультовая охрана «САФЕТИ-ТЭК» - это</span>
+                        <p>Качество</p>
+                        <p>Надежность</p>
+                        <p>Конфиденциальность</p>
+                        <p>Индивидуальный подход</p>
+                    </div>
+                    <img src="pic/pic2.jpg" alt="">
+                </div>
+                <!-- /important-information -->
+
+                <!-- important-information -->
+                <div class="important-information">
+                    <div class="important-information__wrap">
+                        <span>Оперативное прибытие</span>
+                        <p>Группы Быстрого Реагирования (ГБР)</p>
+                        <dl>
+                            <dt>в случае:</dt>
+                            <dd>несанкционированного проникновения на объект</dd>
+                            <dd>нападения</dd>
+                        </dl>
+                    </div>
+                    <img src="pic/pic3.jpg" alt="">
+                </div>
+                <!-- /important-information -->
+
+            <!-- important-information -->
+            <div class="important-information">
+                <div class="important-information__wrap">
+                    <dl>
+                        <dt style="font-weight: 700">Стоимость оборудования и установки</dt>
+                        <dd>от 7 500 руб.</dd>
+                        <dd>от 7 500 руб.</dd>
+                    </dl>
+                    <dl>
+                        <dt style="font-weight: 700">Абонентская плата</dt>
+                        <dd>от 2 700 руб./мес. (с выкупом оборудования)</dd>
+                        <dd>от 3 200 руб./мес. (без выкупа оборудования)</dd>
+                    </dl>
+                </div>
+                <img src="pic/pic4.jpg" alt="">
+            </div>
+            <!-- /important-information -->
+
+            <!-- text-slide -->
+            <div class="text-slide">
+                <div class="text-slide__wrap">
+                    <h2>Выберите товар - кулер для воды, диспенсер, помпа для воды, пурифайеры.</h2>
+                    <p>Кулер для воды - это устройство для розлива бутилированной воды. Мы продаем настольные кулеры от 850р., напольные кулеры от 2800р., помпы для воды от 170р. Цены на сайте действительные! Товар в наличии и под заказ. Название "кулер" происходит от английского существительного холод и глагола охлаждать. Оно не совсем уместное, так не все устройства розлива бутилированной воды охлаждают ее, поэтому часто можно услышать диспенсер для воды.</p>
+                    <p>Нам часто звонят и спрашивают: "Что такое кулер и для чего он нужен?". Многие заказывают бутилированную воду в офис, домой или на дачу, но даже не предполагают, что есть специальные устройства для этого. Если вы используете диспенсер, то выгоды очевидны. Большим плюсом является неотъемлемая у нас привычка экономить, но зачастую мы этого делать просто не умеем! Используя электрический чайник мы греем воду, но в большинстве случаев не столько, сколько ее выпиваем. Оставшаяся вода остывает или превращается в пар и улетучивается, ровно, так же как и ваши деньги потраченные на электроэнергию. Тут мы явно не экономим, верно? Совсем другое дело, если мы используем куллер! Мы нагреваем воду столько, сколько нам нужно, дозируя порции через кран подачи кружной. Это еще и удобно, </p>
+                    <p>Кулер для воды - это устройство для розлива бутилированной воды. Мы продаем настольные кулеры от 850р., напольные кулеры от 2800р., помпы для воды от 170р. Цены на сайте действительные! Товар в наличии и под заказ. Название "кулер" происходит от английского существительного холод и глагола охлаждать. Оно не совсем уместное, так не все устройства розлива бутилированной воды охлаждают ее, поэтому часто можно услышать диспенсер для воды.</p>
+                </div>
+                <span class="text-slide__arrow"></span>
+            </div>
+            <!-- /text-slide -->
+
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

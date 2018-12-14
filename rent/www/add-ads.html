@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <meta name="viewport" content="width=1024">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/iscroll-probe-min.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery.nice.radio.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- header__layout -->
+            <div class="header__layout">
+
+                <a href="#" class="add-ad">Добавить объявление</a>
+
+                <!-- header__login -->
+                <div class="header__login">
+                    <a href="#">Войти</a>
+                    <a href="#">Регистрация</a>
+                </div>
+                <!-- /header__login -->
+
+                <!-- header__city -->
+                <div class="header__city">
+                    <span>Город: <a href="#">Москва</a></span>
+                    <!--<select>-->
+                        <!--<option>Москва</option>-->
+                        <!--<option>Уфа</option>-->
+                        <!--<option>Ростов</option>-->
+                    <!--</select>-->
+                </div>
+                <!-- /header__city -->
+
+                <!-- logo -->
+                <a href="#" class="logo"><img src="img/logo.png" width="193" height="97" alt="APARTMENT RENT EXPRESS"></a>
+                <!-- /logo -->
+
+                <!-- header__menu -->
+                <nav class="header__menu">
+                    <a href="#">О проект</a>
+                    <a href="#">Платные услуги</a>
+                    <a href="#">Вопросы и ответы</a>
+                    <a href="#">Обратная связь</a>
+                </nav>
+                <!-- /header__menu -->
+
+            </div>
+            <!-- /header__layout -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- breadcrumbs -->
+                <nav class="breadcrumbs">
+                    <a href="#">Главная</a>
+                    <span>Добавить объявление</span>
+                </nav>
+                <!-- /breadcrumbs -->
+
+                <h1>ДОБАВИТЬ ОБЪЯВЛЕНИЕ</h1>
+
+                <span>Перед добавлением на сайт каждое объявление проверяется на соответствие <a href="#">правилами</a></span>
+
+                <!-- filter -->
+                <form class="filter add-ads" action="#">
+
+                    <!-- filter__address -->
+                    <div class="filter__address">
+                        <fieldset>
+                            <span class="filter__title">Ваше имя<sup>*</sup></span>
+                            <input type="text" placeholder="" required="">
+                        </fieldset>
+                        <fieldset>
+                            <span class="filter__title">E-mail<sup>*</sup></span>
+                            <input type="email" placeholder="" required="">
+                        </fieldset>
+                        <div>
+                            <span class="filter__title">Регион</span>
+                            <select>
+                                <option>Московская обл</option>
+                                <option>Ростовская обл</option>
+                                <option>Московская обл</option>
+                            </select>
+                        </div>
+                        <div>
+                            <span class="filter__title">Район</span>
+                            <select>
+                                <option>Московская обл</option>
+                                <option>Ростовская обл</option>
+                                <option>Московская обл</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- /filter__address -->
+
+                    <!-- filter__type -->
+                    <div class="filter__type">
+                        <span class="filter__title">Жилая недвижимость</span>
+                        <a href="#">Дом</a>
+                        <a class="active" href="#">Квартира</a>
+                        <a href="#">Комната</a>
+                        <a href="#">Дача</a>
+                    </div>
+                    <!-- /filter__type -->
+
+                    <!-- filter__type -->
+                    <div class="filter__type">
+                        <span class="filter__title">Коммерческая недвижимость</span>
+                        <a href="#">Офис</a>
+                        <a href="#">Склад</a>
+                        <a href="#">Торговая площадь</a>
+                    </div>
+                    <!-- /filter__type -->
+
+                    <!-- filter__apartment-info -->
+                    <div class="filter__apartment-info">
+                        <!-- apartment-storey -->
+                        <fieldset class="apartment-storey">
+                            <span class="filter__title">Этаж<sup>*</sup></span>
+                            <input type="text" placeholder="" required="">
+                        </fieldset>
+                        <!-- /apartment-storey -->
+
+                        <!-- apartment-rooms -->
+                        <fieldset class="apartment-rooms">
+                            <span class="filter__title">Комнат<sup>*</sup></span>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>>5</option>
+                                <option>Студия</option>
+                            </select>
+                        </fieldset>
+                        <!-- /apartment-rooms -->
+
+                        <!-- apartment-square -->
+                        <fieldset class="apartment-square">
+                            <span class="filter__title">Общая. жил. пл.<sup>*</sup></span>
+                            <input type="text" placeholder="" required="">
+                            <span>м<sup>2</sup></span>
+                        </fieldset>
+                        <!-- /apartment-square -->
+
+                        <!-- apartment-price -->
+                        <fieldset class="apartment-price">
+                            <span class="filter__title">Цена<sup>*</sup></span>
+                            <input type="text" placeholder="" required="">
+                        </fieldset>
+                        <!-- /apartment-price -->
+
+                        <!-- apartment-period -->
+                        <fieldset class="apartment-period">
+                            <span class="filter__title">Период<sup>*</sup></span>
+                            <div>
+                                <input checked type="radio" name="check1" id="check1"/>
+                                <label for="check1">День</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="check1" id="check2"/>
+                                <label for="check2">Месяц</label>
+                            </div>
+                        </fieldset>
+                        <!-- /apartment-period -->
+
+                        <!-- apartment-repair -->
+                        <fieldset class="apartment-repair">
+                            <span class="filter__title">Ремонт<sup>*</sup></span>
+                            <select>
+                                <option>Евро</option>
+                                <option>Евро2</option>
+                                <option>Евро3</option>
+                                <option>Евро4</option>
+                            </select>
+                        </fieldset>
+                        <!-- /apartment-repair -->
+
+                        <!-- apartment-people -->
+                        <fieldset class="apartment-people">
+                            <span class="filter__title">Кого хотим<sup>*</sup></span>
+                            <input type="text" placeholder="" required="">
+                        </fieldset>
+                        <!-- /apartment-people -->
+                    </div>
+                    <!-- /filter__apartment-info -->
+
+                    <!-- filter__type -->
+                    <div class="filter__type">
+                        <span class="filter__title">Удобства</span>
+                        <div>
+                            <a href="#">Интернет</a>
+                            <a href="#">Стиральная машина</a>
+                            <a href="#">Кондиционер</a>
+                        </div>
+                        <div>
+                            <a href="#">Холодильник</a>
+                            <a href="#">Мебель</a>
+                            <a href="#">Телевизор</a>
+                            <a href="#">Кабельное ТВ</a>
+                        </div>
+                    </div>
+                    <!-- /filter__type -->
+
+                    <!-- filter__type -->
+                    <div class="filter__type">
+                        <span class="filter__title">Срок размещения объявления<sup>*</sup></span>
+                        <select>
+                            <option>1 мес</option>
+                            <option>2 мес</option>
+                            <option>3 мес</option>
+                            <option>4 мес</option>
+                        </select>
+                    </div>
+                    <!-- /filter__type -->
+
+                    <!-- filter__type -->
+                    <div class="filter__type">
+                        <span class="filter__title">Добавить описание</span>
+                        <textarea></textarea>
+                    </div>
+                    <!-- /filter__type -->
+
+                    <a href="#" class="grey_btn add-photo">Добавить фото</a>
+
+                    <!-- filter__type -->
+                    <fieldset class="filter__type tel-number">
+                        <span class="filter__title">Номер телефона<sup>*</sup></span>
+                        <input type="tel" placeholder="" required="">
+                        <a href="#" class="grey_btn add-tel">Добавить номер</a>
+                    </fieldset>
+                    <!-- /filter__type -->
+
+                    <!-- capcha -->
+                    <fieldset class="capcha">
+                        <span class="filter__title">Введите символы с картинки<sup>*</sup></span>
+                        <div>
+                            <img src="img/capcha.jpg" width="198" height="38" alt="">
+                            <input type="text" placeholder="" required="">
+                        </div>
+                    </fieldset>
+                    <!-- /capcha -->
+
+                    <input class="submit-btn" type="submit" value="опубликовать">
+
+                </form>
+                <!-- /filter -->
+
+            </div>
+            <!-- /content-wrap -->
+
+            <!-- site__aside -->
+            <aside class="site__aside">
+                <!-- last-ads -->
+                <table class="last-ads">
+                    <thead>
+                        <tr>
+                            <th>Последние объявления</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="pic/all-ads_pic1.jpg" width="88" height="63" alt="">
+                                    <span>Двухкомнатная квартира</span>
+                                    <strong>30 000 р. в месяц</strong>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- /last-ads -->
+            </aside>
+            <!-- /site__aside -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <dl>
+                <dt>Недвижимость</dt>
+                <dd><a href="#">Ищу</a></dd>
+                <dd><a href="#">Предлагаю</a></dd>
+                <dd><a href="#">Обменяю</a></dd>
+                <dd><a href="#">Сдам</a></dd>
+            </dl>
+
+            <dl>
+                <dt>Поиск</dt>
+                <dd><a href="#">Лучшие предлжения</a></dd>
+                <dd><a href="#">Последние объявления</a></dd>
+                <dd><a href="#">Все объявления</a></dd>
+            </dl>
+
+            <dl>
+                <dt>Информация</dt>
+                <dd><a href="#">О проекте</a></dd>
+                <dd><a href="#">Платные услуги</a></dd>
+                <dd><a href="#">Вопросы и ответы</a></dd>
+                <dd><a href="#">Обратная связь</a></dd>
+            </dl>
+
+            <!-- social -->
+            <dl class="social">
+                <dt>Мы в соцсетях</dt>
+                <dd class="facebook"><a href="#">Facebook</a></dd>
+                <dd class="vkontakte"><a href="#">Вконтакте</a></dd>
+                <dd class="twitter"><a href="#">Twitter</a></dd>
+                <dd class="odnoklassniki"><a href="#">Одноклассники</a></dd>
+            </dl>
+            <!-- /social -->
+
+            <dl>
+                <dt>О проекте</dt>
+                <dd>
+                    <p>
+                        Сайт бесплатных объявлений. Использование сайта, в том числе подача объявлений, означает согласие с
+                        <a href="#">пользовательским соглашением.</a>
+                    </p>
+                </dd>
+            </dl>
+
+            <!-- footer__counters -->
+            <div class="footer__counters">
+                <a href="#"><img src="img/counter.png" width="88" height="31" alt=""></a>
+                <a href="#"><img src="img/counter.png" width="88" height="31" alt=""></a>
+                <a href="#"><img src="img/counter.png" width="88" height="31" alt=""></a>
+            </div>
+            <!-- /footer__counters -->
+
+            <span class="year">© 2014</span>
+            <span class="create-site">Создание сайта: <a href="#">«Экспресс лаб»</a></span>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+.buttons a,
+.footer__search input[type=search],
+.pagination a,
+.action,
+.action img,
+.reports a {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+
