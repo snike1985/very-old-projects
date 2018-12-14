@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.slider.js"></script>
+    <script src="js/jquery.carousel.js"></script>
+    <script src="js/jquery.fancybox-1.3.4.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $(".fancybox").fancybox();
+
+            /*
+             *  Different effects
+             */
+
+            // Change title type, overlay closing speed
+            $(".fancybox-effects-a").fancybox({
+                helpers: {
+                    title : {
+                        type : "outside"
+                    },
+                    overlay : {
+                        speedOut : 0
+                    }
+                }
+            });
+
+            // Disable opening and closing animations, change title type
+            $(".fancybox-effects-b").fancybox({
+                openEffect  : "none",
+                closeEffect	: "none",
+
+                helpers : {
+                    title : {
+                        type : "over"
+                    }
+                }
+            });
+
+            // Set custom style, close if clicked, change title type and overlay color
+            $(".fancybox-effects-c").fancybox({
+                wrapCSS    : "fancybox-custom",
+                closeClick : true,
+
+                openEffect : "none",
+
+                helpers : {
+                    title : {
+                        type : "inside"
+                    },
+                    overlay : {
+                        css : {
+                            "background" : "rgba(238,238,238,0.85)"
+                        }
+                    }
+                }
+            });
+
+            // Remove padding, set opening and closing animations, close if clicked and disable overlay
+            $(".fancybox-effects-d").fancybox({
+                padding: 0,
+
+                openEffect : "elastic",
+                openSpeed  : 150,
+
+                closeEffect : "elastic",
+                closeSpeed  : 150,
+
+                closeClick : true,
+
+                helpers : {
+                    overlay : null
+                }
+            });
+
+            /*
+             *  Button helper. Disable animations, hide close button, change title type and content
+             */
+
+            $(".fancybox-buttons").fancybox({
+                openEffect  : "none",
+                closeEffect : "none",
+
+                prevEffect : "none",
+                nextEffect : "none",
+
+                closeBtn  : false,
+
+                helpers : {
+                    title : {
+                        type : "inside"
+                    },
+                    buttons	: {}
+                },
+
+                afterLoad : function() {
+                    this.title = "Image " + (this.index + 1) + " of " + this.group.length + (this.title ? " - " + this.title : "");
+                }
+            });
+
+
+            /*
+             *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+             */
+
+            $(".fancybox-thumbs").fancybox({
+                prevEffect : "none",
+                nextEffect : "none",
+
+                closeBtn  : false,
+                arrows    : false,
+                nextClick : true,
+
+                helpers : {
+                    thumbs : {
+                        width  : 50,
+                        height : 50
+                    }
+                }
+            });
+
+            /*
+             *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+             */
+            $(".fancybox-media")
+                    .attr("rel", "media-gallery")
+                    .fancybox({
+                        openEffect : "none",
+                        closeEffect : "none",
+                        prevEffect : "none",
+                        nextEffect : "none",
+
+                        arrows : false,
+                        helpers : {
+                            media : {},
+                            buttons : {}
+                        }
+                    });
+
+            /*
+             *  Open manually
+             */
+
+            $("#fancybox-manual-a").click(function() {
+                $.fancybox.open("1_b.jpg");
+            });
+
+            $("#fancybox-manual-b").click(function() {
+                $.fancybox.open({
+                    href : "iframe.html",
+                    type : "iframe",
+                    padding : 5
+                });
+            });
+
+            $("#fancybox-manual-c").click(function() {
+                $.fancybox.open([
+                    {
+                        href : "1_b.jpg",
+                        title : "My title"
+                    }, {
+                        href : "2_b.jpg",
+                        title : "2nd title"
+                    }, {
+                        href : "3_b.jpg"
+                    }
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+
+
+        });
+    </script>
+
+
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+
+        <!-- header__wrap -->
+        <div class="header__wrap">
+
+            <!-- logo -->
+            <h1 class="logo"><img src="img/logo.png" width="131" height="55" alt="DOMKOM Окна в каждый дом"></h1>
+            <!-- /logo -->
+
+            <!-- call-back -->
+            <div class="call-back">
+                <a href="#">Заказать обратный звонок</a>
+                <form class="call-back__form" action="#">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="text"  name="phone" placeholder="Контактный телефон">
+                    <input type="submit" class="call-back_button" value="Перезвоните мне">
+                </form>
+            </div>
+            <!-- /call-back -->
+
+            <a href="#" class="header__tel">+7 (495)<span>921-30-04</span></a>
+            <span class="header__work-time">Пн. - Вс.  с 9:00 до 21:00</span>
+
+            <!-- header__menu -->
+            <nav class="header__menu">
+                <a href="#" class="action">Акция</a>
+                <a href="#" class="windows">Окна</a>
+                <a href="#" class="quality">Качество</a>
+                <a href="#" class="contacts">Контакты</a>
+            </nav>
+            <!-- /header__menu -->
+
+        </div>
+        <!-- /header__wrap -->
+
+    </header>
+    <!-- /header -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- gallery-slider -->
+            <div class="gallery-slider">
+
+                <!-- ares-slider -->
+                <div class="ares-slider2">
+                    <div class="ares-slider2__item">
+
+                        <img src="pic/slider_pic1.jpg" width="1920" height="610" alt="">
+
+                        <h2>Купи окна <span>со скидкой до</span></h2>
+
+                        <span class="sale">50<span>%</span></span>
+
+                        <p>
+                            <span>Только до 15 января</span> закажите немецкие пластиковые окна по специальной цене со скидкой до 50%!
+                            Отправьте заявку прямо сейчас и получите максимальную скидку + подарок средство по уходу за
+                            окнами:
+                        </p>
+
+                        <label class="name">Как вас зовут<input type="text" value=""></label>
+
+                        <label class="tel">Ваш телефон<input type="text" value=""></label>
+
+                        <div class="order">
+                            <a href="#">Заказать</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="#" class="odnoklasniki"></a>
+                            <a href="#" class="twitter"></a>
+                            <a href="#" class="facebook"></a>
+                            <a href="#" class="vk"></a>
+                        </div>
+
+                    </div>
+                    <div class="ares-slider2__item">
+
+                        <img src="pic/slider_pic1.jpg" width="1920" height="610" alt="">
+
+                        <h2>Купи окна <span>со скидкой до</span></h2>
+
+                        <span class="sale">50<span>%</span></span>
+
+                        <p>
+                            <span>Только до 15 января</span> закажите немецкие пластиковые окна по специальной цене со скидкой до 50%!
+                            Отправьте заявку прямо сейчас и получите максимальную скидку + подарок средство по уходу за
+                            окнами:
+                        </p>
+
+                        <label class="name">Как вас зовут<input type="text" value=""></label>
+
+                        <label class="tel">Ваш телефон<input type="text" value=""></label>
+
+                        <div class="order">
+                            <a href="#">Заказать</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="#" class="odnoklasniki"></a>
+                            <a href="#" class="twitter"></a>
+                            <a href="#" class="facebook"></a>
+                            <a href="#" class="vk"></a>
+                        </div>
+
+                    </div>
+                    <div class="ares-slider2__item">
+
+                        <img src="pic/slider_pic1.jpg" width="1920" height="610" alt="">
+
+                        <h2>Купи окна <span>со скидкой до</span></h2>
+
+                        <span class="sale">50<span>%</span></span>
+
+                        <p>
+                            <span>Только до 15 января</span> закажите немецкие пластиковые окна по специальной цене со скидкой до 50%!
+                            Отправьте заявку прямо сейчас и получите максимальную скидку + подарок средство по уходу за
+                            окнами:
+                        </p>
+
+                        <label class="name">Как вас зовут<input type="text" value=""></label>
+
+                        <label class="tel">Ваш телефон<input type="text" value=""></label>
+
+                        <div class="order">
+                            <a href="#">Заказать</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="#" class="odnoklasniki"></a>
+                            <a href="#" class="twitter"></a>
+                            <a href="#" class="facebook"></a>
+                            <a href="#" class="vk"></a>
+                        </div>
+
+                    </div>
+                    <div class="ares-slider2__item">
+
+                        <img src="pic/slider_pic1.jpg" width="1920" height="610" alt="">
+
+                        <h2>Купи окна <span>со скидкой до</span></h2>
+
+                        <span class="sale">50<span>%</span></span>
+
+                        <p>
+                            <span>Только до 15 января</span> закажите немецкие пластиковые окна по специальной цене со скидкой до 50%!
+                            Отправьте заявку прямо сейчас и получите максимальную скидку + подарок средство по уходу за
+                            окнами:
+                        </p>
+
+                        <label class="name">Как вас зовут<input type="text" value=""></label>
+
+                        <label class="tel">Ваш телефон<input type="text" value=""></label>
+
+                        <div class="order">
+                            <a href="#">Заказать</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="#" class="odnoklasniki"></a>
+                            <a href="#" class="twitter"></a>
+                            <a href="#" class="facebook"></a>
+                            <a href="#" class="vk"></a>
+                        </div>
+
+                    </div>
+
+                    <div class="ares-slider2__prev"></div>
+                    <div class="ares-slider2__next"></div>
+                </div>
+                <!-- /ares-slider -->
+
+            </div>
+            <!-- /gallery-slider -->
+
+            <!-- windows__gallery -->
+            <div class="windows__gallery">
+
+                <!-- ares-slider2 -->
+                <div class="ares-slider2">
+                    <div class="ares-slider2__item">
+                        <h2>Алюминиевое остекление – профиль Provedal</h2>
+                        <span>Четыре раздвижные створки</span>
+                        <img src="pic/windows_gallery_pic1.png" width="620" height="300" alt=""/>
+                        <span class="cost">Стоимость от <del>28000</del> <span class="price">14000</span> руб.<sup>*</sup></span>
+                        <span class="economy">Ваша экономия <span>14000</span> руб. +</span>
+                        <span class="about__window">*Балкон 3м х1,5м., профиль Provedal</span>
+                        <span class="info">Точную стоимость остекления балконов или лоджии Вы сможете узнать
+                            <span>у наших менеджеров-консультантов по телефону. +7 (499) 921-30-04</span>
+                        </span>
+                    </div>
+                    <div class="ares-slider2__item">
+                        <h2>Пластиковое остекление – профиль Provedal</h2>
+                        <span>Четыре раздвижные створки</span>
+                        <img src="pic/windows_gallery_pic1.png" width="620" height="300" alt=""/>
+                        <span class="cost">Стоимость от <del>10000</del> <span class="price">5000</span> руб.<sup>*</sup></span>
+                        <span class="economy">Ваша экономия <span>5000</span> руб. +</span>
+                        <span class="about__window">*Балкон 3м х1,5м., профиль Provedal</span>
+                        <span class="info">Точную стоимость остекления балконов или лоджии Вы сможете узнать
+                            <span>у наших менеджеров-консультантов по телефону. +7 (499) 921-30-04</span>
+                        </span>
+                    </div>
+                    <div class="ares-slider2__prev"></div>
+                    <div class="ares-slider2__next"></div>
+                </div>
+                <!-- /ares-slider2 -->
+
+            </div>
+            <!-- /windows__gallery -->
+
+            <!-- panorama -->
+            <div class="panorama">
+                <h2>3D панорамы балконов:</h2>
+
+                <p>
+                    <a href="http://artidei.ru/test/3d/talinskaya/index.html" class="fancybox fancybox.iframe">
+                        <img alt="" src="pic/panorama_pic1.jpg" height="198" width="294">
+                    </a>
+                    <a href="http://artidei.ru/test/3d/sviblovo/index.html" class="fancybox fancybox.iframe">
+                        <img alt="" src="pic/panorama_pic2.jpg" height="198" width="294">
+                    </a>
+                    <a href="http://artidei.ru/test/3d/klyaz/index.html" class="fancybox fancybox.iframe">
+                        <img alt="" src="pic/panorama_pic3.jpg" height="198" width="294">
+                    </a>
+                </p>
+
+                <span class="lupa">Для просмотра 3D панорамы нажмите на иконку</span>
+            </div>
+            <!-- /panorama -->
+
+            <!-- installment -->
+            <div class="installment">
+
+                <h2>Рассрочка до<span>500 000</span>руб.</h2>
+                <p>Купите пластиковые немецкие окна в рассрочку, без переплаты - прямо сейчас! При желании можно
+                    погасить рассрочку досрочно, без штрафных санкций. Выберите удобный для вас вид беспроцентной
+                    рассрочки, в случае если первоначальный взнос составляет:</p>
+
+                <div class="installment__percent">
+                    <dl class="one">
+                        <dt>3<span>%</span></dt>
+                        <dd>от 3-6 месяцев</dd>
+                    </dl>
+
+                    <dl class="two">
+                        <dt>20<span>%</span></dt>
+                        <dd>от 7-8 месяцев</dd>
+                    </dl>
+
+                    <dl class="three">
+                        <dt>30<span>%</span></dt>
+                        <dd>на 9 месяцев</dd>
+                    </dl>
+                </div>
+
+                <span class="card">
+                    <img src="img/installment_card.png" width="296" height="49" alt="">
+                    Принимаем к оплате карты VISA, MasterCard.
+                </span>
+
+            </div>
+            <!-- /installment -->
+
+            <!-- present -->
+            <div class="present">
+
+                <!-- present__wrap -->
+                <div class="present__wrap">
+
+                    <h2>При покупке окна вы получаете в подарок <span>москитную сетку, термометр и набор по уходу за окнами!</span></h2>
+
+                    <div class="present-get">
+                        <a href="#">Получить в подарок</a>
+                    </div>
+
+                </div>
+                <!-- /present__wrap -->
+
+            </div>
+            <!-- present -->
+
+            <!-- advantage -->
+            <div class="advantage">
+                <h2>Выгодные преимущества:</h2>
+                <ul>
+                    <li>
+                        <h3>Собственное производство</h3>
+                        <p>Современное оборудование и высококвалифицированный персонал, гарантируют Вам качественное и
+                            оперативное выполнение всех Ваших заказов точно в срок. Покупайте качественные окна по
+                            выгодной цене, без наценки.</p>
+                    </li>
+                    <li>
+                        <h3>Гарантия 3 года</h3>
+                        <p>Наша продукция проходит тройной контроль качества на производстве. Такое внимание к деталям
+                            означает, что наши окна служат дольше и требуют меньшего технического обслуживания, чем
+                            другие пластиковые окна.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Безпроцентная рассрочка</h3>
+                        <p>Только в компании «ДОМКОМ», Вы можете купить немецкие окна в рассрочку, без переплаты -
+                            прямо сейчас! При желании можно погасить рассрочку досрочно, без комиссий. Рассрочку
+                            предоставляют наши партнеры:</p>
+                        <img src="pic/metrobank.jpg" width="143" height="19" alt="МЕТРОБАНК">
+                        <img src="pic/evropabank.jpg" width="168" height="20" alt="Европа Банк">
+                    </li>
+                    <li>
+                        <h3>Качественный монтаж</h3>
+                        <p>Наши специалисты выполняют монтаж пластиковых окон по ГОСТу, используя только качественные
+                            строительные материалы и современные инструменты. Именно от монтажа будет зависеть срок
+                            службы ваших окон, а также тепло- и звукоизоляция в доме.</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- /advantage -->
+
+            <!-- gallery-carousel -->
+            <div class="gallery-carousel">
+            <div class="gallery">
+                <ul>
+                    <li><img src="pic/pic1.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic2.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic3.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic4.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic1.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic2.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic3.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic4.jpg" height="149" width="196" alt=""/></li>
+                </ul>
+
+            </div>
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+            <!-- /gallery-carousel -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <form class="call-manager">
+                <h2>Вызов менеджера на замер</h2>
+                <span>Для бесплатного вызова менеджера-замерщика отправьте заявку или позвоните по телефону
+                    +7 (495) 229-33-33</span>
+
+                    <label class="name">Как вас зовут<input type="text" value=""></label>
+
+                    <label class="tel">Ваш телефон<input type="text" value=""></label>
+
+                <div class="footer__send">
+                    <a href="#">Отправить</a>
+                </div>
+            </form>
+
+            <span class="about-company">© Компания «ДОМКОМ», 1996—2013 Производство пластиковых окон</span>
+            <a href="#" class="footer__tel">+7 (495) 229-33-33</a>
+            <a href="mailto:#" class="footer__mail">info@oknadomkom.ru</a>
+            <a href="#" class="footer__up">Наверх</a>
+            
+            <ul class="counters">
+                <li><img src="pic/counter1.png" width="31" height="31"></li>
+                <li><img src="pic/counter2.png" width="88" height="31"></li>
+            </ul>
+
+            <a href="http://artidei.ru" class="artidei"></a>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

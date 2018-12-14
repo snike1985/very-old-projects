@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=1024">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Title</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.slider.js"></script>
+    <script src="js/jquery.ares.multiple.slider.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <!-- popup__wrap -->
+    <form class="popup__wrap" action="#">
+        <div class="popup__close"></div>
+        <h1>Заказать звонок</h1>
+        <label for="popup1">Ваше имя<sup>*</sup></label>
+        <input type="text" id="popup1" placeholder="">
+        <label for="popup2">Ваш телефон<sup>*</sup></label>
+        <input type="tel" id="popup2" placeholder="">
+        <div class="popup__capcha">
+            <img src="pic/capcha.jpg" width="129" height="48" alt="">
+        </div>
+        <label for="popup3">Введите цифры с картинки <sup>*</sup></label>
+        <input type="tel" id="popup3" placeholder="">
+        <input class="popup__send" type="submit" value="Заказать звонок">
+    </form>
+    <!-- /popup__wrap -->
+
+</div>
+<!-- /popup -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <h1 class="logo"><img src="img/logo.png" width="" height="" alt=""></h1>
+            <!-- /logo -->
+
+            <span class="header__slogan">Мы не единственные. Мы особенные!</span>
+
+            <!-- header__search -->
+            <form class="header__search" action="#">
+                <input type="text" placeholder="Поиск по сайту">
+                <input type="submit" value="">
+            </form>
+            <!-- /header__search -->
+
+            <!-- address -->
+            <dl class="address">
+                <dt>
+                    <address>г. Уфа, ул. Мира, 24</address>
+                </dt>
+                <dd>
+                    <span>пн. - пт. с 9:00 до 21:00</span>
+                    <span>сб. - вс. с 10:00 до 18:00</span>
+                </dd>
+            </dl>
+            <!-- /address -->
+
+            <!-- header__tel -->
+            <a href="tel:83472608407" class="header__tel"><span>8 (347)</span>260-84-07</a>
+            <!-- /header__tel -->
+
+            <!-- call-back -->
+            <span class="call-back">Заказать звонок</span>
+            <!-- /call-back -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+        <!-- slider -->
+        <div class="slider">
+
+        <!-- slider-wrap -->
+        <div class="slider-wrap">
+
+        <ul>
+        <!-- slider__item -->
+        <li class="slider__item" data-attr="pic/slider1-min.jpg">
+            <a href="#">
+                <img class="slider__pic" src="pic/slider1.jpg" width="961" height="334" alt="">
+
+                <div class="slider__title">
+                    <span>ваша</span>
+                    <span>молодость </span>
+                    <span>в ваших руках</span>
+                </div>
+            </a>
+        </li>
+        <!-- /slider__item -->
+
+        <!-- slider__item -->
+        <li class="slider__item" data-attr="pic/slider2-min.jpg">
+            <a href="#">
+                <img class="slider__pic" src="pic/slider2.jpg" width="961" height="334" alt="">
+
+                <div class="slider__title">
+                    <span>ваша</span>
+                    <span>молодость </span>
+                    <span>в ваших руках</span>
+                </div>
+            </a>
+        </li>
+        <!-- /slider__item -->
+
+        <!-- slider__item -->
+        <li class="slider__item" data-attr="pic/slider1-min.jpg">
+            <a href="#">
+                <img class="slider__pic" src="pic/slider1.jpg" width="961" height="334" alt="">
+
+                <div class="slider__title">
+                    <span>ваша</span>
+                    <span>молодость </span>
+                    <span>в ваших руках</span>
+                </div>
+            </a>
+        </li>
+        <!-- /slider__item -->
+
+        <!-- slider__item -->
+        <li class="slider__item" data-attr="pic/slider2-min.jpg">
+            <a href="#">
+                <img class="slider__pic" src="pic/slider2.jpg" width="961" height="334" alt="">
+
+                <div class="slider__title">
+                    <span>ваша</span>
+                    <span>молодость </span>
+                    <span>в ваших руках</span>
+                </div>
+            </a>
+        </li>
+        <!-- /slider__item -->
+        </ul>
+
+        <div class="slider__prev"></div>
+        <div class="slider__next"></div>
+        </div>
+        <!-- /slider-wrap -->
+
+        </div>
+        <!-- slider -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <div>
+                    <a href="#">о центре</a>
+                    <a href="#">контакты</a>
+                    <a href="#">новости</a>
+                    <a href="#">сотрудники</a>
+                    <a href="#">фотогалерея</a>
+                    <a href="#">видеогалерея</a>
+                    <a href="#">статьи и публикации</a>
+                    <a href="#">правила приема</a>
+                    <a href="#">вакансии</a>
+                </div>
+            </nav>
+            <!-- menu -->
+
+            <!-- content -->
+            <div class="content">
+
+                <!-- content__aside -->
+                <aside class="content__aside">
+
+                    <!-- content__menu -->
+                    <nav class="content__menu">
+                        <a href="#">Фракционный лазер</a>
+                        <a href="#">Эрбиевый лазер</a>
+                        <a href="#">фотоомоложение</a>
+                        <a href="#">фотоэпиляция</a>
+                        <a href="#">плазмолифтинг</a>
+                        <a href="#">Озонотерапия</a>
+                        <a href="#">Химические пилинги</a>
+                        <a href="#">нитевой лифтинг</a>
+                        <a href="#">3d мезонити</a>
+                        <a href="#">Мезотерапия, биоревитализация</a>
+                        <a href="#">Коррекция мимических морщин – Ботокс, Диспорт</a>
+                        <a href="#">Контурная пластика</a>
+                        <a href="#">Электрокоагуляция родинок, папиллом, гемангиом, бородавок, кондилом</a>
+                        <a href="#">Профессиональные программы ухода за лицом</a>
+                        <a href="#">Перманентный макияж, услуги визажиста</a>
+                        <a href="#">Коррекция фигуры, лечение целлюлита</a>
+                        <a href="#">медицинский массаж</a>
+                        <a href="#">Эпиляция</a>
+                        <a href="#">Криопроцедуры</a>
+                        <a href="#">Прокол мочек ушных раковин, пирсинг</a>
+                        <a href="#">Уход за руками, ногами</a>
+                    </nav>
+                    <!-- /content__menu -->
+
+                    <!-- price -->
+                    <a href="#" class="price">скачать прайс-лист на услуги</a>
+                    <!-- /price -->
+
+                    <!-- links -->
+                    <div class="links">
+                        <h2>полезные ссылки</h2>
+                        <a href="#">
+                            <img src="pic/links1.jpg" width="220" height="81" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="pic/links2.jpg" width="220" height="81" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="pic/links3.jpg" width="220" height="81" alt="">
+                        </a>
+                    </div>
+                    <!-- /links -->
+
+                </aside>
+                <!-- /content__aside -->
+
+                <!-- content__wrap -->
+                <div class="content__wrap">
+
+                    <!-- slider-prewiev__wrap -->
+                    <div class="slider-prewiev__wrap">
+
+                        <h2>новости и акции</h2>
+
+                        <!-- slider-prewiev -->
+                        <div class="slider-prewiev">
+
+                            <!-- slider-prewiev__item -->
+                            <div class="slider-prewiev__item">
+                                <a href="#">
+                                    <img src="pic/slider-prewiev1.jpg" width="218" height="132" alt="">
+                                    <span>Новость</span>
+                                    <time datetime="2014-03-18">18.03.2014</time>
+                                    <h3>Методика коррекции вросшего ногтя системой «podofix»</h3>
+                                    <p>Вросший ноготь - довольно неприятное и болезненное состояние, когда ногтевая пластинка...</p>
+                                </a>
+                                <a href="#">
+                                    <img src="pic/slider-prewiev2.jpg" width="218" height="132" alt="">
+                                    <span class="pink">акция</span>
+                                    <time datetime="2014-03-18">18.03.2014</time>
+                                    <h3>Ri-soft® Liner 3030 Прибор для татуажа и микропигментиро- вания III поколения</h3>
+                                    <p>Данная система игл и дюз является полностью собст- венной разработкой....</p>
+                                </a>
+                                <a href="#">
+                                    <img src="pic/slider-prewiev3.jpg" width="218" height="132" alt="">
+                                    <span>Новость</span>
+                                    <time datetime="2014-03-18">18.03.2014</time>
+                                    <h3>Коррекция фигуры на аппарате Shape C+</h3>
+                                    <p>Быстро и безболезненно корректировать контуры Вашего тела способен аппарат- SHAPE C+...</p>
+                                </a>
+                            </div>
+                            <!-- /slider-prewiev__item -->
+
+                            <!-- slider-prewiev__item -->
+                            <div class="slider-prewiev__item">
+                                <a href="#">
+                                    <img src="pic/slider-prewiev1.jpg" width="218" height="132" alt="">
+                                    <span>Новость</span>
+                                    <time datetime="2014-03-18">18.03.2014</time>
+                                    <h3>Методика коррекции вросшего ногтя системой «podofix»</h3>
+                                    <p>Вросший ноготь - довольно неприятное и болезненное состояние, когда ногтевая пластинка...</p>
+                                </a>
+                                <a href="#">
+                                    <img src="pic/slider-prewiev3.jpg" width="218" height="132" alt="">
+                                    <span>Новость</span>
+                                    <time datetime="2014-03-18">18.03.2014</time>
+                                    <h3>Коррекция фигуры на аппарате Shape C+</h3>
+                                    <p>Быстро и безболезненно корректировать контуры Вашего тела способен аппарат- SHAPE C+...</p>
+                                </a>
+                                <a href="#">
+                                    <img src="pic/slider-prewiev2.jpg" width="218" height="132" alt="">
+                                    <span class="pink">акция</span>
+                                    <time datetime="2014-03-18">18.03.2014</time>
+                                    <h3>Ri-soft® Liner 3030 Прибор для татуажа и микропигментиро- вания III поколения</h3>
+                                    <p>Данная система игл и дюз является полностью собст- венной разработкой....</p>
+                                </a>
+                            </div>
+                            <!-- /slider-prewiev__item -->
+
+                            <!-- slider-prewiev__item -->
+                            <div class="slider-prewiev__item">
+                                <a href="#">
+                                    <img src="pic/slider-prewiev2.jpg" width="218" height="132" alt="">
+                                    <span class="pink">акция</span>
+                                    <time datetime="2014-03-18">18.03.2014</time>
+                                    <h3>Ri-soft® Liner 3030 Прибор для татуажа и микропигментиро- вания III поколения</h3>
+                                    <p>Данная система игл и дюз является полностью собст- венной разработкой....</p>
+                                </a>
+                                <a href="#">
+                                    <img src="pic/slider-prewiev1.jpg" width="218" height="132" alt="">
+                                    <span>Новость</span>
+                                    <time datetime="2014-03-18">18.03.2014</time>
+                                    <h3>Методика коррекции вросшего ногтя системой «podofix»</h3>
+                                    <p>Вросший ноготь - довольно неприятное и болезненное состояние, когда ногтевая пластинка...</p>
+                                </a>
+                                <a href="#">
+                                    <img src="pic/slider-prewiev3.jpg" width="218" height="132" alt="">
+                                    <span>Новость</span>
+                                    <time datetime="2014-03-18">18.03.2014</time>
+                                    <h3>Коррекция фигуры на аппарате Shape C+</h3>
+                                    <p>Быстро и безболезненно корректировать контуры Вашего тела способен аппарат- SHAPE C+...</p>
+                                </a>
+                            </div>
+                            <!-- /slider-prewiev__item -->
+
+                            <div class="slider-prewiev__prev"></div>
+                            <div class="slider-prewiev__next"></div>
+                        </div>
+                        <!-- /slider-prewiev -->
+                    </div>
+                    <!-- /slider-prewiev__wrap -->
+
+                    <!-- what -->
+                    <div class="what">
+                        <h2>что вас беспокоит?</h2>
+                        <a href="#">Морщины, складки</a>
+                        <a href="#">Папилломы, родинки</a>
+                        <a href="#">Жирная кожа</a>
+                        <a href="#">Угри</a>
+                        <a href="#">Рубцы, шрамы</a>
+                        <a href="#">Нежелательный рост волос</a>
+                        <a href="#">Выпадение волос</a>
+                        <a href="#">Вросший ноготь</a>
+                        <a href="#">Лишний вес</a>
+                        <a href="#">Целлюлит</a>
+                        <a href="#">Изменение контура лица</a>
+                        <a href="#">Увядание, старение</a>
+                        <a href="#">Сосудистые звездочки</a>
+                        <a href="#">Второй подбородок</a>
+                        <a href="#">Пигментация</a>
+                        <a href="#">Сухая, чувствительная кожа</a>
+                        <a href="#">Бородавки</a>
+                    </div>
+                    <!-- /what -->
+
+                    <!-- about -->
+                    <div class="about">
+
+                        <h2>о нас</h2>
+
+                        <p>Центр эстетической медицины, предоставляющий косметоло- гические и медицинские услуги европейского
+                            качества, открыл- ся 30 августа 2003 года в Орджоникидзевском районе г.Уфы. Это одно из немногих
+                            мест в столице, где работают врачи-дермато- косметологи и медсестры высшей категории. Здесь
+                            осуществля- ются самые современные процедуры: фотоомоложение, лечение целлюлита, удаление
+                            рубцов, удаление пигментных пятен, кон- турная пластика и многие другие процедуры эстетической
+                            медицины.</p>
+                        <p>Центр Эстетической Медицины оснащен современным оборудо- ванием, позволяющим решать многочисленные
+                            косметологичес- кие проблемы. Все работающие специалисты имеют медицинс- кое образование, прошли
+                            обучение в ведущих клиниках Москвы, Екатеринбурга и Санкт-Петербурга.</p>
+                        <p>Центр эстетической медицины 10 лет на рынке косметологичес- ких услуг в Республике Башкортостан.
+                            Это качество, проверенное временем... Теплый, радушный прием, доброжелательный персо- нал,
+                            высокий уровень сервиса - все это «Центр эстетической медицины».</p>
+                        <img src="pic/about1.jpg" width="461" height="305" alt="">
+
+                        <!-- reviews -->
+                        <div class="reviews">
+                            <!-- reviews__wrap -->
+                            <div class="reviews__wrap">
+                                <h2>отзывы</h2>
+                                <a href="#">
+                                    <time datetime="2014-11-15">15.11.2014 г.</time>
+                                    <span class="reviews__title">Лариса</span>
+                                    <p>Добрый день! Лазерное удаление 1 новообразо- вания до 1 см. от 690 руб. Необходима
+                                        консультация врача-косметолога, стои- мость 300 руб. </p>
+                                </a>
+                                <a href="#">
+                                    <time datetime="2014-11-15">15.11.2014 г.</time>
+                                    <span class="reviews__title">Ольга</span>
+                                    <p>Добрый день! Лазерное удаление 1 новообразо- вания до 1 см. от 690 руб. Необходима
+                                        консультация врача-косметолога, стои- мость 300 руб. </p>
+                                </a>
+                                <a href="#">
+                                    <time datetime="2014-11-15">15.11.2014 г.</time>
+                                    <span class="reviews__title">Кристина</span>
+                                    <p>Добрый день! Лазерное удаление 1 новообразо- вания до 1 см. от 690 руб. Необходима
+                                        консультация врача-косметолога, стои- мость 300 руб. </p>
+                                </a>
+                                <a href="#" class="reviews__more">Все отзывы</a>
+                            </div>
+                            <!-- /reviews__wrap -->
+                            <a href="#" class="reviews__add">Оставить отзыв</a>
+                        </div>
+                        <!-- /reviews -->
+                    </div>
+                    <!-- /about -->
+
+                    <!-- questions -->
+                    <div class="questions">
+                        <h2>вопрос специалисту</h2>
+                        <div class="questions__item">
+                            <span>Альбина</span>
+                            <p>Здравствуйте! Хочу удалить родинку на носу. Она выпуклая. Сколько будет стоить удаление
+                                лазером? И можно ли удалять в мае?</p>
+                            <div class="questions__answer">
+                                <span>Ответ</span>
+                                <p>Добрый день! Лазерное удаление 1 новообразования до 1 см. от 690 руб. Необходима
+                                    консультация врача-косметолога, стоимость 300 руб. Удалять новообразования лучше в
+                                    осенне-зимний период. С уважением, ЦЭМ.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="questions__add">Задать вопрос</a>
+                        <a href="#" class="questions__more">Все вопросы</a>
+                    </div>
+                    <!-- /questions -->
+
+                </div>
+                <!-- /content__wrap -->
+            </div>
+            <!-- /content -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- address -->
+        <dl class="address">
+            <dt>
+                <address>г. Уфа, ул. Мира, 24</address>
+            </dt>
+            <dd>
+                <span>пн. - пт. с 9:00 до 21:00</span>
+                <span>сб. - вс. с 10:00 до 18:00</span>
+            </dd>
+        </dl>
+        <!-- /address -->
+
+        <!-- footer__count -->
+        <div class="footer__count">
+            <img src="pic/footer-counter.jpg" width="118" height="43" alt="">
+        </div>
+        <!-- /footer__count -->
+
+        <!-- footer__copyright -->
+        <div class="footer__copyright">
+            Все права защищены © 2003-2012
+            <span>«Центр эстетической медицины»</span>
+        </div>
+        <!-- /footer__copyright -->
+
+        <!-- footer__design -->
+        <div class="footer__design">
+            Сайт разработан: <a href="#">«Экспресс лаб»</a>
+        </div>
+        <!-- /footer__design -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

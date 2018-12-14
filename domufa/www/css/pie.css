@@ -1,0 +1,17 @@
+.site__menu div,
+/*.news-review a span,*/
+/*.news-review img,*/
+/*.videos-review a span,*/
+/*.videos-review img,*/
+.more,
+.photos-review li,
+.photos-review img,
+.social,
+.social a,
+.site__menu li.active,
+.designers a,
+.sub-menu {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.slider.js"></script>
+    <script src="js/jquery.carousel.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+    <script src="js/jquery.map.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+
+        <!-- header__wrap -->
+        <div class="header__wrap">
+
+            <!-- logo -->
+            <a href="#" class="logo"><img src="img/logo.png" width="131" height="55" alt="DOMKOM Окна в каждый дом"></a>
+            <!-- /logo -->
+
+            <!-- call-back -->
+            <div class="call-back">
+                <a href="#">Заказать обратный звонок</a>
+                <form class="call-back__form" action="#">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="text"  name="phone" placeholder="Контактный телефон">
+                    <input type="submit" class="call-back_button" value="Перезвоните мне">
+                </form>
+            </div>
+            <!-- /call-back -->
+
+            <a href="#" class="header__tel">+7 (495)<span>921-30-04</span></a>
+            <span class="header__work-time">Пн. - Вс.  с 9:00 до 21:00</span>
+
+            <!-- header__menu -->
+            <nav class="header__menu">
+                <a href="#" class="action active_menu">Акция</a>
+                <a href="#" class="windows">Окна</a>
+                <a href="#" class="quality">Качество</a>
+                <a href="#" class="contacts">Контакты</a>
+            </nav>
+            <!-- /header__menu -->
+
+        </div>
+        <!-- /header__wrap -->
+
+    </header>
+    <!-- /header -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- contacts__wrap -->
+            <div class="contacts__wrap">
+
+                <!-- contacts__info -->
+                <div class="contacts__info">
+
+                    <p>
+                        Компания «ДОМКОМ» входит в число крупнейших компаний Москвы, занимающихся производством пластиковых
+                        окон, их продажей и установкой. Обратитесь в один из ближайших к Вам офисов и наши специалисты
+                        проведут для Вас полную и бесплатную консультацию. Если же Вы уже выбрали пластиковые окна —
+                        заказать их Вы также можете в любом из наших офисов. Заявка на замер окна осуществляется по
+                        телефону <span>+7 (495) 229-33-33</span> или с помощью нашей on-line формы.
+                    </p>
+
+                    <!-- map -->
+                    <div class="map" id="map">
+
+                    </div>
+                    <!-- /map -->
+
+                    <!-- offices -->
+                    <div class="offices">
+
+                        <h1>Офисы продаж в Москве и Подмосковье</h1>
+
+                        <dl>
+                            <dt class="grey">Алтуфьево</dt>
+                            <dd>Шенкурский пр-д, д. 3б (оф. 216)</dd>
+                        </dl>
+
+                        <dl>
+                            <dt class="grey">Бибирево</dt>
+                            <dd>Алтуфьевское шоссе 48 / к2 (офис 203)</dd>
+                        </dl>
+
+                        <dl>
+                            <dt class="yellow">Бабушкинская</dt>
+                            <dd>пр. Дежнева, д. 23д (ТЦ «Вавилон 92»)</dd>
+                        </dl>
+
+                        <dl>
+                            <dt class="red">Китай-город</dt>
+                            <dd>Хохловский пер., д. 7 (оф. 1)</dd>
+                        </dl>
+
+                        <dl>
+                            <dt class="grey">Пражская</dt>
+                            <dd>ул. Кировоградская, д. 15 (ТЦ «Электронный рай»)</dd>
+                        </dl>
+
+                        <dl>
+                            <dt class="yellow">Шаболовская</dt>
+                            <dd>2-й Рощинский пр-д., д. 8 (оф. 508)</dd>
+                        </dl>
+
+                    </div>
+                    <!-- /offices -->
+
+                    <span>Московская область, г. Одинцово, Можайское шоссе дом 76А (Торговый центр "Фортуна", 3 этаж)</span>
+
+                </div>
+                <!-- contacts__info -->
+
+            </div>
+            <!-- /contacts__wrap -->
+
+            <!-- gallery-carousel -->
+            <div class="gallery-carousel">
+            <div class="gallery">
+                <ul>
+                    <li><img src="pic/pic1.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic2.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic3.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic4.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic1.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic2.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic3.jpg" height="149" width="196" alt=""/></li>
+                    <li><img src="pic/pic4.jpg" height="149" width="196" alt=""/></li>
+                </ul>
+
+            </div>
+
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+            <!-- /gallery-carousel -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <form class="call-manager">
+                <h2>Вызов менеджера на замер</h2>
+                <span>Для бесплатного вызова менеджера-замерщика отправьте заявку или позвоните по телефону
+                    +7 (495) 229-33-33</span>
+
+                    <label class="name">Как вас зовут<input type="text" value=""></label>
+
+                    <label class="tel">Ваш телефон<input type="text" value=""></label>
+
+                <div class="footer__send">
+                    <a href="#">Отправить</a>
+                </div>
+            </form>
+
+            <span class="about-company">© Компания «ДОМКОМ», 1996—2013 Производство пластиковых окон</span>
+            <a href="#" class="footer__tel">+7 (495) 229-33-33</a>
+            <a href="mailto:#" class="footer__mail">info@oknadomkom.ru</a>
+            <a href="#" class="footer__up">Наверх</a>
+            
+            <ul class="counters">
+                <li><img src="pic/counter1.png" width="31" height="31"></li>
+                <li><img src="pic/counter2.png" width="88" height="31"></li>
+            </ul>
+
+            <a href="http://artidei.ru" class="artidei"></a>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

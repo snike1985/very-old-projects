@@ -1,0 +1,76 @@
+/* --------------- text-graf --------------- */
+.text-graf {
+    font-size: 14px;
+    color: #565656;
+}
+.text-graf h1 {
+    font-size: 24px;
+    color: #565656;
+    margin-bottom: 27px;
+}
+.text-graf h2 {
+    text-align: left;
+    font-size: 16px;
+    color: #565656;
+    font-weight: bold;
+    margin-bottom: 19px;
+    text-transform: none;
+}
+.text-graf p {
+    display: block;
+    line-height: 18px;
+}
+.text-graf__text-wrap {
+    margin-bottom: 20px;
+}
+.text-graf ul {
+    margin-bottom: 19px;
+}
+.text-graf li {
+    line-height: 18px;
+    position: relative;
+    padding-left: 14px;
+}
+.text-graf li:before {
+    content: '';
+    background: #565656;
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.text-graf a,
+.text-graf a:visited {
+    font-size: 14px;
+    color: #025d6a;
+    border-bottom: 1px solid #025d6a;
+    -webkit-transition: border 0.3s ease;
+    transition: border 0.3s ease;
+}
+.text-graf a:hover {
+    border-bottom-color: transparent;
+}
+.text-graf dl {
+    margin-bottom: 16px;
+}
+.text-graf dt {
+    display: block;
+    line-height: 18px;
+}
+.text-graf dd {
+    font-size: 18px;
+    display: block;
+    line-height: 26px;
+}
+.text-graf__inline {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 3px;
+    padding: 12px 79px 0 0;
+}
+.text-graf__inline p {
+    margin-bottom: 6px;
+}
+/* --------------- /text-graf --------------- */

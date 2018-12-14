@@ -1,0 +1,15 @@
+.call-back,
+.order a,
+.present-get a,
+.gallery-carousel,
+.gallery li,
+.call-back__form button,
+.call-back__form,
+.footer__send a,
+.choose-window__wrap p,
+.about-us img,
+.certificates span.zoom-click {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

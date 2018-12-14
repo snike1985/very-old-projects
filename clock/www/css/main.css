@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* --------------- Style to null --------------- */
+*{-moz-box-sizing:border-box;box-sizing:border-box;}html,body,div,span,h1,h2,h3,h4,h5,h6,p,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,table,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,a,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;vertical-align:baseline;background:transparent;font-size:100%;margin:0;padding:0;}a{background:transparent;}table{border-collapse:collapse;border-spacing:0;}td,td img{vertical-align:top;}input,select,button,textarea{font-size:12px;font-family:Arial, Helvetica, sans-serif;margin:0;}input[type="text"],input[type="password"],textarea,input[type="email"],input[type="phone"],input[type="number"]{font:12px Arial, Helvetica, sans-serif;padding:0;}input[type="checkbox"]{vertical-align:bottom;}input[type="radio"]{vertical-align:text-bottom;}sub{vertical-align:sub;font-size:smaller;}sup{vertical-align:super;font-size:smaller;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}ul,ol{list-style:none;}html{overflow-y:scroll;overflow-x:auto;}html,body{height:100%;}body{line-height:1;color:#000;text-align:left;z-index:1;position:relative;}input [type='text']{padding:0;}textarea{resize:none;overflow:auto;}label,input[type="button"],input[type="submit"],button{cursor:pointer;}input[type="button"],input[type="reset"],input[type="submit"],button,input[type="text"],input[type="password"],textarea,input[type="email"],input[type="tel"],input[type="phone"],input[type="number"]{-webkit-appearance:none;}a,a:visited,a:hover,a:focus,a:active{text-decoration:none;}input[type="submit"]::-moz-focus-inner,button::-moz-focus-inner{border:0;padding:0;}input:invalid{outline:none;-moz-box-shadow:none;border:none;}::-ms-clear{display:none;}input,textarea,input[type="search"]:focus,:focus{outline:none;}
+/* --------------- Style to null --------------- */
+
+/*
+    main styles
+    version: 15.01.2013
+
+    placeholder
+
+    fonts
+
+    site
+
+    logo
+*/
+
+/* --------------- placeholder --------------- */
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /placeholder --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+
+    height: 100px;
+}
+.site__content {
+    position: relative;
+    z-index: 2;
+}
+/* --------------- /site --------------- */
+
+/* --------------- clock --------------- */
+.clock {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /*box-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px #000, -1px -1px 0 #000;*/
+    border: 1px dotted #000;
+    background: #cccccc;
+    margin: 50px auto;
+    position: relative;
+}
+.clock:before {
+    content: '';
+    background: red;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -3px 0 0 -3px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.clock > span {
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    /*-webkit-transition: transform 0.3s ease;*/
+    /*transition: transform 0.3s ease;*/
+    display: block;
+    position: absolute;
+    width: 1px;
+    margin-left: -0.5px;
+}
+.clock__seconds{
+    top: 0;
+    height: 50%;
+    left: 50%;
+    background: red;
+}
+.clock__minutes {
+    top: 10%;
+    height: 40%;
+    left: 50%;
+    background: #000;
+}
+.clock__hours {
+    top: 25%;
+    height: 25%;
+    left: 50%;
+    background: #000;
+}
+/* --------------- /clock --------------- */

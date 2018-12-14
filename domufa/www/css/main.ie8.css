@@ -1,0 +1,28 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "7fonts";
+    src: url("../fonts/7fonts.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+.footer__menu a:before {
+    background: url("../img/footer_menu-ie8.png") no-repeat;
+}
+.footer__menu a:hover:before {
+    background: url("../img/footer_menu-ie8.png") no-repeat;
+    background-position: 0 bottom;
+}
+.site__menu li:before {
+   background: url("../img/site__menu-ie8.png") no-repeat;
+}
+.site__menu li.active:after {
+    content: '';
+    background: #fff;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
