@@ -1,0 +1,147 @@
+/*body {*/
+    /*background: #f4f0df;*/
+/*}*/
+/* --------------- logo --------------- */
+/*.logo {*/
+    /*background: url("../img/logo.png") no-repeat;*/
+    /*width: 192px;*/
+    /*height: 67px;*/
+    /*top: 6px;*/
+    /*left: 22px;*/
+/*}*/
+/* --------------- /logo --------------- */
+/*.head {*/
+    /*background: url("../img/top_fon.png") center no-repeat;*/
+/*}*/
+/*.search {*/
+    /*display: none;*/
+/*}*/
+/*.slide_bot {*/
+    /*background: none;*/
+/*}*/
+/*.owl-theme .owl-controls .owl-page span {*/
+    /*background: url("../img/slide_bt.png") 0 -14px no-repeat;*/
+/*}*/
+/*.big_tit span {*/
+    /*background: #f4f0df;*/
+/*}*/
+/*.catalog_index .elem .name {*/
+    /*color: #990000;*/
+/*}*/
+/*.go_to {*/
+    /*color: #990000;*/
+/*}*/
+/*.white h2 {*/
+    /*color: #990000;*/
+/*}*/
+/*.get_price {*/
+    /*background: url("../img/get_price.png") no-repeat;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.index_news .elem p a {*/
+    /*color: #990000;*/
+/*}*/
+/*.foot {*/
+    /*background: url("../img/foot.png");*/
+/*}*/
+/*.foot a {*/
+    /*color: #990000;*/
+/*}*/
+
+/* --------------- header__tel --------------- */
+.header__tel {
+    position: absolute;
+    top: 18px;
+    left: 379px;
+}
+.header__tel li {
+    display: inline-block;
+    vertical-align: top;
+    cursor: default;
+    margin-left: 43px;
+}
+.header__tel li:first-child {
+    margin-left: 0;
+}
+.header__tel li > span {
+    font-size: 12px;
+    color: #444444;
+    display: block;
+}
+.header__tel a {
+    font-size: 22px;
+    color: #444444;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+.header__tel a:after {
+    content: '';
+    background: #444444;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    -webkit-transition: left 0.3s ease, width 0.3s ease;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+.header__tel a > span {
+    color: #990000;
+}
+.header__tel a:hover:after {
+    width: 100%;
+    left: 0;
+}
+/* --------------- /header__tel --------------- */
+
+/* --------------- call-back --------------- */
+.call-back {
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 19px;
+    right: 24px;
+    text-shadow: 0 1px 0 #990000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    padding: 11px 11px 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background: url("../img/call-back_fon.png") repeat-x;
+    height: 36px;
+}
+.call-back:before,
+.call-back:after {
+    content: '';
+    background: url("../img/call-back.png") no-repeat;
+    width: 3px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+}
+.call-back:before {
+    background-position: 0 0;
+    left: -3px;
+}
+.call-back:after {
+    background-position: 0 bottom;
+    right: -3px;
+}
+.call-back:hover {
+    text-decoration: underline;
+}
+/* --------------- /call-back --------------- */
+
+.foot td div {
+    padding-top: 15px;
+}
+.foot td div > p {
+    margin: 0;
+}
+.foot td div > span {
+    font-weight: bold;
+}

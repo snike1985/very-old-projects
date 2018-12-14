@@ -1,0 +1,29 @@
+.countdown_dashboard {
+    display: block;
+    position: absolute;
+    top: 66px;
+    left: 150px;
+}
+.dash {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 45px;
+}
+.dash .digit {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 7px;
+    margin-left: -7px;
+}
+.dash_title {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: -4px;
+    font-size: 12px;
+    color: #000;
+}

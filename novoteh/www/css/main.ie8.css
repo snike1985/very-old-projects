@@ -1,0 +1,13 @@
+/* css for ltie8 */
+.header__menu div > a {
+    padding: 5px 10px 0;
+}
+.header__submenu {
+    width: 360px;
+}
+.kartochka dl span {
+    font-size: 16px;
+}
+.composition-order__form fieldset input {
+    line-height: 25px;
+}

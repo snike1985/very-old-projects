@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024">
+    <title>title</title>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+    <!-- header -->
+    <header class="header">
+
+        <!-- logo -->
+        <a href="#" class="logo"><img src="img/logo.png" width="253" height="79" alt="Окна Скидки"></a>
+        <!-- /logo -->
+
+        <!-- header__label -->
+        <div class="header__label">
+            <span>ЛУЧШАЯ<span>ЦЕНА</span></span>
+        </div>
+        <!-- /header__label -->
+
+        <a href="tel:84957390933" class="header__tel">8 (495) 739-09-33</a>
+
+        <!-- header__form -->
+        <form class="header__form">
+            <input type="search" placeholder="Вам перезвонить?">
+            <input type="submit" value="ДА">
+        </form>
+        <!-- /header__form -->
+
+        <!-- header__menu -->
+        <nav class="header__menu">
+            <ul>
+                <li>
+                    <a href="#">Пластиковые окна</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+                <li>
+                    <a href="#">Остекление балконов</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+                <li>
+                    <a href="#">Цены</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+                <li>
+                    <a href="#">Акции</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+                <li>
+                    <a href="#">Услуги</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+                <li>
+                    <a class="active" href="#">Контакты</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+            </ul>
+        </nav>
+        <!-- /header__menu -->
+
+    </header>
+    <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- contacts -->
+            <div class="contacts">
+
+                <h2>Контакты</h2>
+                <span>Центральный офис:<span>г. Москва, ул. Миклухо-Маклая, дом 42</span></span>
+
+                <!-- map -->
+                <div id="map" class="map" coordinates="55.638622, 37.541145"></div>
+                <!-- /map -->
+
+                <ul>
+                    <li class="contacts__tel">
+                        <a href="tel:84957390933">8 (495) 739-09-33</a>
+                        <span>линия консультации</span>
+                        <a href="tel:834957876687">8 (495) 787-66-87</a>
+                        <span>отдел доставки и рекламаций</span>
+                    </li>
+                    <li class="contacts__mail">
+                        <a class="email" href="mailto:info@oknakonsalt.ru">info@oknakonsalt.ru</a>
+                        <span>почта компании</span>
+                        <a class="email" href="mailto:service@oknakonsalt.ru">service@oknakonsalt.ru</a>
+                        <span>отдел контроля качества</span>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /contacts -->
+
+            <h3>Заявка на расчет</h3>
+
+            <!-- application -->
+            <form class="application">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Телефон">
+                <input type="submit" value="Отправить">
+            </form>
+            <!-- /application -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__menu -->
+        <div class="footer__menu">
+            <a href="#">Пластиковые окна</a>
+            <a href="#">Остекление балконов</a>
+            <a href="#">Цены</a>
+            <a href="#">Акции</a>
+            <a href="#">Услуги</a>
+            <a href="#">Контакты</a>
+        </div>
+        <!-- /footer__menu -->
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <div>
+                <!-- footer__address -->
+                <address class="footer__address">
+                    <span>© 2007-2014, ООО «Окна Скидки»,</span>
+                    <span>г. Москва, ул. Миклухо-Маклая, 42</span>
+                    <span class="okna-plan">Интернет-маркетинг «<a href="#">Окна План</a>»</span>
+                </address>
+                <!-- /footer__address -->
+
+                <a href="tel:84957390933" class="footer__tel">8 (495) 739-09-33 </a>
+
+                <div class="top50"><img src="img/top50.jpg" width="88" height="31" alt=""></div>
+                <div class="count"><img src="img/count.jpg" width="88" height="31" alt=""></div>
+
+            </div>
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

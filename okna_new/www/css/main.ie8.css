@@ -1,0 +1,7 @@
+/* css for ltie8 */
+.application INPUT[type='text'] {
+    line-height: 34px;
+}
+.reviews {
+    margin-bottom: 28px;
+}

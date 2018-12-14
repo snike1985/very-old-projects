@@ -1,0 +1,159 @@
+.form input {
+    width: 220px;
+    height: 50px;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    transition: .15s all linear;
+    -webkit-transition: .15s all linear;
+    -moz-transition: .15s all linear;
+    -ms-transition: .15s all linear;
+    -o-transition: .15s all linear;
+    -icab-transition: .15s all linear;
+    line-height: 50px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form input.otkyda {
+    background: #e9e9e9 url(../img/i1_1.png) no-repeat left center;
+    padding-left: 50px;
+}
+.form input.otkyda:hover {
+    background: url(../img/i1.png) #e9e9e9 no-repeat left center;
+}
+.form input.kyda {
+    background: url(../img/i2_1.png) #e9e9e9 no-repeat left center;
+    padding-left: 50px;
+}
+.form input.kyda:hover {
+    background: url(../img/i1.png) #e9e9e9 no-repeat left center;
+}
+.form input.ves {
+    background: url(../img/i3_1.png) #e9e9e9 no-repeat left center;
+    padding-left: 50px;
+}
+.form input.ves:hover {
+    background: url(../img/i1.png) #e9e9e9 no-repeat left center;
+}
+.form input.name {
+    background: url(../img/i4_1.png) #e9e9e9 no-repeat left center;
+    padding-left: 50px;
+}
+.form input.name:hover {
+    background: url(../img/i1.png) #e9e9e9 no-repeat left center;
+}
+.form input.phone {
+    background: url(../img/i5_1.png) #e9e9e9 no-repeat left center;
+    padding-left: 50px;
+}
+.form input.phone:hover {
+    background: url(../img/i1.png) #e9e9e9 no-repeat left center;
+}
+.form input.e-mail {
+    background: url(../img/i6_1.png) #e9e9e9 no-repeat left center;
+    padding-left: 50px;
+}
+.form input.e-mail:hover {
+    background: url(../img/i1.png) #e9e9e9 no-repeat left center;
+}
+.form>form>input:nth-child(1){
+    background: url(img/i1_1.png) #e9e9e9 no-repeat left center;
+    width: 220px;
+    height: 50px;
+    border:0;
+    border-bottom:1px solid #fff;
+    transition: .15s all linear;
+    -webkit-transition: .15s all linear;
+    -moz-transition: .15s all linear;
+    -ms-transition: .15s all linear;
+    -o-transition: .15s all linear;
+    -icab-transition: .15s all linear;
+    padding-left: 50px;
+}
+.form>form>input:nth-child(1):hover{
+    background: url(img/i1.png) #e9e9e9 no-repeat left center;
+}
+.form>form>input:nth-child(2){
+    background: url(img/i2_1.png) #e9e9e9 no-repeat left center;
+    width: 220px;
+    height: 50px;
+    border:0;
+    border-bottom:1px solid #fff;
+    transition: .15s all linear;
+    -webkit-transition: .15s all linear;
+    -moz-transition: .15s all linear;
+    -ms-transition: .15s all linear;
+    -o-transition: .15s all linear;
+    -icab-transition: .15s all linear;
+    padding-left: 50px;
+}
+.form>form>input:nth-child(2):hover{
+    background: url(img/i2.png) #e9e9e9 no-repeat left center;
+}
+.form>form>input:nth-child(3){
+    background: url(img/i3_1.png) #e9e9e9 no-repeat left center;
+    width: 220px;
+    height: 50px;
+    border:0;
+    border-bottom:1px solid #fff;
+    transition: .15s all linear;
+    -webkit-transition: .15s all linear;
+    -moz-transition: .15s all linear;
+    -ms-transition: .15s all linear;
+    -o-transition: .15s all linear;
+    -icab-transition: .15s all linear;
+    padding-left: 50px;
+}
+.form>form>input:nth-child(3):hover{
+    background: url(img/i3.png) #e9e9e9 no-repeat left center;
+}
+.form>form>input:nth-child(4){
+    background: url(img/i4_1.png) #e9e9e9 no-repeat left center;
+    width: 220px;
+    height: 50px;
+    border:0;
+    border-bottom:1px solid #fff;
+    transition: .15s all linear;
+    -webkit-transition: .15s all linear;
+    -moz-transition: .15s all linear;
+    -ms-transition: .15s all linear;
+    -o-transition: .15s all linear;
+    -icab-transition: .15s all linear;
+    padding-left: 50px;
+}
+.form>form>input:nth-child(4):hover{
+    background: url(img/i4.png) #e9e9e9 no-repeat left center;
+}
+.form>form>input:nth-child(5){
+    background: url(img/i5_1.png) #e9e9e9 no-repeat left center;
+    width: 220px;
+    height: 50px;
+    border:0;
+    border-bottom:1px solid #fff;
+    transition: .15s all linear;
+    -webkit-transition: .15s all linear;
+    -moz-transition: .15s all linear;
+    -ms-transition: .15s all linear;
+    -o-transition: .15s all linear;
+    -icab-transition: .15s all linear;
+    padding-left: 50px;
+}
+.form>form>input:nth-child(5):hover{
+    background: url(img/i5.png) #e9e9e9 no-repeat left center;
+}
+.form>form>input:nth-child(6){
+    background: url(img/i6_1.png) #e9e9e9 no-repeat left center;
+    width: 220px;
+    height: 50px;
+    border:0;
+    border-bottom:1px solid #fff;
+    transition: .15s all linear;
+    -webkit-transition: .15s all linear;
+    -moz-transition: .15s all linear;
+    -ms-transition: .15s all linear;
+    -o-transition: .15s all linear;
+    -icab-transition: .15s all linear;
+    padding-left: 50px;
+}
+.form>form>input:nth-child(6):hover{
+    background: url(img/i6.png) #e9e9e9 no-repeat left center;
+}

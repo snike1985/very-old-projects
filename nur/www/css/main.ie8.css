@@ -1,0 +1,19 @@
+/* css for ltie8 */
+
+.header {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dff7fa',GradientType=0 );
+}
+.goods__item a,
+.goods__item a:visited {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1a1a1', endColorstr='#484848',GradientType=0 );
+}
+.goods__item a:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#484848', endColorstr='#a1a1a1',GradientType=0 );
+}
+.download-price,
+.download-price:visited {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#417d85', endColorstr='#114647',GradientType=0 );
+}
+.download-price:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#114647', endColorstr='#417d85',GradientType=0 );
+}

@@ -1,0 +1,891 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024">
+    <title>title</title>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/calkulator.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jcarousellite.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.custom.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+    <!-- header -->
+    <header class="header">
+
+        <!-- logo -->
+        <h1 href="#" class="logo"><img src="img/logo.png" width="253" height="79" alt="Окна Скидки"></h1>
+        <!-- /logo -->
+
+        <!-- header__label -->
+        <div class="header__label">
+            <span>ЛУЧШАЯ<span>ЦЕНА</span></span>
+        </div>
+        <!-- /header__label -->
+
+        <a href="tel:84957390933" class="header__tel">8 (495) 739-09-33</a>
+
+        <!-- header__form -->
+        <form class="header__form">
+            <input type="search" placeholder="Вам перезвонить?">
+            <input type="submit" value="ДА">
+        </form>
+        <!-- /header__form -->
+
+        <!-- header__menu -->
+        <nav class="header__menu">
+            <ul>
+                <li>
+                    <a href="#">Пластиковые окна</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+                <li>
+                    <a href="#">Остекление балконов</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+                <li>
+                    <a href="#">Цены</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+                <li>
+                    <a href="#">Акции</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+                <li>
+                    <a href="#">Услуги</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+
+                    <!-- header__submenu__wrap -->
+                    <div class="header__submenu__wrap">
+
+                        <!-- header__submenu -->
+                        <div class="header__submenu">
+                            <a href="#">Окна для дачи</a>
+                            <a href="#">Окна для дачи коттеджа</a>
+                            <a href="#">Окна в дом</a>
+                            <a href="#">Окна в избу</a>
+                        </div>
+                        <!-- /header__submenu -->
+
+                    </div>
+                    <!-- /header__submenu__wrap -->
+                </li>
+            </ul>
+        </nav>
+        <!-- /header__menu -->
+
+    </header>
+    <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+           <h2 class="calculator_h2">Калькулятор</h2>
+
+            <div class="calculator">
+            <script>
+                //ПВХ Дверь балконная
+                shir_dver_min = 500;
+                shir_dver_max = 1100;
+                vysota_dver_min = 1700;
+                vysota_dver_max = 2300;
+                stoim_dver_econom = 3545;
+                stoim_dver_standart = 4452;
+                stoim_dver_premium = 5354;
+
+
+
+                //ПВХ Дверь балконная двухстворчатая
+                shir_dver2_min = 1000;
+                shir_dver2_max = 2200;
+                vysota_dver2_min = 1700;
+                vysota_dver2_max = 2300;
+                stoim_dver2_econom = 3545;
+                stoim_dver2_standart = 4452;
+                stoim_dver2_premium = 5354;
+
+
+
+                //ОКНО ГЛУХОЕ
+                shir_oknogluh_min = 400;
+                shir_oknogluh_max = 1300;
+                vysota_oknogluh_min = 400;
+                vysota_oknogluh_max = 2200;
+                stoim_oknogluh_econom = 2011;
+                stoim_oknogluh_standart = 2788;
+                stoim_oknogluh_premium = 3277;
+                shir_framuga_min = 1400;
+                shir_framuga_max = 2200;
+
+                //ОКНО ПОВОРОТНО – ОТКИДНОЕ
+                shir_oknopovorototkid_min = 450;
+                shir_oknopovorototkid_max = 1250;
+                vysota_oknopovorototkid_min = 500;
+                vysota_oknopovorototkid_max = 2300;
+                stoim_oknopovorototkid_econom = 3703;
+                stoim_oknopovorototkid_standart = 4612;
+                stoim_oknopovorototkid_premium = 5472;
+
+
+                //ОКНО ПОВОРОТНОЕ
+                shir_oknopovorot_min = 450;
+                shir_oknopovorot_max = 1300;
+                vysota_oknopovorot_min = 450;
+                vysota_oknopovorot_max = 2250;
+                stoim_oknopovorot_econom = 3545;
+                stoim_oknopovorot_standart = 4452;
+                stoim_oknopovorot_premium = 5146;
+
+                //СКИДКА процент скидки (пишем например 0.58)
+                skidka = 0;
+
+                //Комплектующие за м
+                podokonnik = 423;
+
+                //МОНТАЖНЫЕ РАБОТЫ за м2
+                montazhrab = 990;
+
+                //КОЭФФИЦИЕНТ К СТОИМОСТИ ОКОН
+                koeffits = 0.95;
+
+                // характеристии профиля
+                nazv_econom = "Rehau Blitz";
+                shirina_econom = "60";
+                kolichstekl_econom = "2";
+
+                nazv_standart = "Rehau Sib-Design";
+                shirina_standart = "70";
+                kolichstekl_standart = "3";
+
+                nazv_premium = "Rehau Brilliant-Design";
+                shirina_premium = "80";
+                kolichstekl_premium = "3";
+                //end common params
+            </script>
+            <script>
+            //init params
+
+            //задаем первоначальные минимальные и максимальные значения ширины и высоты
+            minsliderhor = shir_oknogluh_min*2;
+            maxsliderhor = shir_oknopovorototkid_max*2;
+            minsliderver = vysota_oknogluh_min;
+            maxsliderver = vysota_oknogluh_max;
+            derevo = 1;
+
+            //объявляем переменные
+            tipokna = 21; //задаем тип окна
+
+            costfin = 0; // стоимость финальная
+            rassrochka = 0; // стоимость рассрочки
+
+            skidka = 1 - skidka;
+
+            chekoksys = 0; // оконная система 0- эконом, 1 - стандарт, 2 - премиум
+
+            chekpodokonnik = 0; // подоконник, отлив  0- нет, 1 -да
+            chekmontazhrab = 0; // монтажные работы  0- нет, 1 -да
+
+            premium = 1;
+
+            prof_teplo = 1;
+            prof_tishina = 1;
+            prof_design = 1;
+
+            $(function() {
+                //accessories
+                //               $("input[name=profil]").on('click',function () {
+                //                   change_price();
+                //               });
+                //accessories
+                $("input[name=options_accessories]").click(function () {
+                    var active = !($(this).closest('span').hasClass('active'));
+                    if (active) {
+                        chekpodokonnik = 1;
+                    } else {
+                        chekpodokonnik = 0;
+                    }
+                    change_price();
+                });
+
+                //install
+                $("input[name=options_install]").click(function () {
+                    var active = !($(this).closest('span').hasClass('active'));
+                    if (active) {
+                        chekmontazhrab = 1;
+                    } else {
+                        chekmontazhrab = 0;
+                    }
+                    change_price();
+                });
+
+
+
+                //only dights
+                $('input.add-vertical-slide, input.add-horizontal-slide').keydown(function(event) {
+                    // Allow: backspace, delete, tab, escape, enter and .
+                    if ( $.inArray(event.keyCode,[46,8,9,27,190]) !== -1 ||
+                        // Allow: Ctrl+A
+                            (event.keyCode == 65 && event.ctrlKey === true) ||
+                        // Allow: home, end, left, right
+                            (event.keyCode >= 35 && event.keyCode <= 39)) {
+                        // let it happen, don't do anything
+                        return;
+                    }
+                    else {
+                        // Ensure that it is a number and stop the keypress
+                        if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                            event.preventDefault();
+                        }
+                    }
+                });
+
+                //manage types
+                $('.window-type-list input[name="window-form-type"]').change(function(e) {
+                    if($(this).prop('checked')){
+                        if(!$(this).closest('li').find('.window-type-sublist label.active').size()){
+                            $(this).closest('li').find('.window-type-sublist input').eq(0).click();
+                        }
+                    }
+                });
+                $('.window-type-sublist input').change(function(e) {
+                    if($(this).prop('checked')){
+                        $(this).closest('li').find('input').eq(0).click();
+                        $('#window-form-preview2').attr('class',$(this).closest('label').attr('id'));
+                        //set type of window we choose
+                        tipokna  = $(this).closest('label').attr('id').split('wind-type-')[1];
+                        /*
+                         то же самое через fadein/fadeout
+                         classLbl=$(this).closest('label').attr('id');
+                         $('#window-form-preview2').animate({opacity:0},function(){
+                         $('#window-form-preview2').attr('class',classLbl).animate({opacity:1});
+                         });
+                         */
+                    }
+                });
+
+                //create sliders
+                $('input.add-horizontal-slide').each(function(i,inp) {
+                    $(inp).addClass('inp-slide-horizontal-'+$(inp).attr('name')+'-'+i).after('<div class="horizontal-slide"><div class="ui-slider-hor" id="'+$(inp).attr('name')+'-ui-slide-'+i+'"/></div>');
+                    $('#'+$(inp).attr('name')+'-ui-slide-'+i).slider({
+                        orientation: "horizontal",
+                        range: "min",
+                        step: 10,
+                        value: $(inp).val(),
+                        min: Number($(inp).attr('min')),
+                        max: Number($(inp).attr('max')),
+                        slide:
+                                function( event, ui ) {
+                                    $('.inp-slide-horizontal-'+$(inp).attr('name')+'-'+i).val(ui.value);
+                                    change_price();
+                                }
+                    });
+                }).change(function(e) {
+                    $(this).val() > Number($(this).attr('max')) ? $(this).val($(this).attr('max')) :
+                            $(this).val() < Number($(this).attr('min')) ?  $(this).val($(this).attr('min')) :
+                                    '';
+                    $(this).next().find('.ui-slider-hor').slider('value',$(this).val());
+                    change_price();
+                });
+
+                $('input.add-vertical-slide').each(function(i,inp) {
+                    $(inp).addClass('inp-slide-vertical-'+$(inp).attr('name')+'-'+i).after('<div class="vertical-slide"><div class="ui-slider-ver" id="'+$(inp).attr('name')+'-ui-slide-'+i+'"/></div>');
+                    $('#'+$(inp).attr('name')+'-ui-slide-'+i).slider({
+                        orientation: "vertical",
+                        range: "min",
+                        step: 10,
+                        value: $(inp).val(),
+                        min: Number($(inp).attr('min')),
+                        max: Number($(inp).attr('max')),
+                        slide:
+                                function( event, ui ) {
+                                    $('.inp-slide-vertical-'+$(inp).attr('name')+'-'+i).val(ui.value);
+                                    change_price();
+                                }
+                    });
+                }).change(function(e) {
+                    $(this).val() > Number($(this).attr('max')) ? $(this).val($(this).attr('max')) :
+                            $(this).val() < Number($(this).attr('min')) ?  $(this).val($(this).attr('min')) :
+                                    '';
+                    $(this).next().find('.ui-slider-ver').slider('value',$(this).val());
+                    change_price();
+                });
+
+                //init params
+                $('#Costhor').val(800);
+                $('#Costver').val(1100);
+                reInitHorizSlider(800, minsliderhor, maxsliderhor);
+                reInitVertSlider(1100, minsliderver, maxsliderver)
+                change_price();
+
+                //window types selection handlers
+                //*****************Первый блок**************//
+                //ПВХ ОКНО ГЛУХОЕ
+                $("#wind-type-11").click(function () {
+                    tipokna = 11; //задаем тип окна
+                    minsliderhor = shir_oknogluh_min;
+                    maxsliderhor = shir_oknogluh_max;
+                    minsliderver = vysota_oknogluh_min;
+                    maxsliderver = vysota_oknogluh_max;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО ГЛУХОЕ
+
+                //ПВХ ОКНО ПОВОРОТНО – ОТКИДНОЕ
+                $("#wind-type-12").click(function () {
+                    tipokna = 12; //задаем тип окна
+                    minsliderhor = shir_oknopovorototkid_min;
+                    maxsliderhor = shir_oknopovorototkid_max;
+                    minsliderver = vysota_oknopovorototkid_min;
+                    maxsliderver = vysota_oknopovorototkid_max;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО ПОВОРОТНО – ОТКИДНОЕ
+
+                //ПВХ ОКНО ПОВОРОТНО – ОТКИДНОЕ С ГЛУХИМ СВЕРХУ
+                $("#wind-type-13").click(function () {
+                    tipokna = 13; //задаем тип окна
+                    minsliderhor = shir_oknopovorototkid_min;
+                    maxsliderhor = shir_oknopovorototkid_max;
+                    minsliderver = vysota_oknopovorototkid_min + 400;
+                    maxsliderver = vysota_oknopovorototkid_max + 400;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО ПОВОРОТНО – ОТКИДНОЕ С ГЛУХИМ СВЕРХУ
+
+                //ПВХ ФРАМУГА ОТКИДНАЯ
+                $("#wind-type-14").click(function () {
+                    tipokna = 14; //задаем тип окна
+                    minsliderhor = shir_framuga_min;
+                    maxsliderhor = shir_framuga_max;
+                    minsliderver = vysota_framuga_min;
+                    maxsliderver = vysota_framuga_max;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ФРАМУГА ОТКИДНАЯ
+                //*****************Конец первого блока**************//
+
+                //*****************Второй блок**************//
+                //ПВХ ОКНО Глухое и ПОВОРОТНО – ОТКИДНОЕ
+                $("#wind-type-21").click(function () {
+                    tipokna = 21; //задаем тип окна
+                    minsliderhor = shir_oknogluh_min*2;
+                    maxsliderhor = shir_oknopovorototkid_max*2;
+                    minsliderver = vysota_oknogluh_min;
+                    maxsliderver = vysota_oknogluh_max;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО Глухое и ПОВОРОТНО – ОТКИДНОЕ
+
+                //ПВХ ОКНО Поворотное и ПОВОРОТНО – ОТКИДНОЕ
+                $("#wind-type-22").click(function () {
+                    tipokna = 22; //задаем тип окна
+                    minsliderhor = shir_oknopovorototkid_min*2;
+                    maxsliderhor = shir_oknopovorototkid_max*2;
+                    minsliderver = vysota_oknopovorot_min;
+                    maxsliderver = vysota_oknopovorot_max;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО поворотное и ПОВОРОТНО – ОТКИДНОЕ
+
+                //ПВХ ОКНО глухое и ПОВОРОТНО – ОТКИДНОЕ С ГЛУХИМ СВЕРХУ
+                $("#wind-type-23").click(function () {
+                    tipokna = 23; //задаем тип окна
+                    minsliderhor = shir_oknogluh_min*2;
+                    maxsliderhor = shir_oknopovorototkid_max*2;
+                    minsliderver = vysota_oknopovorototkid_min +400;
+                    maxsliderver = vysota_oknogluh_max + 400;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО глухое и ПОВОРОТНО – ОТКИДНОЕ С ГЛУХИМ СВЕРХУ
+
+                //ПВХ ОКНО ПОВОРОТНОЕ и ПОВОРОТНО – ОТКИДНОЕ С ГЛУХИМ СВЕРХУ
+                $("#wind-type-24").click(function () {
+                    tipokna = 24; //задаем тип окна
+                    minsliderhor = shir_oknopovorototkid_min*2;
+                    maxsliderhor = shir_oknopovorototkid_max*2;
+                    minsliderver = vysota_oknopovorototkid_min +400;
+                    maxsliderver = vysota_oknopovorot_max + 400;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО ПОВОРОТНОЕ и ПОВОРОТНО – ОТКИДНОЕ С ГЛУХИМ СВЕРХУ
+                //*****************Конец второго блока**************//
+
+                //*****************Третий блок**************//
+                //ПВХ ОКНО Глухое и ПОВОРОТНО – ОТКИДНОЕ  и глухое
+                $("#wind-type-31").click(function () {
+                    tipokna = 31; //задаем тип окна
+                    minsliderhor = shir_oknopovorototkid_min*3;
+                    maxsliderhor = shir_oknopovorototkid_max*3;
+                    if (maxsliderhor > 3000) {maxsliderhor = 3000;}
+                    minsliderver = vysota_oknopovorototkid_min;
+                    maxsliderver = vysota_oknogluh_max;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО Глухое и ПОВОРОТНО – ОТКИДНОЕ  и глухое
+
+                //ПВХ ОКНО ПОВОРОТНОЕ и Глухое и ПОВОРОТНО – ОТКИДНОЕ
+                $("#wind-type-32").click(function () {
+                    tipokna = 32; //задаем тип окна
+                    minsliderhor = shir_oknopovorototkid_min*3;
+                    maxsliderhor = shir_oknopovorototkid_max*3;
+                    if (maxsliderhor > 3000) {maxsliderhor = 3000;}
+                    minsliderver = vysota_oknopovorototkid_min;
+                    maxsliderver = vysota_oknogluh_max;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО ПОВОРОТНОЕ и Глухое и ПОВОРОТНО – ОТКИДНОЕ
+
+                //ПВХ ОКНО Глухое и ПОВОРОТНО – ОТКИДНОЕ  и глухое и глухое сверху
+                $("#wind-type-33").click(function () {
+                    tipokna = 33; //задаем тип окна
+                    minsliderhor = shir_oknopovorototkid_min*3;
+                    maxsliderhor = shir_oknopovorototkid_max*3;
+                    if (maxsliderhor > 3000) {maxsliderhor = 3000;}
+                    minsliderver = vysota_oknopovorototkid_min + 400;
+                    maxsliderver = vysota_oknogluh_max + 400;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО Глухое и ПОВОРОТНО – ОТКИДНОЕ  и глухое	 и глухое сверху
+
+                //ПВХ ОКНО ПОВОРОТНОЕ и Глухое и ПОВОРОТНО – ОТКИДНОЕ	 и глухое сверху
+                $("#wind-type-34").click(function () {
+                    tipokna = 34; //задаем тип окна
+                    minsliderhor = shir_oknopovorototkid_min*3;
+                    maxsliderhor = shir_oknopovorototkid_max*3;
+                    if (maxsliderhor > 3000) {maxsliderhor = 3000;}
+                    minsliderver = vysota_oknopovorototkid_min + 400;
+                    maxsliderver = vysota_oknogluh_max + 400;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(1100);
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor);
+                    reInitVertSlider(1100, minsliderver, maxsliderver);
+                    change_price();
+                });
+                //конец расчета ПВХ ОКНО ПОВОРОТНОЕ и Глухое и ПОВОРОТНО – ОТКИДНОЕ	 и глухое сверху
+                //*****************Конец третьего блока**************//
+
+                //*****************Четвертный блок**************//
+                // расчет ПВХ Дверь балконная
+                $("#wind-type-41").click(function () {
+                    tipokna = 41; //задаем тип окна
+                    minsliderhor = shir_dver_min;
+                    maxsliderhor = shir_dver_max;
+                    minsliderver = vysota_dver_min;
+                    maxsliderver = vysota_dver_max;
+
+                    // подставляем значения максимума и минимума на слайдер
+                    $('#Costhor').val(minsliderhor);
+                    $('#Costver').val(minsliderver);
+
+                    reInitVertSlider(minsliderver,minsliderver,maxsliderver);
+                    reInitHorizSlider(minsliderhor,minsliderhor,maxsliderhor);
+                    change_price();
+                });
+                //конец расчета ПВХ Дверь балконная
+
+                //ПВХ Дверь балконная двухстворчатая
+                $("#wind-type-42").click(function () {
+                    tipokna = 42; //задаем тип окна
+                    minsliderhor = shir_dver2_min;
+                    maxsliderhor = shir_dver2_max;
+                    minsliderver = vysota_dver2_min;
+                    maxsliderver = vysota_dver2_max;
+                    $('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
+                    $('#Costver').val(minsliderver);
+
+                    reInitHorizSlider(minsliderhor, minsliderhor, maxsliderhor)
+                    reInitVertSlider(minsliderver, minsliderver, maxsliderver)
+                    change_price();
+                });
+                //конец расчета ПВХ Дверь балконная	двухстворчатая
+                //*****************Конец четвертого блока**************//
+            });
+
+            function change_price() {
+                chekoksys = $('input[name=profil]:checked').attr('rel');
+
+                //premium profil
+                switch(parseInt(tipokna)) {
+                    case 41:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * stoim_dver_premium / 1000000;
+                        break;
+                    case 42:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * stoim_dver2_premium / 1000000;
+                        break;
+                    case 11:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * stoim_oknopovorot_premium / 1000000;
+                        break;
+                    case 12:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * stoim_oknopovorototkid_premium / 1000000;
+                        break;
+                    case 21:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * 0.5 * stoim_oknogluh_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.5 * stoim_oknopovorot_premium / 1000000;
+                        break;
+                    case 22:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * 0.5 * stoim_oknopovorototkid_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.5 * stoim_oknogluh_premium / 1000000;
+                        break;
+                    case 23:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * stoim_oknopovorot_premium / 1000000;
+                        break;
+                    case 24:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * 0.5 * stoim_oknopovorototkid_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.5 * stoim_oknopovorot_premium / 1000000;
+                        break;
+                    case 31:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknopovorototkid_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknogluh_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknopovorot_premium / 1000000;
+                        break;
+                    case 32:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknopovorot_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknogluh_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknopovorot_premium / 1000000;
+                        break;
+                    case 33:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknogluh_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknopovorototkid_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknogluh_premium / 1000000;
+                        break;
+                    case 34:
+                        costfin = $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknopovorototkid_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknopovorot_premium / 1000000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim_oknopovorot_premium / 1000000;
+                        break;
+                    default:
+                        break;
+                }
+
+                costfin = costfin * koeffits * skidka;
+
+
+                if (chekpodokonnik == 1) {
+                    costfin = costfin + podokonnik * $('#Costhor').val() * 0.001;
+                }
+                if (chekmontazhrab == 1) {
+                    costfin = costfin + montazhrab * $('#Costhor').val() * $('#Costver').val() * 0.000001;
+                }
+                costfin = Math.round(costfin); // округляем до целого
+                $('.td-price-summury').html(costfin); // выводим финальную стоимость
+
+
+                //расчитываем рассрочку
+                rassrochka = costfin / 8;
+                rassrochka = Math.round(rassrochka); // округляем до целого
+                $('.td-price-installment').html(rassrochka); // выводим финальную стоимость
+            }
+
+
+            function reInitHorizSlider(val, min, max) {
+                $('#window-width-1-ui-slide-0').slider({
+                    orientation: "horizontal",
+                    range: "min",
+                    value: val,
+                    min: Number(min),
+                    max: Number(max),
+                    slide:
+                            function( event, ui ) {
+                                $('.inp-slide-horizontal-window-width-1-0').val(ui.value);
+                                change_price();
+                            }
+                });
+            }
+
+
+            function reInitVertSlider(val, min, max) {
+                $('#window-height-ui-slide-0').slider({
+                    orientation: "vertical",
+                    range: "min",
+                    value: val,
+                    min: Number(min),
+                    max: Number(max),
+                    slide:
+                            function( event, ui ) {
+                                $('.inp-slide-vertical-window-height-0').val(ui.value);
+                                change_price();
+                            }
+                });
+            }
+
+            </script>
+                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ калькулятор -->
+                    <form method="post" action="">
+                           <!-- ~~~~~~~~~~~~~~~~ выбор типа окна -->
+                        <div class="calculate-body">
+                           <div class="calculate-body-left">
+                               <div class="choose-window-form">
+                                   <ul class="window-type-list">
+                                       <li class="row1">
+                                           <label id="wind-type-1" class="window-type">
+                                               <input type="radio" name="window-form-type" class="custom-radio" value="" />
+                                           </label>
+                                           <div class="window-type-sublist">
+                                               <label id="wind-type-11" class="window-type">
+                                                   <input type="radio" name="window-form" class="custom-radio" value="" />
+                                               </label>
+                                               <label id="wind-type-12" class="window-type">
+                                                   <input type="radio" name="window-form" class="custom-radio" value="" />
+                                               </label>
+                                               <label id="wind-type-13" class="window-type">
+                                                   <input type="radio" name="window-form" class="custom-radio" value="" />
+                                               </label>
+
+                                           </div>
+                                       </li>
+
+                                       <li class="row2">
+                                           <label id="wind-type-2" class="window-type"><input type="radio" name="window-form-type" class="custom-radio" value="" /></label>
+                                           <div class="window-type-sublist">
+                                               <label id="wind-type-21" class="window-type"><input type="radio" name="window-form" class="custom-radio" value="" checked="" /></label> 							<label id="wind-type-22" class="window-type"><input type="radio" name="window-form" class="custom-radio" value="" /></label> 							<label id="wind-type-23" class="window-type"><input type="radio" name="window-form" class="custom-radio" value="" /></label> 							<label id="wind-type-24" class="window-type"><input type="radio" name="window-form" class="custom-radio" value="" /></label> 						</div>
+                                       </li>
+
+                                       <li class="row3">
+                                           <label id="wind-type-3" class="window-type"><input type="radio" name="window-form-type" class="custom-radio" value="" /></label>
+                                           <div class="window-type-sublist">
+                                               <label id="wind-type-31" class="window-type"><input type="radio" name="window-form" class="custom-radio" value="" /></label> 							<label id="wind-type-32" class="window-type"><input type="radio" name="window-form" class="custom-radio" value="" /></label> 							<label id="wind-type-33" class="window-type"><input type="radio" name="window-form" class="custom-radio" value="" /></label> 							<label id="wind-type-34" class="window-type"><input type="radio" name="window-form" class="custom-radio" value="" /></label> 						</div>
+                                       </li>
+
+                                       <li class="row4">
+                                           <label id="wind-type-4" class="window-type"><input type="radio" name="window-form-type" class="custom-radio" value="" /></label>
+                                           <div class="window-type-sublist">
+                                               <label id="wind-type-41" class="window-type"><input type="radio" name="window-form" class="custom-radio" value="" /></label> 							<label id="wind-type-42" class="window-type"><input type="radio" name="window-form" class="custom-radio" value="" /></label> 						</div>
+                                       </li>
+                                   </ul>
+                               </div>
+
+                               <div class="radio-block">
+                                   <label><input type="checkbox" name="options_install" class="custom-checkbox" />Монтаж</label>
+                                   <label><input type="checkbox" name="options_accessories" class="custom-checkbox" />Комплектующие</label>
+                               </div>
+                           </div>
+
+                           <!-- ~~~~~~~~~~~~~~~~/выбор типа окна -->
+
+                           <!-- ~~~~~~~~~~~~ высота -->
+
+                           <div class="window-height">
+                               <label>Высота</label>
+                               <input type="text" class="add-vertical-slide" name="window-height" max="4000" min="0" value="2000" id="Costver" />
+                           </div>
+
+                           <!-- ~~~~~~~~~~~~/высота -->
+
+                           <!-- ~~~~~~~~~~~~ ширина  -->
+
+                           <div class="calculate-window">
+                               <div class="wind-type-21" id="window-form-preview2"></div>
+
+                               <!-- ~~~~~~~~~~~~ ширина -->
+
+                               <div class="bottom-width">
+                                   <input type="text" class="add-horizontal-slide" name="window-width-1" max="4000" min="0" value="4000" id="Costhor" />
+                                   <label>Ширина</label>
+                               </div>
+                           </div>
+
+                           <!-- ~~~~~~~~~~~~/ширина -->
+
+                           <div class="clear-all"></div>
+                        </div>
+                       <div class="calculate__result">
+                           <dl>
+                               <dt>Стоимость:</dt>
+                               <dd><span class="td-price-summury">99 999</span> Руб.</dd>
+                           </dl>
+                           <dl>
+                               <dt>В рассрочку:</dt>
+                               <dd><span class="td-price-installment">99 999</span> Руб./месяц</dd>
+                           </dl>
+                       </div>
+
+                       <span class="title">Обращаем Ваше внимание, что данный расчет является предварительным и ознакомительным.
+                           <span>Подробности по телефону (495) 984 21 21.</span>
+                       </span>
+
+                        <a class="calculator__window active" href="#">окна</a>
+                        <a class="calculator__balkon" href="#">балкон</a>
+
+                   </form>
+                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~/калькулятор -->
+            </div>
+
+           <h3>Заявка на расчет</h3>
+
+           <!-- application -->
+           <form class="application">
+               <input type="text" placeholder="Ваше имя">
+               <input type="tel" placeholder="Телефон">
+               <input type="submit" value="Отправить">
+           </form>
+           <!-- /application -->
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__menu -->
+        <div class="footer__menu">
+            <a href="#">Пластиковые окна</a>
+            <a href="#">Остекление балконов</a>
+            <a href="#">Цены</a>
+            <a href="#">Акции</a>
+            <a href="#">Услуги</a>
+            <a href="#">Контакты</a>
+        </div>
+        <!-- /footer__menu -->
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <div>
+                <!-- footer__address -->
+                <address class="footer__address">
+                    <span>© 2007-2014, ООО «Окна Скидки»,</span>
+                    <span>г. Москва, ул. Миклухо-Маклая, 42</span>
+                    <span class="okna-plan">Интернет-маркетинг «<a href="#">Окна План</a>»</span>
+                </address>
+                <!-- /footer__address -->
+
+                <a href="tel:84957390933" class="footer__tel">8 (495) 739-09-33 </a>
+
+                <div class="top50"><img src="img/top50.jpg" width="88" height="31" alt=""></div>
+                <div class="count"><img src="img/count.jpg" width="88" height="31" alt=""></div>
+
+            </div>
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

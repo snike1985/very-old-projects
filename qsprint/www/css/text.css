@@ -1,0 +1,227 @@
+.site__content {
+    width: 1000px;
+    margin: 0 auto;
+}
+.site__content .banner {
+    padding-top: 0;
+    padding-left: 0;
+    height: 230px;
+}
+.banner ul{
+    width: 325px;
+    padding-top: 20px;
+    padding-left: 45px;
+    position: relative;
+    z-index: 10;
+}
+.banner li{
+    font-family: arial;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 16px;
+    padding-left: 20px;
+    position: relative;
+    background: url("../img/banner__li.png") no-repeat left center;
+}
+
+/* --------------- content --------------- */
+.content{
+    width: 662px;
+    padding-left: 2px;
+    display: inline-block;
+    vertical-align: top;
+}
+.content h1, .content h2, .content h3 {
+    font-weight: normal;
+    font-family: 'eurofont';
+    color: #282525;
+    letter-spacing: -1px;
+}
+.content h1 > span, .content h2 > span, .content h3 > span{
+    display: block;
+    color: #282525;
+}
+.content h1 {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 11px;
+}
+.content h3 {
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+.content p {
+    font-family: arial;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    margin-bottom: 18px;
+    color: #000000;
+}
+.content p.images {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.content ul {
+    font-size: 13px;
+    margin-bottom: 19px;
+    padding-left: 5px;
+}
+.content ul li {
+    position: relative;
+    font-size: 13px;
+    padding-left: 20px;
+    line-height: 19px;
+}
+.content ul li:before {
+    position: absolute;
+    content: '';
+    background: url("../img/li_before.png");
+    width: 5px;
+    height: 5px;
+    top: 8px;
+    left: 2px;
+}
+.content span {
+    color: #000;
+}
+.content table {
+    font-size: 12px;
+    font-family: Arial;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 550px;
+}
+.content tbody tr {
+    height: 31px;
+}
+.content thead tr {
+    background: #e98825;
+    font-weight: bold;
+    height: 26px;
+}
+.content thead tr th:first-child{
+    border-left: none;
+}
+.content thead tr th {
+    border-left: 1px solid #e98825;
+    padding-top: 6px;
+    color: #ffffff;
+}
+.content thead tr th:first-child{
+width: 113px;
+}
+.content thead tr th:last-child{
+    width: 155px;
+}
+.content td, th {
+    border: 1px solid #e98825;
+    padding: 9px 15px 0px 15px;
+}
+.content dl {
+    font-size: 12px;
+    margin-bottom: 55px;
+}
+.content dl dt {
+    float: left;
+    padding-right: 2px;
+}
+.content dl dd {
+    float: left;
+    border-left: 1px solid #000;
+}
+.content dl dt+dd {
+    border-left: none;
+}
+.content dl dd a {
+    color: #000;
+    text-decoration: underline;
+    display: inline-block;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.content dl dd a:hover {
+    text-decoration: none;
+}
+.content form{
+    margin-top: 25px;
+}
+.content p > img {
+    float: left;
+    margin: -8px 17px 3px 0px;
+}
+.content p.fon {
+    background: #e6e6e6;
+    padding: 15px;
+}
+.content ol {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 18px 0 35px 33px;
+    list-style-type:decimal;
+}
+
+.contact {
+    margin-top: 22px;
+    margin-bottom: 71px;
+    position: relative;
+    width: 452px;
+}
+.contact fieldset {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-family: Arial;
+    overflow: hidden;
+}
+.contact label {
+    width: 90px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 2%;
+    float: right;
+}
+.contact fieldset input,
+.contact fieldset textarea {
+    border: 1px solid #a09a9a;
+    display: inline-block;
+    width: 345px;
+    float: right;
+    padding-left: 5px;
+}
+.contact fieldset textarea{
+    height: 157px;
+    padding-top: 5px;
+}
+.contact fieldset input {
+    height: 22px;
+}
+.button {
+    position: absolute;
+    right: 0;
+    bottom: -36px;
+}
+.button input {
+    background-color: #e98825;
+    width: 122px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+}
+.button input:hover {
+    background-color: #ff9e3b;
+}
+/* --------------- /content --------------- */

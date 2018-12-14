@@ -1,0 +1,9 @@
+.header__submenu li:before,
+.ares-slider__points li,
+.products-preview a,
+.order > input,
+.print {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

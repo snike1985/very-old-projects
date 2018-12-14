@@ -1,0 +1,436 @@
+.fileform {
+	display:inline-block; //zoom:1; //display:inline; vertical-align:middle;
+    overflow: hidden;
+    position: relative;
+    width:100px;
+    height:42px;
+    text-align:center;
+	line-height:19px;
+	font-weight:700;
+	font-size:16px;}
+.fileform .custom-upload{
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    -moz-opacity: 0; 
+    filter: alpha(opacity=0); 
+    opacity: 0; 
+    font-size: 150px; 
+    height: 30px; 
+    z-index:20;}
+span.custom-radio{
+	display:inline-block; //zoom:1; //display:inline; vertical-align:middle;
+	background:url("../img/radio-inp.png") no-repeat 0 0;
+	width:32px; height:32px; margin:0 9px 0 0;
+	}
+span.custom-checkbox {
+    display:inline-block; //zoom:1; //display:inline; vertical-align:middle;
+    background:url("../img/check-inp.png") no-repeat 0 0;
+    width:32px; height:32px; margin:0 9px 0 0;
+}
+span.custom-radio input, span.custom-checkbox input{
+	position:relative; width:32px; height:32px;
+	opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	}
+span.custom-radio.active, span.custom-checkbox.active{background-position:0 -32px;}
+
+
+
+/*~~~~~~~~~~~~ выбор формы балкона и окна */
+.choose-window-form{
+    position: relative;
+    padding: 7px 0 3px;
+    z-index: 50;
+    margin: 0 auto 55px;
+    border-radius: 6px;
+    background: #fff;
+    border: #c0c0c0 1px solid;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2) inset;
+    text-align: center;
+}
+.calculator__balkon div.choose-window-form{
+    position:relative;
+    padding: 7px 0;
+    z-index:50;
+    margin: 0 auto 28px;
+    border-radius:6px;
+    background:#fff;
+    border:#c0c0c0 1px solid;
+    box-shadow:0 0 8px 0 rgba(0,0,0,0.2) inset;
+    text-align:center;
+    width: 665px;
+}
+.window-type{
+	position:relative; overflow:hidden;
+	display:inline-block;
+	//zoom:1; //display:inline;
+	vertical-align:top;
+	margin:0 5px;
+	height:53px;}
+	.window-type span.custom-radio{
+		position:relative;
+		height:105px;
+		background:url("../img/balcon-window-type-orange.png") no-repeat;
+	}
+	.window-type span.custom-radio.cold{
+		position:relative;
+		height:105px;
+		background:url("../img/balcon-window-type-blue.png") no-repeat;
+	}
+	.window-type span.custom-radio.slidors{
+		position:relative;
+		height:105px;
+		background:url("../img/balcon-window-type-green.png") no-repeat;
+	}
+	.window-type span.custom-radio.warm{
+		position:relative;
+		height:105px;
+		background:url("../img/balcon-window-type-orange.png") no-repeat;
+	}
+
+	.window-type span.custom-radio.active,
+	.window-type span.custom-radio.warm.active,
+	.window-type span.custom-radio.cold.active,
+	.window-type span.custom-radio.slidors.active,
+	.window-type span.custom-radio:hover{top:-52px;}
+
+	.window-type span.custom-radio input{
+		position:absolute;
+		cursor:pointer;
+		left:0; top:0;
+		width:100%; height:100%;}
+
+#window-type-1 span.custom-radio{width:66px; background-position:0 0;}
+#window-type-2 span.custom-radio{width:61px; background-position:-89px 0;}
+#window-type-3 span.custom-radio{width:53px; background-position:-176px 0;}
+#window-type-4 span.custom-radio{width:61px; background-position:-254px 0;}
+#window-type-5 span.custom-radio{width:79px; background-position:-343px 0;}
+#window-type-6 span.custom-radio{width:79px; background-position:-450px 0;}
+#window-type-7 span.custom-radio{width:80px; background-position:-556px 0;}
+
+#window-form-preview{
+	position:relative;
+	float:left;
+	margin-top:19px;
+	width:340px;
+	height:240px;
+	margin-left:-5px;
+	background:url("../img/large-preview.png") no-repeat 0 0;}
+#window-form-preview.window-type-1{background-position:0 0;}
+#window-form-preview.window-type-2{background-position:0 -240px;}
+#window-form-preview.window-type-3{background-position:0 -480px;}
+#window-form-preview.window-type-4{background-position:0 -720px;}
+#window-form-preview.window-type-5{background-position:0 -960px;}
+#window-form-preview.window-type-6{background-position:0 -1200px;}
+#window-form-preview.window-type-7{background-position:0 -1440px;}
+
+
+/*~~~~~~~~~~~~ выбор формы окна */
+.calculate-body-left{
+	position:relative;
+	z-index:50;
+	float:left;
+	width:478px;
+	margin:0 13px;}
+ul.window-type-list{
+	text-align:justify;
+    padding: 0 20px;
+}
+ul.window-type-list:after {
+    display: inline-block;
+    width: 100%;
+    content: '';
+}
+ul.window-type-list > li{
+	position:relative;
+	display:inline-block;
+	margin:0 9px;
+	//zoom:1; //display:inline;
+	vertical-align:top;
+	height:102px;}
+
+ul.window-type-list > li label.window-type{height:83px; margin:0;}
+	
+.window-type-sublist{
+	position:absolute;
+	z-index:60;
+	display:none;
+	top:70px; left:50%;
+	margin-left:-58px;
+	padding:20px 5px 5px 5px;
+	width:105px;
+	white-space:normal;
+	border-radius:6px;
+	background:#fff;
+	border:#c0c0c0 1px solid;
+	text-align:center;}
+
+ul.window-type-list > li:hover .window-type-sublist{display:block;}
+	
+	ul.window-type-list > li.hidden{overflow:hidden;}
+	ul.window-type-list > li.hidden .window-type-sublist{display:none;}
+
+.window-type-sublist label.window-type{
+	display:block;
+	margin:0 auto;
+	height:56px !important;  margin-bottom:13px !important;}
+	.row4 .window-type-sublist label.window-type{height:83px !important;}
+
+.window-type-list span.custom-radio{
+	height:200px; margin:0;
+	background:url("../img/okna-small.png") no-repeat 0 0;}
+	
+	.window-type-list label.window-type span.custom-radio.active,
+	.window-type-list label.window-type span.custom-radio:hover{top:-100px;}
+	
+	.window-type-sublist label.window-type span.custom-radio,
+	.window-type-sublist label.window-type span.custom-radio{top:-16px;}
+	.window-type-sublist label.window-type span.custom-radio.active,
+	.window-type-sublist label.window-type span.custom-radio:hover{top:-116px;}
+	
+	.row4 .window-type-sublist label.window-type span.custom-radio,
+	.row4 .window-type-sublist label.window-type span.custom-radio{top:0;}
+	.row4 .window-type-sublist label.window-type span.custom-radio.active,
+	.row4 .window-type-sublist label.window-type span.custom-radio:hover{top:-100px;}
+
+#wind-type-1 span.custom-radio{width:40px; background-position:0 0;}
+	#wind-type-11 span.custom-radio{width:40px; background-position:-300px 0;}
+	#wind-type-12 span.custom-radio{width:40px; background-position:-342px 0;}
+	#wind-type-13 span.custom-radio{width:40px; background-position:-385px 0;}
+	#wind-type-14 span.custom-radio{width:56px; background-position:-429px 0;}
+	
+#wind-type-2 span.custom-radio{width:70px; background-position:-55px 0;}
+	#wind-type-21 span.custom-radio{width:70px; background-position:-493px 0;}
+	#wind-type-22 span.custom-radio{width:70px; background-position:-568px 0;}
+	#wind-type-23 span.custom-radio{width:70px; background-position:-644px 0;}
+	#wind-type-24 span.custom-radio{width:70px; background-position:-718px 0;}
+	
+#wind-type-3 span.custom-radio{width:100px; background-position:-140px 0;}
+	#wind-type-31 span.custom-radio{width:100px; background-position:-798px 0;}
+	#wind-type-32 span.custom-radio{width:100px; background-position:-902px 0;}
+	#wind-type-33 span.custom-radio{width:100px; background-position:-1007px 0;}
+	#wind-type-34 span.custom-radio{width:100px; background-position:-1110px 0;}
+	
+#wind-type-4 span.custom-radio{width:40px; background-position:-253px 0;}
+	#wind-type-41 span.custom-radio{width:40px; background-position:-1235px 0;}
+	#wind-type-42 span.custom-radio{width:73px; background-position:-1284px 0;}
+
+
+
+.calculate-right-window{
+	float:right;
+	width:350px;
+    padding-top: 37px;
+	text-align:right;}
+#window-form-preview2{
+	display:block;
+    width: 325px;
+    height:223px;
+	background:url("../img/windows-type2.png") no-repeat 0 0;
+    margin-bottom: 37px;}
+
+#window-form-preview2.wind-type-11{background-position:0 -2886px;}
+#window-form-preview2.wind-type-12{background-position:0 -2664px;}
+#window-form-preview2.wind-type-13{background-position:0 -2442px;}
+#window-form-preview2.wind-type-14{background-position:0 -2220px;}
+#window-form-preview2.wind-type-21{background-position:0 -1998px;}
+#window-form-preview2.wind-type-22{background-position:0 -1776px;}
+#window-form-preview2.wind-type-23{background-position:0 -1554px;}
+#window-form-preview2.wind-type-24{background-position:0 -1332px;}
+#window-form-preview2.wind-type-31{background-position:0 -1110px;}
+#window-form-preview2.wind-type-32{background-position:0 -888px;}
+#window-form-preview2.wind-type-33{background-position:0 -666px;}
+#window-form-preview2.wind-type-34{background-position:0 -442px;}
+#window-form-preview2.wind-type-41{background-position:0 -222px;}
+#window-form-preview2.wind-type-42{background-position:0 0px;}
+
+/*~~~~~~~~~~~~ выбор опций */
+.calculate-body-left h4{
+	clear:both;
+    text-align: left;
+    margin-bottom: 20px;
+	font-style:italic;
+	font-size:14px;
+    font-weight: normal;
+    color:#666666;
+}
+.radio-block{
+	overflow:hidden;
+	margin-bottom:17px;
+    margin-left:-35px;
+    width: 250px}
+.radio-block label{
+	position:relative;
+    text-align: left;
+    display: block;
+	overflow:hidden;
+    margin: 0 0 15px 34px;
+    font-weight:700;
+	font-size:18px;
+    line-height: 30px;
+	color:#666666;}
+.radio-block label span{float:left;}
+
+/*~~~~~~~~~~~~ выбор высоты окна */
+.window-height{
+	float:left;
+	margin:0 0 0 14px;
+	width:58px;
+	text-align:center;}
+.window-height label,
+.window-width label,
+.bottom-width label{
+	display:block;
+	font-size:13px;
+	line-height:20px;
+	font-weight:700;
+	color:#666666;}
+	.window-height label{margin-bottom:4px;}
+.window-height input,
+.window-width input,
+.bottom-width input{
+	width:54px;
+	padding:0;
+	margin:0;
+	background:#fff;
+	border:#999999 1px solid;
+	border-radius:6px;
+	height:26px;
+	text-align:center;
+	color:#01bf01;
+    font-weight: 700;
+	box-shadow:0 2px 10px 0 #d3d3d3 inset;
+}
+
+	.window-height input{margin-bottom:6px;}
+
+.vertical-slide{
+	width:22px;
+	margin:0 auto;
+	padding:9px 0 8px ;
+	height:260px;
+	background:url("../img/vertical-slide.png") no-repeat;
+}
+.calculator__balkon div.vertical-slide {
+    width:22px;
+    margin:0 auto;
+    padding:9px 0 8px ;
+    height:179px;
+    background:url("../img/vertical-slide_balkon.png") no-repeat;
+}
+.ui-slider-vertical{
+	position:relative;
+	width:22px;
+	height:242px;
+}
+.calculator__balkon div.ui-slider-vertical{
+    position:relative;
+    width:22px;
+    height:161px;
+}
+.ui-slider-vertical .ui-slider-range{
+	position:absolute;
+	left:8px; bottom:0; width:6px;
+	background:#00cc00;
+	border-radius:3px;
+}
+.ui-slider-vertical .ui-slider-handle{
+	position:absolute;
+	left:-6px; bottom:0;
+	margin-bottom:-32px;
+	width:37px; height:44px;
+	background:url("../img/ui-handle-vertical.png") no-repeat 0 0;
+	border-radius:13px;}
+	
+
+/*~~~~~~~~~~~~ выбор ширина окна */
+.window-width{
+	float:right;
+	width:274px;
+	margin:0 -6px;} 
+.window-width label{
+	text-align:right;
+	padding-top:31px;}
+.window-width ol{
+	margin:0;
+	padding:0;
+    counter-reset: item;}
+.window-width ol li{
+	overflow:hidden;
+	margin:0;
+	margin-top: 24px;
+	width:268px;
+	clear:both;
+	background:none;
+    list-style: decimal;
+    line-height: 1.5em;
+    display: block;
+}
+	.window-width ol li:before{
+		margin:0;
+		padding:0;
+		float:left;
+		color:#666666;
+		font-size:16px;
+		line-height:30px;
+		font-weight:700;
+		text-shadow:0 1px 0 #fff;
+    }
+ol>li:before {
+    margin: 0 0 0 -20px;
+    width: 20px;
+    display: inline-block;
+    content: counters(item,".") ". ";
+    counter-increment: item;
+    color: #157cc3;
+}
+.window-width input{
+	float:right;
+	margin-right:0;}
+.horizontal-slide{
+	position:relative;
+    width: 261px;
+    height: 23px;
+	background:url("../img/slide-hor.png") no-repeat 0 0;
+}
+.calculator__balkon div.horizontal-slide{
+    position:relative;
+    margin-right: 8px;
+    width: 179px;
+    height: 23px;
+    background:url("../img/slide-hor_balkon.png") no-repeat 0 0;
+}
+.window-width .horizontal-slide,
+.bottom-width .horizontal-slide{
+	float:right;
+    margin: 4px 3px 0 -20px;}
+.ui-slider-horizontal{
+	position:relative;
+	width:230px;
+	height:32px;
+}
+.calculator__balkon div.ui-slider-horizontal{
+    position:relative;
+    width:148px;
+    height:32px;
+}
+.ui-slider-horizontal .ui-slider-range{
+	position:absolute;
+	left:9px; top:8px; height:6px;
+	background:#00cc00;
+	border-radius:3px;}
+.ui-slider-horizontal .ui-slider-handle{
+	position:absolute;
+	top:-7px; left:0;
+	margin-left:-12px;
+	width:44px; height:34px;
+	background:url("../img/ui-handle-horizontal.png") no-repeat 0 0;
+	border-radius:13px;}
+
+.bottom-width{text-align:right;
+    margin-right: 15px;}
+.bottom-width input{float:right; margin-left:5px;}
+.bottom-width label{text-align:right; margin-bottom:4px; clear: both}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~/калькулятор: форма */

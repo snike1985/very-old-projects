@@ -1,0 +1,223 @@
+﻿.cottages h2,
+.cottages h3 {
+    color: #ff6600;
+}
+.options > p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    padding: 5px 0 12px;
+}
+.options > a {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #009aea;
+    text-decoration: underline;
+    text-transform: none;
+    display: inherit;
+    margin-bottom: 32px;
+}
+.options > a:before {
+    display: none;
+}
+.options > a:hover {
+    text-decoration: none;
+}
+/* --------------- cottages__glazing --------------- */
+.cottages__glazing {
+    width: 999px;
+    margin: 0 auto;
+    background: url("../img/cottages_glazing_fon.png") no-repeat left 121px;
+    padding: 13px 0 32px;
+    font-family: "Noto Sans", sans-serif;
+    position: relative;
+}
+.cottages__glazing:before {
+    content: '';
+    background: url("../img/cottages_glazing_car.png") no-repeat;
+    width: 447px;
+    height: 336px;
+    position: absolute;
+    top: 291px;
+    right: 46px;
+}
+.cottages__glazing h2 {
+    margin-bottom: 612px;
+}
+.cottages__glazing p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+.cottages__glazing > span {
+    font-size: 15px;
+    color: #333333;
+    position: absolute;
+    top: 610px;
+    text-align: center;
+}
+.cottages__glazing > span > span {
+    display: block;
+    padding-top: 3px;
+}
+.cottages__glazing span.more-order {
+    left: 22px;
+}
+.cottages__glazing span.any-size {
+    left: 177px;
+}
+.cottages__glazing span.eco {
+    left: 358px;
+}
+.cottages__glazing__price {
+    position: absolute;
+    top: 95px;
+    right: 17px;
+    text-align: center;
+}
+.cottages__glazing__price > span {
+    font-size: 18px;
+    font-style: italic;
+    color: #666666;
+    display: block;
+    margin-bottom: 9px;
+}
+.cottages__glazing__price del > span {
+    font-size: 21px;
+}
+.cottages__glazing__price form {
+    border: 2px solid #d5d5d5;
+    border-radius: 6px;
+    background: url("../img/form_fon.jpg");
+    width: 341px;
+    height: 146px;
+    position: relative;
+}
+.cottages__glazing__price dl {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    font-weight: 700;
+}
+.cottages__glazing__price dt {
+    display: inline-block;
+    vertical-align: top;
+    color: #333333;
+    font-size: 17px;
+    line-height: 20px;
+    width: 77px;
+    text-align: right;
+    padding-top: 7px;
+    margin-right: 11px;
+}
+.cottages__glazing__price dd {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 50px;
+    color: #fff;
+}
+.cottages__glazing__price dd > span {
+    font-size: 22px;
+}
+.cottages__glazing__price input[type='submit']:hover {
+    background: #00b200;
+    background: -moz-linear-gradient(top, #00b200 0%, #5af55a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b200), color-stop(100%,#5af55a));
+    background: -webkit-linear-gradient(top, #00b200 0%,#5af55a 100%);
+    background: -o-linear-gradient(top, #00b200 0%,#5af55a 100%);
+    background: -ms-linear-gradient(top, #00b200 0%,#5af55a 100%);
+    background: linear-gradient(to bottom, #00b200 0%,#5af55a 100%);
+}
+.cottages__glazing__price input[type='submit'] {
+    position: absolute;
+    bottom: 18px;
+    right: 21px;
+    font-weight: 700;
+    padding: 9px 16px;
+    border-radius: 18px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 3px solid #bfbfbf;
+    background: #5af55a;
+    background: -moz-linear-gradient(top, #5af55a 0%, #00b200 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5af55a), color-stop(100%,#00b200));
+    background: -webkit-linear-gradient(top, #5af55a 0%,#00b200 100%);
+    background: -o-linear-gradient(top, #5af55a 0%,#00b200 100%);
+    background: -ms-linear-gradient(top, #5af55a 0%,#00b200 100%);
+    background: linear-gradient(to bottom, #5af55a 0%,#00b200 100%);
+}
+.cottages__glazing__price span.sale {
+    width: 142px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+/* --------------- /cottages__glazing --------------- */
+
+/* --------------- lamonacia --------------- */
+.lamonacia {
+    background: #f6f6f6;
+    position: relative;
+    width: 949px;
+    height: 148px;
+    margin: 23px auto 34px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #cccccc;
+    text-align: center;
+    padding-top: 16px;
+}
+.lamonacia__gallery {
+    margin: 0 auto;
+    padding-top: 17px;
+}
+.lamonacia__gallery li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+}
+.lamonacia__gallery img {
+    display: block;
+    border: 7px solid #fff;
+    border-radius: 8px;
+}
+.lamonacia__gallery a {
+    display: block;
+}
+.lamonacia__gallery a:hover {
+    opacity: 0.8;
+}
+.lamonacia button {
+    background: url("../img/lamonacia__gallery_button.png") no-repeat;
+    width: 23px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    border: none;
+}
+.lamonacia button.prev:hover {
+    background-position: 0 -76px;
+}
+.lamonacia button.next:hover {
+    background-position: 0 bottom;
+}
+.lamonacia button.prev {
+    background-position: 0 0;
+    left: 20px;
+}
+.lamonacia button.next {
+    background-position: 0 -38px;
+    right: 20px;
+}
+/* --------------- /lamonacia --------------- */

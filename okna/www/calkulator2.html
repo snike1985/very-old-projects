@@ -1,0 +1,861 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/calkulator.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jcarousellite.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.custom.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- popup -->
+<div class="popup">
+
+    <!-- popup__form -->
+    <form class="popup__form">
+
+            <input type="text" placeholder="Ваше имя">
+            <input type="tel" placeholder="Телефон">
+            <textarea placeholder="Примечание к заказу"></textarea>
+            <div class="capcha-images">
+                <img src="pic/pop-up_images.jpg" width="129" height="51" alt="">
+            </div>
+            <input class="capcha-number" type="text">
+            <input type="submit" class="popup-send" value="Оформить">
+
+    </form>
+    <!-- /popup__form -->
+
+</div>
+<!-- popup -->
+
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="#" class="logo"><img src="img/logo.png" width="257" height="94" alt="Окна Выгодно"></a>
+            <!-- /logo -->
+
+            <a href="tel:83512111525" class="header__tel">8 (351) 211-15-25</a>
+
+            <!-- header__form -->
+            <form class="header__form">
+                <input type="search" placeholder="Вам перезвонить?">
+                <input type="submit" value="ok">
+            </form>
+            <!-- /header__form -->
+
+            <!-- header__menu -->
+            <nav class="header__menu">
+                <a href="#"><span class="home"></span></a>
+                <a href="#"><span>Пластиковые окна</span></a>
+                <a href="#"><span>Остекление балконов</span></a>
+                <a class="active" href="#"><span>Цены</span></a>
+                <a href="#"><span>Акции</span></a>
+                <a href="#"><span>Контакты</span></a>
+            </nav>
+            <!-- /header__menu -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+           <h2 class="calculator_h2">Оконный калькулятор</h2>
+
+            <div class="navigator">
+                <a href="#">Калькулятор окон</a>
+                <a class="active" href="#">Калькулятор балконов</a>
+            </div>
+            <div class="calculator calculator__balkon">
+                    <script>
+                        //common params
+                        //-------------------------------------------------------------------------//
+                        //допуски и цена м2
+                        shir_balk_min = 500;
+                        shir_balk_max = 1200;
+                        vysota_balk_min = 500;
+                        vysota_balk_max = 2000;
+
+                        /*
+                         05.02.2014
+                         stoim_balk_plastik = 3300;
+                         stoim_balk_alum = 2350;
+                         */
+                        /*added 05.02.2014*/
+                        stoim_balk_plastik = 4800;
+                        stoim_balk_alum = 3700;
+                        stoim_balk_slidors = 3800;
+                        stoim = stoim_balk_plastik;
+
+                        //СКИДКА процент скидки (пишем например 0.58)
+                        skidka = 0;
+
+                        //Комплектующие за м
+                        podokonnik = 930;
+
+                        //МОНТАЖНЫЕ РАБОТЫ за м2
+                        montazhrab = 1080;
+
+                        //КОЭФФИЦИЕНТ К СТОИМОСТИ ОКОН
+                        koeffits = 1;
+
+
+                        //задаем первоначальные минимальные и максимальные значения ширины и высоты
+                        minsliderhor1 = shir_balk_min*2;
+                        maxsliderhor1 = shir_balk_max*2;
+
+                        minsliderhor2 = shir_balk_min;
+                        maxsliderhor2 = shir_balk_max;
+
+                        minsliderhor3 = shir_balk_min;
+                        maxsliderhor3 = shir_balk_max;
+
+                        minsliderhor4 = shir_balk_min;
+                        maxsliderhor4 = shir_balk_max;
+
+                        minsliderver = vysota_balk_min;
+                        maxsliderver = vysota_balk_max;
+
+
+
+
+                        //объявляем переменные
+                        tipbalk = 1; //задаем тип окна
+                        shirinafin=0;
+                        costfin = 0; // стоимость финальная
+                        rassrochka = 0; // стоимость рассрочки
+                        /*05.02.2014
+                         stoim = stoim_balk_alum; // присваиваем стоимость из прайса
+                         */
+                        skidka = 1 - skidka;
+                        chekoksys = 0; // оконная система 0- эконом, 1 -премиум
+                        chekpodokonnik = 0; // подоконник, отлив  0- нет, 1 -да
+                        chekmontazhrab = 0; // монтажные работы  0- нет, 1 -да
+                        //-------------------------------------------------------------------------//
+                        //end common params
+                    </script>
+                    <script>
+                    //init params
+                    $(function() {
+                        //init
+                        $('#Costverbalk').val("1100");
+                        $('#Costhor1').val(minsliderhor1);
+                        $('#Costhor2').val(minsliderhor2);
+                        $('#Costhor3').val(minsliderhor3);
+                        $('#Costhor4').val(minsliderhor4);
+
+                        $('#Costhor1').attr('min', minsliderhor1).attr('max', maxsliderhor1).val(minsliderhor1);
+                        $('#Costhor2').attr('min', minsliderhor2).attr('max', maxsliderhor2).val(minsliderhor2);
+                        $('#Costhor3').attr('min', minsliderhor3).attr('max', maxsliderhor3).val(minsliderhor3);
+                        $('#Costhor4').attr('min', minsliderhor4).attr('max', maxsliderhor4).val(minsliderhor4).closest('li').hide();
+                        $('#Costverbalk').attr('min', minsliderver).attr('max', maxsliderver).val(1100);
+
+                        $('.block-select-temp').on('click', 'label', function(){
+                            var colorType = $(this).attr('class').split(' ')[0].split('-')[1] || false;
+                            if (colorType && colorType.length > 0) {
+                                var target = $('.choose-window-form').find('span.custom-radio');
+                                $.each(target, function(index, val) {
+                                    if ($(val).hasClass('active')){
+                                        $(val).attr('class', 'custom-radio active '+ colorType);
+                                    } else {
+                                        $(val).attr('class', 'custom-radio '+ colorType);
+                                    }
+                                });
+                            }
+                        });
+
+
+                        //console.warn(stoim);
+                        //select type
+                        $('input[name=window-type]').on('change', function(event) {
+                            var type = $(this).parent().parent().attr('class').split(' ')[0];
+                            if (type == 'temp-slidors') {
+                                stoim = stoim_balk_slidors;
+                                //console.info(stoim);
+                                change_price();
+                            } else if(type == 'temp-cold') {
+                                stoim = stoim_balk_alum;
+                                //console.info(stoim);
+                                change_price();
+                            } else if (type == 'temp-warm'){
+                                stoim = stoim_balk_plastik;
+                                //console.info(stoim);
+                                change_price();
+                            }
+                        });
+
+
+                        //create VERTICAL slider
+                        $('input.add-vertical-slide').each(function(i,inp) {
+                            $(inp).addClass('inp-slide-vertical-'+$(inp).attr('name')+'-'+i).after('<div class="vertical-slide"><div class="ui-slider-ver" id="'+$(inp).attr('name')+'-ui-slide-'+i+'"/></div>');
+                            $('#'+$(inp).attr('name')+'-ui-slide-'+i).slider({
+                                orientation: "vertical",
+                                range: "min",
+                                step: 10,
+                                value: $(inp).val(),
+                                min: Number($(inp).attr('min')),
+                                max: Number($(inp).attr('max')),
+                                slide:
+                                        function( event, ui ) {
+                                            $('.inp-slide-vertical-'+$(inp).attr('name')+'-'+i).val(ui.value);
+                                            change_price();
+                                        }
+                            });
+                        }).change(function(e) {
+                            $(this).val() > Number($(this).attr('max')) ? $(this).val($(this).attr('max')) :
+                                    $(this).val() < Number($(this).attr('min')) ?  $(this).val($(this).attr('min')) :
+                                            '';
+                            $(this).next().find('.ui-slider-ver').slider('value',$(this).val());
+                            change_price();
+                        });
+
+                        //create HORIZONTAL slider
+                        $('input.add-horizontal-slide').each(function(i,inp) {
+                            $(inp).addClass('inp-slide-horizontal-'+$(inp).attr('name')+'-'+i).after('<div class="horizontal-slide"><div class="ui-slider-hor" id="'+$(inp).attr('name')+'-ui-slide-'+i+'"/></div>');
+                            $('#'+$(inp).attr('name')+'-ui-slide-'+i).slider({
+                                orientation: "horizontal",
+                                range: "min",
+                                step: 10,
+                                value: $(inp).val(),
+                                min: Number($(inp).attr('min')),
+                                max: Number($(inp).attr('max')),
+                                slide:
+                                        function( event, ui ) {
+                                            $('.inp-slide-horizontal-'+$(inp).attr('name')+'-'+i).val(ui.value);
+                                            change_price();
+                                        }
+                            });
+                        }).change(function(e) {
+                            $(this).val() > Number($(this).attr('max')) ? $(this).val($(this).attr('max')) :
+                                    $(this).val() < Number($(this).attr('min')) ?  $(this).val($(this).attr('min')) :
+                                            '';
+                            $(this).next().find('.ui-slider-hor').slider('value',$(this).val());
+                            change_price();
+                        });
+                        change_price();
+
+                        //manage types
+                        $('.choose-window-form input').change(function(e) {
+                            $('#window-form-preview').attr('class',$(this).closest('label').attr('id'));
+                        });
+
+                        // только цифры :
+                        $('input.add-vertical-slide, input.add-horizontal-slide').keydown(function(event) {
+                            // Allow: backspace, delete, tab, escape, enter and .
+                            if ( $.inArray(event.keyCode,[46,8,9,27,13,190]) !== -1 ||
+                                // Allow: Ctrl+A
+                                    (event.keyCode == 65 && event.ctrlKey === true) ||
+                                // Allow: home, end, left, right
+                                    (event.keyCode >= 35 && event.keyCode <= 39)) {
+                                // let it happen, don't do anything
+                                return;
+                            }
+                            else {
+                                // Ensure that it is a number and stop the keypress
+                                if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                                    event.preventDefault();
+                                }
+                            }
+                        });
+
+
+                        // расчет тип балкона 1
+                        $("#window-type-1").click(function () {
+                            tipbalk = 1; //задаем тип окна
+                            minsliderhor1 = shir_balk_min*2;
+                            maxsliderhor1 = shir_balk_max*2;
+                            minsliderhor2 = shir_balk_min;
+                            maxsliderhor2 = shir_balk_max;
+                            minsliderhor3 = shir_balk_min;
+                            maxsliderhor3 = shir_balk_max;
+                            minsliderhor4 = shir_balk_min;
+                            maxsliderhor4 = shir_balk_max;
+
+                            minsliderver = vysota_balk_min;
+                            maxsliderver = vysota_balk_max;
+
+                            $('#Costhor1').val(minsliderhor1); // подставляем значения максимума и минимума на слайдер
+                            $('#Costhor2').val(minsliderhor2);
+                            $('#Costhor3').val(minsliderhor3);
+                            $('#Costhor4').val(minsliderhor4);
+                            $('#Costverbalk').val(1100);
+
+                            reInitHorizSlider1(minsliderhor1, minsliderhor1, maxsliderhor1);
+                            reInitHorizSlider2(minsliderhor2, minsliderhor2, maxsliderhor2);
+                            reInitHorizSlider3(minsliderhor3, minsliderhor3, maxsliderhor3);
+                            reInitHorizSlider4(minsliderhor4, minsliderhor4, maxsliderhor4, true);
+                            reInitVertSlider(1100, minsliderver, maxsliderver);
+                            //stoim = stoim_balk; // присваиваем стоимость из прайса
+                            change_price();
+                        });
+                        //конец расчета тип балкона 1
+
+                        // расчет тип балкона 2
+                        $("#window-type-2").click(function () {
+                            tipbalk = 2; //задаем тип окна
+                            minsliderhor1 = shir_balk_min;
+                            maxsliderhor1 = shir_balk_max;
+                            minsliderhor2 = shir_balk_min*2;
+                            maxsliderhor2 = shir_balk_max*2;
+                            minsliderhor3 = shir_balk_min;
+                            maxsliderhor3 = shir_balk_max;
+                            minsliderhor4 = shir_balk_min;
+                            maxsliderhor4 = shir_balk_max;
+
+                            minsliderver = vysota_balk_min;
+                            maxsliderver = vysota_balk_max;
+
+                            $('#Costhor1').val(minsliderhor1); // подставляем значения максимума и минимума на слайдер
+                            $('#Costhor2').val(minsliderhor2);
+                            $('#Costhor3').val(minsliderhor3);
+                            $('#Costhor4').val(minsliderhor4);
+                            $('#Costverbalk').val(1100);
+
+                            reInitHorizSlider1(minsliderhor1, minsliderhor1, maxsliderhor1);
+                            reInitHorizSlider2(minsliderhor2, minsliderhor2, maxsliderhor2);
+                            reInitHorizSlider3(minsliderhor3, minsliderhor3, maxsliderhor4);
+                            reInitHorizSlider4(minsliderhor4, minsliderhor4, maxsliderhor4, true);
+                            reInitVertSlider(1100, minsliderver, maxsliderver);
+                            //stoim = stoim_balk; // присваиваем стоимость из прайса
+                            change_price();
+                        });
+                        //конец расчета тип балкона 2
+
+                        // расчет тип балкона 3
+                        $("#window-type-3").click(function () {
+                            tipbalk = 3; //задаем тип окна
+                            minsliderhor1 = shir_balk_min*3;
+                            maxsliderhor1 = shir_balk_max*3;
+                            minsliderhor2 = shir_balk_min;
+                            maxsliderhor2 = shir_balk_max;
+                            minsliderhor3 = shir_balk_min;
+                            maxsliderhor3 = shir_balk_max;
+                            minsliderhor4 = shir_balk_min;
+                            maxsliderhor4 = shir_balk_max;
+
+                            minsliderver = vysota_balk_min;
+                            maxsliderver = vysota_balk_max;
+
+                            $('#Costhor1').val(minsliderhor1); // подставляем значения максимума и минимума на слайдер
+                            $('#Costhor2').val(minsliderhor2);
+                            $('#Costhor3').val(minsliderhor3);
+                            $('#Costhor4').val(minsliderhor4);
+                            $('#Costverbalk').val(1100);
+                            reInitHorizSlider1(minsliderhor1, minsliderhor1, maxsliderhor1);
+                            reInitHorizSlider2(minsliderhor1, minsliderhor1, maxsliderhor1, true);
+                            reInitHorizSlider3(minsliderhor1, minsliderhor1, maxsliderhor1, true);
+                            reInitHorizSlider4(minsliderhor1, minsliderhor1, maxsliderhor1, true);
+                            reInitVertSlider(1100, minsliderver, maxsliderver);
+                            //stoim = stoim_balk; // присваиваем стоимость из прайса
+                            change_price();
+                        });
+                        //конец расчета тип балкона 3
+
+                        // расчет тип балкона 4
+                        $("#window-type-4").click(function () {
+                            tipbalk = 4; //задаем тип окна
+                            minsliderhor1 = shir_balk_min*2;
+                            maxsliderhor1 = shir_balk_max*2;
+                            minsliderhor2 = shir_balk_min*2;
+                            maxsliderhor2 = shir_balk_max*2;
+                            minsliderhor3 = shir_balk_min;
+                            maxsliderhor3 = shir_balk_max;
+                            minsliderhor4 = shir_balk_min;
+                            maxsliderhor4 = shir_balk_max;
+
+                            minsliderver = vysota_balk_min;
+                            maxsliderver = vysota_balk_max;
+
+                            $('#Costhor1').val(minsliderhor1); // подставляем значения максимума и минимума на слайдер
+                            $('#Costhor2').val(minsliderhor2);
+                            $('#Costhor3').val(minsliderhor3);
+                            $('#Costhor4').val(minsliderhor4);
+                            $('#Costverbalk').val(1100);
+                            reInitHorizSlider1(minsliderhor1, minsliderhor1, maxsliderhor1);
+                            reInitHorizSlider2(minsliderhor2, minsliderhor2, maxsliderhor2);
+                            reInitHorizSlider3(minsliderhor2, minsliderhor2, maxsliderhor2, true);
+                            reInitHorizSlider4(minsliderhor2, minsliderhor2, maxsliderhor2, true);
+                            reInitVertSlider(1100, minsliderver, maxsliderver);
+                            //stoim = stoim_balk; // присваиваем стоимость из прайса
+                            change_price();
+                        });
+                        //конец расчета тип балкона 4
+
+
+                        // расчет тип балкона 5
+                        $("#window-type-5").click(function () {
+                            tipbalk = 5; //задаем тип окна
+                            minsliderhor1 = shir_balk_min*3;
+                            maxsliderhor1 = shir_balk_max*3;
+                            minsliderhor2 = shir_balk_min;
+                            maxsliderhor2 = shir_balk_max;
+                            minsliderhor3 = shir_balk_min;
+                            maxsliderhor3 = shir_balk_max;
+                            minsliderhor4 = shir_balk_min;
+                            maxsliderhor4 = shir_balk_max;
+
+                            minsliderver = vysota_balk_min;
+                            maxsliderver = vysota_balk_max;
+
+                            $('#Costhor1').val(minsliderhor1); // подставляем значения максимума и минимума на слайдер
+                            $('#Costhor2').val(minsliderhor2);
+                            $('#Costhor3').val(minsliderhor3);
+                            $('#Costhor4').val(minsliderhor4);
+                            $('#Costverbalk').val(1100);
+
+                            reInitHorizSlider1(minsliderhor1, minsliderhor1, maxsliderhor1);
+                            reInitHorizSlider2(minsliderhor2, minsliderhor2, maxsliderhor2);
+                            reInitHorizSlider3(minsliderhor3, minsliderhor3, maxsliderhor3);
+                            reInitHorizSlider4(minsliderhor3, minsliderhor3, maxsliderhor3, true);
+                            reInitVertSlider(1100, minsliderver, maxsliderver);
+                            //stoim = stoim_balk; // присваиваем стоимость из прайса
+                            change_price();
+                        });
+                        //конец расчета тип балкона 5
+
+                        // расчет тип балкона 6
+                        $("#window-type-6").click(function () {
+                            tipbalk = 6; //задаем тип окна
+                            minsliderhor1 = shir_balk_min;
+                            maxsliderhor1 = shir_balk_max;
+                            minsliderhor2 = shir_balk_min*4;
+                            maxsliderhor2 = shir_balk_max*4;
+                            minsliderhor3 = shir_balk_min;
+                            maxsliderhor3 = shir_balk_max;
+                            minsliderhor4 = shir_balk_min;
+                            maxsliderhor4 = shir_balk_max;
+
+                            minsliderver = vysota_balk_min;
+                            maxsliderver = vysota_balk_max;
+
+                            $('#Costhor1').val(minsliderhor1); // подставляем значения максимума и минимума на слайдер
+                            $('#Costhor2').val(minsliderhor2);
+                            $('#Costhor3').val(minsliderhor3);
+                            $('#Costhor4').val(minsliderhor4);
+                            $('#Costverbalk').val(1100);
+
+                            reInitHorizSlider1(minsliderhor1, minsliderhor1, maxsliderhor1);
+                            reInitHorizSlider2(minsliderhor2, minsliderhor2, maxsliderhor2);
+                            reInitHorizSlider3(minsliderhor1, minsliderhor1, maxsliderhor1, true);
+                            reInitHorizSlider4(minsliderhor2, minsliderhor2, maxsliderhor2, true);
+                            reInitVertSlider(1100, minsliderver, maxsliderver);
+                            //stoim = stoim_balk; // присваиваем стоимость из прайса
+                            change_price();
+                        });
+                        //конец расчета тип балкона 6
+
+                        // расчет тип балкона 7
+                        $("#window-type-7").click(function () {
+                            tipbalk = 7; //задаем тип окна
+                            minsliderhor1 = shir_balk_min;
+                            maxsliderhor1 = shir_balk_max;
+                            minsliderhor2 = shir_balk_min*4;
+                            maxsliderhor2 = shir_balk_max*4;
+                            minsliderhor3 = shir_balk_min;
+                            maxsliderhor3 = shir_balk_max;
+                            minsliderhor4 = shir_balk_min;
+                            maxsliderhor4 = shir_balk_max;
+
+                            minsliderver = vysota_balk_min;
+                            maxsliderver = vysota_balk_max;
+
+                            $('#Costhor1').val(minsliderhor1); // подставляем значения максимума и минимума на слайдер
+                            $('#Costhor2').val(minsliderhor2);
+                            $('#Costhor3').val(minsliderhor3);
+                            $('#Costhor4').val(minsliderhor4);
+                            $('#Costverbalk').val(1100);
+                            reInitHorizSlider1(minsliderhor1, minsliderhor1, maxsliderhor1);
+                            reInitHorizSlider2(minsliderhor2, minsliderhor2, maxsliderhor2);
+                            reInitHorizSlider3(minsliderhor3, minsliderhor3, maxsliderhor3);
+                            reInitHorizSlider4(minsliderhor4, minsliderhor4, maxsliderhor4, true);
+                            reInitVertSlider(1100, minsliderver, maxsliderver);
+                            //stoim = stoim_balk; // присваиваем стоимость из прайса
+                            change_price();
+                        });
+                        //конец расчета тип балкона 7
+
+                    });
+
+                    function change_price() {
+                        if (tipbalk == 1) {
+                            costfin = $('#Costhor1').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor2').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor3').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor4').val() * $('#Costverbalk').val() * stoim / 1000000;
+                            shirinafin = parseInt($('#Costhor1').val()) + parseInt($('#Costhor2').val()) + parseInt($('#Costhor3').val()) + parseInt($('#Costhor4').val());
+                        }
+                        if (tipbalk == 2) {
+                            costfin = $('#Costhor1').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor2').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor3').val() * $('#Costverbalk').val() * stoim / 1000000;
+                            shirinafin = parseInt($('#Costhor1').val()) + parseInt($('#Costhor2').val()) + parseInt($('#Costhor3').val());
+                        }
+                        if (tipbalk == 3) {
+                            costfin = $('#Costhor1').val() * $('#Costverbalk').val() * stoim / 1000000;
+                            shirinafin = parseInt($('#Costhor1').val());
+                        }
+
+                        if (tipbalk == 4) {
+                            costfin = $('#Costhor1').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor2').val() * $('#Costverbalk').val() * stoim / 1000000;
+                            shirinafin = parseInt($('#Costhor1').val()) + parseInt($('#Costhor2').val());
+                        }
+
+                        if (tipbalk == 5) {
+                            costfin = $('#Costhor1').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor2').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor3').val() * $('#Costverbalk').val() * stoim / 1000000;
+                            shirinafin = parseInt($('#Costhor1').val()) + parseInt($('#Costhor2').val()) + parseInt($('#Costhor3').val());
+                        }
+
+                        if (tipbalk == 6) {
+                            costfin = $('#Costhor1').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor2').val() * $('#Costverbalk').val() * stoim / 1000000;
+                            shirinafin = parseInt($('#Costhor1').val()) + parseInt($('#Costhor2').val());
+                        }
+
+                        if (tipbalk == 7) {
+                            costfin = $('#Costhor1').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor2').val() * $('#Costverbalk').val() * stoim / 1000000 + $('#Costhor3').val() * $('#Costverbalk').val() * stoim / 1000000;
+                            shirinafin = parseInt($('#Costhor1').val()) + parseInt($('#Costhor2').val()) + parseInt($('#Costhor3').val());
+                        }
+
+                        costfin = costfin * koeffits * skidka;
+                        if (chekoksys == 1) {
+                            costfin = costfin;
+                        }
+                        if (chekpodokonnik == 1) {
+                            costfin = costfin + podokonnik * shirinafin * 0.001;
+                        }
+                        if (chekmontazhrab == 1) {
+                            costfin = costfin + montazhrab * shirinafin * $('#Costverbalk').val() * 0.000001;
+                        }
+                        costfin = Math.round(costfin); // округляем до целого
+                        $('.td-price-summury').html(costfin); // выводим финальную стоимость
+
+
+                        //расчитываем рассрочку
+                        rassrochka = costfin / 8;
+                        rassrochka = Math.round(rassrochka); // округляем до целого
+                        $('.td-price-installment').html(rassrochka); // выводим финальную стоимость
+                    } // конец  change_price()
+
+                    function reInitHorizSlider1(val, min, max, hide) {
+                        if (hide) {
+                            $('.inp-slide-horizontal-window-width-1-0').closest('li').hide();
+                        } else {
+                            $('.inp-slide-horizontal-window-width-1-0').closest('li').show();
+                        }
+                        $('#window-width-1-ui-slide-0').slider({
+                            orientation: "horizontal",
+                            range: "min",
+                            value: val,
+                            min: Number(min),
+                            max: Number(max),
+                            slide:
+                                    function( event, ui ) {
+                                        $('.inp-slide-horizontal-window-width-1-0').val(ui.value);
+                                        change_price();
+                                    }
+                        });
+                    }
+
+                    function reInitHorizSlider2(val, min, max, hide) {
+                        if (hide) {
+                            $('.inp-slide-horizontal-window-width-2-1').closest('li').hide();
+                        } else {
+                            $('.inp-slide-horizontal-window-width-2-1').closest('li').show();
+                        }
+                        $('#window-width-2-ui-slide-1').slider({
+                            orientation: "horizontal",
+                            range: "min",
+                            value: val,
+                            min: Number(min),
+                            max: Number(max),
+                            slide:
+                                    function( event, ui ) {
+                                        $('.inp-slide-horizontal-window-width-2-1').val(ui.value);
+                                        change_price();
+                                    }
+                        });
+                    }
+
+                    function reInitHorizSlider3(val, min, max, hide) {
+                        if (hide) {
+                            $('.inp-slide-horizontal-window-width-3-2').closest('li').hide();
+                        } else {
+                            $('.inp-slide-horizontal-window-width-3-2').closest('li').show();
+                        }
+                        $('#window-width-3-ui-slide-2').slider({
+                            orientation: "horizontal",
+                            range: "min",
+                            value: val,
+                            min: Number(min),
+                            max: Number(max),
+                            slide:
+                                    function( event, ui ) {
+                                        $('.inp-slide-horizontal-window-width-3-2').val(ui.value);
+                                        change_price();
+                                    }
+                        });
+                    }
+
+                    function reInitHorizSlider4(val, min, max, hide) {
+                        if (hide) {
+                            $('.inp-slide-horizontal-window-width-4-3').closest('li').hide();
+                        } else {
+                            $('.inp-slide-horizontal-window-width-4-3').closest('li').show();
+                        }
+                        $('#window-width-4-ui-slide-3').slider({
+                            orientation: "horizontal",
+                            range: "min",
+                            value: val,
+                            min: Number(min),
+                            max: Number(max),
+                            slide:
+                                    function( event, ui ) {
+                                        $('.inp-slide-horizontal-window-width-4-3').val(ui.value);
+                                        change_price();
+                                    }
+                        });
+                    }
+
+                    function reInitVertSlider(val, min, max) {
+                        $('#window-height-ui-slide-0').slider({
+                            orientation: "vertical",
+                            range: "min",
+                            value:  val,
+                            min: Number(min),
+                            max: Number(max),
+                            slide:
+                                    function( event, ui ) {
+                                        $('.inp-slide-vertical-window-height-0').val(ui.value);
+                                        change_price();
+                                    }
+                        });
+                    }
+
+                    </script>
+                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ калькулятор -->
+                    <form action="" method="post">
+
+                        <div class="calculate-body">
+
+                        <!-- ~~~~~~~~~~~~ выбор формы окна -->
+                        <div class="choose-window-form">
+                            <label class="window-type" id="window-type-1">
+                                <input type="radio" class="custom-radio" checked name="window-form">
+                            </label>
+                            <label class="window-type" id="window-type-2">
+                                <input type="radio" class="custom-radio" name="window-form">
+                            </label>
+                            <label class="window-type" id="window-type-3">
+                                <input type="radio" class="custom-radio" name="window-form">
+                            </label>
+
+
+                            <label class="window-type" id="window-type-4">
+                                <input type="radio" class="custom-radio" name="window-form">
+                            </label>
+                            <label class="window-type" id="window-type-5">
+                                <input type="radio" class="custom-radio" name="window-form">
+                            </label>
+                            <label class="window-type" id="window-type-6">
+                                <input type="radio" class="custom-radio" name="window-form">
+                            </label>
+
+                            <label class="window-type" id="window-type-7">
+                                <input type="radio" class="custom-radio" name="window-form">
+                            </label>
+                        </div>
+                        <!-- ~~~~~~~~~~~~/выбор формы окна -->
+
+                        <!-- ~~~~~~~~~~~~~~~~ выбор между ТЕПЛЫМ / SLIDORS и ХОЛОДНЫМ -->
+                        <div class="block-select-temp">
+                            <h4>Выбор типа остекления:</h4>
+                            <label class="temp-cold">
+                                <input type="radio" value="" name="window-type" class="custom-radio">
+                                ХОЛОДНОЕ
+                            </label>
+                            <label class="temp-warm">
+                                <input type="radio" value="" checked name="window-type" class="custom-radio">
+                                ТЕПЛОЕ
+                            </label>
+                        </div>
+                        <!-- ~~~~~~~~~~~~~~~~/выбор между ТЕПЛЫМ / SLIDORS и ХОЛОДНЫМ -->
+
+                        <!-- ~~~~~~~~~~~~~~~~ правая часть формы -->
+                        <div class="calculate-right">
+
+
+                            <!-- ~~~~~~~~~~~~ большое превью формы окна:	id label = class превью -->
+                            <div id="window-form-preview" class="window-type-1"></div>
+                            <!-- ~~~~~~~~~~~~ большое превью формы окна -->
+                            <!-- ~~~~~~~~~~~~ высота -->
+                            <div class="window-height">
+                                <label>Высота</label>
+                                <input id="Costverbalk" type="text" value="2000" min="0" max="4000" name="window-height" class="add-vertical-slide">
+                            </div>
+                            <!-- ~~~~~~~~~~~~/высота -->
+                            <!-- ~~~~~~~~~~~~ ширина -->
+                            <div class="window-width">
+                                <label>Ширина</label>
+                                <ol>
+                                    <li>
+                                        <input id="Costhor1" type="text" value="4000" min="0" max="4000" name="window-width-1" class="add-horizontal-slide">
+                                    </li>
+                                    <li>
+                                        <input id="Costhor2" type="text" value="200" min="0" max="4000" name="window-width-2" class="add-horizontal-slide">
+                                    </li>
+                                    <li>
+                                        <input id="Costhor3" type="text" value="1200" min="0" max="4000" name="window-width-3" class="add-horizontal-slide">
+                                    </li>
+                                    <li>
+                                        <input id="Costhor4" type="text" value="2000" min="0" max="4000" name="window-width-4" class="add-horizontal-slide">
+                                    </li>
+                                </ol>
+                            </div>
+                            <!-- ~~~~~~~~~~~~/ширина -->
+                        </div>
+                        <!-- ~~~~~~~~~~~~~~~~ /правая часть формы -->
+
+
+
+                        </div>
+
+                        <div class="calculate__result">
+                            <dl>
+                                <dt>Итого:</dt>
+                                <dd class="td-price-summury">99 999</dd>
+                            </dl>
+                            <dl class="credit">
+                                <dt>Ежемесячный платеж:</dt>
+                                <dd class="td-price-installment"></dd>
+                            </dl>
+
+                            <input type="submit" value="Заказать">
+                        </div>
+
+                    <span>Обращаем Ваше внимание, что данный расчет является предварительным и ознакомительным.</span>
+                    <span>Точный расчет стоимости Вы можете получить по телефону 8 (351) 211-15-25</span>
+
+                    </form>
+                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~/калькулятор -->
+            </div>
+
+           <h3 class="calculator_h3">Покупайте сейчас - платите потом!</h3>
+           <div class="more">
+               <a href="#">Узнать подробности</a>
+           </div>
+
+           <!-- sms-form -->
+            <form class="sms-form">
+
+                <dl>
+                    <dt>SMS купон</dt>
+                    <dd>Получите дополнительную скидку</dd>
+                </dl>
+
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Телефон">
+                <input type="submit" value="Получить купон">
+
+            </form>
+            <!-- /sms-form -->
+
+                <!-- our-work -->
+                <div class="our-work">
+
+                    <h3>Наши работы</h3>
+
+                    <!-- gallery -->
+                    <div class="gallery">
+                        <ul>
+                            <li>
+                                <a href="pic/gallery_pic_1.jpg" data-lightbox="image-1" data-title="My caption"><img src="pic/gallery_pic_1.jpg" width="247" height="186" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="pic/gallery_pic_2.jpg" data-lightbox="image-1" data-title="My caption"><img src="pic/gallery_pic_2.jpg" width="247" height="186" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="pic/gallery_pic_3.jpg" data-lightbox="image-1" data-title="My caption"><img src="pic/gallery_pic_3.jpg" width="247" height="186" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="pic/gallery_pic_1.jpg" data-lightbox="image-1" data-title="My caption"><img src="pic/gallery_pic_1.jpg" width="247" height="186" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="pic/gallery_pic_2.jpg" data-lightbox="image-1" data-title="My caption"><img src="pic/gallery_pic_2.jpg" width="247" height="186" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="pic/gallery_pic_3.jpg" data-lightbox="image-1" data-title="My caption"><img src="pic/gallery_pic_3.jpg" width="247" height="186" alt=""></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- /gallery -->
+
+                    <button class="prev"></button>
+                    <button class="next"></button>
+
+                </div>
+                <!-- our-work -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__menu -->
+        <div class="footer__menu">
+            <a href="#">Пластиковые окна</a>
+            <a href="#">Остекление балконов</a>
+            <a href="#">Цены</a>
+            <a href="#">Акции</a>
+            <a href="#">Контакты</a>
+        </div>
+        <!-- /footer__menu -->
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+        <div>
+            <!-- footer__address -->
+            <address class="footer__address">
+                <span> © 2008-2014, ООО «Окна Выгодно»,</span>
+                <span>г. Челябинск, ул. Кирова 7а, 2 этаж</span>
+                <span>Интернет-маркетинг «<a href="#">Окна План</a>»</span>
+            </address>
+            <!-- /footer__address -->
+
+            <a href="tel:83517445050" class="footer__tel">8 (351) 755-50-50</a>
+
+            <div class="top50"><img src="img/top50.jpg" width="88" height="31" alt=""></div>
+            <div class="count"><img src="img/count.jpg" width="88" height="31" alt=""></div>
+
+        </div>
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>
