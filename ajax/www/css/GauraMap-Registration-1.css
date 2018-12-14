@@ -1,0 +1,90 @@
+/* --------------- user_reg --------------- */
+.user_reg{
+    margin-top: 65px;
+    display: inline-block;
+    width: 453px;
+    vertical-align: top;
+}
+.user_reg h2{
+    color: #68c03c;
+    margin-bottom: 39px;
+    font-weight: normal;
+    font-family: "robotoslab-bold";
+    font-size: 18px;
+}
+.user_reg label{
+    display: inline-block;
+    vertical-align: top;
+    width: 138px;
+    margin-top: 8px;
+    text-align: right;
+    color: #ada8a3;
+    font-size: 13px;
+    margin-right: 8px;
+}
+.user_reg label span{
+    color: #fa9090;
+}
+.user_reg input[type="email"],
+.user_reg input[type="text"],
+.user_reg input[type="password"]{
+    width: 255px;
+}
+.capcha_container  input[type="text"]{
+    width: 95px;
+}
+.capcha_img{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #e1dbd6;
+    margin-left: 5px;
+}
+.capcha_img img{
+    display: block;
+}
+.user_reg .blue_submit{
+    margin: 13px 0 0 150px;
+}
+.user_reg{
+    color: #4c4c4c;
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 23px;
+}
+/* --------------- /user_reg --------------- */
+
+/* --------------- reg_info --------------- */
+.reg_info{
+    display: inline-block;
+    vertical-align: top;
+    width: 481px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-left: 1px solid #e8e2dc;
+    padding: 38px 0 17px 53px;
+    margin-top: 126px;
+}
+.reg_info p{
+    color: #4c4c4c;
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 23px;
+    padding-left: 58px;
+}
+.reg_info_item1{
+    background: url("../img/img1.png") no-repeat;
+}
+.reg_info_item2{
+    background: url("../img/img2.png") no-repeat 0 6px;
+}
+/* --------------- /reg_info --------------- */
+
+/* --------------- new_password_container --------------- */
+.new_password_container{
+    width: 100%;
+}
+.new_password_container p{
+    margin: 15px 0 15px 148px;
+    white-space: pre-line;
+}
+/* --------------- /new_password_container --------------- */

@@ -1,0 +1,10 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+
+@font-face {
+    font-family: "proximanova-bold";
+    src: url("../fonts/proximanova-bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

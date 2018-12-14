@@ -1,0 +1,1335 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    content-wrap
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+    background: url("../img/bg.png");
+    min-width: 1080px;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+a:hover{
+    text-decoration: underline;
+    color: #00bbdf;
+}
+a{
+    color: #68c03c;
+    font-size: 13px;
+    text-decoration: underline;
+    ransition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "robotoslab-bold";
+    src: url("../fonts/robotoslab-bold.woff") format("woff");
+}
+@font-face {
+    font-family: "robotoslab-regular";
+    src: url("../fonts/robotoslab-regular.woff") format("woff");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 1080px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    font-family: "robotoslab-regular";
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+
+    height: 150px;
+}
+.site__content {
+    display: table;
+    width: 100%;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 98px;
+    background: #fff;
+    border-bottom: 1px solid #eae4de;
+}
+.header_inside{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 40px;
+}
+.header .town_select{
+    position: absolute;
+    top: 41px;
+    left: 302px;
+}
+.town_select{
+    background: url("../img/elements-sprite.png") no-repeat;
+    background-position: 0 -703px;
+    padding-left: 18px;
+    color: #68c03c;
+    text-decoration: none;
+    line-height: 17px;
+}
+.town_select span{
+    position: relative;
+    border-bottom: 1px dashed #68c03c;
+}
+.town_select span:after{
+    position: absolute;
+    top: 9px;
+    right: -9px;
+    width: 5px;
+    height: 4px;
+    content: "";
+    background: url("../img/elements-sprite.png") no-repeat 0 -54px;
+
+}
+.town_select:hover span{
+    border-bottom: 1px dashed #00bbdf;
+}
+.town_select:hover span:after{
+    position: absolute;
+    top: 9px;
+    right: -9px;
+    width: 5px;
+    height: 4px;
+    content: "";
+    background: url("../img/elements-sprite.png") no-repeat  0 0;
+}
+.town_select:hover{
+    background-position: 0 -636px;
+    color: #00bbdf;
+    text-decoration: none;
+}
+/* --------------- /header --------------- */
+
+/* --------------- main_menu --------------- */
+.main_menu{
+    position: absolute;
+    top: 43px;
+    left: 492px;
+
+}
+.main_menu a{
+    display: inline-block;
+    vertical-align: top;
+    color: #4c4c4c;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: "robotoslab-bold";
+}
+.main_menu a:hover{
+    color: #68c03c;
+}
+/* --------------- /main_menu --------------- */
+
+/* --------------- autorization_block --------------- */
+.autorization_block{
+    position: absolute;
+    top: 43px;
+    right: 40px;
+}
+.autorization_block a{
+    display: inline-block;
+    vertical-align: top;
+    color: #00bbdf;
+    font-family: "robotoslab-bold";
+    text-decoration: none;
+    margin-left: 13px;
+
+}
+.autorization_block a:hover{
+    text-decoration: underline;
+}
+.enter_but{
+    background: url("../img/elements-sprite.png") no-repeat 0 -440px;
+    padding-left: 18px;
+}
+/* --------------- /autorization_block --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 16px;
+    left: 40px;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- content-wrap --------------- */
+.content-wrap {
+    display: table-cell;
+    vertical-align: top;
+
+    width: 100%;
+
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- inside_block --------------- */
+.inside_block{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+/* --------------- /inside_block --------------- */
+
+/* --------------- about_guara --------------- */
+.about_guara{
+    margin-top: 66px;
+}
+.about_text{
+    width: 556px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 41px;
+}
+.about_text h2{
+    font-family: "robotoslab-bold";
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.about_text p{
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.about_text p b{
+    font-weight: normal;
+    font-family: "robotoslab-bold";
+}
+.more_but{
+    background: url("../img/elements-sprite.png") no-repeat  right -159px;
+    padding-right: 20px;
+
+}
+.more_but:hover{
+    text-decoration: underline;
+    color: #00bbdf;
+    background: url("../img/elements-sprite.png") no-repeat right -102px;
+}
+.map_but{
+    background: #00bbdf;
+    display: block;
+    border-radius: 5px;
+    width: 320px;
+    height: 70px;
+    line-height: 70px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    ransition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+}
+.map_but:hover{
+    background: #23c6e6;
+    color: #fff;
+    text-decoration: none;
+}
+.map_but:active{
+    background: #00afd0;
+}
+.about_text .map_but{
+    margin-top: 43px;
+    margin-bottom: 10px;
+}
+.choose_town{
+    color: #00bbdf;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    border-bottom: 1px dashed #00bbdf;
+    margin-left: 86px
+}
+.choose_town:hover{
+    border-bottom: none;
+    text-decoration: none;
+}
+/* --------------- /about_guara --------------- */
+
+/* --------------- town_info --------------- */
+.town_info{
+    display: inline-block;
+    vertical-align: top;
+    width: 417px;
+    position: relative;
+    margin-left: 19px;
+    margin-top: -17px;
+}
+.town_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 340px;
+    height: 340px;
+}
+.town_info img{
+    position: absolute;
+}
+.count_green{
+    background: url("../img/green-count.png");
+    width: 154px;
+    height: 154px;
+    position: absolute;
+    top: 127px;
+    left: 6px;
+    text-align: center;
+    color: #fff;
+    white-space: pre-line;
+}
+.count_green .count{
+    font-size: 40px;
+    border-bottom: 1px solid #fff;
+    padding-top: 12px;
+    display: inline-block;
+}
+.object{
+    font-size: 11px;
+}
+.object span{
+    display: block;
+}
+.count_orange{
+    position: absolute;
+    background: url("../img/orange_count.png");
+    width: 120px;
+    height: 120px;
+    top: 231px;
+    left: 95px;
+    text-align: center;
+    color: #fff;
+    white-space: pre-line;
+}
+.count_orange .count{
+    font-size: 28px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+/* --------------- /town_info --------------- */
+
+/* --------------- gray_block --------------- */
+.map img{
+    display: block;
+}
+.gray_block{
+    background: #f6f3f0;
+    min-height: 90px;
+    margin-bottom: 36px;
+}
+.map_info{
+    display: inline-block;
+    vertical-align: top;
+    margin: 22px 41px 0 0;
+}
+.map_info dt{
+    display: inline-block;
+    vertical-align: top;
+    color: #00bbdf;
+    font-size: 36px;
+}
+.map_info dd{
+    color: #4c4c4c;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 14px 0 0 9px;
+}
+/* --------------- /gray_block --------------- */
+
+/* --------------- news_container --------------- */
+.news_container{
+    background: #fff;
+    box-shadow: 0 0 5px #ece9e3;
+    padding: 25px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 72px;
+}
+.news_container dl{
+    margin-bottom: 27px;
+}
+.news_container dt{
+    display: inline-block;
+    vertical-align: top;
+    color: #ada8a3;
+    width: 145px;
+}
+.news_container dd{
+    display: inline-block;
+    color: #4c4c4c;
+    vertical-align: top;
+}
+/* --------------- /news_container --------------- */
+
+/* --------------- know_block --------------- */
+.no_border{
+    border-top: none !important;
+    padding-top: 0 !important;
+}
+.know_block{
+    border-top: 1px solid #e8e2dc;
+    overflow: hidden;
+    margin-bottom: 42px;
+    padding-top: 42px;
+}
+.float_left{
+    float: left;
+    margin: 0 20px 0 0;
+}
+.float_right{
+    float: right;
+}
+.know_block h2{
+    font-size: 30px;
+    font-weight: normal;
+    font-family: "robotoslab-bold";
+    margin-bottom: 19px;
+}
+.know_block p{
+    font-size: 13px;
+    color: #4c4c4c;
+    margin-bottom: 12px;
+    line-height: 22px
+}
+.arrow_but{
+    background: #00bbdf;
+    border-radius: 5px;
+    display: block;
+    width: 235px;
+    height: 40px;
+    line-height: 40px;
+    ransition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: "robotoslab-bold";
+}
+.arrow_but span{
+    background: url("../img/arrow.png") no-repeat right 7px;
+    padding-right: 20px;
+}
+.arrow_but:hover{
+    background: #23c6e6;
+    color: #fff;
+    text-decoration: none;
+}
+.arrow_but:active{
+    background: #00afd0;
+}
+/* --------------- /know_block --------------- */
+
+/* --------------- topic_type --------------- */
+.topic_type{
+    font-family: "robotoslab-bold";
+    font-weight: normal;
+    color: #68c03c;
+    font-size: 18px;
+    border-bottom: 1px solid #e8e2dc;
+    padding-bottom: 7px;
+    margin-bottom: 35px;
+}
+/* --------------- /topic_type --------------- */
+
+/* --------------- niceRadio --------------- */
+.niceRadio {
+    display: inline-block;
+    cursor: pointer;
+    background: url("../img/check-but-sprite.png") no-repeat  0 -1368px;
+    width: 22px;
+    height: 22px;
+    overflow: hidden;
+}
+.niceRadio:hover{
+    background: url("../img/check-but-sprite.png") no-repeat  0 -1296px;
+}
+.radioChecked {
+    background-position: 0 -1224px;
+}
+.radioChecked:hover,
+.radioChecked {
+    background-position: 0 -1224px;
+}
+.niceRadio input {
+    margin-left: -17px;
+}
+/* --------------- /niceRadio --------------- */
+
+/* --------------- niceCheck --------------- */
+.niceCheck {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    cursor: pointer;
+    background: url("../img/check-but-sprite.png") 0 -504px;;
+    overflow: hidden;
+}
+.niceCheck:hover{
+    background-position: 0 -648px;
+}
+.niceChecked:hover,
+.niceChecked {
+    background-position: 0 -576px;
+}
+.niceCheck input {
+    margin-left: -100px;
+}
+.niceCheckDisabled {
+    background-position: 0 -648px;
+
+}
+.blue_checkbox .niceCheck{
+    background-position: 0 -144px;
+}
+.blue_checkbox .niceCheck:hover{
+    background-position: 0 -72px;
+}
+.blue_checkbox .niceChecked {
+    background-position: 0 0;
+}
+.blue_checkbox .niceChecked:hover{
+    background-position: 0 0;
+}
+.blue_checkbox .niceCheckDisabled {
+    background-position: 0 -72px;
+
+}
+
+.gray_block .blue_checkbox label:hover + .niceCheck{
+    background-position: 0 -72px;
+}
+.gray_block .blue_checkbox label:hover + .niceChecked{
+    background-position: 0 0;
+}
+
+.pink_checkbox .niceCheck{
+    background-position: 0 -1152px;
+}
+.pink_checkbox .niceCheck:hover{
+    background-position: 0 -1080px;
+}
+.pink_checkbox .niceChecked {
+    background-position: 0 -1008px;
+}
+.pink_checkbox .niceChecked:hover{
+    background-position: 0 -1008px;
+}
+.pink_checkbox .niceCheckDisabled {
+    background-position: 0 -1080px;
+
+}
+.pink_checkbox{
+    width: 157px;
+}
+.orange_checkbox{
+    width: 240px;
+}
+.gray_block .pink_checkbox label:hover + .niceCheck{
+    background-position: 0 -1080px;
+}
+.gray_block .pink_checkbox label:hover + .niceChecked{
+    background-position: 0 -1008px;
+}
+
+
+.fiolet_checkbox .niceCheck{
+    background-position: 0 -432px;
+}
+.fiolet_checkbox .niceCheck:hover{
+    background-position: 0 -360px;
+}
+.fiolet_checkbox .niceChecked:hover,
+.fiolet_checkbox .niceChecked {
+    background-position: 0 -288px;
+}
+.fiolet_checkbox .niceCheckDisabled {
+    background-position: 0 -360px;
+
+}
+
+.gray_block .fiolet_checkbox label:hover + .niceCheck{
+    background-position: 0 -360px;
+}
+.gray_block .fiolet_checkbox label:hover + .niceChecked{
+    background-position: 0 -288px;
+}
+
+
+.orange_checkbox .niceCheck{
+    background-position: 0 -936px;
+}
+
+.orange_checkbox .niceCheck:hover,
+.orange_checkbox .niceCheckDisabled {
+    background-position: 0 -864px;
+
+}
+.orange_checkbox .niceChecked:hover,
+.orange_checkbox .niceChecked {
+    background-position: 0 -792px;
+}
+
+.gray_block .orange_checkbox label:hover + .niceCheck{
+    background-position: 0 -864px;
+}
+.gray_block .orange_checkbox label:hover + .niceChecked{
+    background-position: 0 -792px;
+}
+
+.green_checkbox .niceCheck{
+    background-position: 0 -720px;
+    width: 22px;
+}
+
+.green_checkbox .niceCheck:hover,
+.green_checkbox .niceCheckDisabled {
+    background-position: 0 -648px;
+
+}
+.green_checkbox .niceChecked:hover,
+.green_checkbox .niceChecked {
+    background-position: 0 -576px;
+}
+
+.gray_block .niceCheck{
+    float: left;
+    margin-right: 5px;
+}
+.gray_block .green_checkbox label:hover + .niceCheck{
+     background-position: 0 -648px;
+}
+.gray_block .green_checkbox label:hover + .niceChecked{
+    background-position: 0 -576px;
+}
+/* --------------- /niceCheck --------------- */
+
+
+input[type="email"],
+input[type="password"],
+input[type="text"]{
+    background: #fff;
+    border: 2px solid #e1dbd6;
+    border-radius: 10px;
+    width: 425px;
+    height: 40px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0 10px;
+    color: #4c4c4c;
+    font-size: 13px;
+    font-family: "robotoslab-regular";
+    ransition: border 0.3s ease;
+    -webkit-transition: border 0.3s ease;
+    -moz-transition: border 0.3s ease;
+}
+
+input[type="password"]:focus,
+textarea:focus,
+input[type="email"]:focus,
+input[type="text"]:focus{
+    border: 2px solid  #68c03c !important;
+}
+textarea.error_input:focus,
+input[type="password"].error_input:focus,
+input[type="text"].error_input:focus,
+input[type="email"].error_input:focus{
+    border: 2px solid #fb5c5c !important;
+}
+textarea{
+    background: #fff;
+    border: 2px solid #e1dbd6;
+    border-radius: 10px;
+    width: 425px;
+    height: 150px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    color: #4c4c4c;
+    font-size: 13px;
+    font-family: "robotoslab-regular";
+    ransition: border 0.3s ease;
+    -webkit-transition: border 0.3s ease;
+    -moz-transition: border 0.3s ease;;
+}
+
+/* --------------- save_but --------------- */
+.save_but{
+    background: #68c03c;
+    border-radius: 10px;
+    float: right;
+    width: 235px;
+    height: 40px;
+    border: none !important;
+    color: #fff;
+    font-size: 13px;
+    font-family: "robotoslab-bold";
+    ransition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+}
+.save_but:hover{
+    background: #70ca43;
+}
+.save_but:active{
+    background: #5bb22f;
+}
+/* --------------- /save_but --------------- */
+
+/* --------------- show_place --------------- */
+.show_place{
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 40px;
+    background: #b8b5b2;
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: "robotoslab-bold";
+    ransition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+}
+.show_place:hover{
+    background: #c2bfbb;
+    color: #fff;
+    text-decoration: none;
+}
+.show_place:active{
+    background: #a49f9a;
+}
+.show_place span{
+    background: url("../img/white-pointer.png") no-repeat 0 3px;
+    padding-left: 15px;
+}
+.close_back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* --------------- /show_place --------------- */
+
+/* --------------- news_page --------------- */
+.news_page{
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+/* --------------- /news_page --------------- */
+
+/* --------------- topic_type2 --------------- */
+.topic_type2{
+    font-weight: normal;
+    font-family: "robotoslab-bold";
+    font-size: 32px;
+    margin-top: 58px;
+    margin-bottom: 40px;
+}
+/* --------------- /topic_type2 --------------- */
+
+/* --------------- help_but --------------- */
+.help_but{
+    background: url("../img/help-but.png");
+    width: 82px;
+    height: 82px;
+    text-indent: -5000px;
+    display: block;
+    float: right;
+    margin: 4px 0 -21px 0;
+}
+.help_but:hover{
+    background-position: 0 -82px;
+}
+/* --------------- /help_but --------------- */
+
+/* --------------- blue_submit --------------- */
+.blue_submit{
+    background: #00bbdf;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    font-family: "robotoslab-bold";
+    font-size: 13px;
+    ransition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    width: 255px;
+    height: 40px;
+}
+.blue_submit:hover{
+    background: #23c6e6;
+}
+.blue_submit:visited{
+    background: #00afd0;
+}
+/* --------------- blue_submit --------------- */
+
+/* --------------- pop_back --------------- */
+.pop_back{
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 10;
+}
+/* --------------- /pop_back --------------- */
+.pop_back2{
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /*display: none;*/
+    z-index: 10;
+}
+.pop_back2 .enter_form{
+    width: 490px;
+}
+.pop_back2 .enter_form input[type="text"]{
+    width: 320px;
+    display: block;
+    margin: 0 auto;
+}
+.resulSearch{
+    position: absolute;
+    top: 113px;
+    left: 87px;
+    width: 318px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #c7c7c7;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;
+}
+.resulSearch li{
+    padding: 10px;
+    color: #4c4c4c;
+    font-size: 13px;
+    font-family: "robotoslab-regular";
+    cursor: pointer;
+}
+.resulSearch li:hover{
+    background: #f1eee9;
+}
+.resulSearch li span{
+    display: block;
+    color: #ada8a3;
+    font-size: 11px;
+}
+/* --------------- enter_form --------------- */
+.enter_form{
+    background: #fff;
+    border-radius: 10px;
+    width: 360px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    margin-top: 100px;
+    padding: 23px 39px;
+}
+.close_pop{
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    background: url("../img/close-sprite.png");
+    width: 14px;
+    height: 14px;
+    text-indent: -5000px;
+    cursor: pointer;
+}
+.close_pop:hover{
+    background-position: 0 14px;
+}
+.enter_form h2{
+    text-align: center;
+    color: #00bbdf;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "robotoslab-bold";
+    margin-bottom: 28px;
+}
+.enter_form_line label{
+    display: inline-block;
+    vertical-align: top;
+    width: 61px;
+    font-size: 13px;
+    margin-top: 12px;
+    color: #ada8a3;
+    font-family: "robotoslab-regular";
+}
+.enter_form input[type="text"],
+.enter_form input[type="password"]{
+    width: 215px;
+    font-family: "robotoslab-regular";
+}
+.enter_form .blue_submit{
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.enter_form_line{
+    margin-bottom: 10px;
+}
+.registr_but:hover,
+.forget_pas:hover{
+    text-decoration: none;
+}
+.forget_pas{
+    display: inline-block;
+    vertical-align: top;
+    color: #4c4c4c;
+    font-size: 13px;
+    text-decoration: underline;
+    margin-right: 30px;
+    font-family: "robotoslab-regular";
+}
+.registr_but{
+    display: inline-block;
+    vertical-align: top;
+    color: #00bbdf;
+    font-size: 13px;
+    text-decoration: underline;
+    font-family: "robotoslab-regular";
+
+}
+.forget_pas:hover{
+    color: #4c4c4c;
+}
+.user_reg .error_input_text{
+    left: 160px;
+}
+.error_text{
+    color: #fb5c5c;
+    font-size: 13px;
+    margin-left: 70px;
+    display: none;
+}
+.error_form .error_text{
+    display: block;
+}
+.error_form .enter_form_line input[type="text"],
+.error_form .enter_form_line input[type="password"]{
+    border: 2px solid #fb5c5c;
+}
+/* --------------- /enter_form --------------- */
+
+.add_map_but{
+    background: #68c03c url("../img/elements-sprite.png") no-repeat  12px -559px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 180px;
+    height: 40px;
+    line-height: 37px;
+    text-indent: 40px;
+    font-family: "robotoslab-bold";
+    ransition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    margin-bottom: 28px;
+}
+.add_map_but:hover{
+    color: #fff;
+    text-decoration: none;
+    background: #70ca43  url("../img/elements-sprite.png") no-repeat  12px -559px;
+}
+.add_map_but:active{
+    background: #5bb22f  url("../img/elements-sprite.png") no-repeat  12px -559px;
+}
+
+.extended_but{
+    color: #fb5c5c;
+}
+.extended_but:hover{
+    color: #fb5c5c;
+    text-decoration: none;
+}
+.edit_but{
+    color: #ada8a3;
+}
+.edit_but:hover{
+    color: #ada8a3;
+    text-decoration: none;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -90px;
+    background: #f6f3f0;
+}
+.footer__layout {
+    width: 1000px;
+    margin: 0 auto;
+    height: 90px;
+    position: relative;
+}
+.footer_logo{
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: url("../img/footer_logo.png");
+    width: 137px;
+    height: 38px;
+    ransition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+}
+.footer_logo:hover{
+    background: url("../img/footer_logo-hover.png");
+}
+.footer_menu{
+    position: absolute;
+    top: 41px;
+    left: 204px;
+}
+.footer_menu a{
+    display: inline-block;
+    vertical-align: top;
+    color: #ada8a3;
+    font-family: "robotoslab-regular";
+    text-decoration: none;
+    margin-right: 19px;
+}
+.footer_menu a:hover{
+    color: #68c03c;
+    text-decoration: underline;
+}
+/* --------------- /footer --------------- */
+
+.error_input_text{
+    position: relative;
+    left: 11px;
+    color: #fb5c5c;
+    font-size: 11px;
+    display: none;
+}
+
+
+.sprite-check-box-blue-active{ background-position: 0 0; width: 22px; height: 22px; }
+.sprite-check-box-blue-disabled{ background-position: 0 -72px; width: 22px; height: 22px; }
+.sprite-check-box-blue{ background-position: 0 -144px; width: 22px; height: 22px; }
+.sprite-check-box-disabled{ background-position: 0 -216px; width: 22px; height: 22px; }
+.sprite-check-box-fiolet-active{ background-position: 0 -288px; width: 22px; height: 22px; }
+.sprite-check-box-fiolet-disabled{ background-position: 0 -360px; width: 22px; height: 22px; }
+.sprite-check-box-fiolet{ background-position: 0 -432px; width: 22px; height: 22px; }
+.sprite-check-box-gray{ background-position: 0 -504px; width: 22px; height: 22px; }
+.sprite-check-box-green-active{ background-position: 0 -576px; width: 22px; height: 22px; }
+.sprite-check-box-green-disabled{ background-position: 0 -648px; width: 22px; height: 22px; }
+.sprite-check-box-green{ background-position: 0 -720px; width: 22px; height: 22px; }
+.sprite-check-box-orange-active{ background-position: 0 -792px; width: 22px; height: 22px; }
+.sprite-check-box-orange-disabled{ background-position: 0 -864px; width: 22px; height: 22px; }
+.sprite-check-box-orange{ background-position: 0 -936px; width: 22px; height: 22px; }
+.sprite-check-box-pink-active{ background-position: 0 -1008px; width: 22px; height: 22px; }
+.sprite-check-box-pink-disabled{ background-position: 0 -1080px; width: 22px; height: 22px; }
+.sprite-check-box-pink{ background-position: 0 -1152px; width: 22px; height: 22px; }
+.sprite-radio-active{ background-position: 0 -1224px; width: 22px; height: 22px; }
+.sprite-radio-disabled{ background-position: 0 -1296px; width: 22px; height: 22px; }
+.sprite-radio{ background-position: 0 -1368px; width: 22px; height: 22px; }
+
+
+.sprite-arrow-blue{ background-position: 0 0; width: 5px; height: 4px; }
+.sprite-arrow-green{ background-position: 0 -54px; width: 5px; height: 4px; }
+.sprite-arrow2-blue{ background-position: 0 -108px; width: 15px; height: 7px; }
+.sprite-arrow2-green{ background-position: 0 -165px; width: 15px; height: 7px; }
+.sprite-arrow3-gray{ background-position: 0 -222px; width: 15px; height: 7px; }
+.sprite-arrow3-green{ background-position: 0 -279px; width: 15px; height: 7px; }
+.sprite-minus-gray{ background-position: 0 -336px; width: 16px; height: 2px; }
+.sprite-minus-white{ background-position: 0 -388px; width: 16px; height: 2px; }
+.sprite-people{ background-position: 0 -440px; width: 12px; height: 14px; }
+.sprite-plus-gray{ background-position: 0 -504px; width: 16px; height: 16px; }
+.sprite-plus-white{ background-position: 0 -570px; width: 16px; height: 16px; }
+.sprite-pointer-blue{ background-position: 0 -636px; width: 11px; height: 17px; }
+.sprite-pointer-green{ background-position: 0 -703px; width: 11px; height: 17px; }
+
+
+
+#slider {
+    width: 273px;
+}
+
+.ui-slider {
+    position: relative;
+}
+.ui-slider .ui-slider-handle:first-of-type{
+    background: url("../img/line.png") no-repeat top right;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 49px;
+    height: 33px;
+    background: url("../img/line.png") no-repeat 0 0;
+    cursor: pointer
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+.ui-slider-horizontal {
+    height: 3px;
+}
+.ui-slider-horizontal .ui-slider-handle:first-of-type{
+    top: -4px;
+    margin-left: -48px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -4px;
+    margin-left: 0px;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+.ui-widget-content {
+    background: #ada8a4;
+    height: 4px;
+}
+.ui-widget-header {
+    background: #68c03c;
+}
+
+.min_time{
+    background: #68c03c;
+    width: 49px;
+    height: 22px;
+    border-radius: 5px 0 5px 5px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+.max_time{
+    position: relative;
+    background: #68c03c;
+    width: 49px;
+    height: 22px;
+    border-radius: 0 5px 5px 5px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+.min_time:after,
+.max_time:after{
+    content: ":00";
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    color: #fff;
+    font-size: 13px;
+}
+.max_time input,
+.min_time input{
+    background: none;
+    color: #fff;
+    border: none;
+    width: 49px;
+    height: 22px;
+    text-align: right;
+    width: 36px;
+}
+.time_range{
+    position: relative;
+}
+.sliderCont{
+    padding-bottom: 34px;
+}
+.tab_list {
+
+}
+.tab_list li:hover {
+    opacity: 0.8;
+}
+.tab_list li {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: green;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.tab_content {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px dashed green;
+}
+.content p {
+    margin-bottom: 5px;
+}

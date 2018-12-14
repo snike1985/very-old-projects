@@ -1,0 +1,47 @@
+/* --------------- site_left_aside --------------- */
+.site_left_aside{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin-top: 116px;
+}
+/* --------------- /site_left_aside --------------- */
+
+/* --------------- aside_menu --------------- */
+.aside_menu a{
+    display: block;
+    margin-bottom: 10px;
+    line-height: 22px;
+    white-space: pre-line;
+}
+.aside_menu a:hover{
+
+}
+.aside_menu a.active{
+    text-decoration: none;
+    color: #00bbdf;
+    cursor: default;
+}
+/* --------------- aside_menu --------------- */
+
+/* --------------- content --------------- */
+.content{
+    display: inline-block;
+    vertical-align: top;
+    width: 743px;
+    margin-top: 52px;
+}
+.content h1{
+    font-weight: normal;
+    font-family: "robotoslab-bold";
+    font-size: 32px;
+    margin-bottom: 32px;
+
+}
+.content p{
+    font-size: 13px;
+    color: #4c4c4c;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+/* --------------- /content --------------- */

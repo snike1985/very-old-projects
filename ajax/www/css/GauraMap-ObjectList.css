@@ -1,0 +1,149 @@
+/* --------------- objects_wrap --------------- */
+.objects_wrap h2{
+    font-size: 13px;
+    font-weight: normal;
+    color: #ada8a3;
+    font-family: "robotoslab-bold";
+    margin-bottom: 28px;
+
+}
+.objects_wrap > p{
+    font-size: 13px;
+    font-weight: normal;
+    color: #ada8a3;
+    margin-bottom: 15px;
+    margin-left: 680px;
+}
+.object_block{
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 3px 5px #efece9;
+    padding: 18px 19px;
+    margin-bottom: 15px;
+}
+.object_block .close_object:hover{
+    background: url("../img/delete.png");
+}
+.close_object{
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    background: url("../img/close-sprite.png");
+    width: 14px;
+    height: 14px;
+    text-indent: -5000px;
+    cursor: pointer;
+}
+.close_object:hover{
+    background-position: 0 14px;
+}
+.control_buts{
+    float: right;
+    margin-right: 36px;
+}
+.control_buts li{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 23px;
+}
+.object_block h3{
+    font-weight: normal;
+    font-family: "robotoslab-bold";
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #4c4c4c;
+}
+.green_object{
+    background: url("../img/green-dote.png") no-repeat 1px 6px;
+    padding-left: 14px;
+}
+.red_object{
+    background: url("../img/pink-dote.png") no-repeat 1px 6px;
+    padding-left: 14px;
+}
+.objcet_place{
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    margin-right: 11px;
+}
+.work_time{
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    background: url("../img/time.png") no-repeat;
+    color: #4c4c4c;
+    font-size: 13px;
+    line-height: 13px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-left: 24px;
+}
+.work_time span{
+    display: block;
+    margin-bottom: 4px;
+}
+.object_site{
+    display: inline-block;
+    vertical-align: top;
+    width: 198px;
+    line-height: 15px;
+    overflow: hidden;
+}
+.object_about{
+    display: inline-block;
+    vertical-align: top;
+    width: 321px;
+    color: #4c4c4c;
+    font-size: 11px;
+    background: url("../img/edit.png") no-repeat;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-left: 20px;
+    line-height: 14px;
+}
+.objcet_place address{
+    font-style: normal;
+    background: url("../img/pointer.png") no-repeat;
+    padding-left: 22px;
+    color: #4c4c4c;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 11px;
+}
+.objcet_place address span{
+    color: #ada8a3;
+    font-size: 11px;
+    display: block;
+}
+.metro_station{
+    color: #4c4c4c;
+    font-size: 13px;
+    background: url("../img/metro.png") no-repeat;
+    padding-left: 22px;
+}
+.work_time span > span{
+    color: #ada8a3;
+    font-size: 11px;
+}
+.not_active_object{
+    border-top: 1px solid #e8e2dc;
+    padding-top: 25px;
+    margin-top: 30px;
+}
+.not_active_object h2{
+    margin-bottom: 28px;
+}
+.message{
+    font-size: 13px;
+    color: #ada8a3;
+    line-height: 21px;
+    margin-top: 75px;
+}
+.message span{
+    color: #fb5b5b;
+}
+/* --------------- /objects_wrap --------------- */

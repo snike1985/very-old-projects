@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+        <title>Title</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/jquery.main.js"></script>
+
+        <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+        <![endif]-->
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+        <![endif]-->
+    </head>
+    <body>
+
+    <!-- reader -->
+    <div class="reader">
+
+        <!-- reader__popup-close -->
+        <div class="reader__popup-close"></div>
+        <!-- /reader__popup-close -->
+
+        <!-- reader__popup -->
+        <div class="reader__popup">
+            <div>
+                <p class="reader__bold">Сейчас вы <span>Читатель.</span></p>
+                <p>Для того что-бы получить статус автора
+                    нужно добавить хотя бы одну книгу</p>
+            </div>
+            <div>
+                <p class="reader__popup-style">Адрес Вашей авторской страницы, который Вы можете давать читателям <a class="reader__bold" href="#">avtor-knigi.ru/user</a></p>
+                <p>Также можно <a href="#">купить личный красивый адрес</a></p>
+            </div>
+            <div>
+                <a class="reader__popup-hide" href="#">Скрыть подсказку</a>
+            </div>
+        </div>
+        <!-- /reader__popup -->
+
+    </div>
+    <!-- /reader -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- header -->
+        <header class="header about-head">
+
+            <!-- header__top -->
+            <div class="header__top">
+                <div class="header__top__wrap">
+
+                    <!-- logo -->
+                    <a href="#" class="logo"><img src="img/logo.png" width="286" height="41" alt="avtor knigi"></a>
+                    <!-- /logo -->
+
+                    <!-- user -->
+                    <div class="user">
+                        <a href="#" class="user__avatar">
+                            <img src="pic/user-avatar.png" width="50" height="50" alt="user"/>
+                        </a>
+                        <div>
+                            <a class="user__name" href="#">Сергей Печкин</a>
+                            <a class="user__edit" href="#">ред.</a>
+
+                            <!-- user__status -->
+                            <dl class="user__status">
+                                <dt>Вы:</dt>
+                                <dd class="user__status-reader"><a href="#"> Читатель</a></dd>
+                                <dd><a href="#">Выход</a></dd>
+                            </dl>
+                            <!-- /user__status -->
+                        </div>
+                    </div>
+                    <!-- /user -->
+
+                    <!-- links -->
+                    <div class="links">
+                        <a class="links__bold" href="#">Добавить книгу</a>
+                        <a href="#">Книжная полка</a>
+                        <a class="links__message" href="#"><span>Сообщения</span><span class="links__message-count">3</span></a>
+                        <a href="#">Статистика</a>
+                        <a class="links__bold" href="#">Вип-аккаунт</a>
+                        <span class="links__balance">Баланс:  <a href="#">0  руб.</a></span>
+                    </div>
+                    <!-- /links -->
+
+                </div>
+            </div>
+            <!-- /header__top -->
+
+            <!-- header__search -->
+            <div class="header__search">
+
+                <!-- search -->
+                <form class="search" action="#">
+                    <input type="search" value="15 фактов" class="search-input" name="search"/>
+                    <input type="submit" value=" "/>
+                                <span class="search__example">
+                                    Например,  <a href="#">Девушка которой сделали предложение</a>
+                                </span>
+                </form>
+                <!-- /search -->
+
+                <!-- mini-nav -->
+                <nav class="mini-nav">
+                    <a href="#" class="mini-nav__item5">Жанры</a>
+                    <a href="#" class="mini-nav__item3">Отзывы</a>
+                    <a href="#" class="mini-nav__item2">Топ авторов</a>
+                    <a href="#" class="mini-nav__item4">Топ книг</a>
+                    <a href="#" class="mini-nav__item6">Все авторы</a>
+                    <a href="#" class="mini-nav__item1">Все книги</a>
+                </nav>
+                <!-- /mini-nav -->
+
+            </div>
+            <!-- /header__search -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+
+            <nav class="crumbs">
+                <a href="#">Главная  </a>
+            </nav>
+
+
+            <!-- content -->
+            <div class="content">
+
+                <h1>Пополнить свой баланс:</h1>
+
+                <!-- recharge -->
+                <div class="recharge">
+
+                    <div>
+
+                        <!-- recharge__title -->
+                        <div class="recharge__title">
+                            <span>1. Выберите способ</span>
+                        </div>
+                        <!-- /recharge__title -->
+
+                        <!-- recharge__method -->
+                        <ul class="recharge__method">
+                            <li>
+                                <a href="#recharge">
+                                    <span class="recharge__name-method recharge__name-method_Robokassa">
+                                    <span>Robokassa</span>
+                                    </span>
+                                    <span class="recharge__prompt">
+                                        Более <span>30 способов</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#recharge">
+                                    <span class="recharge__name-method recharge__name-method_WebMoney">
+                                    <span>WebMoney</span>
+                                    </span>
+                                    <span class="recharge__prompt">
+                                        оплата через <span>WebMoney</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#recharge">
+                                    <span class="recharge__name-method recharge__name-method_yandex">
+                                    <span>Яндекс.Деньги</span>
+                                    </span>
+                                    <span class="recharge__prompt">
+                                        оплата через <span>Яндекс деньги</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#recharge">
+                                    <span class="recharge__name-method recharge__name-method_PayPal">
+                                    <span>PayPal</span>
+                                    </span>
+                                    <span class="recharge__prompt">
+                                        оплата через <span>PayPal</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#recharge">
+                                    <span class="recharge__name-method recharge__name-method_visa">
+                                    <span>Visa, MasterCard</span>
+                                    </span>
+                                    <span class="recharge__prompt">
+                                        оплата через <span>Visa, MasterCard</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#recharge">
+                                    <span class="recharge__name-method recharge__name-method_qiwi">
+                                    <span>Qiwi кошелек</span>
+                                    </span>
+                                    <span class="recharge__prompt">
+                                        оплата через <span>Qiwi кошелек</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#recharge">
+                                    <span class="recharge__name-method recharge__name-method_bank">
+                                    <span>Сбербанк</span>
+                                    </span>
+                                    <span class="recharge__prompt">
+                                        оплата через <span>Сбербанк</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#recharge">
+                                    <span class="recharge__name-method recharge__name-method_mts">
+                                    <span>МТС</span>
+                                    </span>
+                                    <span class="recharge__prompt">
+                                        оплата через <span>МТС</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#recharge">
+                                    <span class="recharge__name-method recharge__name-method_sms">
+                                    <span>СМС</span>
+                                    </span>
+                                    <span class="recharge__prompt">
+                                        оплата через <span>СМС</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /recharge__method -->
+
+                    </div>
+
+                    <div>
+
+                        <!-- recharge__title -->
+                        <div id="recharge" class="recharge__title">
+                            <span>2. Введите сумму и оплатите</span>
+                        </div>
+                        <!-- /recharge__title -->
+
+                        <!-- recharge__inner -->
+                        <div class="recharge__inner">
+
+                            <!-- recharge__tip -->
+                            <div class="recharge__tip">
+
+                                <span>Для начала, выберите один из способов
+                                оплаты слева. </span>
+
+                            </div>
+                            <!-- /recharge__tip -->
+
+                            <!-- recharge__input -->
+                            <div class="recharge__input">
+
+                                <form action="#">
+
+                                    <input type="text" id="input1" value="0"/>
+                                    <label for="input1">руб.</label>
+                                    <input type="submit" class="recharge__submit" value="Оплатить"/>
+
+                                </form>
+
+                                <div>
+                                    <span>
+                                        Введите сумму и нажмите <span class="recharge__allotted">“оплатить”</span>. Далее следуйте инструкциям.
+                                    </span>
+                                </div>
+
+                                <p>
+                                    Робокасса - это пополнене через Webmoney,
+                                    Яндекс деньги, банковские карты
+                                </p>
+                                
+                            </div>
+                            <!-- /recharge__input -->
+
+                            <!-- recharge__input -->
+                            <div class="recharge__input">
+
+                                <form action="#">
+
+                                    <input type="text" id="input2" value="0"/>
+                                    <label for="input2">руб.</label>
+                                    <input type="submit" class="recharge__submit" value="Оплатить"/>
+
+                                </form>
+
+                                <div>
+                                    <span>
+                                        Введите сумму и нажмите <span class="recharge__allotted">“оплатить”</span>. Далее следуйте инструкциям.
+                                    </span>
+                                </div>
+
+                                <p>
+                                    WebMoney - это пополнене через Webmoney,
+                                    Яндекс деньги, банковские карты
+                                </p>
+
+                            </div>
+                            <!-- /recharge__input -->
+
+                            <!-- recharge__input -->
+                            <div class="recharge__input">
+
+                                <form action="#">
+
+                                    <input type="text" id="input3" value="0"/>
+                                    <label for="input3">руб.</label>
+                                    <input type="submit" class="recharge__submit" value="Оплатить"/>
+
+                                </form>
+
+                                <div>
+                                    <span>
+                                        Введите сумму и нажмите <span class="recharge__allotted">“оплатить”</span>. Далее следуйте инструкциям.
+                                    </span>
+                                </div>
+
+                                <p>
+                                    Яндекс.Деньги - это пополнене через Webmoney,
+                                    Яндекс деньги, банковские карты
+                                </p>
+
+                            </div>
+                            <!-- /recharge__input -->
+
+                            <!-- recharge__input -->
+                            <div class="recharge__input">
+
+                                <form action="#">
+
+                                    <input type="text" id="input4" value="0"/>
+                                    <label for="input4">руб.</label>
+                                    <input type="submit" class="recharge__submit" value="Оплатить"/>
+
+                                </form>
+
+                                <div>
+                                    <span>
+                                        Введите сумму и нажмите <span class="recharge__allotted">“оплатить”</span>. Далее следуйте инструкциям.
+                                    </span>
+                                </div>
+
+                                <p>
+                                    PayPal - это пополнене через Webmoney,
+                                    Яндекс деньги, банковские карты
+                                </p>
+
+                            </div>
+                            <!-- /recharge__input -->
+
+                            <!-- recharge__input -->
+                            <div class="recharge__input">
+
+                                <form action="#">
+
+                                    <input type="text" id="input5" value="0"/>
+                                    <label for="input5">руб.</label>
+                                    <input type="submit" class="recharge__submit" value="Оплатить"/>
+
+                                </form>
+
+                                <div>
+                                    <span>
+                                        Введите сумму и нажмите <span class="recharge__allotted">“оплатить”</span>. Далее следуйте инструкциям.
+                                    </span>
+                                </div>
+
+                                <p>
+                                    Visa, MasterCard - это пополнене через Webmoney,
+                                    Яндекс деньги, банковские карты
+                                </p>
+
+                            </div>
+                            <!-- /recharge__input -->
+
+                            <!-- recharge__input -->
+                            <div class="recharge__input">
+
+                                <form action="#">
+
+                                    <input type="text" id="input6" value="0"/>
+                                    <label for="input6">руб.</label>
+                                    <input type="submit" class="recharge__submit" value="Оплатить"/>
+
+                                </form>
+
+                                <div>
+                                    <span>
+                                        Введите сумму и нажмите <span class="recharge__allotted">“оплатить”</span>. Далее следуйте инструкциям.
+                                    </span>
+                                </div>
+
+                                <p>
+                                    Qiwi кошелек - это пополнене через Webmoney,
+                                    Яндекс деньги, банковские карты
+                                </p>
+
+                            </div>
+                            <!-- /recharge__input -->
+
+                            <!-- recharge__input -->
+                            <div class="recharge__input">
+
+                                <form action="#">
+
+                                    <input type="text" id="input7" value="0"/>
+                                    <label for="input7">руб.</label>
+                                    <input type="submit" class="recharge__submit" value="Оплатить"/>
+
+                                </form>
+
+                                <div>
+                                    <span>
+                                        Введите сумму и нажмите <span class="recharge__allotted">“оплатить”</span>. Далее следуйте инструкциям.
+                                    </span>
+                                </div>
+
+                                <p>
+                                    Сбербанк - это пополнене через Webmoney,
+                                    Яндекс деньги, банковские карты
+                                </p>
+
+                            </div>
+                            <!-- /recharge__input -->
+
+                            <!-- recharge__input -->
+                            <div class="recharge__input">
+
+                                <form action="#">
+
+                                    <input type="text" id="input8" value="0"/>
+                                    <label for="input8">руб.</label>
+                                    <input type="submit" class="recharge__submit" value="Оплатить"/>
+
+                                </form>
+
+                                <div>
+                                    <span>
+                                        Введите сумму и нажмите <span class="recharge__allotted">“оплатить”</span>. Далее следуйте инструкциям.
+                                    </span>
+                                </div>
+
+                                <p>
+                                    МТС - это пополнене через Webmoney,
+                                    Яндекс деньги, банковские карты
+                                </p>
+
+                            </div>
+                            <!-- /recharge__input -->
+
+                            <!-- recharge__input -->
+                            <div class="recharge__input">
+
+                                <form action="#">
+
+                                    <input type="text" id="input9" value="0"/>
+                                    <label for="input9">руб.</label>
+                                    <input type="submit" class="recharge__submit" value="Оплатить"/>
+
+                                </form>
+
+                                <div>
+                                    <span>
+                                        Введите сумму и нажмите <span class="recharge__allotted">“оплатить”</span>. Далее следуйте инструкциям.
+                                    </span>
+                                </div>
+
+                                <p>
+                                    СМС - это пополнене через Webmoney,
+                                    Яндекс деньги, банковские карты
+                                </p>
+
+                            </div>
+                            <!-- /recharge__input -->
+
+                        </div>
+                        <!-- /recharge__inner -->
+
+                    </div>
+
+                </div>
+                <!-- /recharge -->
+
+                <p>
+                    Если у Вас возникли трудности с пополнением, или не хватает способа для Вашей страны, Вы всегда можете написать нам об этом на
+                    <a href="mailto:admin@avtor-knigi.ru">admin@avtor-knigi.ru</a> и мы постараемся Вам помочь!
+                </p>
+
+            </div>
+            <!-- /content -->
+
+            <!-- site__aside-rtight -->
+            <aside class="site__aside-rtight site__aside-rtight__loadmoney">
+
+                <h2>Ваш баланс:</h2>
+
+                <!-- money-balance -->
+                <div class="money-balance">
+
+                    <span>1000</span> руб.
+
+                </div>
+                <!-- /money-balance -->
+
+                <!-- settlements-statistic -->
+                <div class="settlements-statistic">
+
+                    <span>
+                        <a href="#">Статистика
+                            взаиморасчётов</a>
+                    </span>
+
+                </div>
+                <!-- /settlements-statistic -->
+
+
+                <h2>Подсазки:</h2>
+
+                <!-- tips -->
+                <div class="tips">
+                    <ul>
+                        <li>
+                            <span>просмотр своих читателей, посетителей страницы, общего информации</span>
+                            <a href="#">скрыть подсказку</a>
+                        </li>
+                        <li>
+                            <span>просмотр своих читателей, посетителей страницы, общего информации</span>
+                            <a href="#">скрыть подсказку</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /tips -->
+
+                <h2>Последние пополнения:</h2>
+
+                <!-- last-replenishment -->
+                <div class="last-replenishment">
+
+                    <ul>
+                        <li>
+                            <div>пополнение на 1000 р.</div>
+                            <div>
+                                <time datetime="2014-09-29">29.09.14</time>
+                                <span>- WebMoney</span>
+                                <a href="#">повторить</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>пополнение на 1000 р.</div>
+                            <div>
+                                <time datetime="2014-09-29">29.09.14</time>
+                                <span>- WebMoney</span>
+                                <a href="#">повторить</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>пополнение на 1000 р.</div>
+                            <div>
+                                <time datetime="2014-09-29">29.09.14</time>
+                                <span>- WebMoney</span>
+                                <a href="#">повторить</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>пополнение на 1000 р.</div>
+                            <div>
+                                <time datetime="2014-09-29">29.09.14</time>
+                                <span>- WebMoney</span>
+                                <a href="#">повторить</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>пополнение на 1000 р.</div>
+                            <div>
+                                <time datetime="2014-09-29">29.09.14</time>
+                                <span>- WebMoney</span>
+                                <a href="#">повторить</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /last-replenishment -->
+
+            </aside>
+            <!-- /site__aside-rtight -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <span class="copyright">
+                    &#169; Самиздат, 2010
+                <span>
+                    Проект сайта <a href="#">bukvaved.ru</a>
+                </span>
+            </span>
+            <dl class="footer-mail">
+                <dt>
+                    Электронная почта:
+                </dt>
+                <dd>
+                    <a href="emailto:sam@bukvaved.ru">sam@bukvaved.ru</a>
+                </dd>
+            </dl>
+            <span class="about-project">
+                <a href="#">
+                    Подробнее о проекте
+                </a>
+            </span>
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+    </body>
+</html>

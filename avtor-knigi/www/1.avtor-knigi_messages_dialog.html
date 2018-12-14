@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+        <title>Title</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/jquery.main.js"></script>
+
+        <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+        <![endif]-->
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="popup popup_add-contact tooltip" id="onOption">
+            <div class="popup__wrap">
+                <h2>Добавить в избранные</h2>
+                <form action="#">
+                    <span class="popup__example">
+                        Введите URL профиля, например: <span>avtor-knigi.ru/kuleshov</span>
+                    </span>
+                    <fieldset>
+                        <input type="search" value="avtor-knigi.ru/kuleshov" class="add-example"/>
+                        <input type="submit" value="Добавить"/>
+                    </fieldset>
+                    <span class="popup__favourites">
+                        В избранных - <span>20 человек</span>
+                    </span>
+                </form>
+                <span class="content__popup-close close">close</span>
+                <span class="triangle-down "></span>
+
+            </div>
+        </div>
+
+        <div class="popup popup_add-contact tooltip" id="onOption2">
+            <div class="popup__wrap">
+                <h2>Добавить в игнорируемые</h2>
+                <form action="#">
+                    <span class="popup__example">
+                        Введите URL профиля, например: <span>avtor-knigi.ru/kuleshov</span>
+                    </span>
+                    <fieldset>
+                        <input type="search" value="avtor-knigi.ru/kuleshov" class="add-example"/>
+                        <input type="submit" value="Добавить"/>
+                    </fieldset>
+                    <span class="popup__favourites">
+                        В игнорируемых - <span>20 человек</span>
+                    </span>
+                </form>
+                <span class="content__popup-close close">close</span>
+                <span class="triangle-down "></span>
+
+            </div>
+        </div>
+
+        <div class="popup popup_add-contact tooltip" id="onOption5">
+            <div class="popup__wrap popup__wrap_massage-limit">
+                <p>
+                    Вы можете вручную удалять сообщения, или диалоги. Но,
+                    возможно у Вас будет большое количество сообщений, или диалогов,
+                    которые очень важны для Вас и Вы хотели бы их сохранить...
+                    В данном случае Вам и пригодится премиальное увеличение.
+                </p>
+                <h3>Лимит сообщений:</h3>
+                <div>
+                    <div class="filling-profile">
+                        <div class="filling-profile__pouring" style="width: 20%"></div>
+                    </div>
+                    <div class="massage-number">
+                        <span>300</span> из <span>1000</span>
+                    </div>
+                </div>
+                <div class="increase-volume">
+                    <a href="#">Увеличить место</a>
+                </div>
+                <span class="content__popup-close close">close</span>
+                <span class="right-triangle "></span>
+
+            </div>
+        </div>
+
+        <!-- reader -->
+        <div class="reader">
+
+            <!-- reader__popup-close -->
+            <div class="reader__popup-close"></div>
+            <!-- /reader__popup-close -->
+
+            <!-- reader__popup -->
+            <div class="reader__popup">
+                <div>
+                    <p class="reader__bold">Сейчас вы <span>Читатель.</span></p>
+                    <p>Для того что-бы получить статус автора
+                        нужно добавить хотя бы одну книгу</p>
+                </div>
+                <div>
+                    <p class="reader__popup-style">Адрес Вашей авторской страницы, который Вы можете давать читателям <a class="reader__bold" href="#">avtor-knigi.ru/user</a></p>
+                    <p>Также можно <a href="#">купить личный красивый адрес</a></p>
+                </div>
+                <div>
+                    <a class="reader__popup-hide" href="#">Скрыть подсказку</a>
+                </div>
+            </div>
+            <!-- /reader__popup -->
+
+        </div>
+        <!-- /reader -->
+
+        <!-- site -->
+        <div class="site">
+
+            <!-- header -->
+            <header class="header about-head">
+
+                <!-- header__top -->
+                <div class="header__top">
+                    <div class="header__top__wrap">
+
+                        <!-- logo -->
+                        <a href="#" class="logo"><img src="img/logo.png" width="286" height="41" alt="avtor knigi"></a>
+                        <!-- /logo -->
+
+                        <!-- user -->
+                        <div class="user">
+                            <a href="#" class="user__avatar">
+                                <img src="pic/user-avatar.png" width="50" height="50" alt="user"/>
+                            </a>
+                            <div>
+                                <a class="user__name" href="#">Сергей Печкин</a>
+                                <a class="user__edit" href="#">ред.</a>
+
+                                <!-- user__status -->
+                                <dl class="user__status">
+                                    <dt>Вы:</dt>
+                                    <dd class="user__status-reader"><a href="#"> Читатель</a></dd>
+                                    <dd><a href="#">Выход</a></dd>
+                                </dl>
+                                <!-- /user__status -->
+                            </div>
+                        </div>
+                        <!-- /user -->
+
+                        <!-- links -->
+                        <div class="links">
+                            <a class="links__bold" href="#">Добавить книгу</a>
+                            <a href="#">Книжная полка</a>
+                            <a class="links__message" href="#"><span>Сообщения</span><span class="links__message-count">3</span></a>
+                            <a href="#">Статистика</a>
+                            <a class="links__bold" href="#">Вип-аккаунт</a>
+                            <span class="links__balance">Баланс:  <a href="#">0  руб.</a></span>
+                        </div>
+                        <!-- /links -->
+
+                    </div>
+                </div>
+                <!-- /header__top -->
+
+                <!-- header__search -->
+                <div class="header__search">
+
+                    <!-- search -->
+                    <form class="search" action="#">
+                        <input type="search" value="15 фактов" class="search-input" name="search"/>
+                        <input type="submit" value=" "/>
+                                <span class="search__example">
+                                    Например,  <a href="#">Девушка которой сделали предложение</a>
+                                </span>
+                    </form>
+                    <!-- /search -->
+
+                    <!-- mini-nav -->
+                    <nav class="mini-nav">
+                        <a href="#" class="mini-nav__item5">Жанры</a>
+                        <a href="#" class="mini-nav__item3">Отзывы</a>
+                        <a href="#" class="mini-nav__item2">Топ авторов</a>
+                        <a href="#" class="mini-nav__item4">Топ книг</a>
+                        <a href="#" class="mini-nav__item6">Все авторы</a>
+                        <a href="#" class="mini-nav__item1">Все книги</a>
+                    </nav>
+                    <!-- /mini-nav -->
+
+                </div>
+                <!-- /header__search -->
+
+            </header>
+            <!-- /header -->
+
+            <!-- site__content -->
+            <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+
+                <nav class="crumbs">
+                    <a href="#">Главная  </a>
+                </nav>
+
+
+                <!-- content -->
+                <div class="content">
+
+                    <span class="content__message-white content__message-white_dialog">
+                        Диалог:
+                    </span>
+
+                    <!-- message -->
+                    <div class="message message_dialog">
+
+                        <!-- message__pic-lnk -->
+                        <a href="#" class="message__pic-lnk">
+                            <img src="pic/none-photo.png" width="55" height="55" alt=""/>
+                        </a>
+                        <!-- /message__pic-lnk -->
+
+                        <!-- message__user -->
+                        <div class="message__user">
+
+                            <span class="message-circle"></span>
+                            <a href="#" class="message__user-name">
+                                Валерия valery Иванова
+                            </a>
+
+                            <!-- message-inbox -->
+                            <div class="message-inbox">
+
+                                <span class="message-inbox__icon message-inbox__icon_open"></span>
+
+                                <!-- message-inbox__text -->
+                                <div class="message-inbox__text">
+
+                                    <a href="#" class="message-inbox__title">
+                                        Сообщений
+                                    </a>
+                                    <span class="message-inbox__number">(343)</span>
+                                    <a href="#" class="message-inbox__del"></a>
+
+                                </div>
+                                <!-- /message-inbox__text -->
+
+                            </div>
+                            <!-- /message-inbox -->
+
+                        </div>
+                        <!-- /message__user -->
+
+                        <!-- message__sort -->
+                        <div class="message__sort">
+
+                            <a href="#" class="favourites-lnk">В избранные</a>
+                            <a href="#" class="ignore-lnk">В игнор</a>
+
+                        </div>
+                        <!-- /message__sort -->
+
+                    </div>
+                    <!-- /message -->
+
+                    <!-- create-message -->
+                    <form action="#" class="create-message create-message_comments" id="comment">
+
+                        <h2>Оставить сообщение:</h2>
+
+                        <!-- create-message__btn-wrap -->
+                        <div class="create-message__btn-wrap">
+
+                            <a href="#" class="create-message__bold">Жирный</a>
+                            <a href="#" class="create-message__italic">Курсив</a>
+                            <a href="#" class="create-message__underline">Подчёркнутый</a>
+                            <a href="#" class="create-message__smile-riant"></a>
+                            <a href="#" class="create-message__smile-sad"></a>
+                            <a href="#" class="create-message__smile-wink"></a>
+                            <a href="#" class="create-message__smile alphabet-choice" data-id="smiles"></a>
+
+                        </div>
+                        <!-- /create-message__btn-wrap -->
+
+                        <textarea name="message" id="message" cols="30" rows="10" class="create-message__text create-message__text_dialog" placeholder="Текст сообщения..."></textarea>
+
+                        <!-- create-message__btn -->
+                        <div class="create-message__btn">
+
+                            <a href="#">Правила сайта</a>
+
+                            <input type="submit" value="ОТПРАВИТЬ"/>
+                            
+                        </div>
+                        <!-- /create-message__btn -->
+
+                    </form>
+                    <!-- /create-message -->
+
+                    <!-- dialog -->
+                    <ul class="dialog">
+
+                        <li>
+                            <h2>
+                                <a href="#">Валерия valery Иванова</a>
+                            </h2>
+                            <p>
+                                Вторая книга, как и первая читается на одном дыхании. Прочитал обе за одну ночь. Возможно иногда кажется несколько преувеличенна правильность поступков и мыслей героев.
+                            </p>
+                            <time datetime="2014-04-22T23:14">22.04.14 23:14</time>
+                            <span class="dialog__spam">
+                                <a href="#" class="dialog__del">Удалить</a>
+                                <a href="#" class="dialog__lnk-spam">Это спам</a>
+                            </span>
+                        </li>
+
+                        <li>
+                            <h2>
+                                Николай voron Воробьев
+                            </h2>
+                            <p>
+                                Вторая книга, как и первая читается на одном дыхании. Прочитал обе за одну ночь. Возможно иногда кажется несколько преувеличенна правильность поступков и мыслей героев.
+                            </p>
+                            <time datetime="2014-04-22T23:14">22.04.14 23:14</time>
+                            <span class="dialog__spam">
+                                <a href="#" class="dialog__del">Удалить</a>
+                                <a href="#" class="dialog__lnk-spam">Это спам</a>
+                            </span>
+                        </li>
+
+                        <li>
+                            <h2>
+                                <a href="#">Валерия valery Иванова</a>
+                            </h2>
+                            <p>
+                                Вторая книга, как и первая читается на одном дыхании. Прочитал обе за одну ночь. Возможно иногда кажется несколько преувеличенна правильность поступков и мыслей героев.
+                            </p>
+                            <time datetime="2014-04-22T23:14">22.04.14 23:14</time>
+                            <span class="dialog__spam">
+                                <a href="#" class="dialog__del">Удалить</a>
+                                <a href="#" class="dialog__lnk-spam">Это спам</a>
+                            </span>
+                        </li>
+
+                    </ul>
+                    <!-- /dialog -->
+
+                    <!-- content__additions -->
+                    <div class="content__additions content__additions_dialog">
+
+                        <a href="#" class="show-more-btn">
+                            <span>Показать еще 10</span>
+                        </a>
+
+                        <!-- paginator-wrap -->
+                        <div class="paginator-wrap">
+
+                            <!-- paginator -->
+                            <ul class="paginator">
+
+                                <li>
+                                    <a href="#" class="paginator__prev">Назад</a>
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">...</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="paginator__next">Далее</a>
+                                </li>
+
+                            </ul>
+                            <!-- /paginator -->
+
+                            <!-- input-page -->
+                            <div class="input-page">
+
+                                <input type="search" class="input-page__search" value="Введите номер страницы для перелистывания"/>
+                                <input type="submit" value="Перейти"/>
+
+                            </div>
+                            <!-- /input-page -->
+
+                        </div>
+                        <!-- /paginator-wrap -->
+
+                    </div>
+                    <!-- /content__additions -->
+
+                </div>
+                <!-- /content -->
+
+                <!-- site__aside-rtight -->
+                <aside class="site__aside-rtight site__aside_other">
+
+                    <!-- writers-list -->
+                    <div class="writers-list writers-list_favorites">
+                        <h2>Избранные контакты:</h2>
+
+                        <!-- writers-list__wrap -->
+                        <div class="writers-list__wrap">
+
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="pic/none-photo.png" width="50" height="50" alt="">
+                                    </a>
+                                    <div class="aside-name-block">
+                                        <a href="#" class="user-name">Станислав Кулешов</a>
+                                                <span>
+                                                    kuleshov
+                                                    <span class="edit-nick">
+                                                        <a href="#" class="edit-nick__write">написать</a>
+                                                        <a href="#" class="edit-nick__del">убрать</a>
+                                                    </span>
+                                                </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="pic/com-pic1.png" width="50" height="50" alt="">
+                                    </a>
+                                    <div class="aside-name-block">
+                                        <a href="#" class="user-name">Марина Гайдар</a>
+                                                <span>
+                                                    kuleshov
+                                                    <span class="edit-nick">
+                                                        <a href="#" class="edit-nick__write">написать</a>
+                                                        <a href="#" class="edit-nick__del">убрать</a>
+                                                    </span>
+                                                </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="pic/com-pic1.png" width="50" height="50" alt="">
+                                    </a>
+                                    <div class="aside-name-block">
+                                        <a href="#" class="user-name">Николай Гайдар</a>
+                                                <span>
+                                                    kuleshov
+                                                    <span class="edit-nick">
+                                                        <a href="#" class="edit-nick__write">написать</a>
+                                                        <a href="#" class="edit-nick__del">убрать</a>
+                                                    </span>
+                                                </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="add-contact on-option openTooltip" data-id="onOption">Добавить контакт</a>
+
+                        </div>
+                        <!-- /writers-list__wrap -->
+
+                    </div>
+                    <!-- /writers-list -->
+
+                    <!-- writers-list -->
+                    <div class="writers-list writers-list_favorites writers-list_ignore">
+                        <h2>Игнорируемые контакты:</h2>
+                        <!-- writers-list__wrap -->
+                        <div class="writers-list__wrap">
+
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="pic/none-photo.png" width="50" height="50" alt="">
+                                    </a>
+                                    <div class="aside-name-block">
+                                        <a href="#" class="user-name">Станислав Кулешов</a>
+                                                <span>
+                                                    kuleshov
+                                                    <span class="edit-nick">
+                                                        <a href="#" class="edit-nick__del">убрать</a>
+                                                    </span>
+                                                </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="pic/none-photo.png" width="50" height="50" alt="">
+                                    </a>
+                                    <div class="aside-name-block">
+                                        <a href="#" class="user-name">Марина Гайдар</a>
+                                                <span>
+                                                    kuleshov
+                                                    <span class="edit-nick">
+                                                        <a href="#" class="edit-nick__del">убрать</a>
+                                                    </span>
+                                                </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="pic/none-photo.png" width="50" height="50" alt="">
+                                    </a>
+                                    <div class="aside-name-block">
+                                        <a href="#" class="user-name">Николай Гайдар</a>
+                                                <span>
+                                                    kuleshov
+                                                    <span class="edit-nick">
+                                                        <a href="#" class="edit-nick__del">убрать</a>
+                                                    </span>
+                                                </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="add-contact on-option openTooltip" data-id="onOption2">Добавить контакт</a>
+
+                        </div>
+                        <!-- /writers-list__wrap -->
+                    </div>
+                    <!-- /writers-list -->
+
+                    <!-- author-about__profile -->
+                    <div class="author-about__profile author-about__profile_message">
+                        <h2>Заполненность ящика:</h2>
+
+                        <!-- filling-profile  -->
+                        <div class="filling-profile">
+
+                            <!-- filling-profile__pouring -->
+                            <div class="filling-profile__pouring" style="width: 20%"></div>
+                            <!-- /filling-profile__pouring -->
+
+                        </div>
+                        <!-- /filling-profile  -->
+
+                        <a href="#" class="filing-percent openTooltip"  data-id="onOption5">
+                            <span class="percent-number"></span> %
+                        </a>
+
+                        <a href="#" class="increase-place openTooltip" data-id="onOption5">Увеличить место</a>
+
+                    </div>
+                    <!-- /author-about__profile -->
+
+                </aside>
+                <!-- /site__aside-rtight -->
+
+            </div>
+            <!-- /content-wrap -->
+
+            </div>
+            <!-- /site__content -->
+
+        </div>
+        <!-- /site -->
+
+        <!-- footer -->
+        <footer class="footer">
+
+            <!-- footer__layout -->
+            <div class="footer__layout">
+
+                    <span class="copyright">
+                            &#169; Самиздат, 2010
+                        <span>
+                            Проект сайта <a href="#">bukvaved.ru</a>
+                        </span>
+                    </span>
+                <dl class="footer-mail">
+                    <dt>
+                        Электронная почта:
+                    </dt>
+                    <dd>
+                        <a href="emailto:sam@bukvaved.ru">sam@bukvaved.ru</a>
+                    </dd>
+                </dl>
+                    <span class="about-project">
+                        <a href="#">
+                            Подробнее о проекте
+                        </a>
+                    </span>
+            </div>
+            <!-- /footer__layout -->
+
+        </footer>
+        <!-- /footer -->
+
+    </body>
+</html>

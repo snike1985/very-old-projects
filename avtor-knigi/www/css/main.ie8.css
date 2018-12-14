@@ -1,0 +1,24 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Font Name";
+    src: url("../fonts/font.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+
+.message-inbox__text {
+    width: 300px;
+    height: 33px;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#801f1511', endColorstr='#001f1511',GradientType=1 ); /* IE6-8 */
+}
+.message-inbox__new {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9d42', endColorstr='#c90502',GradientType=0 ); /* IE6-8 */
+}
+.create-message__btn input[type='submit'] {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee088', endColorstr='#a86902',GradientType=0 ); /* IE6-8 */
+}
+.editing__options_detalizate input[type='submit'] {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdf88', endColorstr='#a86801',GradientType=0 ); /* IE6-8 */
+}

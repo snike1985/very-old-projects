@@ -1,0 +1,23 @@
+/* --------------- niceCheck --------------- */
+.niceCheck {
+    margin: 0 2px 0 0;
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: left;
+    background: url("../img/nice-check.png") 0 -16px no-repeat;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.niceChecked{
+    background: url("../img/nice-check.png") 0 0 no-repeat;
+}
+.niceCheck input {
+    margin-left: -100px;
+}
+/* --------------- /niceCheck --------------- */

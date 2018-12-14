@@ -1,0 +1,231 @@
+/* --------------- add_object --------------- */
+.add_object{
+    margin-top: 65px;
+}
+
+.add_object .line_container > label{
+    display: inline-block;
+    vertical-align: top;
+    width: 138px;
+    margin-top: 13px;
+    margin-right: 8px;
+    color: #ada8a3;
+    font-size: 13px;
+    text-align: right;
+}
+.add_object .radio_wrap{
+    margin-bottom: 0;
+}
+.add_object .radio_wrap > label{
+    margin-top: 5px;
+}
+.add_object label span{
+    color: #fa9090;
+}
+.radio_container{
+    display: inline-block;
+    vertical-align: top;
+    width: 281px;
+    margin-bottom: 23px;
+}
+.input_container{
+    display: inline-block;
+    vertical-align: top;
+    width: 426px;
+}
+.check_box_container{
+    display: inline-block;
+    vertical-align: top;
+    width: 426px;
+}
+.check_box_container .input_container{
+    display: block;
+}
+.radio_line label{
+    color: #4c4c4c;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3px;
+    margin-top: 5px;
+
+}
+.radio_line label:hover + .niceRadio{
+    background: url("../img/check-but-sprite.png") no-repeat  0 -1296px;
+}
+.radio_line label:hover + .radioChecked{
+    background: url("../img/check-but-sprite.png") no-repeat   0 -1224px;
+}
+.radio_line .niceRadio{
+    float: left;
+    margin-bottom: 5px;
+}
+.radio_line{
+    margin-bottom: 5px;
+    clear: both;
+}
+
+.pointer_container{
+    float: right;
+    position: relative;
+    cursor: pointer;
+    margin-top: 6px;
+}
+.little_pointer{
+    text-indent: -5000px;
+    width: 7px;
+    height: 11px;
+    background: url("../img/little-pointer-sprite.png") no-repeat;
+}
+.green_little_pointer{
+    background-position: 0 -122px;
+}
+.blue_little_pointer{
+    background-position: 0 0;
+}
+.pink_little_pointer{
+    background-position: 0 -244px;
+}
+.orange_little_pointer{
+    background-position: 0 -183px;
+}
+.fiolet_little_pointer{
+    background-position: 0 -61px;
+}
+.radio_line:hover .pointer_text{
+    opacity: 1;
+}
+.pointer_text{
+    position: absolute;
+    top: -24px;
+    left: 18px;
+    background: #fffbd6;
+    border: 2px solid #ffe8a1;
+
+    border-radius: 5px;
+    font-size: 11px;
+    color: #4c4c4c;
+    line-height: 17px;
+    white-space: pre-line;
+    height: 26px;
+    padding: 15px;
+    width: 205px;
+    opacity: 0;
+    padding-top: 8px;
+    ransition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+
+}
+.pointer_text:after{
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    left: -10px;
+    background: url("../img/arrow2.png");
+    width: 10px;
+    height: 15px;
+    content: "";
+}
+.input_container{
+    position: relative;
+}
+
+.line_container{
+    margin-bottom: 10px;
+    position: relative;
+}
+/*.line_container .error_input_text{*/
+    /*left: 150px;*/
+    /*top:34px;*/
+/*}*/
+.object_line{
+    margin-bottom: 30px;
+}
+.check_box_line{
+    display: inline-block;
+    vertical-align: top;
+    width: 425px;
+    margin-bottom: 20px;
+    min-height: 30px;
+}
+.check_box_line .niceCheck{
+    float: left;
+    margin-right: 5px;
+}
+.check_box_line label:hover + .niceCheck{
+    background-position: 0 -648px;
+}
+.check_box_line label:hover + .niceChecked{
+    background-position: 0 -576px;
+}
+.check_box_line label{
+    display: inline-block;
+    vertical-align: top;
+    color: #4c4c4c;
+    font-size: 13px;
+    margin-top: 4px;
+    width: 20px;
+}
+.add_object  .check_box_wrap > label{
+    margin-top: 5px;
+}
+.time_line{
+    display: inline-block;
+    margin-top: -10px;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.time_line > span{
+    color: #ada8a3;
+    font-size: 13px;
+    display: inline-block;
+    margin: 8px;
+    vertical-align: top;
+    margin-top: 13px;
+}
+.date_select{
+    display: inline-block;
+    vertical-align: top;
+}
+.date_select .nice-select{
+    width: 185px;
+}
+
+.next_step_but{
+    background: #68c03c url("../img/arrow.png") no-repeat 176px 18px;
+    border-radius: 10px;
+    float: right;
+    width: 235px;
+    height: 40px;
+    border: none !important;
+    color: #fff;
+    font-size: 13px;
+    font-family: tahoma;
+    ransition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    font-family: "robotoslab-bold";
+}
+
+.next_step_but:hover{
+    background: #70ca43 url("../img/arrow.png") no-repeat 176px 18px;
+}
+.next_step_but:active{
+    background: #5bb22f url("../img/arrow.png") no-repeat 176px 18px;
+}
+.add_object_but{
+    background: #68c03c;
+}
+.add_object_but:hover{
+    background: #70ca43
+}
+.add_object_but:active{
+    background: #5bb22f;
+}
+.add_object_footer{
+    border-top: 1px solid #e8e2dc;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+/* --------------- /add_object --------------- */

@@ -1,0 +1,2055 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/calendar.css" />
+    <link rel="stylesheet" href="css/i-scroll.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/iscroll-probe-min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body class="allbooks3 profil-data">
+
+<div class="popup popup_postpone tooltip" id="onOption">
+    <div class="popup__wrap">
+        <h2>Поставить на полку</h2>
+        <form action="#" class="new-shelf">
+            <label for="new-shelf">Новая полка:</label>
+            <div>
+                <input type="text" id="new-shelf" value="Максимум 50 символов"/>
+                <input type="submit" class="new-shelf__submit" value="OK"/>
+            </div>
+        </form>
+        <form action="#" class="fill-shelf">
+            <label>
+                Добавить на полки:
+            </label>
+            <select>
+                <option value="0">Новая полка</option>
+                <option value="1">Новая полка1</option>
+                <option value="2">Новая полка2</option>
+                <option value="3">Новая полка3</option>
+            </select>
+            <select>
+                <option value="0">Фантастика</option>
+                <option value="1">Мистика</option>
+                <option value="2">Фэнтези</option>
+                <option value="3">Рассказы</option>
+            </select>
+            <select>
+                <option value="0">Не добавлять</option>
+                <option value="1">Добавлять</option>
+            </select>
+            <input type="submit" value="Добавить на полку"/>
+        </form>
+        <span class="content__popup-close close">close</span>
+        <span class="triangle-down "></span>
+
+    </div>
+</div>
+
+<div class="popup popup_postpone tooltip" id="onOption2">
+    <div class="popup__wrap">
+        <h2>Убрать с полки</h2>
+        <form action="#" class="fill-shelf">
+            <label>
+                Действие:
+            </label>
+            <select>
+                <option value="0">Убрать из Новая полка</option>
+                <option value="1">Убрать из Новая полка1</option>
+                <option value="2">Убрать из Новая полка2</option>
+                <option value="3">Убрать из Новая полка3</option>
+            </select>
+            <select>
+                <option value="0">Убрать из Фантастика</option>
+                <option value="1">Убрать из Мистика</option>
+                <option value="2">Убрать из Фэнтези</option>
+                <option value="3">Убрать из Рассказы</option>
+            </select>
+            <select>
+                <option value="0">Не добавлять</option>
+                <option value="1">Добавлять</option>
+            </select>
+            <input type="submit" value="Применить"/>
+        </form>
+        <span class="content__popup-close close">close</span>
+        <span class="triangle-down "></span>
+
+    </div>
+</div>
+
+<div class="popup popup_postpone tooltip" id="onOption7">
+    <div class="popup__wrap popup__wrap_coauthor">
+        <p>После отправки приглашения, автор должен будет
+            подтвердить своё согласие на соавторство. После этого, Вы
+            будете уведомлены об отказе, или согласии в личные сообщения.</p>
+        <div>
+            <a href="#">Предложить соавторство</a>
+        </div>
+        <span class="content__popup-close close">close</span>
+        <span class="triangle-down "></span>
+
+    </div>
+</div>
+
+<div class="popup popup_postpone tooltip" id="onOption8">
+    <div class="popup__wrap popup__wrap_medals">
+        <p>Для получения медалей, нужно постоянно участвовать в
+            жизни проекта. Добавлять книги, отзывы и проявлять прочую
+            активность.
+        </p>
+        <span class="content__popup-close close">close</span>
+        <span class="triangle-down "></span>
+
+    </div>
+</div>
+
+<div class="popup popup_postpone tooltip photo-popup" id="onPercent">
+
+    <div class="popup__wrap popup__wrap_percent">
+
+        <dl>
+            <dt>Ваш профиль заполнен на <span>10 %</span>. Вам нужно заполнить ещё:</dt>
+            <dd>Имя <span>(+10%)</span></dd>
+            <dd>Фамилия <span>(+15%)</span></dd>
+        </dl>
+
+        <span class="content__popup-close close">close</span>
+        <span class="triangle-down "></span>
+
+    </div>
+</div>
+
+<!-- reader -->
+<div class="reader">
+
+    <!-- reader__popup-close -->
+    <div class="reader__popup-close"></div>
+    <!-- /reader__popup-close -->
+
+    <!-- reader__popup -->
+    <div class="reader__popup">
+        <div>
+            <p>Сейчас вы <span>Читатель.</span></p>
+            <p>Для того что-бы получить статус автора
+                нужно добавить хотя бы одну книгу</p>
+        </div>
+        <div>
+            <p class="reader__popup-style">Адрес Вашей авторской страницы, который Вы можете давать читателям <a href="#">avtor-knigi.ru/user</a></p>
+            <p>Также можно <a href="#">купить личный красивый адрес</a></p>
+        </div>
+        <div>
+            <a class="reader__popup-hide" href="#">Скрыть подсказку</a>
+        </div>
+    </div>
+    <!-- /reader__popup -->
+
+</div>
+<!-- /reader -->
+
+<!-- site -->
+<div class="site">
+
+<div class="popup popup_postpone tooltip" id="onOption6">
+    <div class="popup__wrap popup__wrap_events">
+        <h2>События автора:</h2>
+        <time datetime="2014-09-11">11.09.14</time>
+        <p>
+            - Добавлена книга: "<a href="#">Чёрный тюльпан</a>".
+        </p>
+        <time datetime="2014-09-15">15.09.14</time>
+        <p>
+            - Отредактирована книга: "<a href="#">Три мушкетёра</a>", изменено поле
+            "серия" <span>С</span> "Раз" <span>НА</span> "Два".
+        </p>
+        <time datetime="2014-09-15">15.09.14</time>
+        <p>
+            - Изменён профиль: изменено поле "Город" <span>С</span> "Минск" <span>НА</span>
+            "Гродно".
+        </p>
+        <span class="content__popup-close close">close</span>
+        <span class="triangle-down "></span>
+
+    </div>
+</div>
+
+<div class="popup popup_postpone popup_thank tooltip photo-popup" id="onPhoto-all">
+
+    <div class="popup__wrap popup__wrap_photo-all">
+
+        <h2>Все фото <span>(365)</span></h2>
+
+        <!-- main-pic -->
+        <div class="main-pic">
+
+            <span class="main-pic__btn-prev"></span>
+
+            <img src="pic/photo15.jpg" width="686" height="433" alt=""/>
+
+            <span class="main-pic__btn-next"></span>
+
+        </div>
+        <!-- /main-pic -->
+
+        <div>фото 5 из 365</div>
+
+        <div class="all-pic">
+
+            <span class="main-pic__btn-prev"></span>
+
+            <!-- photo-adding__list -->
+            <ul class="photo-adding__list">
+
+                <li>
+                    <a href="#">
+                        <img src="pic/photo10.jpg" width="69" height="69" alt=""/>
+                    </a>
+                    <a href="#">Удалить</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="pic/photo11.jpg" width="69" height="69" alt=""/>
+                    </a>
+                    <a href="#">Удалить</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="pic/photo12.jpg" width="69" height="69" alt=""/>
+                    </a>
+                    <a href="#">Удалить</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="pic/photo13.jpg" width="69" height="69" alt=""/>
+                    </a>
+                    <a href="#">Удалить</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="pic/photo14.jpg" width="69" height="69" alt=""/>
+                    </a>
+                    <a href="#">Удалить</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="pic/photo10.jpg" width="69" height="69" alt=""/>
+                    </a>
+                    <a href="#">Удалить</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="pic/photo11.jpg" width="69" height="69" alt=""/>
+                    </a>
+                    <a href="#">Удалить</a>
+                </li>
+
+            </ul>
+            <!-- /photo-adding__list -->
+
+            <span class="main-pic__btn-next"></span>
+
+        </div>
+
+        <span class="content__popup-close close">close</span>
+        <span class="triangle-down "></span>
+
+    </div>
+
+</div>
+
+<div class="popup popup_postpone popup_add-photo tooltip photo-popup" id="onPhoto-add">
+
+    <div class="popup__wrap popup__wrap_photo-add">
+
+        <h2>Добавить ещё фото:</h2>
+
+        <form action="#" class="photo-adding">
+
+            <!-- photo-adding__choice -->
+            <div class="photo-adding__choice">
+                <a href="#" type="file" class="photo-adding__btn">Выбрать фото</a>
+                        <span class="photo-adding__format">
+                            <dl>
+                                <dt>Формат файла:</dt>
+                                <dd>jpg</dd>,
+                                <dd>png</dd>,
+                                <dd>gif</dd>
+                            </dl>
+                            <dl>
+                                <dt>Максимальный размер:</dt>
+                                <dd>5 мб.</dd>
+                            </dl>
+                        </span>
+
+                <!-- filling-profile -->
+                <div class="filling-profile">
+
+                    <!-- filling-profile__pouring -->
+                    <div class="filling-profile__pouring" style="width: 25%"></div>
+                    <!-- /filling-profile__pouring -->
+
+                </div>
+                <!-- /filling-profile -->
+
+                <a href="#" class="filing-percent">
+                    <span class="percent-number"></span> %
+                </a>
+
+                <!-- photo-adding__error -->
+                <div class="photo-adding__error">
+                    Ошибка при загрузке
+                </div>
+                <!-- /photo-adding__error -->
+
+            </div>
+            <!-- /photo-adding__choice -->
+
+            <!-- photo-adding__wrap -->
+            <div class="photo-adding__wrap">
+
+                <h2>5 последних:</h2>
+
+                <!-- photo-adding__list -->
+                <ul class="photo-adding__list">
+
+                    <li>
+                        <a href="#">
+                            <img src="pic/photo10.jpg" width="97" height="97" alt=""/>
+                        </a>
+                        <a href="#">Удалить</a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="pic/photo11.jpg" width="97" height="97" alt=""/>
+                        </a>
+                        <a href="#">Удалить</a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="pic/photo12.jpg" width="97" height="97" alt=""/>
+                        </a>
+                        <a href="#">Удалить</a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="pic/photo13.jpg" width="97" height="97" alt=""/>
+                        </a>
+                        <a href="#">Удалить</a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="pic/photo14.jpg" width="97" height="97" alt=""/>
+                        </a>
+                        <a href="#">Удалить</a>
+                    </li>
+
+                </ul>
+                <!-- /photo-adding__list -->
+
+            </div>
+            <!-- /photo-adding__wrap -->
+
+        </form>
+        <span class="content__popup-close close">close</span>
+        <span class="triangle-down "></span>
+
+    </div>
+
+</div>
+
+<!-- header -->
+<header class="header about-head">
+
+    <!-- header__top -->
+    <div class="header__top">
+        <div class="header__top__wrap">
+
+            <!-- logo -->
+            <a href="#" class="logo"><img src="img/logo.png" width="286" height="41" alt="avtor knigi"></a>
+            <!-- /logo -->
+
+            <!-- user -->
+            <div class="user">
+                <a href="#" class="user__avatar">
+                    <img src="pic/user-avatar.png" width="50" height="50" alt="user"/>
+                </a>
+                <div>
+                    <a class="user__name" href="#">Сергей Печкин</a>
+                    <a class="user__edit" href="#">ред.</a>
+
+                    <!-- user__status -->
+                    <dl class="user__status">
+                        <dt>Вы:</dt>
+                        <dd class="user__status-reader"><a href="#"> Читатель</a></dd>
+                        <dd><a href="#">Выход</a></dd>
+                    </dl>
+                    <!-- /user__status -->
+                </div>
+            </div>
+            <!-- /user -->
+
+            <!-- links -->
+            <div class="links">
+                <a class="links__bold" href="#">Добавить книгу</a>
+                <a href="#">Книжная полка</a>
+                <a class="links__message" href="#"><span>Сообщения</span><span class="links__message-count">3</span></a>
+                <a href="#">Статистика</a>
+                <a class="links__bold" href="#">Вип-аккаунт</a>
+                <span class="links__balance">Баланс:  <a href="#">0  руб.</a></span>
+            </div>
+            <!-- /links -->
+
+        </div>
+    </div>
+    <!-- /header__top -->
+
+    <!-- header__search -->
+    <div class="header__search">
+
+        <!-- search -->
+        <form class="search" action="#">
+            <input type="search" value="15 фактов" class="search-input" name="search"/>
+            <input type="submit" value=" "/>
+                                <span class="search__example">
+                                    Например,  <a href="#">Девушка которой сделали предложение</a>
+                                </span>
+        </form>
+        <!-- /search -->
+
+        <!-- mini-nav -->
+        <nav class="mini-nav">
+            <a href="#" class="mini-nav__item5">Жанры</a>
+            <a href="#" class="mini-nav__item3">Отзывы</a>
+            <a href="#" class="mini-nav__item2">Топ авторов</a>
+            <a href="#" class="mini-nav__item4">Топ книг</a>
+            <a href="#" class="mini-nav__item6">Все авторы</a>
+            <a href="#" class="mini-nav__item1">Все книги</a>
+        </nav>
+        <!-- /mini-nav -->
+
+    </div>
+    <!-- /header__search -->
+
+</header>
+<!-- /header -->
+
+<!-- site__content -->
+<div class="site__content">
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+
+<nav class="crumbs">
+    <a href="#">Главная  </a>
+</nav>
+
+
+<!-- content -->
+<div class="content">
+
+
+<!-- result -->
+<div class="about-writers about-writers_profile">
+
+<!-- tabs-btn -->
+<ul class="tabs-btn">
+    <li><a href="#" class="active"><span>Книги автора</span></a> </li>
+    <li class="intermediate"> или </li>
+    <li><a href="#" > <span>Серии автора</span></a> </li>
+</ul>
+<!-- /tabs-btn -->
+
+<a href="#" class="add-book">Добавить книгу</a>
+
+<!-- tab-block -->
+<div class="tab-block">
+
+<!-- filter-profile -->
+<div class="filter-profile">
+
+    <ul>
+        <li class="filter-profile__genre">
+            <span class="filter-profile__title">Фильтр по жанру</span>
+            <div>
+                <div class="filters__scroll-wrap">
+
+                    <a class="scroll-top">top</a>
+                    <a class="scroll-bottom">bottom</a>
+
+                    <div class="filters__wrapper">
+
+                        <div class="filters__scroller">
+
+                            <dl class="genre-inner genre-inner_profile">
+                                <dt>
+                                    <a href="#">Психология</a>
+                                    <a href="#" class="genre-inner__all">весь</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">Детективы</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">Фантастика</a>
+                                </dd>
+                                <dt>
+                                    <a href="#">Фэнтези</a>
+                                    <a href="#" class="genre-inner__all">весь</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">Мистика</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">Рассказы</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">Мистика</a>
+                                </dd>
+                                <dt>
+                                    <a href="#">Психология</a>
+                                    <a href="#" class="genre-inner__all">весь</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">Детективы</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">Фантастика</a>
+                                </dd>
+                                <dt>
+                                    <a href="#">Фэнтези</a>
+                                    <a href="#" class="genre-inner__all">весь</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">Мистика</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">Рассказы</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">Мистика</a>
+                                </dd>
+                            </dl>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </li>
+        <li class="filter-profile__date">
+            <span class="filter-profile__title">Фильтр по дате</span>
+            <div>
+                <label for="from">С:</label>
+                <input type="text" id="from" name="from">
+                /
+                <label for="to">По:</label>
+                <input type="text" id="to" name="to">
+                <div>
+                    <a href="#" class="close-filter">применить</a>
+                </div>
+            </div>
+        </li>
+        <li class="filter-profile__formate">
+            <span class="filter-profile__title">Фильтр по формату</span>
+            <div>
+                <div class="format__scroll-wrap">
+
+                    <a class="scroll-top">top</a>
+                    <a class="scroll-bottom">bottom</a>
+
+                    <div class="format__wrapper">
+
+                        <div class="filters__scroller">
+
+                            <ul class="filter-select__inner">
+                                <li>
+                                    <a href="#">PDF</a>
+                                </li>
+                                <li>
+                                    <a href="#">DOC</a>
+                                </li>
+                                <li>
+                                    <a href="#">TXT</a>
+                                </li>
+                                <li>
+                                    <a href="#">DJVU</a>
+                                </li>
+                                <li>
+                                    <a href="#">PDF</a>
+                                </li>
+                                <li>
+                                    <a href="#">DOC</a>
+                                </li>
+                                <li>
+                                    <a href="#">TXT</a>
+                                </li>
+                                <li>
+                                    <a href="#">DJVU</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </li>
+        <li class="filter-profile__volume">
+            <span class="filter-profile__title">Фильтр по объему</span>
+            <div>
+                <label for="min-page">От:</label>
+                <input type="text" id="min-page"/>
+                <label for="max-page">До:</label>
+                <input type="text" id="max-page"/>
+                <span>стр.</span>
+                <div>
+                    <a href="#" class="close-filter">применить</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+<!-- /filter-profile -->
+
+<!-- description -->
+<div class="description description_none-border">
+
+    <a href="#">
+        <img src="pic/book-cover1.jpg" width="191" height="254" alt=""/>
+    </a>
+
+    <div class="description__wrap">
+
+        <div>
+            <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                <span>
+                                                    <span style="width: 80%"></span>
+                                                </span>
+        </div>
+        <div>
+            <a href="#" class="description__genre">Фантастика</a>
+            <span class="description__slash"></span>
+            <a href="#" class="description__data">26</a>
+            <span class="description__slash"></span>
+            <time datetime="2014-06-04">04.06.14</time>
+        </div>
+        <div>
+            <span class="description__in-developing">! Книга в работе</span>
+        </div>
+        <span class="description__separator"></span>
+        <p>
+            Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+            отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+        </p>
+        <div>
+            <a href="#" class="description__full">полное описание</a>
+            <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption">поставить на полку</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /description -->
+
+<!-- description -->
+<div class="description">
+
+    <a href="#">
+        <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+    </a>
+
+    <div class="description__wrap">
+
+        <div>
+            <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                <span>
+                                                    <span style="width: 80%"></span>
+                                                </span>
+        </div>
+        <div>
+            <a href="#" class="description__genre">Фантастика</a>
+            <span class="description__slash"></span>
+            <a href="#" class="description__data">26</a>
+            <span class="description__slash"></span>
+            <time datetime="2014-06-04">04.06.14</time>
+        </div>
+        <span class="description__separator"></span>
+        <p>
+            Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+            отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+        </p>
+        <div>
+            <a href="#" class="description__full">полное описание</a>
+            <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /description -->
+
+<!-- description -->
+<div class="description">
+
+    <a href="#">
+        <img src="pic/book-cover3.jpg" width="191" height="254" alt=""/>
+    </a>
+
+    <div class="description__wrap">
+
+        <div>
+            <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                <span>
+                                                    <span style="width: 80%"></span>
+                                                </span>
+        </div>
+        <div>
+            <a href="#" class="description__genre">Фантастика</a>
+            <span class="description__slash"></span>
+            <a href="#" class="description__data">26</a>
+            <span class="description__slash"></span>
+            <time datetime="2014-06-04">04.06.14</time>
+        </div>
+        <span class="description__separator"></span>
+        <p>
+            Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+            отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+        </p>
+        <div>
+            <a href="#" class="description__full">полное описание</a>
+            <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /description -->
+
+<!-- description -->
+<div class="description">
+
+    <a href="#">
+        <img src="pic/book-cover4.jpg" width="191" height="254" alt=""/>
+    </a>
+
+    <div class="description__wrap">
+
+        <div>
+            <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                <span>
+                                                    <span style="width: 80%"></span>
+                                                </span>
+        </div>
+        <div>
+            <a href="#" class="description__genre">Фантастика</a>
+            <span class="description__slash"></span>
+            <a href="#" class="description__data">26</a>
+            <span class="description__slash"></span>
+            <time datetime="2014-06-04">04.06.14</time>
+        </div>
+        <span class="description__separator"></span>
+        <p>
+            Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+            отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+        </p>
+        <div>
+            <a href="#" class="description__full">полное описание</a>
+            <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /description -->
+
+<!-- description -->
+<div class="description">
+
+    <a href="#">
+        <img src="pic/book-cover5.jpg" width="191" height="254" alt=""/>
+    </a>
+
+    <div class="description__wrap">
+
+        <div>
+            <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                <span>
+                                                    <span style="width: 80%"></span>
+                                                </span>
+        </div>
+        <div>
+            <a href="#" class="description__genre">Фантастика</a>
+            <span class="description__slash"></span>
+            <a href="#" class="description__data">26</a>
+            <span class="description__slash"></span>
+            <time datetime="2014-06-04">04.06.14</time>
+        </div>
+        <span class="description__separator"></span>
+        <p>
+            Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+            отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+        </p>
+        <div>
+            <a href="#" class="description__full">полное описание</a>
+            <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /description -->
+
+<!-- description -->
+<div class="description">
+
+    <a href="#">
+        <img src="pic/book-cover6.jpg" width="191" height="254" alt=""/>
+    </a>
+
+    <div class="description__wrap">
+
+        <div>
+            <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                <span>
+                                                    <span style="width: 80%"></span>
+                                                </span>
+        </div>
+        <div>
+            <a href="#" class="description__genre">Фантастика</a>
+            <span class="description__slash"></span>
+            <a href="#" class="description__data">26</a>
+            <span class="description__slash"></span>
+            <time datetime="2014-06-04">04.06.14</time>
+        </div>
+        <span class="description__separator"></span>
+        <p>
+            Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+            отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+        </p>
+        <div>
+            <a href="#" class="description__full">полное описание</a>
+            <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /description -->
+
+<!-- description -->
+<div class="description">
+
+    <a href="#">
+        <img src="pic/book-cover7.jpg" width="191" height="254" alt=""/>
+    </a>
+
+    <div class="description__wrap">
+
+        <div>
+            <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                <span>
+                                                    <span style="width: 80%"></span>
+                                                </span>
+        </div>
+        <div>
+            <a href="#" class="description__genre">Фантастика</a>
+            <span class="description__slash"></span>
+            <a href="#" class="description__data">26</a>
+            <span class="description__slash"></span>
+            <time datetime="2014-06-04">04.06.14</time>
+        </div>
+        <span class="description__separator"></span>
+        <p>
+            Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+            отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+        </p>
+        <div>
+            <a href="#" class="description__full">полное описание</a>
+            <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /description -->
+
+<!-- description -->
+<div class="description">
+
+    <a href="#">
+        <img src="pic/book-cover5.jpg" width="191" height="254" alt=""/>
+    </a>
+
+    <div class="description__wrap">
+
+        <div>
+            <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                <span>
+                                                    <span style="width: 80%"></span>
+                                                </span>
+        </div>
+        <div>
+            <a href="#" class="description__genre">Фантастика</a>
+            <span class="description__slash"></span>
+            <a href="#" class="description__data">26</a>
+            <span class="description__slash"></span>
+            <time datetime="2014-06-04">04.06.14</time>
+        </div>
+        <span class="description__separator"></span>
+        <p>
+            Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+            отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+        </p>
+        <div>
+            <a href="#" class="description__full">полное описание</a>
+            <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /description -->
+
+<!-- description -->
+<div class="description">
+
+    <a href="#">
+        <img src="pic/book-cover6.jpg" width="191" height="254" alt=""/>
+    </a>
+
+    <div class="description__wrap">
+
+        <div>
+            <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                <span>
+                                                    <span style="width: 80%"></span>
+                                                </span>
+        </div>
+        <div>
+            <a href="#" class="description__genre">Фантастика</a>
+            <span class="description__slash"></span>
+            <a href="#" class="description__data">26</a>
+            <span class="description__slash"></span>
+            <time datetime="2014-06-04">04.06.14</time>
+        </div>
+        <span class="description__separator"></span>
+        <p>
+            Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+            отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+        </p>
+        <div>
+            <a href="#" class="description__full">полное описание</a>
+            <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /description -->
+
+<!-- description -->
+<div class="description">
+
+    <a href="#">
+        <img src="pic/book-cover4.jpg" width="191" height="254" alt=""/>
+    </a>
+
+    <div class="description__wrap">
+
+        <div>
+            <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                <span>
+                                                    <span style="width: 80%"></span>
+                                                </span>
+        </div>
+        <div>
+            <a href="#" class="description__genre">Фантастика</a>
+            <span class="description__slash"></span>
+            <a href="#" class="description__data">26</a>
+            <span class="description__slash"></span>
+            <time datetime="2014-06-04">04.06.14</time>
+        </div>
+        <span class="description__separator"></span>
+        <p>
+            Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+            отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+        </p>
+        <div>
+            <a href="#" class="description__full">полное описание</a>
+            <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /description -->
+
+<!-- content__additions -->
+<div class="content__additions content__additions_profil">
+
+    <a href="#" class="show-more-btn">
+        <span>Показать еще 10</span>
+    </a>
+
+    <!-- paginator-wrap -->
+    <div class="paginator-wrap">
+
+        <!-- paginator -->
+        <ul class="paginator">
+
+            <li>
+                <a href="#" class="paginator__prev">Назад</a>
+            </li>
+            <li>
+                <a href="#">1</a>
+            </li>
+            <li>
+                <a href="#">2</a>
+            </li>
+            <li>
+                <a href="#" class="active">3</a>
+            </li>
+            <li>
+                <a href="#">4</a>
+            </li>
+            <li>
+                <a href="#">5</a>
+            </li>
+            <li>
+                <a href="#">...</a>
+            </li>
+            <li>
+                <a href="#" class="paginator__next">Далее</a>
+            </li>
+
+        </ul>
+        <!-- /paginator -->
+
+        <!-- input-page -->
+        <div class="input-page">
+
+            <input type="search" class="input-page__search" value="Введите номер страницы для перелистывания"/>
+            <input type="submit" value="Перейти"/>
+
+        </div>
+        <!-- /input-page -->
+
+    </div>
+    <!-- /paginator-wrap -->
+
+</div>
+<!-- /content__additions -->
+
+</div>
+<!-- /tab-block -->
+
+<!-- tab-block -->
+<div class="tab-block"></div>
+<!-- /tab-block -->
+
+<!-- tab-block -->
+<div class="tab-block">
+
+<!-- editing__options -->
+<dl class="editing__options editing__options_series">
+
+<dt>
+    <span>Серия книг о невероятной вселенной звездного пути “Звездный путь”</span><sup>4</sup>
+</dt>
+
+<dd>
+
+    <!-- description -->
+    <div class="description description_none-border">
+
+        <a href="#">
+            <img src="pic/book-cover1.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+                отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption">поставить на полку</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+</dd>
+
+<dt>
+    <span>13 книг из цикла "В вихре времен", собрание произведений автора</span><sup>4</sup>
+</dt>
+
+<dd>
+
+    <!-- description -->
+    <div class="description description_none-border">
+
+        <a href="#">
+            <img src="pic/book-cover1.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+                отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption">поставить на полку</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+</dd>
+
+<dt>
+    <span>Серия книг о невероятной вселенной звездного пути “Звездный путь”</span><sup>7</sup>
+</dt>
+
+<dd>
+
+    <!-- description -->
+    <div class="description description_none-border">
+
+        <a href="#">
+            <img src="pic/book-cover1.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+                отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption">поставить на полку</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+</dd>
+
+<dt>
+    <span>13 книг из цикла "В вихре времен", собрание произведений автора</span><sup>9</sup>
+</dt>
+
+<dd>
+
+    <!-- description -->
+    <div class="description description_none-border">
+
+        <a href="#">
+            <img src="pic/book-cover1.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за..
+                отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption">поставить на полку</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+    <!-- description -->
+    <div class="description">
+
+        <a href="#">
+            <img src="pic/book-cover2.jpg" width="191" height="254" alt=""/>
+        </a>
+
+        <div class="description__wrap">
+
+            <div>
+                <a href="#" class="description__tite">Лисица и охота на нее</a>
+                                                    <span>
+                                                        <span style="width: 80%"></span>
+                                                    </span>
+            </div>
+            <div>
+                <a href="#" class="description__genre">Фантастика</a>
+                <span class="description__slash"></span>
+                <span class="description__series-number">Номер в серии: 1</span>
+                <span class="description__slash"></span>
+                <time datetime="2014-06-04">04.06.14</time>
+            </div>
+            <span class="description__separator"></span>
+            <p>
+                Неоконченный роман великого Фицджеральда, который жил, отчаянно прожигая дни, и так же творил, ни капли не жалея себя. По легенде, он умер от сердечного приступа прямо за...
+            </p>
+            <div>
+                <a href="#" class="description__full">полное описание</a>
+                <a href="#" class="description__postpone add-contact on-option openTooltip"  data-id="onOption2">убрать с полки</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /description -->
+
+</dd>
+
+</dl>
+<!-- /editing__options -->
+
+</div>
+<!-- /tab-block -->
+
+</div>
+<!-- /result -->
+
+</div>
+<!-- /content -->
+
+<!-- site__aside-rtight -->
+<aside class="site__aside-rtight about-author-site">
+
+<h2 class="about-author-head">Об авторе:</h2>
+
+<!-- author-about -->
+<div class="author-about">
+
+    <!-- author-about__data -->
+    <div class="author-about__data">
+
+        <!-- author-photo -->
+        <div class="author-photo">
+
+            <a href="#" class="author-photo__wrap">
+                <img src="img/none-photo.png" width="55" height="55" alt=""/>
+            </a>
+
+            <div class="author-photo__likes">
+                <span></span>
+                <span class="total-likes">125</span>
+                <span></span>
+            </div>
+
+        </div>
+        <!-- /author-photo -->
+
+        <!-- personal-data -->
+        <div class="personal-data">
+
+            <h2>Станислав Кулешов:</h2>
+
+            <div class="personal-data__name">
+                <span>stas_kuleshov</span>
+                <a href="#">ред.</a>
+            </div>
+            <div>
+                Заходил:
+                                        <span class="peep-into">
+                                            <span class="peep-into__time">56</span>
+                                             минут назад
+                                        </span>
+            </div>
+            <div>
+                Обновление:
+                <a href="#" class="personal-data-update openTooltip bring-link" data-id="onOption6">
+                    19.06.14
+                </a>
+            </div>
+                                    <span class="personal-data__co-authorship">
+                                        <a href="#" class="openTooltip bring-link" data-id="onOption7">
+                                            Предложить соавторство
+                                        </a>
+                                    </span>
+
+        </div>
+        <!-- /personal-data -->
+
+    </div>
+    <!-- /author-about__data -->
+
+    <!-- author-about__profile -->
+    <div class="author-about__profile">
+        <h2>Заполненность профиля:</h2>
+
+        <!-- filling-profile  -->
+        <div class="filling-profile">
+
+            <!-- filling-profile__pouring -->
+            <div class="filling-profile__pouring" style="width: 55%"></div>
+            <!-- /filling-profile__pouring -->
+
+        </div>
+        <!-- /filling-profile  -->
+
+        <a href="#" class="filing-percent openTooltip bring-link" data-id="onPercent">
+            <span class="percent-number"></span> %
+        </a>
+
+    </div>
+    <!-- /author-about__profile -->
+
+    <!-- about-account -->
+    <div class="about-account">
+        <span>Вы:</span>
+        <a href="#" class="about-account__author">Автор</a>
+        <span>Аккаунт</span>
+        <a href="#" class="about-account__level">VIP</a>
+        <a href="#" class="about-account__buy-vip">Купить VIP</a>
+    </div>
+    <!-- /about-account -->
+
+    <!-- page-statistic -->
+    <div class="page-statistic">
+        <a href="#">Статистика страницы</a>
+    </div>
+    <!-- /page-statistic -->
+
+    <!-- author-specification -->
+    <div class="author-specification">
+        <p>
+            Пишу с удовольствием во всех жанрах. Жду  ваших оценок и отзывов. Так же принимаю заказы на написание книг любой специфики..
+        </p>
+        <a href="#">показать полностью</a>
+    </div>
+    <!-- /author-specification -->
+
+    <!-- aside-medals -->
+    <div class="aside-medals">
+        <div>
+            Медали:
+            <a href="#" class="to-get-medals openTooltip bring-link" data-id="onOption8">как получить медали?</a>
+        </div>
+        <div class="medals-list">
+            <span class="gold-medal">Золото</span>
+            <span class="silver-medal">Серебро</span>
+            <span class="bronze-medal">Бронза</span>
+        </div>
+    </div>
+    <!-- /aside-medals -->
+
+    <!-- aside-address -->
+    <address class="aside-address">
+        <div>
+            <span>Город:</span>
+            <div class="aside-address__spb">
+                <a href="#">Санкт-Петербург-бург-бург</a>
+            </div>
+        </div>
+        <div>
+            <span>Email:</span>
+            <div class="aside-address__mail">
+                <a href="mailto:kuleshov@gmail.com">kuleshov@gmail.com</a>
+            </div>
+        </div>
+        <div>
+            <span>Skype:</span>
+            <div class="aside-address__skype">
+                <span class="aside-address__skype_author">menarqwer</span>
+            </div>
+        </div>
+        <div>
+            <span>Телефон:</span>
+            <div class="aside-address__tel">
+                <span class="aside-address__tel_author">+7(926)412-32-12-34-56-78-90-12-34-56</span>
+            </div>
+        </div>
+
+    </address>
+    <!-- /aside-address -->
+
+    <!-- aside-bookshelf -->
+    <div class="aside-bookshelf">
+        <a href="#">
+            Книжная полка пользователя
+        </a>
+    </div>
+    <!-- /aside-bookshelf -->
+
+</div>
+<!-- /author-about -->
+
+<!-- registration-date -->
+<div class="registration-date registration-date_author">
+    Дата регистрации:
+    <a href="#">
+        12.07.2014
+    </a>
+</div>
+<!-- /registration-date -->
+
+<!-- non-photo -->
+<div class="non-photo non-photo_center">
+    <h2>Фото автора:</h2>
+
+    <!-- non-photo -->
+    <div class="non-photo__wrap">
+        <div class="non-photo__centering">
+            <img src="img/non-photo_mark.png" width="102" height="86" alt=""/>
+        </div>
+                            <span>У пользователя еще не загружено ни одной
+                                    фотографии!</span>
+    </div>
+    <!-- /non-photo -->
+
+</div>
+<!-- /non-photo -->
+
+<!-- aside-comments -->
+<div class="aside-comments com-about">
+    <h2>Последние отзывы:</h2>
+    <div class="aside-comments__wrap">
+        <ul>
+            <li>
+                <a href="#" class="comment-title">
+                    Девушка которой сделали...
+                </a>
+                <p class="comment-text">
+                    Впервые читаю автора с таким глубоким пониманием написанного. Удачи вам!!!
+                </p>
+                <div>
+                    <a href="#">
+                        <img src="pic/com-pic1.png" width="40" height="40" alt="">
+                    </a>
+                    <div class="comment-user">
+                        <a href="#">Станислав Кулешов</a>
+                        <span>stas_kuleshov</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="comment-title">
+                    Правила жизни Бьорк...
+                </a>
+                <p class="comment-text">
+                    Очень понравилась 2 часть глава 5. Всем
+                    советую почитать. Книга просто супер!!!
+                </p>
+                <div>
+                    <a href="#">
+                        <img src="pic/com-pic3.png" width="40" height="40" alt="">
+                    </a>
+                    <div class="comment-user">
+                        <a href="#">Сергей Печкин</a>
+                        <span>maringa</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="comment-title">
+                    15 фактов про сиськи...
+                </a>
+                <p class="comment-text">
+                    Очень понравилась 2 часть глава 5. Всем
+                    советую почитать. Книга просто супер!!!
+                </p>
+                <div>
+                    <a href="#">
+                        <img src="pic/com-pic2.png" width="40" height="40" alt="">
+                    </a>
+                    <div class="comment-user">
+                        <a href="#">Марина Гайдар</a>
+                        <span>maringa</span>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <a href="#" class="aside-comments__all-comments">
+            <span>Все отзывы</span>
+            <span>673</span>
+        </a>
+    </div>
+
+</div>
+<!-- /aside-comments -->
+
+<!-- writers-list -->
+<div class="writers-list coauthors">
+    <h2>Соавторы:</h2>
+    <ul>
+        <li>
+            <a href="#">
+                <img src="pic/none-photo.png" width="50" height="50" alt="">
+            </a>
+            <div class="aside-name-block">
+                <a href="#">Сергей Печкин</a>
+                <span>sergepechkin</span>
+                <a class="terminate" href="#">pасторгнуть</a>
+            </div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="pic/none-photo.png" width="50" height="50" alt="">
+            </a>
+            <div class="aside-name-block">
+                <a href="#">Станислав Кулешов</a>
+                <span>stas_kuleshov</span>
+                <a class="terminate" href="#">pасторгнуть</a>
+            </div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="pic/none-photo.png" width="50" height="50" alt="">
+            </a>
+            <div class="aside-name-block">
+                <a href="#">Виктор Профессор</a>
+                <span>professor_ru</span>
+                <a class="terminate" href="#">pасторгнуть</a>
+            </div>
+        </li>
+        <li><a href="#" class="openPopup" data-id="coauthors">Все соавторы</a></li>
+    </ul>
+
+</div>
+<!-- /writers-list -->
+
+</aside>
+<!-- /site__aside-rtight -->
+
+</div>
+<!-- /content-wrap -->
+
+</div>
+<!-- /site__content -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+
+    <!-- footer__layout -->
+    <div class="footer__layout">
+
+                    <span class="copyright">
+                            &#169; Самиздат, 2010
+                        <span>
+                            Проект сайта <a href="#">bukvaved.ru</a>
+                        </span>
+                    </span>
+        <dl class="footer-mail">
+            <dt>
+                Электронная почта:
+            </dt>
+            <dd>
+                <a href="emailto:sam@bukvaved.ru">sam@bukvaved.ru</a>
+            </dd>
+        </dl>
+                    <span class="about-project">
+                        <a href="#">
+                            Подробнее о проекте
+                        </a>
+                    </span>
+    </div>
+    <!-- /footer__layout -->
+
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

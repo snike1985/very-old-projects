@@ -1,0 +1,9 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "times-new-roman";
+    src: url("../fonts/times-new-roman-cyr-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

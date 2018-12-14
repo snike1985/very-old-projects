@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+    <!-- site -->
+    <div class="site site_no-autorization">
+
+    <!-- header -->
+    <header class="header about-head">
+
+        <!-- header__top -->
+        <div class="header__top header_margin">
+            <div class="header__top__wrap">
+
+                <!-- logo -->
+                <a href="#" class="logo"><img src="img/logo.png" width="286" height="41" alt="avtor knigi"></a>
+                <!-- /logo -->
+
+                <!-- header__top__search -->
+                <form action="#" class="header__top__search">
+                    <input type="search" class="search-input" value="15 фактов">
+                    <input type="submit">
+                </form>
+                <!-- /header__top__search -->
+
+                <!-- enter-menu -->
+                <div class="enter-menu">
+                    <a href="#" class="enter-btn">Вход</a>
+                    <a href="#">Регистрация</a>
+                </div>
+                <!-- /enter-menu -->
+
+                <!-- enter-form -->
+                <form class="enter-form">
+
+                    <span class="enter-form__close" title="close">close</span>
+
+                    <input type="text" placeholder="Имя">
+                    <input type="password" placeholder="Пароль">
+
+                    <a href="#">напомнить</a>
+
+                    <input type="submit" value="Войти">
+
+                </form>
+                <!-- /enter-form -->
+
+            </div>
+        </div>
+        <!-- /header__top -->
+
+    </header>
+    <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+
+                <nav class="crumbs">
+                    <a href="#">Главная  </a>
+                </nav>
+
+
+                <!-- content -->
+                <div class="content">
+
+                    <!-- registration -->
+                    <div class="registration">
+                        <h2>Регистрация нового пользователя:</h2>
+
+                        <!-- registration__new-user -->
+                        <form class="registration__new-user" action="#">
+                            <p>Поля отмеченные <span>*</span> обязательны для заполнения</p>
+                            <div class="registration__item">
+                                <div>
+                                    <label for="login">Логин: <span>*</span></label>
+                                    <div class="registration__check-message">
+                                        <input type="text" name="login" id="login"/>
+
+                                        <!-- добавив к .registration__message класс not_check цвет шрифта становится красным и появлется бекграунд в виде красного треугольника
+                                         добавив к .registration__message класс check цвет шрифта становится зеленым и появлется бекграунд в виде зеленого кружечка-->
+                                        <span class="registration__message not_check">логин занят</span>
+                                    </div>
+                                </div>
+                                <div class="registration__prompt">
+                                    например, <a href="#">professor</a>
+                                </div>
+                            </div>
+                            <div class="registration__item">
+                                <div>
+                                    <label for="pass">Пароль: <span>*</span></label>
+                                    <input type="password" name="pass" id="pass"/>
+                                </div>
+                                <div class="registration__prompt">только латинские буквы A..Z, и цифры 0..10</div>
+                            </div>
+                            <div class="registration__item">
+                                <div>
+                                    <label for="pass1">Повторите
+                                        Пароль: <span>*</span></label>
+                                    <div class="registration__check-message">
+                                        <input type="password" name="pass1" id="pass1"/>
+
+                                        <!-- добавив к .registration__message класс not_check цвет шрифта становится красным и появлется бекграунд в виде красного треугольника
+                                         добавив к .registration__message класс check цвет шрифта становится зеленым и появлется бекграунд в виде зеленого кружечка-->
+                                        <span class="registration__message check">пароли совпадают</span>
+                                    </div>
+                                </div>
+                                <div class="registration__prompt">только латинские буквы A..Z, и цифры 0..10</div>
+                            </div>
+                            <div class="registration__item">
+                                <div>
+                                    <label for="email">Email: <span>*</span></label>
+                                    <input type="email" name="email" id="email"/>
+                                </div>
+                                <div class="registration__prompt">например, <a href="#">thereader_s@gmail.com</a></div>
+                            </div>
+                            <div class="registration__item">
+                                <div>
+                                    <label for="first-name">Имя: <span>*</span></label>
+                                    <input type="text" name="first-name" id="first-name"/>
+                                </div>
+                                <div class="registration__prompt">например, <a href="#">Константин</a></div>
+                            </div>
+                            <div class="registration__item">
+                                <div>
+                                    <label for="last-name">Фамилия: <span>*</span></label>
+                                    <input type="text" name="last-name" id="last-name"/>
+                                </div>
+                                <div class="registration__prompt">например,  <a href="#">Ланевский</a></div>
+                            </div>
+                            <div class="registration__item control_question">
+                                <label for="question">Контрольный вопрос: <span>*</span></label>
+                                <span>Девичья фамилия матери</span>
+                                <input type="text" name="question" id="question" placeholder="Введите ответ на вышезаданный вопрос"/>
+                            </div>
+                            <div class="registration__send">
+                                <input type="submit" value="Зарегистрироваться"/>
+                            </div>
+                            <span class="registration__registered">Если вы уже зарегистрированы то можете  <a href="#">войти на сайт</a></span>
+                        </form>
+                        <!-- /registration__new-user -->
+
+                    </div>
+                    <!-- registration -->
+
+                </div>
+                <!-- /content -->
+
+                <!-- site__aside-rtight -->
+                <aside class="site__aside-rtight">
+
+                    <!-- registered -->
+                    <div class="registered">
+                        <h2>Всего зарегистрировано:</h2>
+                        <div>
+                            <div class="registered__why">
+                                <div class="registered__total">
+                                    <span>1</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>5</span>
+                                </div>
+                                <span><a href="#">Зачем нужна регистрация</a></span>
+                            </div>
+                            <div class="registered__video-presentation">
+                                <a href="#">Видеопрезентация сайта</a>
+                            </div>
+                            <div class="registered__statistic">
+                                <span><a href="#">Подробная статистика пользователей</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /registered -->
+
+                    <!-- tips -->
+                    <div class="tips">
+                        <h2>Подсазки:</h2>
+                        <ul>
+                            <li>
+                                <span>просмотр своих читателей, посетителей страницы, общего информации</span>
+                                <a href="#">скрыть подсказку</a>
+                            </li>
+                            <li>
+                                <span>просмотр своих читателей, посетителей страницы, общего информации</span>
+                                <a href="#">скрыть подсказку</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /tips -->
+
+                    <!-- writers-list -->
+                    <div class="writers-list">
+                        <h2>Новые пользователи:</h2>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="pic/none-photo.png" width="50" height="50" alt="">
+                                </a>
+                                <div class="aside-name-block">
+                                    <a href="#">Сергей Печкин</a>
+                                    <span>sergepechkin</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="pic/none-photo.png" width="50" height="50" alt="">
+                                </a>
+                                <div class="aside-name-block">
+                                    <a href="#">Станислав Кулешов</a>
+                                    <span>stas_kuleshov</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="pic/none-photo.png" width="50" height="50" alt="">
+                                </a>
+                                <div class="aside-name-block">
+                                    <a href="#">Виктор Профессор</a>
+                                    <span>professor_ru</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /writers-list -->
+
+                </aside>
+                <!-- /site__aside-rtight -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <span class="copyright">
+                    &#169; Самиздат, 2010
+                <span>
+                    Проект сайта <a href="#">bukvaved.ru</a>
+                </span>
+            </span>
+            <dl class="footer-mail">
+                <dt>
+                    Электронная почта:
+                </dt>
+                <dd>
+                    <a href="emailto:sam@bukvaved.ru">sam@bukvaved.ru</a>
+                </dd>
+            </dl>
+            <span class="about-project">
+                <a href="#">
+                    Подробнее о проекте
+                </a>
+            </span>
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

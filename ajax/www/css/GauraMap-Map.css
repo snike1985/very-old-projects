@@ -1,0 +1,150 @@
+.gray_block label{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+    color: #4c4c4c;
+    font-size: 13px;
+}
+.check_box_type{
+    display: inline-block;
+    vertical-align: top;
+}
+.line_container{
+    padding: 22px 0 7px 0;
+    position: relative;
+}
+.line_container .error_input_text{
+    left: 150px;
+}
+.line_container .green_checkbox{
+    width: 336px;
+}
+.line_container .blue_checkbox{
+    width: 167px;
+}
+.gray_block  .fiolet_checkbox{
+   width: 167px;
+}
+.day_line{
+    display: inline-block;
+    vertical-align: top;
+    width: 273px;
+    margin-right: 63px;
+    margin-top: 15px;
+}
+.day_container{
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 21px;
+}
+
+
+.day_container a{
+    float: left;
+    color: #4c4c4c;
+    height: 22px;
+    line-height: 21px;
+    width: 39px;
+    text-align: center;
+    text-decoration: none;
+    ransition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+}
+.day_container a:hover,
+.day_container a.active{
+    background: #68c03c;
+    cursor: default;
+    color: #fff;
+}
+.day_container a:hover{
+    cursor: pointer;
+}
+.day_container a.active:hover{
+    text-decoration: none;
+}
+
+.add_recently dt{
+    color: #ada8a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 42px;
+    font-family: "robotoslab-bold";
+
+}
+.add_recently  dd{
+    font-size: 13px;
+    color: #4c4c4c;
+    padding-left: 14px;
+    margin-bottom: 27px;
+}
+.add_recently  dd a{
+    display: inline-block;
+    margin-left: 9px;
+}
+.add_recently  dd b{
+    font-weight: normal;
+    font-family: "robotoslab-bold";
+}
+.green_edit{
+    background: url("../img/green-dote.png") no-repeat 0 4px;
+}
+.blue_edit{
+    background: url("../img/blue_dot.png") no-repeat 0 4px;
+}
+.pink_edit{
+    background: url("../img/pink-dote.png") no-repeat 0 4px;
+}
+
+.fead_back{
+    position: fixed;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.fead_back .user_reg .error_input_text{
+    left: 177px;
+}
+.fead_back .user_reg{
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    font-family: robotoslab-regular;
+    display: block;
+    padding-bottom: 42px;
+    margin-top: 50px;
+}
+.fead_back  .user_reg h2{
+    text-align: center;
+    color: #00bbdf;
+    font-size: 18px;
+    padding-top: 23px;
+    margin-bottom: 26px;
+}
+.fead_back .blue_submit{
+    width: 150px;
+}
+.fead_back textarea{
+    width: 255px;
+    height: 100px;
+}
+.fead_back .user_reg{
+    width: 481px;
+}
+
+.fead_back .line_container{
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+.fead_back .user_reg label{
+    width: 155px;
+}
+.fead_back .user_reg .blue_submit{
+    margin: 13px 0 0 167px;
+}
